@@ -1,0 +1,128 @@
+@import "./utilities";
+// @import "./swiper";
+@import "./splide";
+@import "../components/navbar";
+
+* {
+    touch-action: manipulation;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    // scroll-behavior: smooth;
+    font-smooth: always;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    font-size: clamp(14px, 1vw, 16px);
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    flex-direction: column;
+    transition: background-color 0.075s;
+}
+
+@mixin container($maxWidth, $breakpoint, $breakpointMaxWidth) {
+    width: 100%;
+    max-width: $maxWidth;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    position: relative;
+    padding-right: 1rem;
+
+    @media (max-width: #{$breakpoint}) {
+        & {
+            max-width: $breakpointMaxWidth;
+        }
+    }
+}
+
+.main-container {
+    @include container(1200px, 1366px, 1136px);
+}
+
+.main-container-sm {
+    @include container(960px, 980px, 768px);
+}
+
+.main-container-xs {
+    @include container(768px, 0px, 768px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fade-out 0.6s forwards !important;
+}
+
+main#main-content {
+    flex: 1 1 0;
+    // padding-top: 6rem;
+    // padding-bottom: 3rem;
+    // padding-top: 5rem;
+    animation: fade-in 0.35s forwards;
+}
+
+ul {
+    padding-left: 1.75rem;
+    & li {
+        list-style-type: disc;
+    }
+}
+
+ol {
+    padding-left: 1.15rem;
+    & li {
+        list-style-type: decimal;
+    }
+}

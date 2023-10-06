@@ -1,0 +1,54 @@
+@import "../../modules/main";
+
+.collapsible {
+    display: grid;
+    text-align: left;
+    justify-items: start;
+    & > button {
+        text-align: left;
+    }
+
+    & .button-icon {
+        transition: transform 0.25s;
+    }
+    & > button * {
+        pointer-events: none;
+    }
+    .collapsible-content-wrapper {
+        display: grid;
+        transition:
+            grid-template-rows 0.25s,
+            margin-top 0.25s;
+    }
+    &.active {
+        .collapsible-content-wrapper {
+            grid-template-rows: 1fr;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .button-icon {
+            transform: rotate(-180deg);
+        }
+    }
+    &:not(.active) {
+        .collapsible-content-wrapper {
+            grid-template-rows: 0fr;
+        }
+    }
+    .collapsible-content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        a,
+        button {
+            padding-left: 1.25rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+
+#mobile-menu-list::-webkit-scrollbar {
+    width: 5px;
+}
