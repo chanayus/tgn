@@ -617,17 +617,21 @@ ol li {
 
 .storytelling-card {
   aspect-ratio: 0.65;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
   flex-shrink: 0;
   text-align: center;
   overflow: hidden;
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.storytelling-card:hover {
-  transform: scale(0.925) !important;
-}
-.storytelling-card:hover > img {
-  transform: scale(1.075);
+@media (hover: hover) and (pointer: fine) {
+  .storytelling-card:hover {
+    transform: scale(0.925) !important;
+  }
+  .storytelling-card:hover > img {
+    transform: scale(1.075);
+  }
 }
 .storytelling-card .storytelling-info {
   position: absolute;
