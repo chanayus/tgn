@@ -59,9 +59,8 @@ if (textSlideContent.length > 0) {
 
 gsap
   .timeline()
-  .fromTo("#hero-section h1", { autoAlpha: 0, y: 75 }, { autoAlpha: 1.5, y: 0, ease: "expo", duration: 1 }, "+=0.25")
-  .fromTo("#hero-section-bg", { autoAlpha: 0, scale: 1.25 }, { autoAlpha: 1, scale: 1, duration: 2.5, ease: "expo" }, "-=0.25")
-  .fromTo("#navbar", { autoAlpha: 0 }, { autoAlpha: 1, duration: 1 }, "<");
+  .fromTo("#hero-section h1", { autoAlpha: 0, y: 75 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 1 }, "+=0.25")
+  .fromTo("#hero-section-bg", { autoAlpha: 0, scale: 1.25 }, { autoAlpha: 1, scale: 1, duration: 2.5, ease: "expo" }, "-=0.25");
 
 // Animate for Text and Image Section
 
