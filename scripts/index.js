@@ -42,9 +42,11 @@ const initSlide = () => {
 
   paginationDot?.forEach((button, index) => {
     button.addEventListener("click", () => {
-      playSlideAnimation(currentSlidePage, index);
-      currentSlidePage = index;
-      updatePagination();
+      if (currentSlidePage !== index) {
+        playSlideAnimation(currentSlidePage, index);
+        currentSlidePage = index;
+        updatePagination();
+      }
     });
   });
 };
