@@ -105,7 +105,7 @@
   overflow: hidden;
 }
 
-.playfair-font, .heading-section-text {
+.playfair-font, .storytelling-card .storytelling-info .storytelling-heading, .heading-section-text {
   font-family: "Playfair Display", "IBM Plex Sans Thai", sans-serif !important;
 }
 
@@ -613,4 +613,56 @@ ol li {
 
 #mobile-menu-list::-webkit-scrollbar {
   width: 5px;
+}
+
+.storytelling-card {
+  aspect-ratio: 0.65;
+  position: relative;
+  flex-shrink: 0;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.storytelling-card:hover {
+  transform: scale(0.925) !important;
+}
+.storytelling-card:hover > img {
+  transform: scale(1.075);
+}
+.storytelling-card .storytelling-info {
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 1.5rem 0.75rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48.22%, rgba(0, 0, 0, 0.9) 82.2%);
+}
+.storytelling-card .storytelling-info .storytelling-heading {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.storytelling-card .storytelling-info .info-underline {
+  width: 3rem;
+  height: 1px;
+  background: #fff;
+}
+.storytelling-card .storytelling-info .storytelling-desc {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.storytelling-card > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }/*# sourceMappingURL=global.css.map */

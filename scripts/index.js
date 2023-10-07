@@ -4,33 +4,9 @@ let paginationDot;
 const paginationContainer = document.querySelector("#slide-pagination");
 const imageSlide = document.querySelectorAll(".image-slide-content");
 const textSlideContent = document.querySelectorAll(".slide-content");
+const slideSection = document.querySelector("#slide-section");
 
 let currentSlidePage = 0;
-
-const slide = new splide.Splide("#storytelling-container", {
-  perPage: 4,
-  drag: true,
-  perMove: 1,
-  pagination: false,
-  gap: "1rem",
-  breakpoints: {
-    1024: {
-      perPage: 4,
-      perMove: 1,
-      padding: { left: "1.25rem", right: "1.25rem" },
-    },
-    960: {
-      perPage: 3,
-      perMove: 1,
-      drag: "free",
-    },
-    640: {
-      perPage: 1,
-      perMove: 1,
-      fixedWidth: "16rem",
-    },
-  },
-}).mount();
 
 const updatePagination = () => {
   paginationDot.forEach((dot, index) => {
@@ -73,6 +49,12 @@ const initSlide = () => {
   });
 };
 
+if (textSlideContent.length > 0) {
+  initSlide();
+} else {
+  slideSection.classList.add("!hidden");
+}
+
 // Animate for Hero Section
 
 gsap
@@ -93,7 +75,7 @@ textImageSections?.forEach((section, index) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: section,
-      start: "top center",
+      start: "-5% center",
       end: "top center",
     },
   });
@@ -116,4 +98,47 @@ gsap
   .fromTo("#what-we-do-section .heading-section-text", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.1 })
   .fromTo("#what-we-do-section a", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.2, ease: "expo", duration: 0.75 });
 
-initSlide();
+// Handle Story Telling Section & Animate
+
+const slide = new splide.Splide("#storytelling-container", {
+  perPage: 4,
+  drag: true,
+  perMove: 1,
+  pagination: false,
+  gap: "1rem",
+  breakpoints: {
+    1024: {
+      perPage: 4,
+      perMove: 1,
+      padding: { left: "1.25rem", right: "1.25rem" },
+    },
+    960: {
+      perPage: 3,
+      perMove: 1,
+      drag: "free",
+    },
+    640: {
+      perPage: 1,
+      perMove: 1,
+      fixedWidth: "16rem",
+    },
+  },
+}).mount();
+
+const storyTellingCards = document.querySelectorAll("#story-card-container .storytelling-card");
+const storyTellingSection = document.querySelector("#storytelling-container");
+
+if (storyTellingCards.length > 0) {
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: storyTellingSection,
+        start: "top center",
+        end: "top center",
+      },
+    })
+    .fromTo("#storytelling-heading", { autoAlpha: 0 }, { autoAlpha: 1 })
+    .fromTo(storyTellingCards, { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.15, ease: "expo", duration: 0.75 });
+} else {
+  storyTellingSection.classList.add("!hidden");
+}

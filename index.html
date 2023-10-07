@@ -23,6 +23,7 @@
     <!-- Components -->
     <script src="./components/navbar.js"></script>
     <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
 
     <!-- JS -->
     <script
@@ -41,6 +42,7 @@
   </head>
   <body>
     <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
 
     <main id="main-content">
       <header id="hero-section" class="w-full h-screen overflow-hidden bg-black max-h-[67.5rem] relative flex justify-center items-center text-white">
@@ -89,7 +91,7 @@
           <a href="" class="space-y-4">
             <figure class="w-full aspect-[0.85]">
               <img
-                src="https://s3-alpha-sig.figma.com/img/e33fw-64f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
                 class="object-cover w-full h-full"
               />
@@ -214,7 +216,7 @@
       </section>
 
       <section id="storytelling-container" class="pt-10 space-y-8 overflow-hidden splide pb-28">
-        <div class="flex flex-col justify-between md:items-center md:flex-row main-container gap-y-8">
+        <div id="storytelling-heading" class="flex flex-col justify-between md:items-center md:flex-row main-container gap-y-8">
           <h3 class="heading-section-text">Storytelling Through Food</h3>
           <div class="flex gap-x-4 splide__arrows">
             <button id="storytelling-prev" class="w-12 h-12 rotate-180 btn-rounded-gold splide__arrow splide__arrow--prev">
@@ -227,166 +229,107 @@
         </div>
 
         <div class="splide__track main-container lg:!overflow-visible">
-          <div class="flex w-full pb-2 splide__list lg:min-w-fit">
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div
-                class="absolute w-full truncate flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]"
-              >
-                <h4 class="text-4xl font-bold playfair-font">ปลาไทย</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+          <div id="story-card-container" class="flex w-full pb-2 splide__list lg:min-w-fit">
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">ปลาไทย</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
 
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">อาหารอีสาน</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 2 Isan Soul Gastronomy</p>
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">สมัยอยุธยา</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 3 Portland Bazaar Gastronomy</p>
+
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">Black Journey</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 4 Wondering Gastronomy</p>
+
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">Black Journey</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
-              />
-            </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div
-                class="absolute w-full truncate flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]"
-              >
-                <h4 class="text-4xl font-bold playfair-font">ปลาไทย</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/13d3/b099/f49871ad7ad1c95b910dab08091af683?Expires=1697414400&Signature=Hk3~Sie2ApFDRs~l9fns63fJ~TUmuVa~ReiefrmDEvYF0JRpg8K3Jp~O3GOpQ4E28JUeMCxlNvuIBnm45OXmRKx1pfXN~vTD5~izz~QHV3jpExgu67JyGYIQt3BKGpv35PPZ7WYCn-jOdqt3sEN1xbyPfVpQzZmxlJ-RhGI6DC9NRzV-8532XJGvEe986uUxHV9Q5MGaT1GLt1gf9gxtcxkcy3cBtSGHpEb0gyrVhgXfUUNtxcdyDN8-6lYv~SJPsW7B9DRx8XoifGQoDTmlx9sikKBVFzBsryoeA1GPSJjgOcAejO2bQrLH6rJWLCEEQxeyQy8LQ1PgdJwEj6Z1VQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
 
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">อาหารอีสาน</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 2 Isan Soul Gastronomy</p>
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">ปลาไทย</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </a>
+
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">สมัยอยุธยา</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 3 Portland Bazaar Gastronomy</p>
+
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">Black Journey</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 4 Wondering Gastronomy</p>
+
+            <a href="" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">Black Journey</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
               </div>
               <img
                 src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
-                class="absolute object-cover w-full h-full"
-              />
-            </a>
-
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div
-                class="absolute w-full truncate flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]"
-              >
-                <h4 class="text-4xl font-bold playfair-font">ปลาไทย</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/13d3/b099/f49871ad7ad1c95b910dab08091af683?Expires=1697414400&Signature=Hk3~Sie2ApFDRs~l9fns63fJ~TUmuVa~ReiefrmDEvYF0JRpg8K3Jp~O3GOpQ4E28JUeMCxlNvuIBnm45OXmRKx1pfXN~vTD5~izz~QHV3jpExgu67JyGYIQt3BKGpv35PPZ7WYCn-jOdqt3sEN1xbyPfVpQzZmxlJ-RhGI6DC9NRzV-8532XJGvEe986uUxHV9Q5MGaT1GLt1gf9gxtcxkcy3cBtSGHpEb0gyrVhgXfUUNtxcdyDN8-6lYv~SJPsW7B9DRx8XoifGQoDTmlx9sikKBVFzBsryoeA1GPSJjgOcAejO2bQrLH6rJWLCEEQxeyQy8LQ1PgdJwEj6Z1VQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-                class="absolute object-cover w-full h-full"
-              />
-            </a>
-
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">อาหารอีสาน</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 2 Isan Soul Gastronomy</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-                class="absolute object-cover w-full h-full"
-              />
-            </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">สมัยอยุธยา</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 3 Portland Bazaar Gastronomy</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-                class="absolute object-cover w-full h-full"
-              />
-            </a>
-            <a href="" class="splide__slide w-64 aspect-[0.65] relative shrink-0 text-center">
-              <div class="absolute w-full flex flex-col justify-end items-center gap-y-4 py-6 px-3 text-white h-full z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0)_48.22%,rgba(0,0,0,0.9)_82.2%)]">
-                <h4 class="text-4xl font-bold playfair-font">Black Journey</h4>
-                <div class="w-12 h-px bg-white"></div>
-                <p class="w-full truncate">EP. 4 Wondering Gastronomy</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-                class="absolute object-cover w-full h-full"
               />
             </a>
           </div>
         </div>
       </section>
 
-      <section class="relative w-full lg:h-[40.625rem] h-[80vh] bg-[#D5CBC2] max-lg:flex flex-col">
+      <section id="slide-section" class="relative w-full lg:h-[40.625rem] h-[80vh] bg-[#D5CBC2] max-lg:flex flex-col">
         <figure class="relative flex-[0.875] w-full lg:h-full shrink-0 overflow-hidden">
           <img
             src="https://s3-alpha-sig.figma.com/img/3aae/cea3/81f57278c2cdc60f128631be3d80640c?Expires=1697414400&Signature=M3mo8HoAiGbn-zlcf-yHvel~4am2AX9rwLnvVOTRkoo9MRcg9FLrg35EvS7wGHYFj2hmHdfkxClXFQLI7-vFjzy06s2LeDHrCe2mOY2Jacl1-Bxuf9nsqskI4d~fb4ZxWTatlGUXGt9l0OK~w-eC3X1Y32YKiA-nynYOvHbfMrfEeYRJz0tbriXNiRBnyhyPQs0EAdf27pne9I7Mt26VcWEqWgsQRkuhoIRAUf8m9OZbK0HGMYxgaQympEfEUPKxqP5-J0X7HhsqOuqvJSOeHXolEJ9zK0bG9Wi1BiZSqSMo~w9xIXb8kyZK1rEaTmDBkCb2cVF8Yvqvcu4S9kFd1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
