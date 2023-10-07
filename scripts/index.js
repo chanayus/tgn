@@ -53,6 +53,10 @@ const initSlide = () => {
 
 if (textSlideContent.length > 0) {
   initSlide();
+  if( textSlideContent.length <= 1){
+    paginationContainer.classList.add("!hidden")
+  }
+  
 } else {
   slideSection.classList.add("!hidden");
 }
