@@ -10,7 +10,7 @@ let currentSlidePage = 0;
 
 const updatePagination = () => {
   paginationDot.forEach((dot, index) => {
-    dot.className = `${index === currentSlidePage ? "w-7 bg-gold" : "bg-white"} w-3 h-3 rounded-full`;
+    dot.className = `${index === currentSlidePage ? "active" : ""} pagination-dot`;
   });
 };
 
@@ -34,7 +34,7 @@ const initSlide = () => {
       }
     }
     paginationContainer.innerHTML += `
-      <button class="${index === currentSlidePage ? "w-7 bg-gold" : "bg-white"} w-3 h-3 rounded-full"></button>
+      <button class="${index === currentSlidePage ? "active" : ""} pagination-dot"></button>
     `;
   });
 
