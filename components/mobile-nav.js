@@ -11,7 +11,7 @@ class MobileNav extends HTMLElement {
                   <rect x="0.282227" y="23.1816" width="32" height="2.5" transform="rotate(-45 0.282227 23.1816)" fill="#AD9C6C"/>
                 </svg>
               </button>
-              <a href="" class="border border-gold px-2.5 py-1 md:block hidden">
+              <a href="" class="border border-gold px-2.5 py-1 md:block hidden hover:bg-[#AD9C6C] hover:text-white transition-colors">
                 Gastronomy Academy
               </a>
             </section>

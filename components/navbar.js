@@ -10,7 +10,7 @@ class Navbar extends HTMLElement {
               <path d="M5.25 31.5V28H36.75V31.5H5.25ZM5.25 22.75V19.25H36.75V22.75H5.25ZM5.25 14V10.5H36.75V14H5.25Z" fill="white"/>
             </svg>  
           </button>
-          <a href="" class="border px-2.5 py-1 md:block hidden">
+          <a href="" class="border px-2.5 py-1 md:block hidden hover:bg-white hover:text-black transition-colors">
             Gastronomy Academy
           </a>
         </section>
