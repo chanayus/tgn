@@ -1,6 +1,7 @@
 import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
 
 let paginationDot;
+let slideInterval;
 const paginationContainer = document.querySelector("#slide-pagination");
 const imageSlide = document.querySelectorAll(".image-slide-content");
 const textSlideContent = document.querySelectorAll(".slide-content");
@@ -23,6 +24,9 @@ const playSlideAnimation = (currentIndex, nextIndex) => {
     .set([textSlideContent[nextIndex], imageSlide[nextIndex]], { display: "block" })
     .fromTo(imageSlide[nextIndex], { autoAlpha: 0, scale: 1.1 }, { autoAlpha: 1, scale: 1, ease: "expo", duration: 1.5 })
     .fromTo(textSlideContent[nextIndex], { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 0.5 }, "-=1");
+
+  currentSlidePage = nextIndex;
+  updatePagination();
 };
 
 const initSlide = () => {
@@ -43,9 +47,9 @@ const initSlide = () => {
   paginationDot?.forEach((button, index) => {
     button.addEventListener("click", () => {
       if (currentSlidePage !== index) {
+        clearInterval(slideInterval);
         playSlideAnimation(currentSlidePage, index);
-        currentSlidePage = index;
-        updatePagination();
+        slideInterval = setInterval(() => playSlideAnimation(currentSlidePage, currentSlidePage + 1 > textSlideContent.length - 1 ? 0 : currentSlidePage + 1), 5000);
       }
     });
   });
@@ -53,10 +57,11 @@ const initSlide = () => {
 
 if (textSlideContent.length > 0) {
   initSlide();
-  if( textSlideContent.length <= 1){
-    paginationContainer.classList.add("!hidden")
+  if (textSlideContent.length <= 1) {
+    paginationContainer.classList.add("!hidden");
+  } else if (textSlideContent.length > 1) {
+    slideInterval = setInterval(() => playSlideAnimation(currentSlidePage, currentSlidePage + 1 > textSlideContent.length - 1 ? 0 : currentSlidePage + 1), 5000);
   }
-  
 } else {
   slideSection.classList.add("!hidden");
 }
@@ -66,8 +71,14 @@ if (textSlideContent.length > 0) {
 gsap
   .timeline()
   .fromTo("#hero-section h1", { autoAlpha: 0, y: 75 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 1 }, "+=0.25")
-  .fromTo("#hero-section-bg", { autoAlpha: 0, scale: 1.25 }, { autoAlpha: 1, scale: 1, duration: 2.5, ease: "expo" }, "-=0.25");
+  .fromTo("#hero-section-bg", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2.5, ease: "expo" }, "-=0.25")
+  .fromTo("#scrolldown-mouse", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2.5, ease: "expo" }, "<");
 
+gsap
+  .timeline({ repeat: -1, repeatDelay: 0, ease: "none" })
+  .fromTo("#scrolldown-mouse-wheel", { y: 0, duration: 1, autoAlpha: 0 }, { y: 0, duration: 1, autoAlpha: 1 })
+  .to("#scrolldown-mouse-wheel", { y: 14, duration: 1, autoAlpha: 0 })
+  .to("#scrolldown-mouse-wheel", { y: 0, duration: 1 });
 // Animate for Text and Image Section
 
 const textImageSections = document.querySelectorAll(".text-image-section");
