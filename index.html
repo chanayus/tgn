@@ -45,6 +45,15 @@
     <navbar-component></navbar-component>
     <mobile-nav-component></mobile-nav-component>
 
+    <section id="video-story-telling" class="fixed z-30 flex items-center justify-center invisible w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-story-telling" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
     <main id="main-content">
       <header id="hero-section" class="w-full h-screen overflow-hidden bg-black max-h-[67.5rem] relative flex justify-center items-center text-white">
         <div class="relative z-10 overflow-hidden playfair-font text-[clamp(2rem,7vw,3.5rem)] text-center px-4">
@@ -52,7 +61,7 @@
         </div>
 
         <iframe
-          src="https://player.vimeo.com/video/872245150?h=70966264ba&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1&#t=2s"
+          src="https://player.vimeo.com/video/872245150?h=70966264ba&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1&t=2s"
           width="100%"
           height="100%"
           frameborder="0"
@@ -62,12 +71,12 @@
           data-ready="true"
         ></iframe>
 
-        <div class="w-8 h-12 absolute border-[3px] opacity-0 flex justify-center p-1 rounded-2xl bottom-[6%] left-[50%] translate-x-[-50%] z-10" id="scrolldown-mouse">
+        <a href="#tgn-intro" class="w-8 h-12 absolute border-[3px] opacity-0 flex justify-center p-1 rounded-2xl bottom-[6%] left-[50%] translate-x-[-50%] z-10" id="scrolldown-mouse">
           <div id="scrolldown-mouse-wheel" class="w-1 h-3 bg-white rounded-full"></div>
-        </div>
+        </a>
       </header>
 
-      <section class="py-20 text-image-section bg-body-gold">
+      <section id="tgn-intro" class="py-20 text-image-section bg-body-gold">
         <div class="flex flex-col main-container gap-x-24 gap-y-8 lg:flex-row">
           <div class="flex-1 space-y-6 lg:mt-12">
             <h2 class="heading-section-text">Thailand Gastronomy Network</h2>
@@ -256,7 +265,7 @@
 
         <div class="splide__track main-container lg:!overflow-visible">
           <div id="story-card-container" class="flex w-full pb-2 splide__list lg:min-w-fit">
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">ปลาไทย</h4>
                 <div class="info-underline"></div>
@@ -266,9 +275,9 @@
                 src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">อาหารอีสาน</h4>
                 <div class="info-underline"></div>
@@ -278,9 +287,9 @@
                 src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">สมัยอยุธยา</h4>
                 <div class="info-underline"></div>
@@ -290,9 +299,9 @@
                 src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">Black Journey</h4>
                 <div class="info-underline"></div>
@@ -302,9 +311,9 @@
                 src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">ปลาไทย</h4>
                 <div class="info-underline"></div>
@@ -314,9 +323,9 @@
                 src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">อาหารอีสาน</h4>
                 <div class="info-underline"></div>
@@ -326,9 +335,9 @@
                 src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">สมัยอยุธยา</h4>
                 <div class="info-underline"></div>
@@ -338,9 +347,9 @@
                 src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
 
-            <a href="" class="splide__slide storytelling-card">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
               <div class="storytelling-info">
                 <h4 class="storytelling-heading">Black Journey</h4>
                 <div class="info-underline"></div>
@@ -350,7 +359,7 @@
                 src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
-            </a>
+            </button>
           </div>
         </div>
       </section>

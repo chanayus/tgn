@@ -8,14 +8,13 @@
     box-sizing: border-box;
     outline: none;
     -webkit-font-smoothing: antialiased;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
     font-smooth: always;
     text-rendering: optimizeLegibility;
 }
 
 html {
     font-size: clamp(14px, 1vw, 16px);
-    scroll-padding-top: 6rem;
 }
 
 body {

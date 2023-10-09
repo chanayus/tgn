@@ -439,13 +439,13 @@
   box-sizing: border-box;
   outline: none;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
   font-smooth: always;
   text-rendering: optimizeLegibility;
 }
 
 html {
   font-size: clamp(14px, 1vw, 16px);
-  scroll-padding-top: 6rem;
 }
 
 body {
@@ -623,6 +623,7 @@ ol li {
   flex-shrink: 0;
   text-align: center;
   overflow: hidden;
+  display: flex;
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media (hover: hover) and (pointer: fine) {
@@ -668,6 +669,7 @@ ol li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  top: 0;
   transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
