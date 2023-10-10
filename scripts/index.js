@@ -117,19 +117,17 @@ gsap
 // Handle Story Telling Section & Animate
 
 const slide = new splide.Splide("#storytelling-container", {
-  perPage: 4,
+  perPage: 3,
   drag: true,
   perMove: 1,
   pagination: false,
   gap: "1rem",
   breakpoints: {
     1024: {
-      perPage: 4,
       perMove: 1,
       padding: { left: "1.25rem", right: "1.25rem" },
     },
     960: {
-      perPage: 3,
       perMove: 1,
       drag: "free",
     },
