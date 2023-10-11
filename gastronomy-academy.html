@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/gastronomyAcademy.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content">
+      <header id="hero-section" class="w-full h-screen md:pt-[10rem] pt-[8rem] overflow-hidden bg-body-gold max-h-[57.5rem] min-h-[50rem] relative text-white">
+        <section class="flex w-full max-xl:h-full xl:aspect-video main-container">
+          <div class="relative flex items-end w-full p-8 overflow-hidden md:py-24 md:items-center md:p-14 max-lg:h-full md:aspect-video">
+            <div class="absolute top-0 left-0 z-10 w-full h-full bg-[linear-gradient(358deg,rgba(46,40,35,0.5)_1.48%,rgba(46,40,35,0.5)_35.74%,rgba(213,203,194,0)_98.22%)]"></div>
+            <div id="hero-section-info" class="relative z-10 space-y-4 sm:space-y-5">
+              <h1 class="max-w-[30ch] w-full leading-snug md:text-4xl sm:text-3xl text-2xl">Gastronomy Academy has course structure with proven success.</h1>
+              <p class="md:text-lg">-Courses designed with proven records of extensive research and practical experiences</p>
+              <p class="md:text-lg">-Network of well sought after Masters from all over the world</p>
+              <div class="flex items-center gap-x-2">
+                <img src="./icons/checked-green.svg" alt="" />
+                <b>50+ qualified teachers from all over the world</b>
+              </div>
+              <div class="flex items-center gap-x-2">
+                <img src="./icons/checked-green.svg" alt="" />
+                <b>Courses designed with landing job in mind</b>
+              </div>
+              <div class="flex items-center gap-x-2">
+                <img src="./icons/checked-green.svg" alt="" />
+                <b>More than 20.000 happy customers</b>
+              </div>
+            </div>
+            <img id="hero-section-bg" src="./images/pages/gastronomy-academy/hero.webp" class="absolute top-0 left-0 object-cover w-full h-full" alt="" />
+          </div>
+        </section>
+      </header>
+
+      <section class="py-20 space-y-8 bg-body-gradient">
+        <h2 class="text-4xl text-center text-gold">Expand the network : Creating “Preferred Choices” Portfolios</h2>
+        <div id="gallery-marquee" class="flex overflow-hidden gap-x-14">
+          <div class="flex gallery-item shrink-0 gap-x-14 will-change-transform">
+            <img src="./images/pages/gastronomy-academy/bu.png" class="object-contain w-48 aspect-square shrink-0" alt="" />
+            <img src="./images/pages/gastronomy-academy/farm-visit.png" class="object-contain w-48 aspect-square shrink-0" alt="" />
+            <img src="./images/pages/gastronomy-academy/home-cooked.png" class="object-contain w-48 aspect-square shrink-0" alt="" />
+            <img src="./images/pages/gastronomy-academy/food-gift.png" class="object-contain w-48 aspect-square shrink-0" alt="" />
+            <img src="./images/pages/gastronomy-academy/boutique-hotel.png" class="object-contain w-48 aspect-square shrink-0" alt="" />
+            <img src="./images/pages/gastronomy-academy/artisan-chef.png" class="object-contain w-48 aspect-square shrink-0" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 space-y-14 main-container">
+        <h2 class="text-4xl text-center text-gold">
+          Extraordinary UX <br />
+          EXPERIENCE DESIGN
+        </h2>
+        <div class="flex flex-col justify-between text-lg lg:flex-row gap-y-8 gap-x-24">
+          <div class="flex-1 space-y-8">
+            <div class="space-y-3">
+              <h6 class="text-gold">Modules Online Learning : The Master Class</h6>
+              <p>1. Sustainable Food Experience Design</p>
+              <p>2. Farming Experience and Farm Visit</p>
+              <p>3. Community based Development (Home Cooked and Local Recipe)</p>
+              <p>4. Food Culture Design (Boutique Hotel and Local Awake)</p>
+              <p>5. Food Gift Makeover and Marketing</p>
+              <p>6. Food Innovation and Creativity (Artisan Chefs)</p>
+            </div>
+            <div class="space-y-3">
+              <h6 class="text-gold">Onsite Workshops Tools/Canvas and Seminars</h6>
+              <p><b>Workshop with The Masters (6 Hours)</b></p>
+              <p>7. Food Technology Trend</p>
+              <p>8. Sustainable Food and Culinary : Best Practices</p>
+              <p>9. Marketing Campaign</p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="space-y-3">
+              <h6 class="text-gold">Site Visit/Field Trip/Cases</h6>
+              <p><b>Personal Cases</b></p>
+              <p>10. Farm Visit</p>
+              <p>11. Gastronomy Trail</p>
+              <p>12. Artisan/Food Experiences</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <figure class="w-full h-[31.25rem]">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/6f67/53be/7670414a46fc44648b1b7a2d8eeb46dc?Expires=1698019200&Signature=f3YZwhqFZ214-UOmE83LQMNXtrqtrj72pPsyCfVxB~QKDTCthKbyQOoPU~U4tAMvdZvGfb4Dm7u7-hBoQBAyu-77SdxG4besLt1ci9VZSSw8Y0NGki41OwYYpO291uFhScQnLdpuypg9HwetHsMbBYkqoXlq-fceX1ByIIWiG9OJFUpGq4fHaUhMJRMJ1Wszp1Ajlbanf~Gi4iYscC4VPSgGqi9BhMnBNfmDfJuhIsXo53OtEZuc1L69oXPvRMhMgZQC0WblvrVr2R3UAioxp6HLTxeyZMkgMGDuKBqNcCIF5ss8i1AB5pyN8LycAurlBsV1~qlmR7H0C4Bh8IzQew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          class="object-cover w-full h-full"
+          alt=""
+        />
+      </figure>
+
+      <section id="tgn-intro" class="py-20 text-image-section bg-body-gold">
+        <div class="flex flex-col main-container gap-x-24 gap-y-8 lg:flex-row">
+          <figure class="flex-1 lg:aspect-[0.95] overflow-hidden">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2109/f227/078686d9fe4e8e2e0cb5c77f9c92f301?Expires=1697414400&Signature=qerNsuJ6yTHC4AFJd9E4Ye4g7MvcxcKWb2j6Eo~u6Vb~U0e39pd2Qs1gfXyFubq9zo5qDnElVhxYatK71cGcGs~eHJFEAmkD6LrendiQWABcE9ame5dj5AkyYEWWHvdOkbcfxoXoTuGv7eqbAgBNopn9sFSzGuITmX~~m9p5LCacEMzHllDj4IgV4sIOghkufsltkYXVIpE983DsqqFHVMJAy52Qe3gVzslSkq3i-d4BiF6OfVzDMGaSNe6g7EeFmVxOhQRcnYL-3g7L200okrjupeLc4ycI~4NuBoJlX55f~hB7xqpItYxBfGeld3xhTSkANwSKMWcEOCyeLfjFdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+              class="object-cover w-full h-full section-image"
+            />
+          </figure>
+          <div class="flex-1 space-y-8 lg:mt-12">
+            <h2 class="text-[clamp(1.75rem,5vw,2rem)] text-gold">Learn to become quality entrepreneurs Thailand Gastronomy "Preferred Choices"</h2>
+            <div class="space-y-6">
+              <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+            </div>
+            <div class="flex flex-col gap-6 text-lg lg:flex-row">
+              <div class="flex-1 space-y-6">
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Nature, Carbon Neutrality & Bio-Diversity Initiatives</b>
+                </div>
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Influential Power</b>
+                </div>
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Creativity & Unique Experience</b>
+                </div>
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Resilience</b>
+                </div>
+              </div>
+              <div class="flex-1 space-y-6">
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Local Entrepreneur & Employment</b>
+                </div>
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Innovation & Smart Tourism</b>
+                </div>
+                <div class="flex items-start gap-x-2.5">
+                  <img src="./icons/checked-rounded-gold.svg" alt="" class="lg:mt-1" width="20" height="20" />
+                  <b>Inclusiveness</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="storytelling-container" class="pt-20 space-y-8 overflow-hidden splide">
+        <div id="storytelling-heading" class="relative flex flex-col items-center justify-center md:flex-row main-container gap-y-8">
+          <h3 class="text-[clamp(1.75rem,5vw,2.5rem)] text-gold">The Master</h3>
+          <div class="flex md:absolute md:-translate-y-1/2 right-4 top-1/2 gap-x-4 splide__arrows">
+            <button id="storytelling-prev" class="w-10 h-10 rotate-180 btn-rounded-gold splide__arrow splide__arrow--prev">
+              <img src="./icons/arrow-right-gold.svg" alt="" />
+            </button>
+            <button id="storytelling-next" class="w-10 h-10 btn-rounded-gold splide__arrow splide__arrow--next">
+              <img src="./icons/arrow-right-gold.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="splide__track main-container lg:!overflow-visible">
+          <div id="story-card-container" class="flex w-full pb-2 splide__list lg:min-w-fit">
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">ปลาไทย</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">Black Journey</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">ปลาไทย</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">Black Journey</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-container">
+        <div class="p-6 flex md:flex-row flex-col h-[45rem] bg-[#F6F6F6]">
+          <div class="flex-1 p-4 space-y-6 overflow-y-auto md:border-r-2">
+            <h4 class="text-4xl text-gold">Farming Experience and Farm Visit</h4>
+            <p>- Transition to Organic Farming (TOCA)</p>
+            <p>- Farmers Market Start-Up and Management (The Greenery Market)</p>
+            <p>- Farm Visit Design and Branding</p>
+          </div>
+          <div class="flex-1 p-4 space-y-6 overflow-y-auto">
+            <div class="flex gap-5">
+              <figure>
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/45e4/06a2/c7b4b228e12a79602a8bef174cb80a05?Expires=1698019200&Signature=ivTeDAZa3z-BCM2Iut2DcY6aLnd9LQbcfbmVaRgay1vqGno3HzezE5hvgpCG2KcT9HB5bKWkO50VJB52Fj37SHpy-b~Ww2p0Iph~M9pNyvp1UAqgHMANd3IZsNWlujoNVqJH8wsZe-xK~Bi8i1F6w5roYpItXbCNJUaUn6fLqbmkl7Z-IFZ37SMLN1VaEAaPC~-So-18dxLa9da3blzh6QJFLWyS799OfZo7CRbZyY42TpBmcJxNXTJpDZ3x4txpYw7h~cM8CNF7hvlXaySIup58qjvbiZul2nvyDGjECMwV5pL4V0byQpM1pNUTFFokYRKpUOflvVutfY5N275uDw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="flex-1 block w-full"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/5947/3851/8a137ff4bc4aa05a05f296245fe39ba6?Expires=1698019200&Signature=qebv2Wt0emrBGtWYWozKupbzKWX4f7jOCPQyyAOcWB4B0ElxfXFiTD04QgQ62LbkexsFuVInG49jq1Jm~BnlTqMgZPTszdCnhKIuOfBTlIO91zieL2d1hyNGFcdgIcqhnJjAQib9YnMligq7JlZRkagohDJtVHx3voH6YymknY55ejYbkb4BkPq2dgLSPfJu8Qmlfhcsi6A87IkkN6PAsT83JslIsvZMYReUNoJBPLNnKty6lE8EsuUqIZS0yNQOdONKLtV1IBGjE-1pgCTyb2gYZET7sj8PHR26lufhDE01qTtnuvq0I7GFeYQmyvACf4eEfYw2hpPhMgf4iJUnZg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="flex-1 w-full"
+                />
+              </figure>
+            </div>
+            <img src="./images/pages/gastronomy-academy/farm-visit.png" alt="" class="w-48 mx-auto" />
+            <h5 class="text-2xl text-gold">Farm Visit Experience ร่วมรับผิดชอบต่อสังคมและ สิ่งแวดล้อม</h5>
+            <p>
+              Farmer : ส่งเสริมเกษตรกรรายย่อย ผู้ผลิต ผู้ปลูก ต้นทาง อาหารปลอดภัย ผู้นำทางความคิดให้เข้าถึงเรื่องราววัตถุดิบ ท้องถิ่น ฤดูกาล ธรรมชาติ การ ผลิตที่ปลอดภัยและดีต่อสุขภาพ Distributors
+              เชื่อมโยงระหว่างตัวกลาง ร่วมสื่อสารระหว่างผู้ผลิตและผู้บริโภค Consumer : ออกเดินทาง ค้นหา รู้ที่มาของอาหาร
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 space-y-14">
+        <h3 class="text-[clamp(1.75rem,5vw,2.5rem)] text-gold text-center max-w-[38ch] mx-auto">Artisan Chef Movement & innovation Experience The Power of Thai (Artisan) Chefs</h3>
+        <div id="img-slide" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list [&>.is-prev]:scale-90 [&>.is-next]:scale-90 [&>*]:transition-transform">
+              <a href="" class="splide__slide">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/ff7e/c70b/45fc180f7374ee1e999bf1b6142315b3?Expires=1698019200&Signature=IweS1DsllvY6~5ekO7A4A4T1y72cXFpvVCUYkUDygHTTlgNo0pU7EuRoUZr4u0V53WXd-pcMzsjOj2LfVp9coJ6FyGQnCg91Zo~ImO-nybRWmCtHk671LZRTB612OjNceNmLifPG99jqH0nuosX98DIckUIvhfyUjJlZzxe5HaI2aK2dhgAEpq0XblrRtVSbjYyrorYK8bZaQ7qRvxOLUabsezWu7oYJkw18w1Ksgq3GNoh71kLQZcwISIPAaqOCWt47pPgeXMpAYIlzhoysgwz~YwmtRbbSwW34C8aW67L42YEiye-35D20GGjZ8nn5suxrd8A9t1eIXbwTs2PgCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                  class="w-full border-4"
+                />
+              </a>
+              <a href="" class="splide__slide">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/ff7e/c70b/45fc180f7374ee1e999bf1b6142315b3?Expires=1698019200&Signature=IweS1DsllvY6~5ekO7A4A4T1y72cXFpvVCUYkUDygHTTlgNo0pU7EuRoUZr4u0V53WXd-pcMzsjOj2LfVp9coJ6FyGQnCg91Zo~ImO-nybRWmCtHk671LZRTB612OjNceNmLifPG99jqH0nuosX98DIckUIvhfyUjJlZzxe5HaI2aK2dhgAEpq0XblrRtVSbjYyrorYK8bZaQ7qRvxOLUabsezWu7oYJkw18w1Ksgq3GNoh71kLQZcwISIPAaqOCWt47pPgeXMpAYIlzhoysgwz~YwmtRbbSwW34C8aW67L42YEiye-35D20GGjZ8nn5suxrd8A9t1eIXbwTs2PgCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                />
+              </a>
+              <a href="" class="splide__slide">
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/ff7e/c70b/45fc180f7374ee1e999bf1b6142315b3?Expires=1698019200&Signature=IweS1DsllvY6~5ekO7A4A4T1y72cXFpvVCUYkUDygHTTlgNo0pU7EuRoUZr4u0V53WXd-pcMzsjOj2LfVp9coJ6FyGQnCg91Zo~ImO-nybRWmCtHk671LZRTB612OjNceNmLifPG99jqH0nuosX98DIckUIvhfyUjJlZzxe5HaI2aK2dhgAEpq0XblrRtVSbjYyrorYK8bZaQ7qRvxOLUabsezWu7oYJkw18w1Ksgq3GNoh71kLQZcwISIPAaqOCWt47pPgeXMpAYIlzhoysgwz~YwmtRbbSwW34C8aW67L42YEiye-35D20GGjZ8nn5suxrd8A9t1eIXbwTs2PgCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  alt=""
+                />
+              </a>
+            </ul>
+          </div>
+          <ul class="absolute !-bottom-[3rem] splide__pagination"></ul>
+        </div>
+
+        <section class="flex flex-col items-center justify-center gap-10 py-20 md:justify-between lg:flex-row main-container">
+          <div class="flex-1 w-full space-y-8">
+            <h3 class="text-[clamp(1.75rem,5vw,2.5rem)] text-gold max-lg:text-center">
+              Sustainable food <br />
+              Experience Design
+            </h3>
+            <a href="" class="btn-stroke-gold lg:max-w-fit max-w-lg max-lg:mx-auto !px-6">Download Workbook</a>
+          </div>
+          <figure class="flex-[1.25]">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/1882/57cc/2afc4091d23ffef34bd6f4e0ea0a50e2?Expires=1698019200&Signature=NUK4RLgePSOc8m8HTetCBny~uJ9XaQyrvWnenGJ~x400IWHolx9EfstsGP0sHinQQKDC513GZSw9hl~srcdeBhUXcNFkx4zZcXHgRZaJJGM9-4u7zjEZXyYuh1oFJT6HDe~~pVXsGcAPSFnW8I-nL~bXBq-4CXk4o1yQrw-0Y3QiCE52BBTvFPlOHtTR4yZ~mz2Po~7Bq-SCR1BKQUGBPdnO6gM0U1lI8S4aLFXmTYh9EJuUTwNAvzF9P7Jl47byhyUwoGJKLeFEvekCU7NCYzAXIxUBfXovz66AElGlwsBjF5wAxPMHSGAcXtgqbru-of11212hn-BRAP1w2Rix4Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              alt=""
+            />
+          </figure>
+        </section>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
