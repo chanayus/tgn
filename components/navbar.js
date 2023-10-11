@@ -15,7 +15,7 @@ class Navbar extends HTMLElement {
           </a>
         </section>
 
-        <a href="" >
+        <a href="../index.html" >
           <img src="./images/logo.webp" alt="" width="55" height="55" />
         </a>
 

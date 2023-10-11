@@ -118,6 +118,18 @@
   border-radius: 999px;
 }
 
+.btn-gold {
+  height: 2.5rem;
+  padding: 0 2.5rem;
+  background: rgb(173, 156, 108);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  color: #fff;
+}
+
 .section-link {
   display: flex;
   align-items: center;
@@ -698,4 +710,33 @@ ol li {
 .pagination-dot-active {
   width: 2.9rem;
   position: relative;
+}
+.input-wrapper {
+  width: 100%;
+  height: 2.25rem;
+  position: relative;
+  border-bottom: 1px solid rgba(173, 156, 108, 0.5);
+}
+.input-wrapper label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.25s;
+  color: rgba(0, 0, 0, 0.75);
+}
+.input-wrapper input {
+  height: 100%;
+  width: 100%;
+}
+.input-wrapper:has(input:not(input:-moz-placeholder-shown)) label {
+  top: -25%;
+  font-size: 0.875rem;
+  color: rgb(173, 156, 108);
+}
+.input-wrapper:has(input:focus) label, .input-wrapper:has(input:not(input:placeholder-shown)) label {
+  top: -25%;
+  font-size: 0.875rem;
+  color: rgb(173, 156, 108);
 }/*# sourceMappingURL=global.css.map */

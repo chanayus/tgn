@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/register.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content">
+      <header id="hero-section" class="w-full h-screen overflow-hidden bg-black max-h-[67.5rem] relative flex justify-center items-center text-white">
+        <div id="hero-section-info" class="relative z-20 px-4 space-y-8 overflow-hidden text-center">
+          <h1 class="max-w-[30ch] w-full leading-snug text-[clamp(2rem,7vw,4.5rem)]">GASTRONOMY ACADEMY ORIENTATION</h1>
+          <div class="w-1/2 h-px mx-auto bg-white/30"></div>
+          <a href="#register-form" class="mx-auto btn-gold max-w-fit">Register</a>
+        </div>
+
+        <img id="hero-section-bg" src="./images/pages/register/hero.png" class="absolute object-cover w-full h-full" alt="" />
+
+        <div class="absolute z-10 w-full h-full bg-black/50"></div>
+
+        <a href="#activities-section" class="w-8 h-12 absolute border-[3px] flex justify-center p-1 rounded-2xl bottom-[6%] left-[50%] translate-x-[-50%] z-10" id="scrolldown-mouse">
+          <div id="scrolldown-mouse-wheel" class="w-1 h-3 bg-white rounded-full"></div>
+        </a>
+      </header>
+
+      <section id="activities-section" class="py-20 space-y-14 bg-body-gold">
+        <h2 class="text-4xl text-center text-gold">Orientation Activities</h2>
+        <div id="activities-list-container" class="space-y-8 text-lg main-container-sm">
+          <div class="flex flex-col gap-4 md:flex-row">
+            <b class="flex-1">9:00-9:30am</b>
+            <p class="flex-[2.25]">Registration</p>
+          </div>
+          <div class="flex flex-col gap-4 md:flex-row">
+            <b class="flex-1">9:30-10:00am</b>
+            <p class="flex-[2.25]">Meet the Course Directors Introduction of the Programme and The Administrative Team Short VDO “what is gastronomy?”</p>
+          </div>
+          <div class="flex flex-col gap-4 md:flex-row">
+            <b class="flex-1">10:00-11:00am</b>
+            <p class="flex-[2.25]">Setting learner's goals and sharing learner's profile (Creating our first batch “Hall of Fame”)</p>
+          </div>
+          <div class="flex flex-col gap-4 md:flex-row">
+            <b class="flex-1">11:00-11:15am</b>
+            <p class="flex-[2.25]">Becoming members of Thailand Gastronomy Network Platform</p>
+          </div>
+          <div class="flex flex-col gap-4 md:flex-row">
+            <b class="flex-1">11:15-12:00am</b>
+            <p class="flex-[2.25]">Learn how to log-in, time management and Q&A sessions</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers-section" class="py-20 space-y-14 bg-body-gold">
+        <h2 class="text-4xl text-center text-gold">Special Speakers</h2>
+        <div class="flex flex-col items-center justify-center gap-x-20 gap-y-10 md:flex-row main-container">
+          <img id="speakers-img" src="./images/pages/register/speaker.png" class="object-cover max-w-[70vw] h-full rounded-full w-80 aspect-square" alt="" width="300" height="300" />
+          <div id="speakers-info" class="space-y-2">
+            <p class="text-2xl text-gold">The Master</p>
+            <h5 class="text-3xl font-bold">A/Prof Jutamas Jan Wisansing</h5>
+            <p class="text-lg">President Thailand Gastronomy Network</p>
+            <p class="text-lg">Founder, Perfect Link Consulting Group</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 space-y-14 bg-body-gradient">
+        <h2 class="text-4xl text-center text-gold">Partners</h2>
+        <div class="grid grid-cols-2 gap-6 md:gap-8 md:grid-cols-3 main-container justify-items-center">
+          <img src="./images/pages/register/chim-thai.webp" class="max-md:p-3 w-full max-w-[16rem] h-[10rem] object-contain" alt="" />
+          <img src="./images/pages/register/toca.webp" class="max-md:p-3 w-full max-w-[16rem] h-[10rem] object-contain" alt="" />
+          <img src="./images/pages/register/blackitch.webp" class="max-md:p-3 w-full max-w-[16rem] h-[10rem] object-contain" alt="" />
+          <img src="./images/pages/register/greenery.webp" class="max-md:p-3 w-full max-w-[16rem] h-[10rem] object-contain" alt="" />
+          <img src="./images/pages/register/igcat.webp" class="max-md:p-3 w-full max-w-[16rem] h-[10rem] object-contain" alt="" />
+          <img src="./images/pages/register/ign.webp" class="max-md:p-3 w-full max-w-[16rem] h-[10rem] object-contain" alt="" />
+        </div>
+      </section>
+
+      <section class="py-20 space-y-14">
+        <h2 class="text-4xl text-center text-gold">Gallery</h2>
+        <div id="gallery-marquee" class="flex overflow-hidden gap-x-4">
+          <div class="flex gallery-item shrink-0 gap-x-4 will-change-transform">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/3f5e/c3a1/e7f2cc0545a65fe85b21ecd61e13636d?Expires=1698019200&Signature=PsBONliLx7FhQy5hKJO0WswX7Qew8cQx6Ec6VN3~N7XuPV1PEgMzltyBW2nGtbS0BAtsxpgfLm0W8b-qhbuJRKY0WZmNxVti7xQd8Oh2Ybog6baeoAU8UfueFjesE4-eIgUBNF9suPRSYmQVL273JBSH46GPjRSYzVI7noEMxOwDO7GoDvRYlPcYkb33T~6qmYb3t6dXwRXHmR69tqronnZCSV5B7tKg-StOtAQOagwnrbcnbT0ZDAWMp5WdOliagSHwdKYChqnwTKkNfOH9J9Z2ZFTrzPNVVDEY3G301PWCwpM-kh6YLBCvtMVRmOVAZQaXO-E8hOG0UZJ8Db1j1A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              class="object-cover w-56 md:w-72 aspect-square shrink-0"
+              alt=""
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/aa1c/c9eb/6ec1d7c7431f877ced25527acf9b7904?Expires=1698019200&Signature=WdoKTeieRWn2RQfOyCj6R~TuhQUyv02flbHkgELDWCtqryYoqGEH04OumdJaXFft6lBeWFwPKsHnUhE7fXpgxX4nWHpa2z-nRhAD7fDXurhwRvYp0znf4aTzKe63t7SfSZrmobDlLCmQgFmLB9w-Ot8rkjwRp-2iJEnTEGhS2WuLtZPDCpWXfB1p-87kfFtVUYhvVScuKevouibKkWV-XA3btyHLHsTHQU3OkooILML7~KZdG-Do97oyDBaVd6viGgZqnsG9INyLfUFH5OSb1OfysKbQ39nL4S5a4O001MBEDECMqSdEW04zpU2t1NpGZKj25V55sANmFoXr~lTVoA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              class="object-cover w-56 md:w-72 aspect-square shrink-0"
+              alt=""
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/8c90/4d65/fbac3c655abef914e5e859b22a558dd5?Expires=1698019200&Signature=TmgZYAU0n8PSRglLGxDbd3F18kmKf~cBueZDcc3RLuoF9bky~yn8q9ViyOE56LH89Or5s5voLO9yRtyUVWnBQQPKVcC-GaxVJchrixg6KW6t3cU6lT5o2M1UtcFdXeaaHYSrTt6EnGJPk397Dprs7CoHRuZEImFujNW2MbVTDrI3MkzZYARYAxKbdtLVWh8~r8YK7O9MMDpaIDmQNhZoQxfHJ-~VQIwWr~bzriW7V9y8ZOeyLgTa~L6oTFxi78SyQG260HnxICs6Cp-np5OFaBEfGzn3uRcj14a~x5J-3oU80LZnueIBzn~xeDS8sUW90Api58nmoxv9Bc7gf9xnzQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              class="object-cover w-56 md:w-72 aspect-square shrink-0"
+              alt=""
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/c23f/dd9c/4341c283852864492eb381f8976988dc?Expires=1698019200&Signature=Ya-OMLYf1uy0mEtJlPxyBUhnixc5SFPCifL5gWZq0PVMzMWHzoa9BKHY~KhGF9FC~-9rn1IjICuqleeO4Xj1s8R~OOjBzqB1r0S2dWpmj3f8VzNtHJcgrdtP9B6-TWA5OM~nnDl2zNHzlhXlRsirijjCFgS9EVCdsgLCHqxME4lA8b2sE-sIrAVrZVyyqDxUrIv~5ioW~jEGkYrep5tv1X8-h74qSOiusonj6ZNWM45SfjmPDnGT2~Zpjax5wWA4zfwsy7C7cORETeXOl4aHxpJG~e8YhzgH1ysppYpO5Eip8S1LafHUYQOF5MU0PjNTDTwwy7c5xUcfyiiA8hwrng__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              class="object-cover w-56 md:w-72 aspect-square shrink-0"
+              alt=""
+            />
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2b79/3f26/8bfcf3b22b0b9a7a9463cce9fd14eb9f?Expires=1698019200&Signature=BsuSknj3oc-QWssjKaioOEgvTOJTJ7vF8~a7tmbby5qQGAGXtu5HnVvkt2qgv7TmAQOsFSOtSz0Pq5UhJRVnnbAQ~2gnkXlS7IXEvcbZ3aUrJdVzhHU9P9kcsUWv-GIsg-k1m5OHV3FEebNaHhBq4p~yjrDKyxOrPLmyaFU30sNRp8fMLMauAtl6tjZLU6a2xv2adRHBATaxSVpMnhwm2AnzKGu3ExLSMd5FS3s-YAo8N9kIIstBkhFUZF0CrhW5PfrSzYPygvvwtV4sgRicEn~R1RCnmDdbFp0SkdivSkIa8olARd6Q4bUF78Z2zTUA0K29MbxubS1Z7wI1HuUMpg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+              class="object-cover w-56 md:w-72 aspect-square shrink-0"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <form id="register-form" class="py-20 space-y-14 main-container-sm">
+        <h2 class="text-4xl text-center text-gold">Register</h2>
+
+        <div class="space-y-10">
+          <section class="flex flex-col gap-10 md:flex-row">
+            <div class="input-wrapper">
+              <label for="">Full name</label>
+              <input type="text" placeholder="" />
+            </div>
+            <div class="input-wrapper">
+              <label for="">Email</label>
+              <input type="email" placeholder="" />
+            </div>
+          </section>
+
+          <section class="flex flex-col gap-10 md:flex-row">
+            <div class="input-wrapper">
+              <label for="">Phone number</label>
+              <input type="tel" placeholder="" />
+            </div>
+            <div class="input-wrapper">
+              <label for="">Line id</label>
+              <input type="text" placeholder="" />
+            </div>
+          </section>
+
+          <section class="flex flex-col gap-10 md:flex-row">
+            <div class="input-wrapper">
+              <label for="">What province are you living in?</label>
+              <input type="text" placeholder="" />
+            </div>
+            <div class="input-wrapper">
+              <label for="">Occupation</label>
+              <input type="text" placeholder="" />
+            </div>
+          </section>
+
+          <div class="input-wrapper">
+            <label for="">What are your interests?</label>
+            <input type="text" placeholder="" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="">Ability?</label>
+            <input type="text" placeholder="" />
+          </div>
+        </div>
+
+        <button class="mx-auto max-md:w-full btn-gold">Register</button>
+      </form>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

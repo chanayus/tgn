@@ -49,6 +49,17 @@ $colors: (
     border-radius: 999px;
 }
 
+.btn-gold {
+    height: 2.5rem;
+    padding: 0 2.5rem;
+    background: $gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: #fff;
+}
+
 .section-link {
     display: flex;
     align-items: center;
@@ -58,7 +69,7 @@ $colors: (
 .heading-section-text {
     color: $gold;
     @extend .playfair-font;
-    font-size: clamp(1.75rem,5vw,2.375rem);
+    font-size: clamp(1.75rem, 5vw, 2.375rem);
 }
 // .btn-base {
 //     width: 100%;
