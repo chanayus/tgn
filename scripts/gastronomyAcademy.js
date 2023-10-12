@@ -53,6 +53,7 @@ const masterSlide = new splide.Splide("#master-container", {
     960: {
       perMove: 1,
       drag: "free",
+      autoplay: false,
     },
     768: {
       perPage: 1,
