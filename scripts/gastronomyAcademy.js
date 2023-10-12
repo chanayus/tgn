@@ -6,8 +6,9 @@ navbar?.classList.add("gold-theme");
 
 gsap
   .timeline()
-  .fromTo("#hero-section-bg", { autoAlpha: 0, scale: 1.2 }, { autoAlpha: 1, scale: 1, duration: 1.5, ease: "expo" }, "+=0.25")
-  .fromTo("#hero-section-info", { autoAlpha: 0 }, { autoAlpha: 1, ease: "expo", duration: 2 }, "-=0.75");
+  .fromTo("#hero-section-content", { xPercent: -110 }, { autoAlpha: 1, xPercent: 0, duration: 1.5, ease: "expo.inOut" }, "+=0.25")
+  .fromTo("#hero-section-bg", { scale: 1.5 }, { scale: 1, duration: 1.5, ease: "expo" }, "-=0.7")
+  .fromTo("#hero-section-info > *", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, ease: "expo", stagger: 0.1, duration: 1 }, "-=0.75");
 
 const initGallery = () => {
   const gallery = document.querySelector("#gallery-marquee");
@@ -24,7 +25,7 @@ const initGallery = () => {
     ".gallery-item",
     { xPercent: 0 },
     {
-      xPercent: -101.05,
+      xPercent: -104,
       repeat: -1,
       duration: 20,
       ease: "linear",
@@ -38,8 +39,11 @@ const masterSlide = new splide.Splide("#storytelling-container", {
   perPage: 4,
   drag: true,
   perMove: 1,
+  rewind: true,
   pagination: false,
   gap: "1rem",
+  interval: 2500,
+  autoplay: true,
   breakpoints: {
     1024: {
       perMove: 1,
@@ -65,4 +69,29 @@ const imgSlide = new splide.Splide("#img-slide", {
   updateOnMove: true,
   interval: 5000,
   autoplay: true,
+  gap: "1.5625rem",
+  breakpoints: {
+    960: {
+      padding: "15vw",
+    },
+  },
 }).mount();
+
+// Master Video Popup
+const masterCards = document.querySelectorAll(".master-card");
+const masterVideoPopup = document.querySelector("#master-video-popup");
+const masterIFrame = document.querySelector("#master-video-popup iframe");
+const closeVideoPopupButton = document.querySelector("#close-master-video");
+
+masterCards.forEach((card) => {
+  card.addEventListener("click", (e) => {
+    masterIFrame.src = card.dataset.url;
+    gsap.fromTo(masterVideoPopup, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.25 });
+  });
+});
+
+closeVideoPopupButton.addEventListener("click", (e) => {
+  gsap.fromTo(masterVideoPopup, { autoAlpha: 1 }, { autoAlpha: 0, duration: 0.25 }).then(() => {
+    masterIFrame.src = "";
+  });
+});

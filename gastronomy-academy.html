@@ -44,14 +44,26 @@
     <navbar-component></navbar-component>
     <mobile-nav-component></mobile-nav-component>
 
+    <section id="master-video-popup" class="fixed z-30 flex items-center justify-center invisible w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-master-video" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
     <main id="main-content">
       <header id="hero-section" class="w-full h-screen md:pt-[10rem] pt-[8rem] overflow-hidden bg-body-gold max-h-[57.5rem] min-h-[50rem] relative text-white">
-        <section class="flex w-full max-xl:h-full xl:aspect-video main-container">
-          <div class="relative flex items-end w-full p-8 overflow-hidden md:py-24 md:items-center md:p-14 max-lg:h-full md:aspect-video">
+        <section class="flex w-full overflow-hidden max-xl:h-full xl:aspect-video main-container">
+          <div id="hero-section-content" class="relative flex items-end w-full p-8 overflow-hidden opacity-0 md:py-24 md:items-center md:p-14 max-lg:h-full md:aspect-video">
             <div class="absolute top-0 left-0 z-10 w-full h-full bg-[linear-gradient(358deg,rgba(46,40,35,0.5)_1.48%,rgba(46,40,35,0.5)_35.74%,rgba(213,203,194,0)_98.22%)]"></div>
-            <div id="hero-section-info" class="relative z-10 space-y-4 sm:space-y-5">
+            <div id="hero-section-info" class="relative z-10 space-y-5 sm:space-y-5">
               <h1 class="max-w-[30ch] w-full leading-snug md:text-4xl sm:text-3xl text-2xl">Gastronomy Academy has course structure with proven success.</h1>
-              <p class="md:text-lg">-Courses designed with proven records of extensive research and practical experiences</p>
+              <p class="md:text-lg">
+                -Courses designed with proven records of extensive research and <br />
+                practical experiences
+              </p>
               <p class="md:text-lg">-Network of well sought after Masters from all over the world</p>
               <div class="flex items-center gap-x-2">
                 <img src="./icons/checked-green.svg" alt="" />
@@ -181,7 +193,7 @@
         </div>
       </section>
 
-      <section id="storytelling-container" class="pt-20 space-y-8 overflow-hidden splide">
+      <section id="storytelling-container" class="relative pt-20 space-y-8 overflow-hidden splide">
         <div id="storytelling-heading" class="relative flex flex-col items-center justify-center md:flex-row main-container gap-y-8">
           <h3 class="text-[clamp(1.75rem,5vw,2.5rem)] text-gold">The Master</h3>
           <div class="flex md:absolute md:-translate-y-1/2 right-4 top-1/2 gap-x-4 splide__arrows">
@@ -193,101 +205,86 @@
             </button>
           </div>
         </div>
-
+        <div class="absolute w-20 h-full bottom-0 z-10 right-0 bg-[linear-gradient(270deg,#FFF_0%,rgba(255,_255,_255,_0.58)_38.54%,rgba(255,255,255,0)_100%)]"></div>
         <div class="splide__track main-container lg:!overflow-visible">
           <div id="story-card-container" class="flex w-full pb-2 splide__list lg:min-w-fit">
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">ปลาไทย</h4>
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">A/Prof Jutamas Jan Wisansing</h4>
                 <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+                <p class="master-desc">President Thailand Gastronomy Network Founder, Perfect Link Consulting Group</p>
+              </div>
+              <img src="./images/pages/gastronomy-academy/master.png" alt="" />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">คุณ อรุษ นวราช</h4>
+                <div class="info-underline"></div>
+                <p class="master-desc">นายกสมาคมผู้บริโภคอินทรี ไทย กรรมการผู้จัดการสวนสาม พราน</p>
               </div>
               <img
-                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/553e/4069/564d85a22a55bfaa8d1b0ca56f5c942a?Expires=1698019200&Signature=M~CiHVbr9oG8qdwEVd0-npB32L24JlrxA6bEpgSsGjiLqk9HE7oigRzRh9W4OfumPhjNDSMdyJuArJOyLlJM781KhP-FNfTgNtg-CVgkYFnGP70Y~dRpOYAmgs3b389-8zkNLWgGKAVtBUf4vG5OMa6rekpmNRQb7aTMROEuJ6LDbOHEqGdMIUeWn~pamGe1bS~JzTVXy4FrEPj2ClLnlzB5dBW2Rn2g1AXjwaZnqJ9rrLp-cHzZ1QUiwfFNKTchc78bsZkEboDoQJb3WneqimMUGRv35qRgFgxDjDWQP5KnqAt43~sQ1gIVFe1DjFFJh13DYUgbxIHOIyViqVwqMA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
             </button>
 
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">คุณ ภานุภน บุลสุวรรณ</h4>
                 <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
+                <p class="master-desc">เชฟแบล็ก Blackitch Artisan Kitchen</p>
               </div>
               <img
-                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/5607/cf45/827475f58b3dfea9b5994e566e1d010c?Expires=1698019200&Signature=PfcgGezBA7u9bfUpdO7aMNmmm6y7Wz4KRCBpqebNbfTkLImXIFJS8RyrgCaBEdnAuGvhgC2EJ557hzet0PSoY3WJwLdFpICZtrrwl6FHQ4tulSJvjFtUFyMmZSvXtZoYxClLPwzdfq2exJJbx-MzCG29tCjHn4KTBO1tSVPQI0RQ3yX0F-~vmieTLd48a9XwdKNBt04ssVwPr-QhgIWzRzWPxstnCU7D3ZfZFBbrgMmXl1o5lj7CxPWZwZmLXCWFJy5DmLayZTHYimcnx8oLdnI-vI6vBBjBM79F0ipOxXgZZy6YQ1rlrTR-~Z8j12NPAHgAziePQASxEU8MeB-CWA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
             </button>
 
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">คุณ อโณทัย พิชยัยุทธ</h4>
                 <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
+                <p class="master-desc">เชฟเบียร์ Blackitch Artisan Kitchen</p>
               </div>
               <img
-                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/922b/09d2/0db97ec7f80450edb0c617a6d09aa1d2?Expires=1698019200&Signature=QL7uqYQMqzPwVUVdpkYg0fWx5Rjkgy7tYYgPOdiGkyqdNONBKPwoG2K2xMfcY6aF82OdDIMogKDyQ0VIrFzLOAvanrSMnQXWaoCpBD1D6QNfW51Xu-K4AoeNnoegCrDojsXk~lf8kZaYZiZB49MOxBew1Tfhj6MDhqNJV7NllA6hwzuhEObGSDo2MVnCtkmC7ukqve7ivMWC3LphkP3SOwecpQ0FvPq31rCF94Q9GelaKIc~UkHXI4QKpu86qgne8hnt8yHVl7p3Hk6N1EYuaDtdhBQjnTHLVu3OSLHv7QVGNxfu2Cuu~AwAV6DzJxBtbUh17vemcSvPitSVyFTbNg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
             </button>
 
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">Black Journey</h4>
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">iRin Rerksasarn</h4>
                 <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
+                <p class="master-desc">Co-Founder/Producer at Chim Thai.Asia- An Artisan Market Place for Thai Food Fanatics and Co-Founder/Producer at Taste Inc Asia Co.,Ltd</p>
               </div>
               <img
-                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/1df2/283a/ad9a5e9e5c15e583141213aeb36d1e53?Expires=1698019200&Signature=pn-gAffywbFG3A-O8P2KKBvNJAaao4lxV3k042KpwrTWgUgR-WqQTr5Ynmzyi4r2gAKmGzrCJHujcmSGCZqm1MNuD1swM~4G7wg1qLTLy8pGOEiDEuBe2lmqauDCjDVSw6eF3IlDGViQmiIOkjL2WqHnt7tmYYapVrujCjpJU~O6jdAC-4R4btcn72Cy4BoRvF7-zcR~WUVGOt0t8GP8aGJMDmtOIzxEqYJySMe0w70YSuqms83Le0qrSIlQV9VJqVN-S9fraVdGP2bDQvMKrLuCgehELRKITzGxuX9WL8Fk59jwdHbNDQ83wJ58vrJ-3ZYZGzmJG4PV9X69OaU22A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
             </button>
 
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">ปลาไทย</h4>
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">คุณ กฤษฎากร สุขมูล</h4>
                 <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+                <p class="master-desc">Gastronomy Network Food Film Director , Food Photographer TomPhotoStudio</p>
               </div>
               <img
-                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/4be7/75af/c1be1f353e59ea1f4cb98d8578683a39?Expires=1698019200&Signature=CfCkGwRy80vKMfUlHgWCKDCa7rFKKOgjZcFJ4tH~VW0Xe1rI-2pnPgaM0J42sP-Opscw5lxbEOzM0HBSO0~dUQh3IlfPaxiUvfEFlge71pXhkKf8qPohhtSF~RskHi2Ub7oIyTy50IbtXVKkEd-NxJ0DJY0ufRtbMbSEJW1TET9o1RdRZojbfU97qEWe3M5CI3-A1WvUZVje8N0ZkaUtvmXrcVHPJn8unKcSy7SOGFxfily1MBfEfNrs9isfw9qViuKEfnuTor0uMEgKqtVqi03p4W6UVcuY4Ek7rLW8w6UZbmckJiSc4c0ZpOWK-FHrLFMO8lJyqcQ5k6CpslotWw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
             </button>
 
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide master-card">
+              <div class="master-info">
+                <h4 class="master-heading">คุณสุนันที กาญจนวัฒน์</h4>
                 <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
+                <p class="master-desc">Gastronomy Network Sensory Food Designe</p>
               </div>
               <img
-                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-              />
-            </button>
-
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
-                <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                alt=""
-              />
-            </button>
-
-            <button class="splide__slide storytelling-card">
-              <div class="storytelling-info">
-                <h4 class="storytelling-heading">Black Journey</h4>
-                <div class="info-underline"></div>
-                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
-              </div>
-              <img
-                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                src="https://s3-alpha-sig.figma.com/img/f7db/7f1d/259bb8f2ce302d8d3906ff6d8545b405?Expires=1698019200&Signature=QEyY-WTe6hUJa-rILMKM39SzTsysMBjYUsTiPXqEi-FW1nWvmYl~yn6A6dZgDzVUOoKBjP~Cv~KMVECT-Pua0pzaAavw0ssd5cF-xXnR7QqTGq1ymbgdG4H0e4k30qsfPwrY6acSI2CwccmmwPaRHckQIvRzKHmyLiYWEDzX6TSD9qDFVzNah5Gpu3N8cN4GpESu1mWxmW7tMOquwuhB4nSYqPEwUp479io~2YAhFstx1P8p8t36uj4l31MRYbTPUqrrMGNHFLUBRw8XHpi-y4zz7WRzZi1reZT-ICPha7CufqYd2E73cHTdtvIuImZe5lGqG1U6RNQkZan845UW9Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                 alt=""
               />
             </button>
@@ -334,24 +331,26 @@
         <h3 class="text-[clamp(1.75rem,5vw,2.5rem)] text-gold text-center max-w-[38ch] mx-auto">Artisan Chef Movement & innovation Experience The Power of Thai (Artisan) Chefs</h3>
         <div id="img-slide" class="splide">
           <div class="splide__track">
-            <ul class="splide__list [&>.is-prev]:scale-90 [&>.is-next]:scale-90 [&>*]:transition-transform">
+            <ul class="splide__list [&>.is-prev]:scale-y-90 [&>.is-next]:scale-y-90 [&>*]:transition-transform">
               <a href="" class="splide__slide">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/ff7e/c70b/45fc180f7374ee1e999bf1b6142315b3?Expires=1698019200&Signature=IweS1DsllvY6~5ekO7A4A4T1y72cXFpvVCUYkUDygHTTlgNo0pU7EuRoUZr4u0V53WXd-pcMzsjOj2LfVp9coJ6FyGQnCg91Zo~ImO-nybRWmCtHk671LZRTB612OjNceNmLifPG99jqH0nuosX98DIckUIvhfyUjJlZzxe5HaI2aK2dhgAEpq0XblrRtVSbjYyrorYK8bZaQ7qRvxOLUabsezWu7oYJkw18w1Ksgq3GNoh71kLQZcwISIPAaqOCWt47pPgeXMpAYIlzhoysgwz~YwmtRbbSwW34C8aW67L42YEiye-35D20GGjZ8nn5suxrd8A9t1eIXbwTs2PgCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  src="https://s3-alpha-sig.figma.com/img/af06/813a/5fe25a73aa9ac480d833fb7fa7854830?Expires=1698019200&Signature=IonLc0z~jA1HlyDIA5RlLbHOmclNeWlNngqtKd7Wl6S0WdPWdyruWxIhY0lN2kU8jo1QQB5gyz3GlEv3EUuhJCa~Nz9blYxDp2ZWRZWNYEHhw-9AaKutQUhcRYUm76jDnTTZVllwlvUFR3Pzld~FdFEZ539fPSXTxvD8YHtoZSYVE06M0ZX24ZXw~KnCpgmF7kPakZ-P8jo2JFlIBJI8Yhdu1P-oMZV4xhRyEzkUOTJrZyN8Vx5VwFwbPRvjSgoEsUrp~GXzP71VUH3j9ff0OXNJGVnWR~yH5agmkI4V71CkF-0Nc3C9Gk-ImUAnWXtfrmWFVtP6gA8owFKRx6eIqA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                   alt=""
-                  class="w-full border-4"
+                  class="object-cover w-full h-full mx-auto"
                 />
               </a>
               <a href="" class="splide__slide">
                 <img
                   src="https://s3-alpha-sig.figma.com/img/ff7e/c70b/45fc180f7374ee1e999bf1b6142315b3?Expires=1698019200&Signature=IweS1DsllvY6~5ekO7A4A4T1y72cXFpvVCUYkUDygHTTlgNo0pU7EuRoUZr4u0V53WXd-pcMzsjOj2LfVp9coJ6FyGQnCg91Zo~ImO-nybRWmCtHk671LZRTB612OjNceNmLifPG99jqH0nuosX98DIckUIvhfyUjJlZzxe5HaI2aK2dhgAEpq0XblrRtVSbjYyrorYK8bZaQ7qRvxOLUabsezWu7oYJkw18w1Ksgq3GNoh71kLQZcwISIPAaqOCWt47pPgeXMpAYIlzhoysgwz~YwmtRbbSwW34C8aW67L42YEiye-35D20GGjZ8nn5suxrd8A9t1eIXbwTs2PgCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                   alt=""
+                  class="object-cover w-full h-full mx-auto"
                 />
               </a>
               <a href="" class="splide__slide">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/ff7e/c70b/45fc180f7374ee1e999bf1b6142315b3?Expires=1698019200&Signature=IweS1DsllvY6~5ekO7A4A4T1y72cXFpvVCUYkUDygHTTlgNo0pU7EuRoUZr4u0V53WXd-pcMzsjOj2LfVp9coJ6FyGQnCg91Zo~ImO-nybRWmCtHk671LZRTB612OjNceNmLifPG99jqH0nuosX98DIckUIvhfyUjJlZzxe5HaI2aK2dhgAEpq0XblrRtVSbjYyrorYK8bZaQ7qRvxOLUabsezWu7oYJkw18w1Ksgq3GNoh71kLQZcwISIPAaqOCWt47pPgeXMpAYIlzhoysgwz~YwmtRbbSwW34C8aW67L42YEiye-35D20GGjZ8nn5suxrd8A9t1eIXbwTs2PgCw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                  src="https://s3-alpha-sig.figma.com/img/8fcb/8864/e82094c7d932882fb70e036cd676238c?Expires=1698019200&Signature=bg6K2uUleptb0H3BIqC1-3qfrsRj23UzRIEXCoadulA815eTfzC2FmhBAtxBhWl3xoECwEtM80Ar3h2MJHFhpXDLab6US~qvr49oMsZSRcIvcUUh6zjoam0yJlyTniTXIlbDiNGF-6NiGmtGROg0atxIOsbbcKF~4SvYY6vblBbLlz6LrYbZ4jSD6rSjYm5T8DM8KJCbRbkScyq-Y-vm9WRWNmql9Ib5zD6vXFAtJo-pI2baD~uZCP3CHVplUu3OcRoKWgszWVvBp3tOx-OFu-u08TOkLmRsf~XOVJcOX9Aiolpqy5a7iG6bcojr~O3QQQ2lik2t6HgwVt413eIaIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                   alt=""
+                  class="object-cover w-full h-full mx-auto"
                 />
               </a>
             </ul>

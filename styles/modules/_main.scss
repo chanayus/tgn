@@ -1,5 +1,4 @@
 @import "./utilities";
-// @import "./swiper";
 @import "./splide";
 @import "../components/navbar";
 
@@ -61,20 +60,21 @@ button:disabled {
 }
 
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 12px;
     height: 3px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #bbb;
+    border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #999;
 }
 
 .hide-scroll-bar::-webkit-scrollbar {
