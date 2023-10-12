@@ -79,6 +79,5 @@ $colors: (
 
 .heading-section-text {
     color: $gold;
-    @extend .playfair-font;
     font-size: clamp(1.75rem, 5vw, 2.375rem);
 }

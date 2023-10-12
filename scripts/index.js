@@ -15,6 +15,18 @@ const updatePagination = () => {
   });
 };
 
+const activeDotStyle = () => {
+  const activeDot = document.querySelector(`#slide-pagination .pagination-dot.active`);
+  const dots = document.querySelectorAll(`#slide-pagination .pagination-dot`);
+  const div = document.createElement("div");
+  div.className = "active-interval";
+
+  dots.forEach((dot) => (dot.innerHTML = ""));
+  activeDot.appendChild(div);
+
+  gsap.fromTo(div, { width: "0%" }, { width: "100%", duration: 5, ease: "linear" });
+};
+
 const playSlideAnimation = (currentIndex, nextIndex) => {
   gsap
     .timeline()
@@ -27,6 +39,7 @@ const playSlideAnimation = (currentIndex, nextIndex) => {
 
   currentSlidePage = nextIndex;
   updatePagination();
+  activeDotStyle();
 };
 
 const initSlide = () => {
@@ -60,6 +73,7 @@ if (textSlideContent.length > 0) {
   if (textSlideContent.length <= 1) {
     paginationContainer.classList.add("!hidden");
   } else if (textSlideContent.length > 1) {
+    activeDotStyle();
     slideInterval = setInterval(() => playSlideAnimation(currentSlidePage, currentSlidePage + 1 > textSlideContent.length - 1 ? 0 : currentSlidePage + 1), 5000);
   }
 } else {
@@ -175,3 +189,35 @@ closeVideoPopupButton.addEventListener("click", (e) => {
     storyTellingIFrame.src = "";
   });
 });
+
+// Award Marquee
+
+const initGallery = () => {
+  const gallery = document.querySelector("#award-marquee");
+  const childElement = gallery.firstElementChild;
+
+  if (childElement) {
+    for (let i = 0; i <= 3; i++) {
+      const duplicatedElement = childElement.cloneNode(true);
+      duplicatedElement.classList.add("duplicate-item");
+      gallery.appendChild(duplicatedElement);
+    }
+  }
+
+  let mm = gsap.matchMedia();
+
+  mm.add("(min-width: 1024px)", () => {
+    gsap.fromTo(
+      ".award-marquee-item",
+      { xPercent: 0 },
+      {
+        xPercent: -102.5,
+        repeat: -1,
+        duration: 20,
+        ease: "linear",
+      }
+    );
+  });
+};
+
+initGallery();

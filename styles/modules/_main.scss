@@ -10,6 +10,7 @@
     scroll-behavior: smooth;
     font-smooth: always;
     text-rendering: optimizeLegibility;
+
 }
 
 html {
@@ -61,7 +62,7 @@ button:disabled {
 
 ::-webkit-scrollbar {
     width: 12px;
-    height: 3px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {

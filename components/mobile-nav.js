@@ -35,7 +35,7 @@ class MobileNav extends HTMLElement {
         </div>
   
         <div class="main-container flex justify-between flex-[1_1_0] gap-x-12">
-          <section class="playfair-font flex-1 flex flex-col">
+          <section class="flex-1 flex flex-col">
             <div id="mobile-menu-list" class="overflow-y-auto overflow-x-hidden lg:flex-[1_1_0] lg:pr-4 pr-1 ">
               <div class="collapsible border-b border-gold">
                 <button class="text-3xl flex items-center py-6 justify-between w-full ">
@@ -128,7 +128,7 @@ class MobileNav extends HTMLElement {
             </div>
           </section>
           <figure class="flex-1 w-full overflow-hidden lg:block hidden">
-            <img src="https://s3-alpha-sig.figma.com/img/5847/0bdf/25d5355bc80c008dfe6bb56537fb21c8?Expires=1697414400&Signature=a2jaijINND43cz1D6oYU1WvEUyXxWZ~DyGaKyOet1p1jq979-YN-I47OHUm1KIWemOrwwiDnSYqnLasJIru6~Ck0j1rwg3VWR15DWH~sz9nMspR8QPZ0Vx2s9hGT00fVu8SMlOofH8GYNxLA4XEqx5a21bWXsjvnO6jJ-q-gS4zQlUAtK1~IFxwG6N5EahtxgWuRU01ebh3m9WWK~oYXo3-xyBKOpGQ-DaI-Pfnna8JoPnRBfJnp3B3QEXXYxO-BymazI-5YZaX9Zoc6pR2nMrfnre0GSNynaZEnmY47WH2qviRWigsbKZFtbea5jLEQHyKoqcp84Arw3tejS1H5qQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt=""
+            <img src="../images/pages/menu-bg.webp" alt=""
             class="w-full aspect-square object-cover"
             id="mobile-nav-img"
             />

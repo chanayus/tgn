@@ -105,7 +105,7 @@
   overflow: hidden;
 }
 
-.playfair-font, .storytelling-card .storytelling-info .storytelling-heading, .heading-section-text {
+.playfair-font {
   font-family: "Playfair Display", "IBM Plex Sans Thai", sans-serif !important;
 }
 
@@ -326,17 +326,21 @@
 
 .splide__pagination__page.is-active {
   width: 2.75rem;
-  margin-bottom: 10px;
 }
-.splide__pagination__page.is-active::after {
-  content: "";
+
+.splide__pagination__page.is-active {
+  width: 2.75rem;
+  margin-bottom: 9px;
+}
+
+.splide__pagination__page.is-active .active-interval {
   position: absolute;
-  width: 60%;
   height: 100%;
   top: 0;
   left: 0;
   border-radius: 9999px;
   background: rgb(173, 156, 108);
+  transition: width 0.1s;
 }
 
 .splide__pagination__page:hover {
@@ -541,7 +545,7 @@ button:disabled {
 
 ::-webkit-scrollbar {
   width: 12px;
-  height: 3px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -770,9 +774,8 @@ ol li {
 .pagination-dot.active {
   width: 2.75rem;
 }
-.pagination-dot.active::before {
+.pagination-dot.active .active-interval {
   position: absolute;
-  content: "";
   width: 60%;
   height: 100%;
   top: 0;

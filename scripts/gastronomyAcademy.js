@@ -1,4 +1,5 @@
 import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
+import { initActiveDotInterval } from "./modules/slideDotActiveInterval.js";
 
 const navbar = document.querySelector("#navbar");
 
@@ -44,14 +45,19 @@ const masterSlide = new splide.Splide("#master-container", {
   interval: 2500,
   autoplay: true,
   breakpoints: {
-    1240: {
+    1024: {
+      perPage: 3,
+      perMove: 1,
       padding: { left: "1.25rem", right: "1.25rem" },
     },
     960: {
       perMove: 1,
+      drag: "free",
+    },
+    768: {
+      perPage: 1,
       perMove: 1,
       fixedWidth: "16rem",
-      drag: "free",
     },
   },
 }).mount();
@@ -64,6 +70,8 @@ const imgSlide = new splide.Splide("#img-slide", {
   updateOnMove: true,
   interval: 5000,
   autoplay: true,
+  pauseOnFocus: false,
+  pauseOnHover: false,
   gap: "1.5625rem",
   breakpoints: {
     960: {
@@ -71,6 +79,8 @@ const imgSlide = new splide.Splide("#img-slide", {
     },
   },
 }).mount();
+
+initActiveDotInterval("#img-slide", imgSlide);
 
 // Master Video Popup
 const masterCards = document.querySelectorAll(".master-card");
