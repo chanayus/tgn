@@ -34,7 +34,7 @@ const initGallery = () => {
 
 initGallery();
 
-const masterSlide = new splide.Splide("#storytelling-container", {
+const masterSlide = new splide.Splide("#master-container", {
   perPage: 4,
   drag: true,
   perMove: 1,
@@ -44,18 +44,14 @@ const masterSlide = new splide.Splide("#storytelling-container", {
   interval: 2500,
   autoplay: true,
   breakpoints: {
-    1024: {
-      perMove: 1,
+    1240: {
       padding: { left: "1.25rem", right: "1.25rem" },
     },
     960: {
       perMove: 1,
-      drag: "free",
-    },
-    640: {
-      perPage: 1,
       perMove: 1,
       fixedWidth: "16rem",
+      drag: "free",
     },
   },
 }).mount();
