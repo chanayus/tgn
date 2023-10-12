@@ -116,6 +116,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 999px;
+  transition: 0.2s;
+}
+.btn-rounded-gold:hover {
+  background: rgb(173, 156, 108);
+  color: #f3f0e9;
+}
+.btn-rounded-gold:hover rect,
+.btn-rounded-gold:hover path {
+  fill: #fff;
+  stroke: #fff;
+}
+.btn-rounded-gold:hover img {
+  filter: contrast(100) grayscale(100%);
 }
 
 .btn-gold {
@@ -128,6 +141,10 @@
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
   color: #fff;
+  transition: background-color 0.2s;
+}
+.btn-gold:hover {
+  background: #8d7d4f;
 }
 
 .btn-stroke-gold {
@@ -141,6 +158,11 @@
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
   color: rgb(173, 156, 108);
+  transition: 0.2s;
+}
+.btn-stroke-gold:hover {
+  background: rgb(173, 156, 108);
+  color: #f3f0e9;
 }
 
 .section-link {
@@ -469,6 +491,36 @@
   top: 0;
 }
 
+nav.gold-theme * {
+  color: rgb(173, 156, 108);
+  border-color: rgb(173, 156, 108);
+}
+nav.gold-theme #bar-icon path {
+  fill: rgb(173, 156, 108);
+}
+nav.gold-theme #bar-icon:hover path {
+  fill: #000;
+}
+nav.gold-theme #user-icon path {
+  stroke: rgb(173, 156, 108);
+}
+nav.gold-theme #user-icon:hover path {
+  stroke: #000;
+}
+
+nav button,
+nav a,
+nav path {
+  transition: color 0.2s, border-color 0.2s, fill 0.2s, stroke 0.2s;
+}
+
+#mobile-nav-menu button,
+#mobile-nav-menu a,
+#mobile-nav-menu path,
+#mobile-nav-menu rect {
+  transition: color 0.2s, border-color 0.2s, fill 0.2s, stroke 0.2s;
+}
+
 * {
   touch-action: manipulation;
   box-sizing: border-box;
@@ -603,6 +655,10 @@ ol {
 }
 ol li {
   list-style-type: decimal;
+}
+
+.ease-theme {
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .collapsible {
@@ -816,15 +872,4 @@ ol li {
   top: -25%;
   font-size: 0.875rem;
   color: rgb(173, 156, 108);
-}
-
-nav.gold-theme * {
-  color: rgb(173, 156, 108);
-  border-color: rgb(173, 156, 108);
-}
-nav.gold-theme #bar-icon path {
-  fill: rgb(173, 156, 108);
-}
-nav.gold-theme #user-icon path {
-  stroke: rgb(173, 156, 108);
 }/*# sourceMappingURL=global.css.map */

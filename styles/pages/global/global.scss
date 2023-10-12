@@ -225,17 +225,3 @@
         color: $gold;
     }
 }
-
-nav.gold-theme {
-    & * {
-        color: $gold;
-        border-color: $gold;
-    }
-    & #bar-icon path {
-        fill: $gold;
-    }
-
-    & #user-icon path {
-        stroke: $gold;
-    }
-}

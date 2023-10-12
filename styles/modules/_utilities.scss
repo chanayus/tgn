@@ -47,6 +47,19 @@ $colors: (
     justify-content: center;
     align-items: center;
     border-radius: 999px;
+    transition: 0.2s;
+    &:hover {
+        background: $gold;
+        color: $body-gold;
+        rect,
+        path {
+            fill: #fff;
+            stroke: #fff;
+        }
+        img {
+            filter: contrast(100) grayscale(100%);
+        }
+    }
 }
 
 .btn-gold {
@@ -58,6 +71,10 @@ $colors: (
     align-items: center;
     column-gap: 0.5rem;
     color: #fff;
+    transition: background-color 0.2s;
+    &:hover {
+        background: darken($gold, 12);
+    }
 }
 
 .btn-stroke-gold {
@@ -70,6 +87,11 @@ $colors: (
     align-items: center;
     column-gap: 0.5rem;
     color: $gold;
+    transition: 0.2s;
+    &:hover {
+        background: $gold;
+        color: $body-gold;
+    }
 }
 .section-link {
     display: flex;

@@ -21,11 +21,11 @@ class Footer extends HTMLElement {
               <img src="./icons/youtube-gold.svg" alt="" />
             </a>
         </div>
-        <div class="[&>a]:px-5 lg:[&>a:not(a:last-of-type)]:border-r [&>a]:border-current flex flex-wrap justify-center gap-y-4">
-            <a href="">COMPANY INFO</a>
-            <a href="">TERMS AND CONDITIONS</a>
-            <a href="">PRIVACY POLICY</a>
-            <a href="">COOKIE POLICY</a>
+        <div class="[&>a]:px-5 [&>a:hover]:text-black  lg:[&>a:not(a:last-of-type)]:border-r flex flex-wrap justify-center gap-y-4">
+            <a href="" class="border-gold">COMPANY INFO</a>
+            <a href="" class="border-gold">TERMS AND CONDITIONS</a>
+            <a href="" class="border-gold">PRIVACY POLICY</a>
+            <a href="" class="border-gold">COOKIE POLICY</a>
         </div>
       </div>
 

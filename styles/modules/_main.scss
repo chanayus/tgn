@@ -10,7 +10,6 @@
     scroll-behavior: smooth;
     font-smooth: always;
     text-rendering: optimizeLegibility;
-
 }
 
 html {
@@ -125,4 +124,8 @@ ol {
     & li {
         list-style-type: decimal;
     }
+}
+
+.ease-theme {
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
