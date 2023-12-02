@@ -170,6 +170,7 @@
   align-items: center;
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
+  text-transform: uppercase;
 }
 
 .heading-section-text {
@@ -348,10 +349,7 @@
 
 .splide__pagination__page.is-active {
   width: 2.75rem;
-}
-
-.splide__pagination__page.is-active {
-  width: 2.75rem;
+  position: relative;
   margin-bottom: 9px;
 }
 
@@ -362,9 +360,17 @@
   left: 0;
   border-radius: 9999px;
   background: rgb(173, 156, 108);
-  transition: width 0.1s;
+  animation: active-progress 4s forwards linear;
 }
 
+@keyframes active-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .splide__pagination__page:hover {
   cursor: pointer;
   opacity: 0.9;
@@ -387,6 +393,10 @@
 
 .splide__slide {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: transform 0.3s;
+}
+.splide__slide * {
+  transition: transform 0.3s;
 }
 
 .splide__slide:focus {
@@ -670,6 +680,11 @@ ol li {
   text-align: left;
 }
 .collapsible .button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+  flex-shrink: 0;
   transition: transform 0.25s;
 }
 .collapsible > button * {
@@ -677,6 +692,7 @@ ol li {
 }
 .collapsible .collapsible-content-wrapper {
   display: grid;
+  width: 100%;
   transition: grid-template-rows 0.25s, margin-top 0.25s;
 }
 .collapsible.active .collapsible-content-wrapper {

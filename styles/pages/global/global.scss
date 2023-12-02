@@ -9,6 +9,11 @@
     }
 
     & .button-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-origin: center;
+        flex-shrink: 0;
         transition: transform 0.25s;
     }
     & > button * {
@@ -16,6 +21,7 @@
     }
     .collapsible-content-wrapper {
         display: grid;
+        width: 100%;
         transition:
             grid-template-rows 0.25s,
             margin-top 0.25s;
@@ -225,3 +231,4 @@
         color: $gold;
     }
 }
+

@@ -1,10 +1,6 @@
 import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
 import { initActiveDotInterval } from "./modules/slideDotActiveInterval.js";
 
-const navbar = document.querySelector("#navbar");
-
-navbar?.classList.add("gold-theme");
-
 gsap
   .timeline()
   .fromTo("#hero-section-content", { xPercent: -110 }, { autoAlpha: 1, xPercent: 0, duration: 1.5, ease: "expo.inOut" }, "+=0.25")

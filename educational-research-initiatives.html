@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/educationalResearchInitiatives.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <section id="video-story-telling" class="fixed z-30 flex items-center justify-center invisible w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-story-telling" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <header class="pt-[10rem] py-14 bg-body-gradient">
+        <div class="flex flex-col lg:items-center gap-x-14 main-container gap-y-8 lg:flex-row">
+          <figure class="flex-[0.95] lg:w-[32.875rem] h-[43.125rem] aspect-video overflow-hidden">
+            <img src="./images/pages/educational-research-initiatives/hero.webp" alt="" class="object-cover w-full h-full section-image" />
+          </figure>
+          <div class="self-center flex-1 space-y-4">
+            <h2 class="heading-section-text">Educational Research Initiatives</h2>
+
+            <div class="space-y-4 text-lg desc">
+              <p>
+                Gastronomic or food tourism experiences are much more than just eating and drinking at a destination. Food tourism comprises a continuum that extends from production (e.g.,
+                agri-tourism and visits to artisanal food producers) through to post-consumption (e.g., value-added souvenir products and food waste management).
+              </p>
+
+              <p>
+                Our educational research initiatives comprise an integrated, networked, and holistic approach to food and food culture that spans the continuum from production through
+                post-consumption. This includes landscapes, place, agriculture and food production, food traditions, food presentations, hospitality, eating, culture and heritage, lifestyle,
+                destination development, sustainability and importantly, their synergistic relationship between gastronomy as an expression of the culinary arts and creativity, innovation, and design.
+                A wide range of initiatives aims to ensure that we all will have a quality destination offering a unique, diverse experience, and will be committed to responsible, sustainable,
+                inclusive, and balanced development, to contribute significantly to the socioeconomic well-being of people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="main-container">
+        <hgroup class="py-20 space-y-4 text-center">
+          <h4 class="text-2xl">Highlight of Our Research Projects</h4>
+          <h2 class="heading-section-text">Educational Research Initiatives</h2>
+        </hgroup>
+
+        <div class="relative object-cover w-full overflow-hidden aspect-video">
+          <iframe src="https://player.vimeo.com/video/872245150?h=70966264ba" class="absolute w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p class="text-lg pt-9">
+          By definition, cuisine is a particular style of food preparation characteristic of a region. Its meaning and significance, however, is far deeper than this simplistic definition suggests.
+          Cuisine is the outcome of a region’s unique history, its products/ingredients (and the land from which they come), and the social norms and customs of the group that dictate the way in which
+          food is produced, prepared, and consumed. Cuisine is imbued with social and cultural capital. It is this social and cultural capital that is at the core of gastronomy and tourism.
+        </p>
+      </section>
+
+      <section class="py-20 space-y-10">
+        <h2 class="text-center heading-section-text">The 4 Pillars</h2>
+        <div class="splide" id="pillars-slide" aria-label="Placeholder Example">
+          <div class="splide__track">
+            <ul class="splide__list [&_:not(.is-active)_img]:scale-75">
+              <li class="splide__slide">
+                <img src="./images/pages/educational-research-initiatives/practice-cover.webp" alt="" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="./images/pages/educational-research-initiatives/practice-1.webp" alt="" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="./images/pages/educational-research-initiatives/practice-4.webp" alt="" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="./images/pages/educational-research-initiatives/practice-cover.webp" alt="" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="./images/pages/educational-research-initiatives/practice-1.webp" alt="" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="./images/pages/educational-research-initiatives/practice-4.webp" alt="" />
+              </li>
+            </ul>
+          </div>
+
+          <ul class="splide__pagination"></ul>
+        </div>
+      </section>
+
+      <section class="py-20 space-y-6 text-lg main-container">
+        <b>These pillars are: (1) farming system, (2) the story of food, (3) creative industries, and (4) sustainable tourism.</b>
+
+        <p>These four pillars are experienced as a “journey” co-created by the tourist and the host community in which they come together in a place-based approach that captures local character.</p>
+
+        <p>Farming systems underpin the food system; they are the source of all cuisine.</p>
+
+        <p class="pl-4 ml-8 border-l-4 border-gold">
+          Cuisine is more than just food; it is an expression of culture and identity. By telling the story of local food (through sharing cuisine, cooking classes etc.), host communities share Thai
+          knowledge and wisdom with their guests, creating a deeper and more meaningful experience.
+        </p>
+
+        <p>
+          As an expression of culture, the stories of food and cuisine can also be expressed and experienced through creativity and creative industries (art, literature, and music, film, photography,
+          fashion and many more.)
+        </p>
+
+        <p>
+          Taken in their entirety, these create sustainable tourism experiences that contribute to community development, local pride, and an enhanced tourism experience for both tourists and locals.
+        </p>
+      </section>
+
+      <!-- Pillar Section -->
+      <section class="py-20 text-image-section">
+        <div class="flex flex-col-reverse items-center main-container gap-x-16 gap-y-8 lg:flex-row">
+          <div class="flex flex-col flex-1 space-y-6 text-3xl text-gold gap-y-4">
+            <a href=""><b>Pillar 1:</b> Farming systems and Organic Ingredients </a>
+            <a href="" class="opacity-50"><b>Pillar 2:</b> Story of Food </a>
+            <a href="" class="opacity-50"><b>Pillar 3:</b> Creative Industries and Creative Culture </a>
+            <a href="" class="opacity-50"><b>Pillar 4:</b> Sustainable Tourism </a>
+          </div>
+          <figure class="flex-1 overflow-hidden lg:aspect-square aspect-video">
+            <img src="./images/pages/educational-research-initiatives/pillars.webp" alt="" class="object-cover object-top w-full h-full section-image" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Woodcutting Section -->
+      <section class="py-20 text-image-section">
+        <div class="flex flex-col items-center main-container gap-x-16 gap-y-8 lg:flex-row">
+          <figure class="flex-1 lg:aspect-[0.8] aspect-video overflow-hidden">
+            <img src="./images/pages/index/tgn-intro.webp" alt="" class="object-cover object-top w-full h-full section-image" />
+          </figure>
+          <div class="flex-1 space-y-6">
+            <h2 class="heading-section-text">Woodcutting by Weerawut Kangwannavakul</h2>
+
+            <div class="space-y-6 text-lg">
+              <p>
+                The poster, a truncated version of an original woodcutting by Thai artist Weerawut Kangwannavakul, was titled simply “Gastronomy Journey” The artwork reflects the four pillars as being
+                experienced as a
+              </p>
+              <p>
+                The poster, a truncated version of an original woodcutting by Thai artist Weerawut Kangwannavakul, was titled simply “Gastronomy Journey” The artwork reflects the four pillars as being
+                experienced as a
+              </p>
+              <p>
+                coming together in an agricultural setting, in which various forms of sustainable food production can be seen as part of a cultural landscape. In the original artwork, an airplane
+                traversesthe sky, flying above a bright orange sun flanked by a fork and a knife, further reinforcing the linkages between agriculture, tourism, cuisine, and art.
+              </p>
+
+              <p>
+                Visit our artist
+                <a href="" class="underline text-gold"> LEARN MORE Portfolio | Nujo Art and Farm (jimdosite.com) </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collection of Our Research Initiatives Section -->
+      <section class="py-20 space-y-14 main-container">
+        <h2 class="text-center heading-section-text Collection of Our Research Initiatives">Collection of Our Research Initiatives</h2>
+
+        <div class="space-y-8">
+          <!-- Thai-ness and Gastrodiplomacy -->
+          <section class="px-6 py-2 collapsible bg-body-gold active">
+            <button class="flex items-center justify-between w-full py-6 text-3xl text-gold hover:text-black">
+              <span>Thai-ness and Gastrodiplomacy</span>
+              <div class="w-6 h-6 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-12 collapsible-content">
+                <hgroup class="">
+                  <img src="./images/pages/educational-research-initiatives/thai-people-logo.webp" width="180" height="130" alt="" class="mx-auto" />
+                </hgroup>
+
+                <section class="flex flex-col gap-8 main-container lg:flex-row">
+                  <figure class="flex-1 overflow-hidden aspect-square">
+                    <img src="./images/pages/educational-research-initiatives/thai-ness-and-gastrodiplomacy.webp" alt="" class="object-cover object-top w-full h-full section-image" />
+                  </figure>
+                  <div class="flex-1 space-y-6">
+                    <div class="space-y-6 text-lg">
+                      <p>
+                        VALUE AND WELCOME the inclusion of young generation and all genders to express their creativities through art of food. Our Research depicts “Gastronomy goes far beyond just
+                        what is “on the plate”.
+                      </p>
+                      <p><b> Thai Performing Arts and The Art of Food: </b></p>
+                      <p>
+                        Artisan chef and performing art students explore the selected territorial assets, including cultural, heritage and historical traditions (food, crafts, folklore, visual arts,
+                        drama, literary references, and historical sites) and natural resources (landscapes flora, fauna, physical and social spheres of production). Together, they tested a
+                        place-based approach that capitalises on distinct local characteristics that define a particular place. A creative research process demonstrated how to turn local assets into a
+                        theater where senses of place was told through Thai performing arts, designing for an extraordinary pairing with local gastronomic delicacies designed by the chef.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <a href="" class="mx-auto section-link text-gold">
+                  Our Gastrodiplomacy
+
+                  <div class="w-12 h-12 btn-rounded-gold">
+                    <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Gastro-inspired Ventures: Our Research Lab Camp Approach -->
+          <section class="px-6 py-2 collapsible bg-body-gold">
+            <button class="flex items-center justify-between w-full py-6 text-3xl text-gold hover:text-black">
+              <span>Gastro-inspired Ventures: Our Research Lab Camp Approach</span>
+              <div class="w-6 h-6 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-12 collapsible-content">
+                <hgroup class="">
+                  <img src="./images/pages/educational-research-initiatives/thai-people-logo.webp" width="180" height="130" alt="" class="mx-auto" />
+                </hgroup>
+
+                <section class="flex flex-col gap-8 main-container lg:flex-row">
+                  <figure class="flex-1 overflow-hidden aspect-square">
+                    <img src="./images/pages/educational-research-initiatives/thai-ness-and-gastrodiplomacy.webp" alt="" class="object-cover object-top w-full h-full section-image" />
+                  </figure>
+                  <div class="flex-1 space-y-6">
+                    <div class="space-y-6 text-lg">
+                      <p>
+                        VALUE AND WELCOME the inclusion of young generation and all genders to express their creativities through art of food. Our Research depicts “Gastronomy goes far beyond just
+                        what is “on the plate”.
+                      </p>
+                      <p><b> Thai Performing Arts and The Art of Food: </b></p>
+                      <p>
+                        Artisan chef and performing art students explore the selected territorial assets, including cultural, heritage and historical traditions (food, crafts, folklore, visual arts,
+                        drama, literary references, and historical sites) and natural resources (landscapes flora, fauna, physical and social spheres of production). Together, they tested a
+                        place-based approach that capitalises on distinct local characteristics that define a particular place. A creative research process demonstrated how to turn local assets into a
+                        theater where senses of place was told through Thai performing arts, designing for an extraordinary pairing with local gastronomic delicacies designed by the chef.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <a href="" class="mx-auto section-link text-gold">
+                  Our Gastrodiplomacy
+
+                  <div class="w-12 h-12 btn-rounded-gold">
+                    <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Food Film -->
+          <section class="px-6 py-2 collapsible bg-body-gold">
+            <button class="flex items-center justify-between w-full py-6 text-3xl text-gold hover:text-black">
+              <span>Food Film</span>
+              <div class="w-6 h-6 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-12 collapsible-content">
+                <hgroup class="">
+                  <img src="./images/pages/educational-research-initiatives/thai-people-logo.webp" width="180" height="130" alt="" class="mx-auto" />
+                </hgroup>
+
+                <section class="flex flex-col gap-8 main-container lg:flex-row">
+                  <figure class="flex-1 overflow-hidden aspect-square">
+                    <img src="./images/pages/educational-research-initiatives/thai-ness-and-gastrodiplomacy.webp" alt="" class="object-cover object-top w-full h-full section-image" />
+                  </figure>
+                  <div class="flex-1 space-y-6">
+                    <div class="space-y-6 text-lg">
+                      <p>
+                        VALUE AND WELCOME the inclusion of young generation and all genders to express their creativities through art of food. Our Research depicts “Gastronomy goes far beyond just
+                        what is “on the plate”.
+                      </p>
+                      <p><b> Thai Performing Arts and The Art of Food: </b></p>
+                      <p>
+                        Artisan chef and performing art students explore the selected territorial assets, including cultural, heritage and historical traditions (food, crafts, folklore, visual arts,
+                        drama, literary references, and historical sites) and natural resources (landscapes flora, fauna, physical and social spheres of production). Together, they tested a
+                        place-based approach that capitalises on distinct local characteristics that define a particular place. A creative research process demonstrated how to turn local assets into a
+                        theater where senses of place was told through Thai performing arts, designing for an extraordinary pairing with local gastronomic delicacies designed by the chef.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <a href="" class="mx-auto section-link text-gold">
+                  Our Gastrodiplomacy
+
+                  <div class="w-12 h-12 btn-rounded-gold">
+                    <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Food Anthropology -->
+          <section class="px-6 py-2 collapsible bg-body-gold">
+            <button class="flex items-center justify-between w-full py-6 text-3xl text-gold hover:text-black">
+              <span>Food Anthropology</span>
+              <div class="w-6 h-6 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-12 collapsible-content">
+                <hgroup class="">
+                  <img src="./images/pages/educational-research-initiatives/thai-people-logo.webp" width="180" height="130" alt="" class="mx-auto" />
+                </hgroup>
+
+                <section class="flex flex-col gap-8 main-container lg:flex-row">
+                  <figure class="flex-1 overflow-hidden aspect-square">
+                    <img src="./images/pages/educational-research-initiatives/thai-ness-and-gastrodiplomacy.webp" alt="" class="object-cover object-top w-full h-full section-image" />
+                  </figure>
+                  <div class="flex-1 space-y-6">
+                    <div class="space-y-6 text-lg">
+                      <p>
+                        VALUE AND WELCOME the inclusion of young generation and all genders to express their creativities through art of food. Our Research depicts “Gastronomy goes far beyond just
+                        what is “on the plate”.
+                      </p>
+                      <p><b> Thai Performing Arts and The Art of Food: </b></p>
+                      <p>
+                        Artisan chef and performing art students explore the selected territorial assets, including cultural, heritage and historical traditions (food, crafts, folklore, visual arts,
+                        drama, literary references, and historical sites) and natural resources (landscapes flora, fauna, physical and social spheres of production). Together, they tested a
+                        place-based approach that capitalises on distinct local characteristics that define a particular place. A creative research process demonstrated how to turn local assets into a
+                        theater where senses of place was told through Thai performing arts, designing for an extraordinary pairing with local gastronomic delicacies designed by the chef.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <a href="" class="mx-auto section-link text-gold">
+                  Our Gastrodiplomacy
+
+                  <div class="w-12 h-12 btn-rounded-gold">
+                    <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Food Anthropology -->
+      <section class="py-20 bg-body-gold">
+        <div class="space-y-6 main-container">
+          <h4 class="heading-section-text">Food Anthropology</h4>
+          <div class="space-y-4 text-lg">
+            <p>
+              Food and Agriculture Organisation of the United Nations (www.fao.org) <br />
+              UNWTO (Gastronomy) https://www.unwto.org/gastronomy-wine-tourism
+              <br />
+              Slow Food Network https://www.slowfood.com/
+            </p>
+
+            <p>IGCAT Regions of Gastronomy Bid Book Collection https://igcat.org/projects/region-of-gastronomy-award/bid-books/</p>
+
+            <p>
+              KTC https://www.ktc.co.th/promotion/dining/international/culinary-collective <br />
+              Perfect link www.perfectlink.co.th <br />
+              National Food Institute https://www.nfi.or.th/home.php <br />
+              Research Papers
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

@@ -152,12 +152,10 @@
     overflow: hidden;
     margin: 0 5px;
 }
-.splide__pagination__page.is-active {
-    width: 2.75rem;
-}
 
 .splide__pagination__page.is-active {
     width: 2.75rem;
+    position: relative;
     margin-bottom: 9px;
 }
 
@@ -168,7 +166,17 @@
     left: 0;
     border-radius: 9999px;
     background: $gold;
-    transition: width 0.1s;
+
+    animation: active-progress 4s forwards linear;
+}
+
+@keyframes active-progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .splide__pagination__page:hover {
@@ -189,6 +197,10 @@
 }
 .splide__slide {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: transform 0.3s;
+    * {
+        transition: transform 0.3s;
+    }
 }
 .splide__slide:focus {
     outline: 0;

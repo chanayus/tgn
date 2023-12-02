@@ -1,7 +1,18 @@
-const collapsibleButton = document.querySelectorAll(".collapsible > button");
+const collapsibleButtons = [...document.querySelectorAll(".collapsible > button")];
 
-const toggleCollapsibleMenu = (e) => {
+let closeAllBeforeToggle = false;
+
+export const setCloseAllBeforeToggle = (value) => {
+  closeAllBeforeToggle = value;
+};
+
+const closeAllCollapsibleMenu = (toggleIndex) => {
+  collapsibleButtons?.forEach((item, index) => toggleIndex !== index && item.parentElement.classList.remove("active"));
+};
+
+const toggleCollapsibleMenu = (e, index) => {
+  closeAllBeforeToggle && closeAllCollapsibleMenu(index);
   e.target.parentElement.classList.toggle("active");
 };
 
-[...collapsibleButton]?.map((item) => item.addEventListener("click", toggleCollapsibleMenu));
+collapsibleButtons?.forEach((item, index) => item.addEventListener("click", (e) => toggleCollapsibleMenu(e, index)));
