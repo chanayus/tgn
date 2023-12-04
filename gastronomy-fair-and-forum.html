@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/gastronomyFairAndForum.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <section id="video-story-telling" class="fixed z-30 flex items-center justify-center invisible object-cover w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-story-telling" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <section class="pt-[10rem] py-14 bg-body-gradient">
+        <figure class="w-full overflow-hidden main-container">
+          <img id="hero-image" src="./images/pages/gastronomy-fair-and-forum/hero.webp" alt="" class="object-cover w-full h-full section-image" />
+        </figure>
+      </section>
+
+      <section class="space-y-10 main-container">
+        <h2 class="text-center heading-section-text">Gastronomy Fair & Forum</h2>
+
+        <p>
+          Enjoy our vibrant world of culinary exploration and gastronomic innovation at the Gastronomy Fair and Forum! Our event promises to be a feast for the senses, where food enthusiasts,
+          professionals, and foodies alike come together to celebrate the art, culture, and sustainability of gastronomy.
+        </p>
+
+        <p>
+          Our first ASEAN Gastronomy Fair and Forum was not just a food event; it's a unique experience that brings together the rich tapestry of flavors, aromas, and stories that food has to offer.
+          Whether you're a seasoned chef, a culinary student, a passionate home cook, or simply someone who enjoys savoring delicious dishes, this event has something for everyone. Key Highlights of
+          the Gastronomy Fair and Forum:
+        </p>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Culinary Delights: Explore a diverse array of food stalls offering delectable dishes from around the world. From street food to gourmet cuisine, you'll embark on a mouthwatering journey
+            that will tantalize your taste buds.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Interactive Workshops: Participate in hands-on workshops where you can create your own culinary masterpieces. From making pasta from scratch to crafting exquisite desserts, you'll have the
+            chance to get your hands dirty.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Cooking Demonstrations: Learn from culinary masters as they showcase their skills and share their culinary secrets. Discover the art of plating, knife skills, and the latest cooking
+            techniques.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Gastronomic Innovation: Explore the latest in smart gastronomy. Witness how technology is transforming the culinary world, from high-tech kitchen equipment to smart recipe management.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Sustainability Talks: Engage with experts in the field of sustainable gastronomy. Learn about responsible sourcing, reducing food waste, and making eco-conscious choices in the kitchen.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Networking and Community: Connect with like-minded food enthusiasts, chefs, and industry professionals. Build relationships, share ideas, and become a part of the gastronomic community.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Food Pairing and Tastings: Delve into the world of food and beverage pairings. Sample wines, craft beers, and other beverages that complement the flavors of dishes.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Food for Thought: Attend panel discussions and forums on the future of gastronomy. Learn about emerging trends, challenges, and opportunities in the culinary world.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Cultural Exchange: Immerse yourself in the cultural diversity of food. Experience the traditions, stories, and rituals behind various cuisines.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">Entertainment: Enjoy live music, cultural performances, and other entertainment to enhance the festive atmosphere of the event.</p>
+        </div>
+
+        <p>
+          The Gastronomy Fair and Forum is not just about savoring delicious food; it's about savoring life's culinary pleasures and gaining a deeper understanding of the role food plays in our lives,
+          cultures, and ecosystems. We invite you to join us on this culinary adventure, where food becomes a medium for connecting with others, learning, and celebrating the wonderful world of
+          gastronomy. Enjoy the event, and let your taste buds and curiosity run wild!
+        </p>
+      </section>
+
+      <div class="space-y-6 main-container py-14">
+        <section class="flex gap-4 max-md:flex-col" id="img-section-1">
+          <figure>
+            <img src="./images/pages/gastronomy-fair-and-forum/1.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid grid-cols-2 gap-4">
+            <img src="./images/pages/gastronomy-fair-and-forum/2.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/3.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/4.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/5.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+
+        <figure id="img-section-2">
+          <img src="./images/pages/gastronomy-fair-and-forum/6.webp" alt="" />
+        </figure>
+
+        <section id="img-section-3" class="flex gap-4 max-md:flex-col">
+          <figure class="grid gap-4 max-md:grid-cols-2">
+            <img src="./images/pages/gastronomy-fair-and-forum/7.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/8.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure>
+            <img src="./images/pages/gastronomy-fair-and-forum/9.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid gap-4 max-md:grid-cols-2">
+            <img src="./images/pages/gastronomy-fair-and-forum/10.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/11.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+
+        <section id="img-section-4" class="flex gap-4 max-md:flex-col">
+          <figure class="grid grid-cols-2 gap-4">
+            <img src="./images/pages/gastronomy-fair-and-forum/12.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/13.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/14.webp" alt="" class="object-cover w-full h-full" />
+            <img src="./images/pages/gastronomy-fair-and-forum/15.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure>
+            <img src="./images/pages/gastronomy-fair-and-forum/16.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

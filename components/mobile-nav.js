@@ -58,27 +58,6 @@ class MobileNav extends HTMLElement {
   
               <div class="collapsible border-b border-gold">
                 <button class="text-3xl flex items-center py-6 hover:text-black justify-between w-full ">
-                  <span>About</span>
-                  <div class="w-10 h-10 btn-rounded-gold button-icon">
-                    <img src="./icons/arrow-down-gold.svg" alt="" width="30" height="30" />
-                  </div>
-                </button>
-                <div class="collapsible-content-wrapper">
-                  <div class="collapsible-content gap-y-6 text-xl">
-                    <a href="">Gastronomy Academy (E-Learning Platform)</a>
-                    <a href="">Sustainable Food Learning Journey and Workshop</a>
-                    <a href="">Gastronomy Trail & Visit</a>
-                    <a href="">Gastronomy Fair & Forum</a>
-                  </div>
-                </div>
-              </div>
-  
-              <a href="" class="text-3xl flex items-center py-6 hover:text-black justify-between w-full border-b border-gold">
-                Our Preferred Choice
-              </a>
-  
-              <div class="collapsible border-b border-gold">
-                <button class="text-3xl flex items-center py-6 hover:text-black justify-between w-full ">
                   <span>What we do?</span>
                   <div class="w-10 h-10 btn-rounded-gold button-icon">
                     <img src="./icons/arrow-down-gold.svg" alt="" width="30" height="30" />
@@ -93,6 +72,11 @@ class MobileNav extends HTMLElement {
                   </div>
                 </div>
               </div>
+
+              <a href="" class="text-3xl flex items-center py-6 hover:text-black justify-between w-full border-b border-gold">
+                Our Preferred Choice
+              </a>
+
   
               <div class="collapsible border-b border-gold">
                 <button class="text-3xl flex items-center py-6 hover:text-black justify-between w-full ">
@@ -113,7 +97,7 @@ class MobileNav extends HTMLElement {
   
               <div class="collapsible">
                 <button class="text-3xl flex items-center py-6 hover:text-black justify-between w-full ">
-                  <span>Become members & partners</span>
+                  <span>Become Members & Partners</span>
                   <div class="w-10 h-10 btn-rounded-gold button-icon">
                     <img src="./icons/arrow-down-gold.svg" alt="" width="30" height="30" />
                   </div>

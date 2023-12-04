@@ -350,7 +350,7 @@
 .splide__pagination__page.is-active {
   width: 2.75rem;
   position: relative;
-  margin-bottom: 9px;
+  margin-bottom: 9.5px;
 }
 
 .splide__pagination__page.is-active .active-interval {

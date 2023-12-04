@@ -97,3 +97,33 @@ closeVideoPopupButton.addEventListener("click", (e) => {
     masterIFrame.src = "";
   });
 });
+
+// Lesson Module
+
+const lessonButtons = document.querySelectorAll(".lesson-module-button");
+const lessonContents = document.querySelectorAll(".lesson-module");
+
+lessonButtons?.forEach((button, buttonIndex) =>
+  button.addEventListener("click", () => {
+    console.log(buttonIndex);
+    lessonContents?.forEach((content, contentIndex) => {
+      if (contentIndex === buttonIndex) {
+        lessonButtons[contentIndex]?.classList.add("bg-[#AD9C6C]", "text-white");
+        lessonButtons[contentIndex]?.classList.remove("bg-white");
+
+        content.classList.remove("hidden");
+      } else {
+        lessonButtons[contentIndex]?.classList.remove("bg-[#AD9C6C]", "text-white");
+        lessonButtons[contentIndex]?.classList.add("bg-white");
+
+        content.classList.add("hidden");
+      }
+    });
+  })
+);
+
+lessonContents?.forEach((content, contentIndex) => {
+  if (contentIndex !== 0) {
+    content.classList.add("hidden");
+  }
+});

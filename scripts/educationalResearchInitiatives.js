@@ -1,8 +1,6 @@
 import { setCloseAllBeforeToggle } from "./modules/collapsibleMenu.js";
 import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
-// import * as splideUrlHash from "https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.3.0/+esm";
 
-// const HashFunction = splideUrlHash.URLHash;
 setCloseAllBeforeToggle(true);
 
 const slide = new splide.Splide("#pillars-slide", {
@@ -42,10 +40,36 @@ const addPaginationProgress = () => {
 };
 
 slide.on("pagination:updated", () => addPaginationProgress());
-
-slide.on("autoplay:playing", function (rate) {
-  //   console.log(rate);
-  //   bar.style.width = String(100 * rate) + "%";
-});
+slide.on("autoplay:play", () => addPaginationProgress());
 
 addPaginationProgress();
+
+gsap
+  .timeline()
+  .fromTo(
+    "#header-image img",
+    {
+      x: "-100%",
+      scale: 1.5,
+    },
+    {
+      x: 0,
+      scale: 1,
+      duration: 1,
+      ease: "expo",
+    }
+  )
+  .fromTo(
+    "#header-text > *",
+    {
+      y: 25,
+      autoAlpha: 0,
+    },
+    {
+      y: 0,
+      autoAlpha: 1,
+      duration: 1,
+      ease: "expo",
+      stagger: 0.1,
+    }, "-=0.5"
+  );

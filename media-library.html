@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <!-- <script type="module" src="./scripts/educationalResearchInitiatives.js"></script> -->
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <section id="video-story-telling" class="fixed z-30 flex items-center justify-center invisible object-cover w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-story-telling" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <hgroup class="pt-[10rem] flex flex-col items-center gap-y-4 bg-[#F8F3ED]">
+        <h2 class="heading-section-text">Media Library: For members only.</h2>
+
+        <a href="" class="mx-auto section-link text-gold">
+          Become our members
+
+          <div class="w-12 h-12 btn-rounded-gold">
+            <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+          </div>
+        </a>
+      </hgroup>
+
+      <section class="bg-[#F8F3ED] pt-10">
+        <figure class="main-container">
+          <img src="./images/pages/media-library/shelf.png" alt="" />
+        </figure>
+
+        <div class="main-container">
+          <section class="w-[92%] px-[7.5%] pb-10 pt-2 flex gap-6 sm:justify-between justify-center flex-wrap mx-auto bg-[linear-gradient(180deg,#FCFBFB_0%,#FEFEFE_100%)]">
+            <a href="" class="flex gap-x-4">
+              <figure>
+                <img src="./images/pages/media-library/left-to-fear.png" alt="" width="100" class="w-24 shadow-2xl" />
+              </figure>
+              <div class="leading-[1]">
+                <div class="flex items-center mb-1.5">
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-white.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-white.svg" alt="" width="20" height="20" />
+                </div>
+                <p class="text-lg max-sm:truncate sm:max-w-[15ch]">False Witness:A Novel</p>
+                <p class="text-sm truncate opacity-50">Karin Slaughter</p>
+              </div>
+            </a>
+
+            <a href="" class="flex gap-x-4">
+              <figure>
+                <img src="./images/pages/media-library/malibu-rising.png" alt="" width="100" class="w-24 shadow-2xl" />
+              </figure>
+              <div class="leading-[1]">
+                <div class="flex items-center mb-1.5">
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-white.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-white.svg" alt="" width="20" height="20" />
+                </div>
+                <p class="text-lg max-sm:truncate sm:max-w-[15ch]">Malibu Rising</p>
+                <p class="text-sm truncate opacity-50">Taylor Jenkins</p>
+              </div>
+            </a>
+
+            <a href="" class="flex gap-x-4">
+              <figure>
+                <img src="./images/pages/media-library/black-ice.png" alt="" width="100" class="w-24 shadow-2xl" />
+              </figure>
+              <div class="leading-[1]">
+                <div class="flex items-center mb-1.5">
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-yellow.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-white.svg" alt="" width="20" height="20" />
+                  <img src="./icons/star-white.svg" alt="" width="20" height="20" />
+                </div>
+                <p class="text-lg max-sm:truncate sm:max-w-[15ch]">Black Ice</p>
+                <p class="text-sm truncate opacity-50">Brad Thor</p>
+              </div>
+            </a>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
