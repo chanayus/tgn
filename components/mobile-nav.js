@@ -47,7 +47,7 @@ class MobileNav extends HTMLElement {
                 <div class="collapsible-content-wrapper">
                   <div class="collapsible-content gap-y-6 text-xl">
                     <a href="">Thailand Gastronomy Network</a>
-                    <a href="">Educational Research Initiatives</a>
+                    <a href="../educational-research-initiatives.html">Educational Research Initiatives</a>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ class MobileNav extends HTMLElement {
                     <a href="">Gastronomy Academy (E-Learning Platform)</a>
                     <a href="">Sustainable Food Learning Journey and Workshop</a>
                     <a href="">Gastronomy Trail & Visit</a>
-                    <a href="">Gastronomy Fair & Forum</a>
+                    <a href="../gastronomy-fair-and-forum.html">Gastronomy Fair & Forum</a>
                   </div>
                 </div>
               </div>
