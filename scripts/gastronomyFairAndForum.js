@@ -1,16 +1,31 @@
-gsap.fromTo(
-  "#hero-image",
-  {
-    autoAlpha: 0,
-    scale: 1.2,
-  },
-  {
-    autoAlpha: 1,
-    scale: 1,
-    ease: "expo",
-    duration: 1.5,
-  }
-);
+gsap
+  .timeline()
+  .fromTo(
+    "#hero-image",
+    {
+      autoAlpha: 0,
+      scale: 1.2,
+    },
+    {
+      autoAlpha: 1,
+      scale: 1,
+      ease: "expo",
+      duration: 1.5,
+    }
+  )
+
+  .fromTo(
+    "#text-section",
+    {
+      autoAlpha: 0,
+    },
+    {
+      autoAlpha: 1,
+      ease: "expo",
+      duration: 1.5,
+    },
+    "-=1"
+  );
 
 [1, 2, 3, 4].forEach((value) => {
   gsap
