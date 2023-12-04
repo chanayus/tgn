@@ -55,6 +55,7 @@ gsap
     {
       x: 0,
       scale: 1,
+      autoAlpha: 1,
       duration: 1,
       ease: "expo",
     }
@@ -71,5 +72,6 @@ gsap
       duration: 1,
       ease: "expo",
       stagger: 0.1,
-    }, "-=0.5"
+    },
+    "-=0.5"
   );
