@@ -43,6 +43,9 @@ slide.on("pagination:updated", () => addPaginationProgress());
 slide.on("autoplay:play", () => addPaginationProgress());
 
 addPaginationProgress();
+
+// Animation
+
 gsap
   .timeline()
   .to(
@@ -78,7 +81,29 @@ gsap
       autoAlpha: 1,
       duration: 1,
       ease: "expo",
-      stagger: 0.1,
+      stagger: 0.15,
     },
     "-=0.5"
   );
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: `#video-section`,
+      start: "top center",
+      end: "top center",
+    },
+  })
+  .fromTo("#video-section hgroup *", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.25, ease: "expo", duration: 1 })
+  .fromTo("#video-section #research-video", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 1 }, "-=0.5");
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: `#pillar-section`,
+      start: "top center",
+      end: "top center",
+    },
+  })
+  .fromTo("#pillar-link-container a", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.15, ease: "expo", duration: 1 })
+  .fromTo("#pillar-image img", { autoAlpha: 0, scale: 1.5, x: "100%" }, { autoAlpha: 1, scale: 1, x: "0%", ease: "expo", duration: 1 }, "-=1");

@@ -105,7 +105,6 @@ const lessonContents = document.querySelectorAll(".lesson-module");
 
 lessonButtons?.forEach((button, buttonIndex) =>
   button.addEventListener("click", () => {
-    console.log(buttonIndex);
     lessonContents?.forEach((content, contentIndex) => {
       if (contentIndex === buttonIndex) {
         lessonButtons[contentIndex]?.classList.add("bg-[#AD9C6C]", "text-white");
