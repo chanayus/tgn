@@ -43,9 +43,15 @@ slide.on("pagination:updated", () => addPaginationProgress());
 slide.on("autoplay:play", () => addPaginationProgress());
 
 addPaginationProgress();
-
 gsap
   .timeline()
+  .to(
+    "#header-section",
+    {
+      autoAlpha: 1,
+    },
+    "+=0.5"
+  )
   .fromTo(
     "#header-image img",
     {
@@ -58,7 +64,8 @@ gsap
       autoAlpha: 1,
       duration: 1,
       ease: "expo",
-    }
+    },
+    "-=0.5"
   )
   .fromTo(
     "#header-text > *",

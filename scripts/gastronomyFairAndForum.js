@@ -11,7 +11,8 @@ gsap
       scale: 1,
       ease: "expo",
       duration: 1.5,
-    }
+    },
+    "+=0.25"
   )
 
   .fromTo(
