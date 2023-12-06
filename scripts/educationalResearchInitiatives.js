@@ -1,7 +1,4 @@
-import { setCloseAllBeforeToggle } from "./modules/collapsibleMenu.js";
 import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
-
-setCloseAllBeforeToggle(true);
 
 const slide = new splide.Splide("#pillars-slide", {
   perPage: 3,
@@ -27,7 +24,7 @@ const slide = new splide.Splide("#pillars-slide", {
     },
 
     640: {
-      perPage: 1.5,
+      perPage: 1,
       gap: "1rem",
     },
   },
