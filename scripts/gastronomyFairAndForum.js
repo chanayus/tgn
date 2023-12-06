@@ -28,14 +28,17 @@ gsap
     "-=1"
   );
 
-[1, 2, 3, 4].forEach((value) => {
+const imgSection = document.querySelectorAll(".img-section");
+console.log(imgSection);
+
+imgSection.forEach((value, index) => {
   gsap
     .timeline({
       scrollTrigger: {
-        trigger: `#img-section-${value}`,
+        trigger: `#img-section-${index + 1}`,
         start: "top center",
         end: "top center",
       },
     })
-    .fromTo(`#img-section-${value} img`, { autoAlpha: 0, scale: 0.95 }, { autoAlpha: 1, scale: 1, stagger: 0.1, duration: 0.85, ease: "expo" });
+    .fromTo(`#img-section-${index + 1} img`, { autoAlpha: 0, scale: 0.95 }, { autoAlpha: 1, scale: 1, stagger: 0.1, duration: 0.85, ease: "expo" });
 });
