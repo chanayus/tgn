@@ -59,25 +59,25 @@ const masterSlide = new splide.Splide("#master-container", {
   },
 }).mount();
 
-const imgSlide = new splide.Splide("#img-slide", {
-  type: "loop",
-  padding: "25vw",
-  arrows: false,
-  focus: "center",
-  updateOnMove: true,
-  interval: 5000,
-  autoplay: true,
-  pauseOnFocus: false,
-  pauseOnHover: false,
-  gap: "1.5625rem",
-  breakpoints: {
-    960: {
-      padding: "15vw",
-    },
-  },
-}).mount();
+// const imgSlide = new splide.Splide("#img-slide", {
+//   type: "loop",
+//   padding: "25vw",
+//   arrows: false,
+//   focus: "center",
+//   updateOnMove: true,
+//   interval: 5000,
+//   autoplay: true,
+//   pauseOnFocus: false,
+//   pauseOnHover: false,
+//   gap: "1.5625rem",
+//   breakpoints: {
+//     960: {
+//       padding: "15vw",
+//     },
+//   },
+// }).mount();
 
-initActiveDotInterval("#img-slide", imgSlide);
+// initActiveDotInterval("#img-slide", imgSlide);
 
 // Master Video Popup
 const masterCards = document.querySelectorAll(".master-card");
@@ -102,10 +102,12 @@ closeVideoPopupButton.addEventListener("click", (e) => {
 
 const lessonButtons = document.querySelectorAll(".lesson-module-button");
 const lessonContents = document.querySelectorAll(".lesson-module");
+const lessonWrapper = document.querySelector("#lesson-wrapper");
 
 lessonButtons?.forEach((button, buttonIndex) =>
   button.addEventListener("click", () => {
     lessonContents?.forEach((content, contentIndex) => {
+      lessonWrapper.scrollTop = 0;
       if (contentIndex === buttonIndex) {
         lessonButtons[contentIndex]?.classList.add("bg-[#AD9C6C]", "text-white");
         lessonButtons[contentIndex]?.classList.remove("bg-white");

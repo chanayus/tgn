@@ -82,6 +82,10 @@ button:disabled {
     width: 0;
 }
 
+.sm-scroll-bar::-webkit-scrollbar {
+    width: 6px;
+}
+
 @keyframes fade-out {
     from {
         opacity: 1;
