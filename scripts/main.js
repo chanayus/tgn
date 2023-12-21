@@ -5,7 +5,9 @@ const navbar = document.querySelector("#navbar");
 
 const pathsGoldTheme = ["educational-research-initiatives", "gastronomy-academy", "gastronomy-fair-and-forum", "media-library"];
 
-if (pathsGoldTheme.indexOf("educational-research-initiatives") !== -1) {
+const pathname = window.location.pathname.substring(1).replace(".html", "");
+
+if (pathsGoldTheme.indexOf(pathname) !== -1) {
   navbar?.classList.add("gold-theme");
 }
 

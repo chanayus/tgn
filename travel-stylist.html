@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/travelStylist.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="space-y-20">
+      <header class="relative flex items-center justify-center w-full h-screen overflow-hidden bg-black ">
+        <div class="relative z-10 flex items-center max-md:flex-col">
+          <img id="cia-logo" src="./images/pages/travel-stylist/cia.webp" alt="" width="250" class="w-64 opacity-0" />
+          <hgroup class="text-4xl font-bold text-white header-text md:text-6xl max-md:text-center">
+            <h1 class="leading-normal opacity-0">Travel Stylist for</h1>
+            <h1 class="opacity-0">Conscious Travellers</h1>
+          </hgroup>
+        </div>
+        <img src="./images/pages/travel-stylist/hero.webp" id="header-image" class="absolute object-cover w-full h-full opacity-0" alt="" />
+      </header>
+
+      <section id="never-stop-section" class="space-y-8 text-center main-container">
+        <h2 class="heading-section-text">Because you will never stop learning...</h2>
+        <p>
+          Thailand is your open classroom. What would be better than hearing fascinating stories about life in different environments from the people who actually live there. We are offering unique
+          curated learning programmes:
+        </p>
+
+        <div class="flex gap-4 max-md:flex-col">
+          <figure class="flex-1"><img class="w-full" src="./images/pages/travel-stylist/openclass-1.webp" alt="" /></figure>
+          <figure class="flex-1"><img class="w-full" src="./images/pages/travel-stylist/openclass-2.webp" alt="" /></figure>
+        </div>
+      </section>
+
+      <section id="data-block-section" class="flex flex-wrap justify-center gap-6 main-container">
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Corporates</b></p>
+          <p>upskills, creating top performing team.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Graduates</b></p>
+          <p>great gap week, month, year</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Tertiary edutainments</b></p>
+          <p>on the field</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Secondary</b></p>
+          <p>show me and I remember.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Kinship (forever family & Friend)</b></p>
+          <p>connecting through learning.</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Corporates</b></p>
+          <p>Town...</p>
+        </div>
+        <div class="flex flex-col items-center justify-center w-56 p-4 text-center border h-36 border-gold gap-y-2">
+          <p class="text-lg text-gold"><b>Explore Thailand</b></p>
+          <p>make you old memories new again...</p>
+        </div>
+      </section>
+
+      <section class="grid gap-6 sm:grid-cols-3 main-container section-1-img-container">
+        <figure class="space-y-6 sm:pt-20">
+          <img src="./images/pages/travel-stylist/section-1-1.webp" alt="" class="w-full" />
+          <img src="./images/pages/travel-stylist/section-1-2.webp" alt="" class="w-full" />
+          <img src="./images/pages/travel-stylist/section-1-3.webp" alt="" class="w-full" />
+        </figure>
+        <figure class="space-y-6">
+          <img src="./images/pages/travel-stylist/section-1-4.webp" alt="" class="w-full" />
+          <img src="./images/pages/travel-stylist/section-1-5.webp" alt="" class="w-full" />
+          <img src="./images/pages/travel-stylist/section-1-6.webp" alt="" class="w-full" />
+        </figure>
+        <figure class="space-y-6 sm:pt-20">
+          <img src="./images/pages/travel-stylist/section-1-7.webp" alt="" class="w-full" />
+          <img src="./images/pages/travel-stylist/section-1-8.webp" alt="" class="w-full" />
+          <img src="./images/pages/travel-stylist/section-1-9.webp" alt="" class="w-full" />
+        </figure>
+      </section>
+
+      <p class="text-3xl font-bold leading-normal text-center main-container-sm">
+        In cooperation with the Community Innovation Agency (CIA) and Gastro-Travel Specialists, our travel stylist is responsible for developing your experience: “a journey to colour yourself”.
+        Thailand will always be your open classroom.
+      </p>
+
+      <section id="about-gallery-container" class="flex pb-8 main-container gap-x-4 h-screen min-h-[67.5rem] md:max-h-full max-h-[60vh] overflow-hidden">
+        <div class="flex-1 gallery-col">
+          <div class="img-col-odd [&>*]:mb-4 border border-transparent">
+            <img src="./images/pages/travel-stylist/section-2-1.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-2.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-3.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-4.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+          </div>
+        </div>
+        <div class="flex-1 gallery-col">
+          <div class="img-col-even [&>*]:mb-4 border border-transparent">
+            <img src="./images/pages/travel-stylist/section-2-5.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-6.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-7.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-8.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+          </div>
+        </div>
+        <div class="flex-1 hidden gallery-col sm:block">
+          <div class="img-col-odd [&>*]:mb-4 border border-transparent">
+            <img src="./images/pages/travel-stylist/section-2-9.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-10.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-11.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-12.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+          </div>
+        </div>
+        <div class="flex-1 hidden gallery-col lg:block">
+          <div class="img-col-even [&>*]:mb-4 border border-transparent">
+            <img src="./images/pages/travel-stylist/section-2-13.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-14.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-15.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+            <img src="./images/pages/travel-stylist/section-2-16.webp" alt="" class="w-full aspect-[0.96] object-cover" />
+          </div>
+        </div>
+
+        <div class="absolute -top-0 w-full bg-gradient-to-b from-[#fff] h-1/4"></div>
+        <div class="absolute -bottom-0 w-full bg-gradient-to-t from-[#fff] h-1/4"></div>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>
