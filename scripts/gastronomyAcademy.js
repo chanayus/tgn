@@ -106,25 +106,28 @@ const lessonWrapper = document.querySelector("#lesson-wrapper");
 
 lessonButtons?.forEach((button, buttonIndex) =>
   button.addEventListener("click", () => {
-    lessonContents?.forEach((content, contentIndex) => {
-      lessonWrapper.scrollIntoView()
-      if (contentIndex === buttonIndex) {
-        lessonButtons[contentIndex]?.classList.add("bg-[#AD9C6C]", "text-white");
-        lessonButtons[contentIndex]?.classList.remove("bg-white");
-
-        content.classList.remove("hidden");
-      } else {
-        lessonButtons[contentIndex]?.classList.remove("bg-[#AD9C6C]", "text-white");
-        lessonButtons[contentIndex]?.classList.add("bg-white");
-
-        content.classList.add("hidden");
-      }
-    });
+    lessonContents[buttonIndex].scrollIntoView();
+    toggleModuleButton(buttonIndex);
   })
 );
 
+const toggleModuleButton = (targetIndex) => {
+  lessonButtons?.forEach((button, buttonIndex) => {
+    if (buttonIndex === targetIndex) {
+      lessonButtons[buttonIndex]?.classList.add("bg-[#AD9C6C]", "text-white");
+      lessonButtons[buttonIndex]?.classList.remove("bg-white");
+    } else {
+      lessonButtons[buttonIndex]?.classList.remove("bg-[#AD9C6C]", "text-white");
+      lessonButtons[buttonIndex]?.classList.add("bg-white");
+    }
+  });
+};
+
 lessonContents?.forEach((content, contentIndex) => {
-  if (contentIndex !== 0) {
-    content.classList.add("hidden");
-  }
+  ScrollTrigger.create({
+    trigger: content,
+    start: "-1rem top",
+    onEnter: () => toggleModuleButton(contentIndex),
+    onEnterBack: () => toggleModuleButton(contentIndex),
+  });
 });
