@@ -107,7 +107,7 @@ const lessonWrapper = document.querySelector("#lesson-wrapper");
 lessonButtons?.forEach((button, buttonIndex) =>
   button.addEventListener("click", () => {
     lessonContents?.forEach((content, contentIndex) => {
-      lessonWrapper.scrollTop = 0;
+      lessonWrapper.scrollIntoView()
       if (contentIndex === buttonIndex) {
         lessonButtons[contentIndex]?.classList.add("bg-[#AD9C6C]", "text-white");
         lessonButtons[contentIndex]?.classList.remove("bg-white");
