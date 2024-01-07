@@ -1,7 +1,7 @@
 class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
-    <nav id="navbar" class="absolute top-0 z-10 flex items-center w-full h-24 text-white">
+    <nav id="navbar" class="absolute top-0 z-30 flex items-center w-full h-24 text-white">
       <div class="flex items-center justify-between w-full main-container">
         <section class="flex-1 flex items-center gap-x-6">
           <button id="mobile-nav-menu-open" class="[&:hover_path]:fill-black">
