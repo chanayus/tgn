@@ -1,3 +1,5 @@
+gsap.fromTo("header img", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.85, ease: "expo" });
+
 gsap
   .timeline({
     scrollTrigger: {
@@ -17,4 +19,4 @@ gsap
     },
   })
   .fromTo("#text-section h2", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "expo" })
-  .fromTo("#text-section p", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, stagger: 0.1, duration: 0.85, ease: "expo" },"-=0.25");
+  .fromTo("#text-section p", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, stagger: 0.1, duration: 0.85, ease: "expo" }, "-=0.25");
