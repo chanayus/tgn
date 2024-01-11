@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/gastronomyTrailAndVisit.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="">
+      <header class="pt-[10rem] py-14 bg-body-gradient">
+        <div class="main-container">
+          <figure id="hero-image" class="w-full overflow-hidden h-[60vh] max-h-[37.5rem] relative">
+            <img src="./images/pages/gastronomy-trail-and-visit/hero.webp" alt="" class="absolute object-cover w-full h-full -translate-x-1/2 opacity-0 left-1/2 section-image" />
+          </figure>
+        </div>
+      </header>
+
+      <section id="text-section" class="space-y-16 opacity-0 main-container">
+        <div class="space-y-6">
+          <h2 class="text-center heading-section-text">Gastronomy Trail & Visit</h2>
+
+          <p class="text-center">-Our Preferred Choice & Advocacy</p>
+        </div>
+
+        <h4 class="text-3xl font-bold text-center max-w-[48ch] mx-auto">“A Collection of Unique Territorial Assets, Presenting Artistically and Sustainably through Gastronomy Experiences”</h4>
+
+        <p>
+          Welcome to an immersive culinary adventure that will take you on a gastronomic journey like no other. The Gastronomy Trail and Visit is your ticket to exploring the rich, diverse, and
+          delectable world of food and flavors in a way that tantalizes your taste buds and piques your curiosity.
+        </p>
+
+        <p>
+          This unique experience is designed for food enthusiasts, culinary explorers, and anyone who appreciates the cultural significance of food. Join us as we uncover the hidden gems of local
+          cuisine, artisanal delicacies, and the stories behind the dishes that define a region's identity.
+        </p>
+      </section>
+
+      <div class="space-y-6 main-container py-14">
+        <section class="flex gap-4 img-section max-md:flex-col" id="img-section-1">
+          <figure>
+            <img src="./images/pages/gastronomy-trail-and-visit/1.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid gap-4 sm:grid-cols-2">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/2.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/3.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/4.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/5.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section id="img-section-2" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/6.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/7.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="flex-1">
+            <img src="./images/pages/gastronomy-trail-and-visit/8.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/9.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/10.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section class="flex gap-4 img-section max-md:flex-col" id="img-section-3">
+          <figure class="grid gap-4 sm:grid-cols-2">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/11.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/12.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/13.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/14.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure>
+            <img src="./images/pages/gastronomy-trail-and-visit/15.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+
+        <section class="flex gap-4 img-section max-md:flex-col max-md:hidden" id="img-section-4">
+          <figure>
+            <img src="./images/pages/gastronomy-trail-and-visit/16.webp" alt="" loading="lazy" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid gap-4 sm:grid-cols-2">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/17.webp" loading="lazy" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/18.webp" loading="lazy" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/19.webp" loading="lazy" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/20.webp" loading="lazy" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section id="img-section-5" class="flex gap-4 img-section max-md:flex-col max-md:hidden">
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/21.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/22.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="flex-1">
+            <img src="./images/pages/gastronomy-trail-and-visit/23.webp" alt="" loading="lazy" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/24.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/25.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section class="flex gap-4 img-section max-md:flex-col max-md:hidden" id="img-section-6">
+          <figure class="grid gap-4 sm:grid-cols-2">
+            <div><img src="./images/pages/gastronomy-trail-and-visit/26.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/27.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/28.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/gastronomy-trail-and-visit/29.webp" alt="" loading="lazy" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure>
+            <img src="./images/pages/gastronomy-trail-and-visit/30.webp" alt="" loading="lazy" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+
+        <button id="loadmore-button" class="w-full !md:hidden btn-gold">Load More</button>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
