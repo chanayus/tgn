@@ -3,7 +3,7 @@ import "./modules/mobileNavMenu.js";
 
 const navbar = document.querySelector("#navbar");
 
-const pathsGoldTheme = ["educational-research-initiatives", "gastronomy-academy", "gastronomy-fair-and-forum", "media-library", "storytelling-through-food"];
+const pathsGoldTheme = ["educational-research-initiatives", "gastronomy-academy", "gastronomy-fair-and-forum", "media-library", "storytelling-through-food", "food-learning-and-workshop"];
 
 const pathname = window.location.pathname.substring(1).replace(".html", "");
 

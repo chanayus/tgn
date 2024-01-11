@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/foodLearningAndWorkshop.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <section id="video-story-telling" class="fixed z-30 flex items-center justify-center invisible object-cover w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-story-telling" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <main id="main-content" class="">
+      <header class="pt-[10rem] py-14 bg-body-gradient">
+        <div class="main-container">
+          <figure id="hero-image" class="w-full overflow-hidden max-h-[37.5rem]">
+            <img src="./images/pages/food-learning-and-workshop/hero.webp" alt="" class="object-cover w-full h-full opacity-0 section-image" />
+          </figure>
+        </div>
+      </header>
+
+      <section id="text-section" class="space-y-12 opacity-0 main-container">
+        <h2 class="text-center heading-section-text">Sustainable Food Learning Journey & Workshop</h2>
+
+        <p>
+          Are you ready to embark on a transformative culinary adventure that celebrates the principles of sustainability and conscious eating? Welcome to the Sustainable Food Learning Journey and
+          Workshop, where we explore the vital connections between what we eat, how it's produced, and the impact on our planet.
+        </p>
+
+        <h4 class="text-3xl font-bold text-center max-w-[48ch] mx-auto">
+          “People traveling to places would love to see the differences of culture and tradition that may differ from their hometown. Food is a key motivation and basic needs of human to get in touch
+          with varied cultures.”
+        </h4>
+
+        <section class="grid gap-6 md:grid-cols-3">
+          <div class="flex flex-col items-center justify-center p-8 gap-y-6 bg-body-gold">
+            <img src="./icons/vegetable.png" width="65" height="65" class="object-contain w-16 h-16" alt="" />
+            <p class="text-2xl font-bold text-center text-gold">Our journey begins with organic farming.</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-8 gap-y-6 bg-body-gold">
+            <img src="./icons/plant.png" width="65" height="65" class="object-contain w-16 h-16" alt="" />
+            <p class="text-2xl font-bold text-center text-gold">Promoting organic farming</p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center p-8 gap-y-6 bg-body-gold">
+            <img src="./icons/cooking.png" width="65" height="65" class="object-contain w-16 h-16" alt="" />
+            <p class="text-2xl font-bold text-center text-gold">Raising awareness of health issues and promote healthy eating</p>
+          </div>
+        </section>
+
+        <h5 class="text-lg font-bold text-center">Key Highlights of the Sustainable Food Learning Journey and Workshop:</h5>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Sustainable Gastronomy: Gain a comprehensive understanding of sustainable gastronomy, where food is celebrated not only for its taste but also for its impact on the environment, society,
+            and health.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Ethical Dining: Delve into the ethics of food production and consumption. Understand the impact of our dietary choices on animals, workers, and the environment.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Farm-to-Table: Connect with local farmers and producers to learn about the importance of supporting sustainable agriculture. Witness the journey of ingredients from the farm to your plate.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Eco-Friendly Practices: Discover how to make your kitchen and dining habits more environmentally friendly. Learn about sustainable kitchen equipment and eco-conscious meal planning.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Cooking Workshops: Hone your culinary skills in hands-on cooking workshops led by expert chefs. Discover how to prepare delicious, sustainable dishes using locally sourced ingredients.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Food for Thought: Participate in enlightening discussions and panel sessions on the future of sustainable food. Gain insights into the latest trends, challenges, and opportunities in the
+            realm of conscious dining.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Sustainability Talks: Engage with sustainability experts who will share insights into responsible sourcing, reducing food waste, and the significance of making eco-conscious choices in the
+            kitchen.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Community Building: Connect with a community of like-minded individuals who share your passion for sustainable food. Network, share ideas, and create lasting connections.
+          </p>
+        </div>
+
+        <div class="flex justify-between gap-y-8 gap-x-16 max-lg:flex-col">
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Waste Reduction: Explore innovative ways to minimize food waste, from creative cooking techniques to composting and recycling strategies.
+          </p>
+          <p class="flex-1 pl-4 border-l-4 border-gold h-fit">
+            Taste and Savor: Feast on delectable dishes created during the workshops. Experience the joy of savoring food that not only tastes good but also does good for the planet.
+          </p>
+        </div>
+
+        <p>
+          The Sustainable Food Learning Journey and Workshop is more than just a culinary experience; it's an opportunity to make a positive impact on the world through your daily food choices. We
+          invite you to join us in this quest to savor food in a way that nurtures both our bodies and the environment. Prepare to be inspired, educated, and transformed on this enlightening journey
+          into the world of sustainable and conscious eating. Bon appétit!
+        </p>
+      </section>
+
+      <div class="space-y-6 main-container py-14">
+        <section class="flex gap-4 img-section max-md:flex-col" id="img-section-1">
+          <figure>
+            <img src="./images/pages/food-learning-and-workshop/1.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid gap-4 sm:grid-cols-2">
+            <div><img src="./images/pages/food-learning-and-workshop/2.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/3.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/4.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/5.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section id="img-section-2" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/food-learning-and-workshop/6.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="flex-1">
+            <img src="./images/pages/food-learning-and-workshop/7.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/food-learning-and-workshop/8.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/9.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section id="img-section-3" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/food-learning-and-workshop/10.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="grid flex-1 gap-4">
+            <div><img src="./images/pages/food-learning-and-workshop/11.webp" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/12.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="flex-1">
+            <img src="./images/pages/food-learning-and-workshop/13.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+
+        <section id="img-section-4" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid flex-[1.35]">
+            <div><img src="./images/pages/food-learning-and-workshop/14.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="grid flex-1">
+            <div><img src="./images/pages/food-learning-and-workshop/15.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="flex-1">
+            <img src="./images/pages/food-learning-and-workshop/16.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section>
+
+        <section id="img-section-4" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid flex-1">
+            <div><img src="./images/pages/food-learning-and-workshop/17.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure class="flex-1">
+            <img src="./images/pages/food-learning-and-workshop/18.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid flex-[1.35]">
+            <div><img src="./images/pages/food-learning-and-workshop/19.webp" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <!-- <figure id="img-section-2" class="img-section">
+          <img src="./images/pages/food-learning-and-workshop/6.png" alt="" />
+        </figure>
+
+        <section id="img-section-3" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid gap-4">
+            <div><img src="./images/pages/food-learning-and-workshop/7.png" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/8.png" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure>
+            <img src="./images/pages/food-learning-and-workshop/9.png" alt="" class="object-cover w-full h-full" />
+          </figure>
+          <figure class="grid gap-4">
+            <div><img src="./images/pages/food-learning-and-workshop/10.png" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/11.png" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+        </section>
+
+        <section id="img-section-4" class="flex gap-4 img-section max-md:flex-col">
+          <figure class="grid gap-4 sm:grid-cols-2">
+            <div><img src="./images/pages/food-learning-and-workshop/12.png" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/13.png" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/14.png" alt="" class="object-cover w-full h-full" /></div>
+            <div><img src="./images/pages/food-learning-and-workshop/15.png" alt="" class="object-cover w-full h-full" /></div>
+          </figure>
+          <figure>
+            <img src="./images/pages/food-learning-and-workshop/16.png" alt="" class="object-cover w-full h-full" />
+          </figure>
+        </section> -->
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
