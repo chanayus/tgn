@@ -131,6 +131,28 @@
   filter: contrast(100) grayscale(100%);
 }
 
+.btn-rounded-white {
+  aspect-ratio: 1/1;
+  display: flex;
+  border: 1px solid #FFF;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+.btn-rounded-white:hover {
+  background: #FFF;
+  color: #000;
+}
+.btn-rounded-white:hover rect,
+.btn-rounded-white:hover path {
+  fill: #000;
+  stroke: #000;
+}
+.btn-rounded-white:hover img {
+  filter: contrast(0) grayscale(100%);
+}
+
 .btn-gold {
   height: 2.5rem;
   padding: 0 2.5rem;
@@ -328,11 +350,9 @@
 }
 
 .splide__pagination {
-  bottom: 0.5em;
   left: 0;
   display: flex;
   align-items: center;
-  position: absolute;
   right: 0;
   z-index: 1;
 }

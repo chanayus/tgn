@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/storytellingThroughFood.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="pb-20 space-y-20">
+      <header class="relative pb-20 space-y-20 h-fit bg-body-gradient">
+        <h2 class="text-center heading-section-text pt-[10rem] opacity-0 ">Storytelling through Food</h2>
+        <div class="flex items-center gap-x-24 gap-y-14 max-md:flex-col main-container">
+          <img src="./images/logo.webp" alt="" class="opacity-0 w-80" />
+          <section class="space-y-8 text-lg ">
+            <p class="opacity-0">
+              Our storytelling though food is covered through an extraordinary journey of chefs or journey like chef that goes far beyond what is on the plate. We not only tell story of food but we
+              tell inspiring stories through food.
+            </p>
+            <p class="opacity-0">
+              Based on “Gastrodiplomacy”, our storytelling through food is a concept that involves the use of food and cuisine as a diplomatic powerful tool to promote cultural exchange, build
+              relationships, foster international cooperation, and more importantly create sustainabilitymovement. It recognizes the power of food to transcend borders and bring people together to
+              think & act upon sustainability. Gastrodiplomacy involves showcasing local culinary traditions, hosting food talks & festivals, and using food as a means of cultural diplomacy to enhance
+              a local's unique image and diplomacy efforts on the global stage. By sharing their cuisine and culinary heritage, community, corporates, or a nationcan create positive interactions and
+              connections with others, fostering understanding and collaboration in the process. We embrace and recognize storytellers who uphold sustainable gastronomy principles.
+            </p>
+          </section>
+        </div>
+      </header>
+
+      <section class="relative space-y-20">
+        <h2 class="text-center heading-section-text">Gastrodiplomacy Profiles</h2>
+
+        <div class="splide" id="pillars-slide" aria-label="Placeholder Example">
+          <div class="splide__track">
+            <ul class="splide__list [&_:not(.is-active)_img]:scale-75 [&_img]:mx-auto mb-8">
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/gastro-diplomacy.webp" alt="" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/1.webp" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/2.webp" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/3.webp" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/4.webp" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/5.webp" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="./images/pages/storytelling-through-food/6.webp" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class=" splide__pagination"></ul>
+      </section>
+
+      <section class="flex flex-col items-center pb-20 space-y-8 text-center main-container">
+        <h3 class="text-4xl font-bold max-w-[50ch]">Goes beyond what is on the plate...Explore our land, sea, mountain, river, and senses of place with Chefs...</h3>
+        <p>Storytelling is an art featured in a well collected e-magazine.</p>
+        <a href="" class="section-link text-gold">
+          Click link to Black Journey
+
+          <div class="w-12 h-12 btn-rounded-gold">
+            <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+          </div>
+        </a>
+      </section>
+
+      <section class="grid md:grid-cols-2 gap-7 main-container">
+        <figure class="flex justify-center items-center w-full aspect-square bg-cover bg-[url('./images/pages/storytelling-through-food/become-partner.webp')] relative">
+          <div class="space-y-4 text-center text-white">
+            <p class="text-4xl">Become partners</p>
+            <a href="" class="mx-auto section-link w-fit">
+              Learn more
+
+              <div class="w-12 h-12 btn-rounded-white">
+                <img src="./icons/arrow-right-white.svg" alt="" width="30" height="30" />
+              </div>
+            </a>
+          </div>
+        </figure>
+        <figure class="flex justify-center items-center w-full aspect-square bg-cover bg-[url('./images/pages/storytelling-through-food/become-member.webp')] relative">
+          <div class="space-y-4 text-center text-white">
+            <p class="text-4xl">Become our members</p>
+            <a href="" class="mx-auto section-link w-fit">
+              Learn more
+
+              <div class="w-12 h-12 btn-rounded-white">
+                <img src="./icons/arrow-right-white.svg" alt="" width="30" height="30" />
+              </div>
+            </a>
+          </div>
+        </figure>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>
