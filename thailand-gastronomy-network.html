@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/twind.js"></script>
+    <script>
+      twind.install({
+        hash: false,
+      });
+    </script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/thailandGastronomyNetwork.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="">
+      <header class="py-[10rem] bg-body-gradient ">
+        <div class="flex flex-col-reverse opacity-0 main-container gap-x-24 gap-y-8 lg:flex-row">
+          <div class="flex-1 space-y-6 lg:mt-12">
+            <h2 class="heading-section-text">Thailand Gastronomy Network</h2>
+            <div class="space-y-6 text-lg desc">
+              <p>
+                Gastronomic or food tourism experiences are much more than just eating and drinking at a destination. Food tourism comprises a continuum that extends from production (e.g.,
+                agri-tourism and visits to artisanal food producers) through to post-consumption (e.g., value-added souvenir products and food waste management).
+              </p>
+
+              <p>
+                Along this continuum are numerous opportunities to engage tourists in a variety of food-related tourism activities and experiences that create socioeconomic benefits for a broad range
+                of stakeholders, many of whom exist outside the primary tourism industry.
+              </p>
+
+              <p>
+                Thailand Gastronomy Network is a consortium of experts. The platform gathers people <a href="" class="font-bold underline text-gold">(our brain bank)</a> who believe passionately in
+                unique gastronomy territorial assets and eager to find ways to artistically turn local assets into sustainable food movement. Our network was established from strong research-based
+                evidence since 2017 <a href="" class="font-bold underline text-gold">(Educational Research Initiatives)</a>.
+              </p>
+            </div>
+          </div>
+          <figure class="flex-1 lg:aspect-[0.8] overflow-hidden">
+            <img src="./images/pages/index/tgn-intro.webp" alt="" class="object-cover w-full h-full section-image" />
+          </figure>
+        </div>
+      </header>
+
+      <section id="our-partner-section" class="pb-20 space-y-8 text-center main-container">
+        <h2 class="heading-section-text">
+          A continuous research funding support for over... A decade has given us an opportunity to move forward with our partners to uphold the following principles
+        </h2>
+        <a href="" class="mx-auto text-lg !capitalize section-link text-gold w-fit">
+          our partners
+
+          <div class="w-12 h-12 btn-rounded-gold">
+            <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+          </div>
+        </a>
+      </section>
+
+      <!-- Timeline Section -->
+
+      <section id="timeline-section" class="relative mb-10 text-lg main-container max-md:space-y-14 max-md:max-h-[80rem] overflow-hidden">
+        <div class="absolute w-px h-full -translate-x-1/2 max-md:hidden bg-gold left-1/2"></div>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 md:ml-auto max-md:mr-auto">
+              <img src="./icons/food-cart-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="md:text-right">
+              UPHOLD the general principles for the development of gastronomy and tourism to be a vehicle for the transmission of culture and embrace its ability to achieve sustainable and inclusive
+              development goals. Sustainable local, regional, and global food systems are important for our future. Gastronomy practices will open innovative solutions about sustainable tourism, local
+              employment while preserving local tradition and diversity, harnessing, and rewarding authenticity.
+            </p>
+          </div>
+          <div class="flex-1 max-md:hidden"></div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 max-md:hidden"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 mr-auto">
+              <img src="./icons/vegan-plate-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="text-left">
+              VALUE AND WELCOME the inclusion of young generation and all genders to express their creativities through art of food (for example, food presentation, food stylist, food dialogues, food
+              souvenirs, food pairings).
+            </p>
+          </div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 md:ml-auto max-md:mr-auto">
+              <img src="./icons/checkhand-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="md:text-right">
+              LEVERAGE cultural assets to transform a community into a vibrant, enticing, and engaging place to live, work, and visit. Successful creative gastronomic initiatives have been shown to
+              create a strong sense and character of place, attract new visitors, and serve as a catalyst for local innovation and positive economic development for small to medium sized enterprises
+              (SMEs).
+            </p>
+          </div>
+          <div class="flex-1 max-md:hidden"></div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 max-md:hidden"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 mr-auto">
+              <img src="./icons/devices-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="text-left">
+              ESTABLISH the Platform for knowledge sharing to substantially improve gastronomic experiences – one that provides livelihoods for farmers as well as nutritious products for locals and
+              visitors.
+            </p>
+          </div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 md:ml-auto max-md:mr-auto">
+              <img src="./icons/community-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="md:text-right">
+              FOSTER the interrelation between gastronomy and tourism as a medium for inter-generational cultural exchange. The transmission of multifaceted cross culture, if properly managed,
+              enhances inclusive economic development, sustainable practices, and food experiences. Hence, gastronomic tourism helps to create strong sense of place for branding and marketing
+              destinations, as well as assisting in maintaining and preserving local heritage and identity.
+            </p>
+          </div>
+          <div class="flex-1 max-md:hidden"></div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 max-md:hidden"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 mr-auto">
+              <img src="./icons/food-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="text-left">
+              EMPOWER local communities by guiding, facilitating, and supporting leaders in cities, regions, and any cultural innovation initiatives to understand the totality of sustainable culinary
+              value chain and promote the full potentialities of their distinct food, cultural heritage, arts, and tourism assets.
+            </p>
+          </div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 md:ml-auto max-md:mr-auto">
+              <img src="./icons/invest-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="md:text-right">
+              INVEST in young artisans to accelerate innovative enterprises which contribute to a better quality of life in regions by highlighting distinctive food cultures, educating for better
+              health and sustainability, and stimulating the development of gastronomic related produces/products/initiatives.
+            </p>
+          </div>
+          <div class="flex-1 max-md:hidden"></div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 max-md:hidden"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 mr-auto">
+              <img src="./icons/showcase-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="text-left">BUILD AND SHOWCASE local cultural identity and food assets internationally by giving visibility to traditional food ways.</p>
+          </div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 md:ml-auto max-md:mr-auto">
+              <img src="./icons/food-healty-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="md:text-right">CREATE awareness of wider food issues for healthy living and sustainability both through educational programs and wider citizen engagement projects.</p>
+          </div>
+          <div class="flex-1 max-md:hidden"></div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 max-md:hidden"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 mr-auto">
+              <img src="./icons/people-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="text-left">
+              RAISE citizen awareness about the food they eat, the value of local products and the need to innovate to protect local produces. Therefore, gastronomic tourism is not just concerned with
+              attracting visitors to the region but also in the longer-term benefits by educating for better and healthier lifestyles and supporting responsible small and medium enterprises (SMEs).
+            </p>
+          </div>
+        </section>
+
+        <section class="relative flex timeline-item gap-x-20">
+          <div class="absolute w-8 h-8 -translate-x-1/2 bg-white border rounded-full timeline-dot max-md:hidden top-5 border-gold left-1/2"></div>
+          <div class="flex-1 space-y-5">
+            <figure class="w-16 h-16 md:ml-auto max-md:mr-auto">
+              <img src="./icons/waste-gold.svg" alt="" class="w-full h-full" />
+            </figure>
+            <p class="md:text-right">MEASURE TO MANAGE food waste, environmental protection and protecting biodiversity.</p>
+          </div>
+          <div class="flex-1 max-md:hidden"></div>
+        </section>
+
+        <!-- Load more timeline -->
+        <section id="loadmore-timeline-section" class="md:hidden absolute px-4 bottom-0 left-0 w-full flex justify-center items-end h-[18rem] py-8 bg-[linear-gradient(180deg,rgba(0,0,0,0)_-5%,#fff_40%)]">
+          <button id="loadmore-timeline-button" class="w-full max-w-lg btn-gold">Load More</button>
+        </section>
+      </section>
+
+      <!-- Document Section -->
+
+      <section class="py-[10rem] bg-body-gradient-flip">
+        <div class="flex flex-col items-center main-container gap-x-24 gap-y-8 lg:flex-row">
+          <figure class="flex-1 lg:aspect-[0.8] overflow-hidden w-full max-w-[33.75rem]">
+            <img src="./images/pages/thailand-gastronomy-network/document.webp" alt="" class="object-contain w-full h-full section-image" />
+          </figure>
+          <div class="flex-1 space-y-6 lg:mt-12">
+            <h2 class="heading-section-text">Our Network is recognized by the Ministry of Culture (Thailand)</h2>
+            <div class="space-y-6 text-lg desc">
+              <p>Read more about cultural council, Department of Cultural Promotion</p>
+
+              <a href="" class="underline-link-gold">Click here</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

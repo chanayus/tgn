@@ -2,6 +2,7 @@
 
 $colors: (
     "body-gradient": $body-gradient,
+    "body-gradient-flip": $body-gradient-flip,
     "body-gold": $body-gold,
     "gold": $gold
 );
@@ -65,13 +66,13 @@ $colors: (
 .btn-rounded-white {
     aspect-ratio: 1/1;
     display: flex;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     justify-content: center;
     align-items: center;
     border-radius: 999px;
     transition: 0.2s;
     &:hover {
-        background: #FFF;
+        background: #fff;
         color: #000;
         rect,
         path {
@@ -120,9 +121,44 @@ $colors: (
     align-items: center;
     column-gap: 0.75rem;
     text-transform: uppercase;
+    &:hover .btn-rounded-gold {
+        background: $gold;
+        color: $body-gold;
+        rect,
+        path {
+            fill: #fff;
+            stroke: #fff;
+        }
+        img {
+            filter: contrast(100) grayscale(100%);
+        }
+    }
 }
 
 .heading-section-text {
     color: $gold;
     font-size: clamp(1.75rem, 5vw, 2.375rem);
+}
+
+.underline-link-gold {
+    position: relative;
+    color: $gold;
+    display: block;
+    width: fit-content;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        bottom: 0;
+        left: 0;
+        height: 0.125rem;
+        background: $gold;
+        transition: 0.25s;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
 }

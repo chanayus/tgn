@@ -11,6 +11,7 @@ const pathsGoldTheme = [
   "storytelling-through-food",
   "food-learning-and-workshop",
   "gastronomy-trail-and-visit",
+  "thailand-gastronomy-network"
 ];
 
 const pathname = window.location.pathname.substring(1).replace(".html", "");

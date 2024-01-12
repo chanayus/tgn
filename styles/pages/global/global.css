@@ -22,6 +22,30 @@
   color: linear-gradient(180deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
 }
 
+.text-body-gradient-flip {
+  color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.bg-body-gradient-flip {
+  background: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.accent-body-gradient-flip {
+  accent-color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.border-body-gradient-flip {
+  border-color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.hover-bg-body-gradient-flip:hover {
+  background: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.hover-text-body-gradient-flip:hover {
+  color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
 .text-body-gold {
   color: #f3f0e9;
 }
@@ -134,14 +158,14 @@
 .btn-rounded-white {
   aspect-ratio: 1/1;
   display: flex;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   justify-content: center;
   align-items: center;
   border-radius: 999px;
   transition: 0.2s;
 }
 .btn-rounded-white:hover {
-  background: #FFF;
+  background: #fff;
   color: #000;
 }
 .btn-rounded-white:hover rect,
@@ -194,10 +218,43 @@
        column-gap: 0.75rem;
   text-transform: uppercase;
 }
+.section-link:hover .btn-rounded-gold {
+  background: rgb(173, 156, 108);
+  color: #f3f0e9;
+}
+.section-link:hover .btn-rounded-gold rect,
+.section-link:hover .btn-rounded-gold path {
+  fill: #fff;
+  stroke: #fff;
+}
+.section-link:hover .btn-rounded-gold img {
+  filter: contrast(100) grayscale(100%);
+}
 
 .heading-section-text {
   color: rgb(173, 156, 108);
   font-size: clamp(1.75rem, 5vw, 2.375rem);
+}
+
+.underline-link-gold {
+  position: relative;
+  color: rgb(173, 156, 108);
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.underline-link-gold::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  height: 0.125rem;
+  background: rgb(173, 156, 108);
+  transition: 0.25s;
+}
+.underline-link-gold:hover::before {
+  width: 100%;
 }
 
 .splide__container {
