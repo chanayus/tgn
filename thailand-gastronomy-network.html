@@ -12,12 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <script src="./styles/twind.js"></script>
-    <script>
-      twind.install({
-        hash: false,
-      });
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/pages/global/global.css" />
 
     <!-- Components -->
@@ -44,7 +39,7 @@
     <mobile-nav-component></mobile-nav-component>
 
     <main id="main-content" class="">
-      <header class="py-[10rem] bg-body-gradient ">
+      <header class="py-[10rem] bg-body-gradient">
         <div class="flex flex-col-reverse opacity-0 main-container gap-x-24 gap-y-8 lg:flex-row">
           <div class="flex-1 space-y-6 lg:mt-12">
             <h2 class="heading-section-text">Thailand Gastronomy Network</h2>
@@ -239,7 +234,10 @@
         </section>
 
         <!-- Load more timeline -->
-        <section id="loadmore-timeline-section" class="md:hidden absolute px-4 bottom-0 left-0 w-full flex justify-center items-end h-[18rem] py-8 bg-[linear-gradient(180deg,rgba(0,0,0,0)_-5%,#fff_40%)]">
+        <section
+          id="loadmore-timeline-section"
+          class="md:hidden absolute px-4 bottom-0 left-0 w-full flex justify-center items-end h-[18rem] py-8 bg-[linear-gradient(180deg,rgba(0,0,0,0)_-5%,#fff_40%)]"
+        >
           <button id="loadmore-timeline-button" class="w-full max-w-lg btn-gold">Load More</button>
         </section>
       </section>
