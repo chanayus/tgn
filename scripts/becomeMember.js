@@ -1,6 +1,7 @@
 gsap
   .timeline()
-  .fromTo("header h2", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "expo" })
+  .fromTo("header", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.85, ease: "expo" })
+  .fromTo("header h2", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "expo" }, "-=0.8")
   .fromTo("header a", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "expo" }, "-=0.5")
   .fromTo("header h3", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "expo" }, "-=0.5")
   .fromTo("header #header-logo", { autoAlpha: 0, scale: 0.9, rotate: "-10deg" }, { autoAlpha: 1, scale: 1, duration: 0.85, rotate: "0deg", ease: "expo" }, "-=0.35")
