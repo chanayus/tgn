@@ -35,9 +35,9 @@ gsap
 
 const initGallery = () => {
   const gallery = document.querySelector("#gallery-marquee");
-  console.log(gallery);
+
   const childElement = gallery.firstElementChild;
-  console.log(gallery);
+
   if (childElement) {
     for (let i = 0; i <= 3; i++) {
       const duplicatedElement = childElement.cloneNode(true);

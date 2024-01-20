@@ -193,6 +193,22 @@
   background: #8d7d4f;
 }
 
+.btn-white {
+  height: 2.5rem;
+  padding: 0 2.5rem;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  color: rgb(173, 156, 108);
+  transition: background-color 0.2s;
+}
+.btn-white:hover {
+  background: #e0e0e0;
+}
+
 .btn-stroke-gold {
   height: 2.5rem;
   padding: 0 2.5rem;

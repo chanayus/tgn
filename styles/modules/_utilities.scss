@@ -100,6 +100,21 @@ $colors: (
     }
 }
 
+.btn-white {
+    height: 2.5rem;
+    padding: 0 2.5rem;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: $gold;
+    transition: background-color 0.2s;
+    &:hover {
+        background: darken(#FFF, 12);
+    }
+}
+
 .btn-stroke-gold {
     height: 2.5rem;
     padding: 0 2.5rem;

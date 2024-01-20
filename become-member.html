@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <script src="./styles/tailwind.js"></script>
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/becomeMember.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="pb-20 space-y-20">
+      <header class="relative pb-20 space-y-28 h-fit bg-body-gradient">
+        <hgroup class="space-y-6">
+          <h2 class="text-center heading-section-text pt-[10rem] max-w-[30ch] mx-auto opacity-0">Become A Member of Thailand Gastronomy Network.</h2>
+          <a href="" class="mx-auto section-link text-gold w-fit">
+            Join our platform
+
+            <div class="w-12 h-12 btn-rounded-gold">
+              <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+            </div>
+          </a>
+        </hgroup>
+        <div class="relative flex gap-x-24 gap-y-14 max-lg:flex-col main-container">
+          <figure id="header-logo" class="top-0 flex-1 w-full h-full opacity-0 ">
+            <img src="./images/logo.webp" alt="" class="w-full lg:max-w-[28rem] max-w-[20rem] max-lg:mx-auto" />
+          </figure>
+          <section class="flex-1 space-y-16 text-lg">
+            <h3 class="heading-section-text max-lg:text-center">Membership Benefits</h3>
+            <section class="relative space-y-6">
+              <div class="absolute w-px h-full benefit-line top-px bg-gold left-7"></div>
+              <div class="flex gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl text-white border border-white rounded-full benefit-index shrink-0 bg-gold w-14 h-14">1</div>
+                <p>Collaborate, network, and grow with other gastronomy researchers & practitioners virtually,locally, and globally.</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">2</div>
+                <p>Connect with our brain bank and other members.</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">3</div>
+                <p>Access invaluable resources (E-Magazine, E-book, PDF publications, articles, industry papers andreports, Podcast and Media Assets).</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">4</div>
+                <p>Access to our Gastronomy Academy E-Learning Platform, savings of up to 40% on “Certificate in Integrated Sustainable Gastronomy Design”.</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">5</div>
+                <p>Member Exclusive discounts on creative gastronomy trails/ workshops/events.</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">6</div>
+                <p>Watch and learn from leaders in the gastronomy profession from across the globe with live and on-demand webinars and coaching sessions.</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">7</div>
+                <p>Opportunity to share your business profile on our “preferred choice” collection.</p>
+              </div>
+              <div class="flex items-center gap-x-5">
+                <div class="relative z-10 flex items-center justify-center text-2xl bg-white border rounded-full text-gold border-gold shrink-0 w-14 h-14 benefit-index">8</div>
+                <p>Create the change “be the change”!</p>
+              </div>
+            </section>
+          </section>
+        </div>
+      </header>
+
+      <section class="relative object-cover w-full overflow-hidden aspect-[2.5] max-md:aspect-square">
+        <iframe
+          src="https://player.vimeo.com/video/872245150?h=70966264ba&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          class="absolute min-w-full w-[178vh] h-[56.25vw] min-h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          allow="autoplay; fullscreen"
+          data-ready="true"
+        ></iframe>
+      </section>
+
+      <section id="member-section" class="space-y-16 main-container">
+        <h2 class="text-center heading-section-text">Membership Fees</h2>
+
+        <div class="grid gap-8 lg:grid-cols-3 sm:grid-cols-2">
+          <!-- Individual Membership -->
+          <section class="flex flex-col flex-1 p-5 member-card bg-body-gold text-gold gap-y-8">
+            <h3 class="text-xl font-bold text-center">Individual Membership</h3>
+
+            <div class="text-center">
+              <h2 class="text-4xl font-bold">4,900 Baht</h2>
+              <p>(USD 200)</p>
+            </div>
+
+            <div class="w-full h-px bg-white"></div>
+
+            <div class="flex-1 space-y-4">
+              <h4 class="text-lg font-bold">Get all the member benefits plus</h4>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-gold.svg" alt="" width="24" height="24" />
+                <p>Tickets (value 8,000 Baht) to 2 selected events.</p>
+              </div>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-gold.svg" alt="" width="24" height="24" />
+                <p>Full access to three E- Learning master classes with Certification</p>
+              </div>
+            </div>
+            <a href="" class="btn-stroke-gold">Sign Up</a>
+          </section>
+          <!-- Corporate Membership -->
+          <section class="flex flex-col flex-1 p-5 text-white member-card bg-gold gap-y-8">
+            <h3 class="text-xl font-bold text-center">Corporate Membership</h3>
+
+            <div class="text-center">
+              <h2 class="text-4xl font-bold">45,000 Baht</h2>
+              <p>(USD 2,500)</p>
+            </div>
+
+            <div class="w-full h-px bg-[#A18F5A]"></div>
+
+            <div class="flex-1 space-y-4">
+              <h4 class="text-lg font-bold">Get all the member benefits plus</h4>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-white.svg" alt="" width="24" height="24" />
+                <p>Exclusive on-site consultation & webinar on “Sustainability Movement through Food and Branding Strategies” Criteria, Certification and Strategic Plan</p>
+              </div>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-white.svg" alt="" width="24" height="24" />
+                <p>Full interview featured in our preferred choice “storytelling through food.”</p>
+              </div>
+            </div>
+            <a href="" class="btn-white">Sign Up</a>
+          </section>
+          <!-- Student Membership -->
+          <section class="flex flex-col flex-1 p-5 member-card bg-body-gold text-gold gap-y-8">
+            <h3 class="text-xl font-bold text-center">Student Membership</h3>
+
+            <div class="text-center">
+              <h2 class="text-4xl font-bold">900 Baht</h2>
+              <p>(USD 30)</p>
+            </div>
+
+            <div class="w-full h-px bg-white"></div>
+
+            <div class="flex-1 space-y-4">
+              <h4 class="text-lg font-bold">Get all the member benefits plus</h4>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-gold.svg" alt="" width="24" height="24" />
+                <p>
+                  Get all the member benefits and become part of the network. To be eligible, you must be enrolled in a full-time, high- school, degree-granting program at a college or university.
+                </p>
+              </div>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-gold.svg" alt="" width="24" height="24" />
+                <p>Full access to two E-Learning master classes with Certification.</p>
+              </div>
+
+              <div class="flex gap-x-2.5">
+                <img src="./icons/checked-rounded-stroke-gold.svg" alt="" width="24" height="24" />
+                <p>The network offers (student monthly) resources to support your career development, training, certification and finding a job that will take your career where you want to go.</p>
+              </div>
+            </div>
+            <a href="" class="btn-stroke-gold">Sign Up</a>
+          </section>
+        </div>
+      </section>
+
+      <figure class="w-full h-[35rem] bg-fixed bg-no-repeat bg-cover bg-center bg-[url('./images/pages/become-member/honey.webp')]">
+      
+      </figure>
+
+      <section class="space-y-16">
+        <h2 class="text-center heading-section-text main-container-sm">Become Our Partners: Creating Shared Value for Sustainable Brand Building through Food</h2>
+
+        <div class="flex gap-y-6 max-lg:flex-col">
+          <figure class="relative flex-1 min-h-[40rem] overflow-hidden">
+            <div class="absolute flex h-full gap-x-4">
+              <div class="flex flex-col flex-1 gap-y-4 gallery-item-1 h-fit">
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/1.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/2.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/3.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/1.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/2.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/3.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/1.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/2.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/3.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col flex-1 gap-y-4 gallery-item-2 h-fit">
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/4.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/5.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/6.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/4.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/5.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/6.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/4.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/5.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/6.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col flex-1 gap-y-4 gallery-item-3 h-fit">
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/7.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/8.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/9.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/7.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/8.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/9.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+                <div class="space-y-4 image-wrapper">
+                  <img src="./images/pages/become-member/7.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/8.webp" alt="" class="w-full aspect-[0.7] object-cover" />
+                  <img src="./images/pages/become-member/9.webp" alt="" class="w-full aspect-[0.875] object-cover" />
+                </div>
+              </div>
+            </div>
+          </figure>
+          <section class="flex-1 px-4 space-y-6">
+            <h4 class="text-xl font-bold">Become Our Partners: Creating Shared Value for Sustainable Brand Building through Food</h4>
+            <p>Why Affiliated? Because we know how food can build your sustainable brand even you are not in food business. Action speaks louder than words. Food can speak your sustainability.</p>
+            <p>
+              Sustainability is not an add-on; it's an integral part of responsible business practices. It should be ingrained in a company's core values and operations, not simply a supplementary
+              feature.
+            </p>
+            <p>
+              Let's create changes: Our “Movement Marketing” approach recognizes that sustainability is no longer a mere buzzword, but a fundamental driver of long-term success for businesses.
+              Regardless of which field you are in, you must strive to create brands that align with the values and aspirations of conscious consumers, together we can create sustainability movement
+              through food.
+            </p>
+            <ul class="pl-6 space-y-4">
+              <li>Movement Marketing = Communicate Your Sustainability through an Integrated “Black Journey”</li>
+              <li>Our Chefs can build your team through “story of corporate values”.</li>
+              <li>“Story of food” strategic workshop can be tailor-made to ensure you can build your top performing team.</li>
+              <li>Engage with your consumers in a “food” creative way. Let us help communicate your value through “beyond what is on the plate”.</li>
+            </ul>
+            <p>
+              Sustainable brand building through food is fun, dynamic and can engage stakeholders in today's business landscape. It involves the strategic development and promotion of your products
+              and services that not only cater to consumer preferences but also address environmental, social, and ethical concerns. We can explore the multifaceted journey of sustainable brand
+              building through food, highlighting the importance of your corporate responsibility through responsible sourcing, eco- friendly packaging, transparent practices, and community engagement
+              to foster a positive brand image in the ever-evolving world.
+            </p>
+            <p>because we know how food can build your sustainable brand even you are not in food business.</p>
+            <a href="" class="section-link text-gold">
+              Book a consultation
+
+              <div class="w-12 h-12 btn-rounded-gold">
+                <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+              </div>
+            </a>
+          </section>
+        </div>
+      </section>
+
+      <section id="partner-section" class="space-y-16 main-container">
+        <h2 class="text-center heading-section-text">Partners</h2>
+        <div class="items-center flex flex-wrap lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-x-[6.875rem] max-sm:gap-16 gap-y-16">
+          <img src="./images/pages/become-member/chim-thai.webp" alt="" class="object-contain w-full max-w-[8rem] mx-auto" />
+          <img src="./images/pages/become-member/toca.webp" alt="" class="object-contain w-full max-w-[11rem] mx-auto" />
+          <img src="./images/pages/become-member/blackitch.webp" alt="" class="object-contain w-full max-w-[11rem] mx-auto" />
+          <img src="./images/pages/become-member/greenery.webp" alt="" class="object-contain w-full max-w-[8rem] mx-auto" />
+
+          <img src="./images/pages/become-member/igcat.webp" alt="" class="object-contain w-full max-w-[11rem] mx-auto" />
+          <img src="./images/pages/become-member/ign.webp" alt="" class="object-contain w-full max-w-[11rem] mx-auto" />
+          <img src="./images/pages/become-member/cusine_de_garden.webp" alt="" class="object-contain w-full max-w-[11rem] mx-auto" />
+          <img src="./images/pages/become-member/wana_yook.webp" alt="" class="object-contain w-full max-w-[8rem] mx-auto" />
+
+          <img src="./images/pages/become-member/saa_muay.webp" alt="" class="object-contain w-full max-w-[8rem] mx-auto" />
+          <img src="./images/pages/become-member/taan.webp" alt="" class="object-contain w-full max-w-[8rem] mx-auto" />
+          <img src="./images/pages/become-member/bu.webp" alt="" class="object-contain w-full max-w-[11rem] mx-auto" />
+        </div>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>
