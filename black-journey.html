@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <script src="./styles/tailwind.js"></script>
+    <link rel="stylesheet" href="./styles/tailwind/output.css">
     <link rel="stylesheet" href="./styles/pages/global/global.css" />
 
     <!-- Components -->
@@ -38,9 +38,19 @@
     <navbar-component></navbar-component>
     <mobile-nav-component></mobile-nav-component>
 
+    <!-- Video Popup -->
+    <section id="video-popup" class="fixed z-30 flex items-center justify-center invisible w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-popup" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
     <main id="main-content" class="pb-20 space-y-20">
       <header class="w-full md:h-screen h-[40rem] bg-[#21409a]">
-        <img src="./images/pages/black-journey/hero.webp" alt="" class="object-cover w-full h-full opacity-0" />
+        <img src=".//images/pages/black-journey/hero.webp" alt="" class="object-cover w-full h-full opacity-0" />
       </header>
 
       <section id="text-section" class="space-y-8 main-container">
@@ -58,7 +68,7 @@
       </section>
 
       <section id="video-gird-section" class="grid gap-5 md:grid-cols-3 sm:grid-cols-2 main-container">
-        <figure class="bg-[url('images/pages/black-journey/1.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/1.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <button class="play-video-button">
               <img src="./icons/play-white.svg" width="75" height="75" class="w-20 h-20" alt="" />
@@ -67,73 +77,73 @@
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/2.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/2.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">02 มังคุดสวนยกร่อง</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/3.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/3.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">03 กุ้งแม่น้ำหนีบนิ้ว</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/4.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/4.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">04 กุ้งแม่น้ำคลองแควอ้อม</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/5.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/5.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">05 นักจับปู</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/6.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/6.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">06 ดักปลาป่าชายเลน</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/7.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/7.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">07 ดอนหอยหลอด</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/8.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/8.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">08 สวนมะนาวยกร่อง</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/9.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/9.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">09 สวนถั่วฝักยาวยกร่อง</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/10.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/10.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">10 สวนมะระยกร่อง</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/11.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/11.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">11 ผักสวนครัว สวนยกร่อง</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/12.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/12.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">12 สวนนำ้ตาลมะพร้าว</p>
           </div>
         </figure>
 
-        <figure class="bg-[url('images/pages/black-journey/13.webp')] aspect-video bg-cover bg-no-repeat">
+        <figure data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="bg-[url('../../images/pages/black-journey/13.webp')] aspect-video bg-cover bg-no-repeat cursor-pointer">
           <div class="relative w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_32.75%,_rgba(0,0,0,0.5)_79%)] flex justify-center items-center">
             <p class="absolute text-xl font-bold text-white bottom-4 left-4">13 แผ่นดินเกลือผืนสุดท้าย</p>
           </div>
@@ -141,7 +151,7 @@
       </section>
 
       <section class="grid md:grid-cols-2 gap-7 main-container">
-        <figure class="flex justify-center items-center w-full aspect-square bg-cover bg-[url('./images/pages/storytelling-through-food/become-member.webp')] relative">
+        <figure class="flex justify-center items-center w-full aspect-square bg-cover bg-[url('../../images/pages/storytelling-through-food/become-member.webp')] relative">
           <div class="space-y-4 text-center text-white">
             <p class="text-4xl">Contact us for Travel stylist...</p>
             <a href="" class="mx-auto section-link w-fit">
@@ -153,7 +163,7 @@
             </a>
           </div>
         </figure>
-        <figure class="flex justify-center items-center w-full aspect-square bg-cover bg-[url('./images/pages/storytelling-through-food/become-partner.webp')] relative">
+        <figure class="flex justify-center items-center w-full aspect-square bg-cover bg-[url('../../images/pages/storytelling-through-food/become-partner.webp')] relative">
           <div class="space-y-4 text-center text-white">
             <p class="text-4xl">Become partners</p>
             <a href="" class="mx-auto section-link w-fit">

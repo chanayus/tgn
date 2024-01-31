@@ -20,3 +20,22 @@ gsap
   })
   .fromTo("#text-section h2", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 0.85, ease: "expo" })
   .fromTo("#text-section p", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, stagger: 0.1, duration: 0.85, ease: "expo" }, "-=0.25");
+
+const storyTellingVideoPopup = document.querySelector("#video-popup");
+const storyTellingIFrame = document.querySelector("#video-popup iframe");
+const closeVideoPopupButton = document.querySelector("#close-video-popup");
+
+const chapters = document.querySelectorAll("#video-gird-section figure");
+
+chapters.forEach((card) => {
+  card.addEventListener("click", (e) => {
+    storyTellingIFrame.src = card.dataset.url;
+    gsap.fromTo(storyTellingVideoPopup, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.25 });
+  });
+});
+
+closeVideoPopupButton.addEventListener("click", (e) => {
+  gsap.fromTo(storyTellingVideoPopup, { autoAlpha: 1 }, { autoAlpha: 0, duration: 0.25 }).then(() => {
+    storyTellingIFrame.src = "";
+  });
+});
