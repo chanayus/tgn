@@ -2121,6 +2121,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -2153,6 +2159,10 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 @media not all and (min-width: 1280px) {
@@ -2498,6 +2508,10 @@ video {
   .xl\:aspect-video {
     aspect-ratio: 16 / 9;
   }
+}
+
+.\[\&\:hover_\.play-video-button\]\:opacity-100:hover .play-video-button {
+  opacity: 1;
 }
 
 .\[\&\:hover_path\]\:fill-black:hover path {
