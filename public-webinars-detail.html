@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/publicWebinarsDetail.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <!-- Video Popup -->
+    <section id="video-popup" class="fixed z-30 flex items-center justify-center invisible w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-popup" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <main id="main-content" class="pb-20 space-y-20 pt-[10rem] bg-body-gradient">
+      <hgroup class="space-y-3 text-center">
+        <h1 class="heading-section-text">กินดี อยู่ดี วิถีภูเก็ต</h1>
+        <p>January 18, 2023 | by <span class="text-gold">Thailandgastronomynetwork</span></p>
+      </hgroup>
+
+      <article class="space-y-8 main-container">
+        <img id="hero-image" src="./images/pages/public-webinars-detail/hero.webp" alt="" class="object-cover w-full h-full" />
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+          popularised in the 1960s with the release of Letraset
+        </p>
+        <p class="border-l-2 border-gold pl-1.5">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+          normal distribution of letters, as opposed
+        </p>
+        <figure id="video-section" data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="relative">
+          <img src="./images/pages/public-webinars-detail/video-cover.webp" alt="" />
+          <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+            <button class="play-video-button">
+              <img src="./icons/play-white.svg" width="75" height="75" class="w-20 h-20" alt="" />
+            </button>
+          </div>
+        </figure>
+
+        <section class="flex gap-6 max-md:flex-col">
+          <figure class="flex-[0.7]">
+            <img src="./images/pages/public-webinars-detail/section-1.webp" alt="" class="object-cover w-full h-full max-md:max-w-96 mx-auto aspect-[0.85]" />
+          </figure>
+          <div class="flex flex-col flex-1 gap-6">
+            <div class="flex-1 space-y-8">
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humourThere are many variations of passages of Lorem
+                Ipsum available, but the majority
+              </p>
+
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+              </p>
+
+              <p>
+                discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                This book is a treatise on the theory of ethics, very popular during the Renaissance.
+              </p>
+            </div>
+            <figure>
+              <img src="./images/pages/public-webinars-detail/section-2.webp" alt="" class="object-cover w-full" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="flex items-center gap-2">
+          <p>Share</p>
+
+          <a href="" class="w-10 h-10 ml-3 btn-rounded-gold">
+            <img src="./icons/facebook-gold.svg" alt="" />
+          </a>
+          <a href="" class="w-10 h-10 btn-rounded-gold">
+            <img src="./icons/share-gold.svg" alt="" />
+          </a>
+        </section>
+      </article>
+
+      <section class="space-y-6 main-container" id="other-webinars-section">
+        <h4 class="text-3xl text-gold">Other Public webinars</h4>
+        <div class="grid grid-cols-2 gap-6 text-center lg:grid-cols-4 sm:grid-cols-3">
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.75]">
+              <img src="./images/pages/public-webinars/ep10.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-lg">EP. 10 (พิเศษ) หวานๆที่เมืองเพชร</p>
+          </a>
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.75]">
+              <img src="./images/pages/public-webinars/ep9.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-lg">EP. 9 อาหารพาไปไหน การเล่าเรื่องผ่านอาหาร คืออะไร</p>
+          </a>
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.75]">
+              <img src="./images/pages/public-webinars/ep8.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-lg">EP. 8 ต๊าชชต้องชิม วังต้องชม</p>
+          </a>
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.75]">
+              <img src="./images/pages/public-webinars/ep7.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-lg">EP. 7 อยุธยา จากวรรณกรรมสู่การถอดรหัส</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

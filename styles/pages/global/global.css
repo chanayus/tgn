@@ -22,6 +22,14 @@
   color: linear-gradient(180deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
 }
 
+.placeholder-body-gradient::-moz-placeholder {
+  color: linear-gradient(180deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.placeholder-body-gradient::placeholder {
+  color: linear-gradient(180deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
 .text-body-gradient-flip {
   color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
 }
@@ -43,6 +51,14 @@
 }
 
 .hover-text-body-gradient-flip:hover {
+  color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.placeholder-body-gradient-flip::-moz-placeholder {
+  color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.placeholder-body-gradient-flip::placeholder {
   color: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
 }
 
@@ -70,6 +86,14 @@
   color: #f3f0e9;
 }
 
+.placeholder-body-gold::-moz-placeholder {
+  color: #f3f0e9;
+}
+
+.placeholder-body-gold::placeholder {
+  color: #f3f0e9;
+}
+
 .text-gold {
   color: rgb(173, 156, 108);
 }
@@ -91,6 +115,14 @@
 }
 
 .hover-text-gold:hover {
+  color: rgb(173, 156, 108);
+}
+
+.placeholder-gold::-moz-placeholder {
+  color: rgb(173, 156, 108);
+}
+
+.placeholder-gold::placeholder {
   color: rgb(173, 156, 108);
 }
 

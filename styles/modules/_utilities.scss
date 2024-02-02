@@ -26,6 +26,9 @@ $colors: (
     .hover-text-#{$key}:hover {
         color: $value;
     }
+    .placeholder-#{$key}::placeholder {
+        color: $value;
+    }
 }
 
 @for $i from 1 through 5 {

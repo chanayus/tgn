@@ -1,4 +1,5 @@
 import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
+import { openVideoPopup, setVideoSrc } from "./modules/videoPopup.js";
 
 let paginationDot;
 let slideInterval;
@@ -173,20 +174,10 @@ if (storyTellingCards.length > 0) {
 
 // StoryTelling Video Popup
 
-const storyTellingVideoPopup = document.querySelector("#video-story-telling");
-const storyTellingIFrame = document.querySelector("#video-story-telling iframe");
-const closeVideoPopupButton = document.querySelector("#close-video-story-telling");
-
 storyTellingCards.forEach((card) => {
   card.addEventListener("click", (e) => {
-    storyTellingIFrame.src = card.dataset.url;
-    gsap.fromTo(storyTellingVideoPopup, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.25 });
-  });
-});
-
-closeVideoPopupButton.addEventListener("click", (e) => {
-  gsap.fromTo(storyTellingVideoPopup, { autoAlpha: 1 }, { autoAlpha: 0, duration: 0.25 }).then(() => {
-    storyTellingIFrame.src = "";
+    setVideoSrc(card.dataset.url);
+    openVideoPopup();
   });
 });
 

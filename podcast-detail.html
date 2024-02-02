@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/podcastDetail.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="pb-20 space-y-10 md:pt-[10rem] pt-[6rem] bg-[linear-gradient(180deg,#F3F0E9_9%,_rgba(243,240,233,0)_30%)]">
+      <header class="flex gap-8 py-10 opacity-0 main-container-sm md:items-center max-md:flex-col">
+        <figure id="podcast-thumbnail" class="md:max-w-[26rem] w-full mx-auto aspect-[1.45] relative">
+          <img src="./images/pages/podcast/1.png" alt="" class="object-cover w-full h-full" />
+        </figure>
+        <section class="space-y-8">
+          <p id="podcast-title" class="text-4xl font-bold">อาหารพาไปไหน การเล่าเรื่องผ่านอาหาร คืออะไร</p>
+
+          <div id="podcast-info" class="flex flex-wrap gap-4 sm:items-center max-sm:flex-col">
+            <p>
+              <b>EP 5</b>
+              <span class="pl-2 pr-4 border-black sm:border-r">29.11.2023</span>
+            </p>
+            <figure class="flex items-center gap-x-2">
+              <img src="./images/pages/register/speaker.png" class="rounded-full w-9 h-9 bg-black/5" alt="" width="35" height="35" />
+              <p><b>A/Prof Jutamas Jan Wisansing</b></p>
+            </figure>
+          </div>
+        </section>
+      </header>
+
+      <section id="media-player" class="opacity-0 main-container-sm ">
+        <iframe frameborder="0" height="200" scrolling="no" class="rounded-xl bg-[#232831]" src="https://playlist.megaphone.fm?e=SHC3158625047" width="100%"></iframe>
+      </section>
+
+      <article class="space-y-8 opacity-0 main-container-sm">
+        <p><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</b></p>
+        <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+          normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem
+          Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident,
+          sometimes on purpose (injected humour and the like).
+        </p>
+
+        <p class="pl-2 ml-8 border-l-4 border-gold">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+          believable. If you are going
+        </p>
+
+        <p>
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+          reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+
+        <section class="flex items-center gap-2">
+          <p>Share</p>
+
+          <a href="" class="w-10 h-10 ml-3 btn-rounded-gold">
+            <img src="./icons/facebook-gold.svg" alt="" />
+          </a>
+          <a href="" class="w-10 h-10 btn-rounded-gold">
+            <img src="./icons/share-gold.svg" alt="" />
+          </a>
+        </section>
+      </article>
+
+      <section id="podcast-container" class="main-container [&_.podcast-card:last-of-type]:border-none">
+        <h3 class="mb-8 text-center heading-section-text">Other episodes</h3>
+
+        <a href="" class="flex gap-6 py-10 border-b podcast-card md:items-center max-md:flex-col border-gold">
+          <section class="text-lg">
+            <p>
+              <b>EP 5</b>
+            </p>
+            <p>29.11.2023</p>
+          </section>
+          <figure class="min-w-[23.75rem] max-w-[40rem] w-full mx-auto aspect-[1.45] relative [&:hover_.play-video-button]:opacity-100">
+            <img src="./images/pages/podcast/1.png" alt="" class="object-cover w-full h-full" />
+            <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full transition-opacity opacity-0 play-video-button bg-black/20">
+              <button class="transition-opacity">
+                <img src="./icons/play-white.svg" width="75" height="75" class="w-20 h-20" alt="" />
+              </button>
+            </div>
+          </figure>
+          <section class="space-y-4">
+            <p class="px-2 border border-gold text-gold w-fit">ต๊าชชต้องชิม</p>
+            <p class="text-2xl font-bold">อาหารพาไปไหน การเล่าเรื่องผ่านอาหาร คืออะไร</p>
+            <p class="text-lg line-clamp-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+              galley of type
+            </p>
+            <div class="flex items-center gap-2">
+              <img src="./images/pages/register/speaker.png" class="rounded-full w-11 h-11 bg-black/5" alt="" width="42" height="42" />
+              <p><b>A/Prof Jutamas Jan Wisansing</b></p>
+            </div>
+          </section>
+        </a>
+        <a href="" class="flex gap-6 py-10 border-b podcast-card md:items-center max-md:flex-col border-gold">
+          <section class="text-lg">
+            <p>
+              <b>EP 5</b>
+            </p>
+            <p>29.11.2023</p>
+          </section>
+          <figure class="min-w-[23.75rem] max-w-[40rem] w-full mx-auto aspect-[1.45] relative [&:hover_.play-video-button]:opacity-100">
+            <img src="./images/pages/podcast/1.png" alt="" class="object-cover w-full h-full" />
+            <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full transition-opacity opacity-0 play-video-button bg-black/20">
+              <button class="transition-opacity">
+                <img src="./icons/play-white.svg" width="75" height="75" class="w-20 h-20" alt="" />
+              </button>
+            </div>
+          </figure>
+          <section class="space-y-4">
+            <p class="px-2 border border-gold text-gold w-fit">ต๊าชชต้องชิม</p>
+            <p class="text-2xl font-bold">อาหารพาไปไหน การเล่าเรื่องผ่านอาหาร คืออะไร</p>
+            <p class="text-lg line-clamp-4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+              galley of type
+            </p>
+            <div class="flex items-center gap-2">
+              <img src="./images/pages/register/speaker.png" class="rounded-full w-11 h-11 bg-black/5" alt="" width="42" height="42" />
+              <p><b>A/Prof Jutamas Jan Wisansing</b></p>
+            </div>
+          </section>
+        </a>
+      </section>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>

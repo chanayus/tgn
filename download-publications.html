@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/downloadPublications.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="pb-20 space-y-20 pt-[10rem] bg-[linear-gradient(180deg,#F3F0E9_9%,_rgba(243,240,233,0)_30%)]">
+      <h1 id="main-heading" class="text-center heading-section-text">TGN Magazine</h1>
+
+      <article class="space-y-8 main-container">
+        <img src="./images/pages/download-publications/hero.webp" alt="" class="object-cover w-full h-full" />
+
+        <section class="flex gap-6 max-md:flex-col">
+          <figure class="flex-[0.7]">
+            <img src="./images/pages/download-publications/section-1.webp" alt="" class="object-cover w-full h-full max-md:max-w-96 mx-auto aspect-[0.85]" />
+          </figure>
+          <div class="flex flex-col flex-1 gap-6">
+            <div class="flex-1 space-y-8">
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humourThere are many variations of passages of Lorem
+                Ipsum available, but the majority
+              </p>
+
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+              </p>
+
+              <p>
+                discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                This book is a treatise on the theory of ethics, very popular during the Renaissance.
+              </p>
+            </div>
+            <figure>
+              <img src="./images/pages/download-publications/section-2.webp" alt="" class="object-cover w-full" />
+            </figure>
+          </div>
+        </section>
+
+        <p>
+          Historical Journey: Many traditional recipes have a long history. By preparing or consuming these dishes, you can connect with the past and appreciate the culinary heritage of a particular
+          place or era.
+        </p>
+
+        <p>
+          Virtual Travel: In an increasingly interconnected world, you can access international recipes and ingredients to recreate authentic dishes from your own kitchen. Cooking or dining on
+          international cuisine at local restaurants allows you to "travel" without leaving your town.
+        </p>
+
+        <p>
+          Celebration of Festivals: Many cultures have food-related festivals and holidays. Participating in these celebrations, even if it's just through the food, can make you feel like a part of
+          that culture's festivities.
+        </p>
+
+        <p>
+          Emotional Connection: Food has the power to evoke memories and emotions. One bite of a specific dish can instantly transport you back to a particular time and place, even if you're
+          physically far away.
+        </p>
+
+        <p>Interpersonal Connections: Sharing a meal with people from different backgrounds fosters connections and understanding. Food can bring people together and promote cultural exchange.</p>
+
+        <p>Inspiration for Travel: Trying a new and delicious dish can spark your desire to visit the place where it originates. Food can be the inspiration for your next travel adventure.</p>
+
+        <p>
+          Our TGN magazine themed “where can food take you” means we can take you on a journey of cultural exploration, historical discovery, and emotional connection. It allows you to experience the
+          world's diversity, even if you're not physically traveling, and serves as a delightful way to connect with other cultures and regions in a sustainable manner.
+        </p>
+      </article>
+
+      <section class="grid grid-cols-2 gap-6 text-center main-container lg:grid-cols-4 sm:grid-cols-3">
+        <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+          <figure class="w-full aspect-[0.85]">
+            <img src="./images/pages/download-publications/appetizer.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+
+          <p class="text-lg">Appetizer</p>
+        </a>
+        <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+          <figure class="w-full aspect-[0.85]">
+            <img src="./images/pages/download-publications/main-course.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+
+          <p class="text-lg">Main course (ขนมจีน)</p>
+        </a>
+        <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+          <figure class="w-full aspect-[0.85]">
+            <img src="./images/pages/download-publications/dessert.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+
+          <p class="text-lg">Dessert</p>
+        </a>
+        <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+          <figure class="w-full aspect-[0.85]">
+            <img src="./images/pages/download-publications/side-dishes.webp" alt="" class="object-cover w-full h-full" />
+          </figure>
+
+          <p class="text-lg">Side dishes</p>
+        </a>
+      </section>
+
+      <div>
+        <figure class="w-full max-h-[40rem] relative aspect-video">
+          <img src="./images/pages/download-publications/section2-1.webp" alt="" class="object-cover w-full h-full" />
+        </figure>
+
+        <section class="flex justify-center items-center relative w-full h-[40rem]">
+          <div class="relative z-10 max-w-[25rem] w-full text-center space-y-4 pb-28">
+            <h3 class="text-4xl leading-snug text-gold">Subscribe</h3>
+            <p>Subscribe to our newsletter & stay updated</p>
+            <form class="flex items-center w-full border-b border-gold">
+              <input type="email" class="w-full bg-transparent placeholder-gold text-gold" placeholder="Email" />
+              <button type="submit">
+                <img src="./icons/arrow-right-gold.svg" alt="" />
+              </button>
+            </form>
+          </div>
+
+          <img src="./images/pages/download-publications/form-bg.webp" alt="" class="absolute object-cover object-[center_50%] w-full h-full" />
+        </section>
+      </div>
+    </main>
+
+    <footer-component></footer-component>
+  </body>
+</html>
