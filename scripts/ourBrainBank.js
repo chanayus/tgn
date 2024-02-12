@@ -52,6 +52,7 @@ gsap
   })
   .fromTo("#main-heading", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0 }, "+=0.25")
   .fromTo("#manager-section h3", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0 })
+  .fromTo("#manager-section", { autoAlpha: 0 }, { autoAlpha: 1 }, "<")
   .fromTo("#manager-section .storytelling-card", { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, stagger: 0.05 }, "<");
 
 gsap
