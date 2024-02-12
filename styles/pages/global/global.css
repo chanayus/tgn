@@ -861,6 +861,7 @@ ol li {
   text-align: center;
   overflow: hidden;
   display: flex;
+  background: #c4c4c4;
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media (hover: hover) and (pointer: fine) {
