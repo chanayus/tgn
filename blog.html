@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+    <link rel="stylesheet" href="./styles/pages/blog/blog.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/blog.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="">
+      <header class="pt-[10rem] py-14 bg-body-gradient">
+        <div class="space-y-10 main-container">
+          <div class="space-y-6">
+            <div class="px-2.5 py-1 bg-gold mx-auto text-white w-fit">Blog</div>
+            <h2 class="text-center md:text-4xl text-3xl !leading-snug text-gold max-w-[40ch] mx-auto">
+              หากมีวัตถุดิบเป็นมะม่วงสุก มะม่วงมัน และมะม่วงเปรี้ยว ให้คุณนำไปทำอาหาร คุณจะนำไปทำเป็นเมนูอะไร
+            </h2>
+
+            <p class="text-center">January 18, 2023 | by <span class="font-bold text-gold">Thailandgastronomynetwork</span></p>
+          </div>
+          <figure id="hero-image" class="w-full overflow-hidden aspect-video max-h-[54.125rem] relative">
+            <img src="https://s3-alpha-sig.figma.com/img/82d6/3e9e/4b877a431f228824985f512607d4e8d4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aaCsgHp5hnAK~PhQGOvDtB46eRkXbDjfR3wt09sJgYcbHngVpCo5lza6sgDM38-YVLHy7xI-H-RQ~xE0wbZ7lDCOoS1saGh8dLEq1bvOkRgiALUtS0MNmHSYkYWsgNeOOd28VhCBLgoyVBIIai2InbJCQ6qz~h6FyV8qOsG1fTAYYFh7sDWk7ZA75JuoWovCzkt7eUb6cZZZeWbuUynzu1ro~2rBf-Qz3Uu2n1xQEVpkKOm45yrMENbuIcZkB3zpgchQSfUCtW4zuPIt1CYPp9Rg2Z7b3Depp1ZcW3F5Zy-BO3K-eCObEJm5yZv165q~TEHR6N8plospIlCxJDPk3w__" alt="" class="object-cover object-top w-full h-full" />
+          </figure>
+        </div>
+      </header>
+
+      <section class="flex items-center mb-10 main-container gap-x-6">
+        <span>Share</span>
+        <div class="flex gap-x-2.5">
+          <a href="" class="w-10 h-10 btn-rounded-gold">
+            <img src="./icons/facebook-gold.svg" alt="" />
+          </a>
+          <a href="" class="w-10 h-10 btn-rounded-gold">
+            <img src="./icons/share-gold.svg" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <article class="space-y-5 main-container block-editor">
+        <h5>เมนูที่ผมคิดออก คือ</h5>
+        <p>
+          มะม่วงสุกปลอกแช่ตู้เย็นรอให้เย็นฉ่ำ แล้วนำออกมากินอร่อยชื่นใจ ส่วนมะม่วงกินดิบปลอกเปลือกเฉาะเป็นชิ้นจิ้มกินกับพริกเกลือ หรือฝานบาง ๆ จิ้มกินกับน้ำปลาหวาน รสชาติจี๊ดจ๊าดสะใจ
+          แต่หากเรานำมะม่วงสุก มะม่วงมัน และมะม่วงเปรี้ยวส่งไปให้เชฟแบลค ภานุภน บุลสุวรรณ เชฟเจ้าของร้าน Blackitch เชฟแบลคจะนำมะม่วงสุก มะม่วงมัน และมะม่วงเปรี้ยวไปออกแบบเป็นเมนูใหม่ ๆ
+          ที่ทำให้เราประหลาดใจ เชฟแบลคสามารถใช้มะม่วงสร้างสรรค์เป็นเมนูใหม่ได้หลายร้อยเมนู จากวิธีปรุงด้วยวัฒนธรรมอาหารหลากหลายจนต้องอุทานว่า “มะม่วงทำแบบนี้ได้ด้วยเหรอ”
+        </p>
+        <p>อะไรที่ทำให้เชฟแบล็คสามารถสร้างสรรค์เมนูได้หลากหลายเมนู</p>
+        <p>ผมต้อมทีมงาน TGN สรุปเนื้อหาส่วนหนึ่งจาก Workshop ของหลักสูตร Integrated Smart Gastronomy Design (ISDG) ที่มหาวิทยาลัยราชภัฏราชนครินทร์ ฉะเชิงเทรามาให้อ่านกันครับ</p>
+
+        <h5>เริ่มจากวัตถุดิบ : มะม่วง ของฉะเชิงเทรา</h5>
+        <p>
+          จังหวัดฉะเชิงเทรามีพื้นที่ปลูกมะม่วงกระจายอยู่หลายอำเภอ อำเภอบางคล้า และอำเภอคลองเขื่อนเป็น 2 อำเภอที่มีชื่อเสียงเรื่องการปลูกมะม่วงมากเป็นอันดับต้น ๆ ของจังหวัด
+          และเป็นพื้นที่เพาะปลูกมะม่วงที่สำคัญของประเทศ มะม่วงน้ำดอกไม้สีทอง ของอำเภอบางคล้า ถูกขึ้นทะเบียนเป็นสินค้า GI (สิ่งบ่งชี้ทางภูมิศาสตร์)
+          ที่ได้รับความนิยมจากผู้บริโภคมากเป็นพิเศษเพราะรสชาติดี
+        </p>
+        <p>
+          นอกจากมะม่วงน้ำดอกไม้สีทองยังมีมะม่วงขายตึก มะม่วงเขียวเสวย แรด ฟ้าลั่น โชคอนันต์ มันขุนศรี และทวายเดือนเก้า ที่ได้รับความนิยมไม่แพ้กัน จากที่กล่าวมาข้างต้น
+          จังหวัดฉะเชิงเทรายังมีมะม่วงอีกหลายร้อยสายพันธุ์ที่ยังไม่ได้กล่าวถึง ไว้จะนำมาเล่าในบทความต่อ ๆ ไป
+        </p>
+
+        <h5>แล้วมะม่วงจากทั้งสองพื้นที่มีรสชาติดีจากอะไร</h5>
+        <p>ผมลองวิเคราะห์ดูจากระบบนิเวศ 3 น้ำ</p>
+        <p>
+          หากลองสำรวจภูมิศาสตร์ของจังหวัดฉะเชิงเทราที่มีภูมิศาสตร์เป็นพื้นที่ปากแม่น้ำ มีระบบนิเวศ 3 น้ำ คือน้ำจืด น้ำเค็ม และน้ำกร่อยอยู่ในพื้นที่เดียวกัน
+          เป็นระบบนิเวศที่มีวัฏจักรของน้ำเปลี่ยนไปตามฤดูกาล
+        </p>
+        <p>
+          ช่วงฤดูน้ำหลาก น้ำในแม่น้ำนำพาตะกอนดินที่อุดมไปด้วยแร่ธาตุไหลมากับแหล่งต้นน้ำ ไหลไปตามลำน้ำสาขาของพื้นที่เพาะปลูก และไหลออกสู่ทะเล
+          ตะกอนดินไหลลงสู่ทะเลรวมกันทับถมเป็นดินสันดอนปากแม่น้ำที่อุดมด้วยแร่ธาตุอยู่กับน้ำทะเล ในขณะเดียวกันน้ำทะเลได้รับอิธพลจากดวงจันทร์เกิดปรากฏการน้ำขึ้นน้ำลง เมื่อน้ำจืดในแม่น้ำลดลงตามฤดูกาล
+          น้ำเค็มในทะเลหนุนเข้าผสมกับน้ำจืดพร้อมนำแร่ธาตุ ตะกอนดินสันดอนปากแม่น้ำกลับเข้ามาสู่แม่น้ำอีกครั้ง นำ้นำพาตะดอนดินไหลไปตามลำน้ำสาขา นำ้ทะเลผสมกับน้ำจืดกลายเป็นน้ำกร่อยให้รสลักจืดลักเค็ม
+          ตะกอนดินที่ไหลมากับน้ำสะสมอยู่ตามลำน้ำในพื้นที่เพาะปลูก ทุกอย่างสัมพันธ์กันไปตามระบบนิเวศ
+        </p>
+        <p>
+          เมื่อชาวสวนตักตะกอนดินขึ้นสู่ร่องสวน ตะกอนดินถูกแสงแดด สายลมปรุงจนกลมกล่อมผ่านเวลาแรมปีกลายเป็นดินที่อุดมไปด้วยแร่ธาตุเหมาะต่อการปลูกพืชผลที่ สามารถปรับตัวได้ดีกับพื้นที่ที่มีความเค็มพอเหมาะ
+          มะม่วงเป็นพืชอีกชนิดหนึ่งที่ปรับตัวได้ดีกับระบบนิเวศลักษณะนี้ ชอบรสเค็มพอเหมาะ จึงส่งผลต่อรสชาติของมะม่วง สมดุลของระบบนิเวศดิน น้ำ ลม แดด ตัวแปรสำคัญช่วยหล่อหลอมให้เกิดรสชาติเฉพาะถิ่นขึ้น
+          แต่ที่สิ่งผมเล่ามาข้างต้น ก็อาจยังไม่ถูดต้องที่สุด ยังมีอีกหลายปัจจัยที่ส่งผลต่อรสชาติมะม่วง เช่น การพัฒนาสายพันธุ์มะม่วงจนได้ความสมดุลของสายพันธุ์มะม่วงที่เหมาะกับพื้นที่ เป็นต้น
+        </p>
+        <p>หากผู้อ่านท่านไหนมีข้อมูลเพิ่มเติมสามารถเขียนมาแนะนำได้ครับ</p>
+        <p>
+          ผมเคยได้ชิมรสชาติมะม่วงน้ำดอกไม้สีทองสุก มะม่วงเขียวเสวย มะม่วงแรด ของอำเภอบางคล้า และอำเภอคลองเขื่อนอยู่บ่อยครั้ง เมื่อได้กินมะม่วงสุกประสาทสัมผัสของผมจะรับรู้ถึงกลิ่นหอม รสหวาน
+          เนื้อนุ่มละมุน ส่วนมะม่วงกินดิบก็หวาน มัน กรอบ ชาวฉะเชิงเทรามักบอกกับผมเสมอ ว่ารสชาติมะม่วงฉะเชิงเทรารสชาติดีไม่เป็นรองใคร ทุกครั้งที่ผมได้ลิ้มรสก็ยอมรับว่าจริงตามคำบอก
+        </p>
+
+        <h5>เชฟแบล็ค</h5>
+        <p>ชฟผู้หลงใหลวัตถุดิบไทย สื่อสารเรื่องราวผ่านอาหาร รักษามาตรฐานวัฏจักรอาหารให้เกิดความสมดุลย์เพื่อรักษาความหลากหลายทางชีวภาพและภูมิปัญญาท้องถิ่น ให้อยู่อย่างสมดุล</p>
+        <p>
+          เชฟแบล็คสามารถนำวัตถุดิบหลากหลายชนิดตามฤดูกาลมาสร้างสรรค์เป็นเมนูอาหารได้หลากหลายเมนูด้วยวิธีปรุงจากวัฒนธรรมอาหารที่มาจากทั่วโลกเอกลักษณ์ของวัตถุดิบ ไทยถูกเชฟแบลคนำมาปรุงจนกลมกล่อมด้วยศาสตร์
+          9 รส เป็นความกลมกล่มที่ลงตัวจากความสมดุลของรสชาติที่มาจากธรรมชาตินอกจากความหลงใหลวัตถุดิบไทย เชฟแบลคยังหลงใหลเรื่องศาสตร์การหมักดอง โดยนำวัตถุดิบเหลือใช้หมักทำซีอิ้ว น้ำปลา
+          หรือดองเป็นเครื่องเคียงเป็นวิธีเปลี่ยนของเหลือใช้ให้เกิดคุณค่าใหม่ แทบไม่มีของเหลือทิ้ง
+        </p>
+        <p>
+          การเข้าใจวัตถุดิบ วิธีการปรุงอย่างแตกฉานทำให้เชฟแบคลปรุงอาหารแต่ละจานส่งผ่านเรื่องราวของชุมชนได้อย่างหน้าสนใจ เชฟทำอย่างไร จึงดึงคุณค่าวัตถุดิบในท้องถิ่นมาประกอบอาหารได้อย่างมีศิลปะ
+          สื่อสารไปถึงรากของภูมิปัญญาอาหาร ร้อยเรียงไปสู่เรื่องเล่าผ่านอาหารได้อย่างประทับใจ คำตอบอยู่ย่อหน้าถัดไป
+        </p>
+
+        <h5>ราก / แก่น + อัตลักษณ์ = เมนูใหม่ที่เป็นเอกลักษณ์ของตัวเอง</h5>
+        <p>ลองสวมแว่นของ Gastronomy ส่องขยายไปยังอาหารในแต่ละจานของเชฟแบลคในที่นี้ คือมะม่วง เราจะพบกับ 4 เสาหลักที่เป็นหัวใจสำคัญ คือ</p>
+        <p><b>เสาที่ 1 :</b> Farming System เริ่มต้นเส้นทางของอาหารจากความหลากหลายทางชีวภาพ ไปจนถึงการทำเกษตรปลอดภัย ดีต่อสิ่งแวดล้อม ดีต่อสุขภาพและ สงเสริมการกินดีมีสุขของผู้คน</p>
+        <p><b>เสาที่ 2 :</b> Story of Food เรื่องราวของอาหารที่ทำให้คุณค่าของวัตถุดิบ ไปจนถึงจานอาหารดูโดดเด่น โดยมีรากฐานจากภูมิศาสตร์ ธรรมชาติ วิถีชีวิต โบราณคดี ประวัติศสตร์ และมรดกทางภูมิปัญญา</p>
+        <p>
+          <b>เสาที่ 3 :</b> Creative Industries อุตสาหกรรมที่ใช้ความคิดสร้างสรรค์มีส่วนเกี่ยวข้องกับอาหาร เพราะการนำเสนออาหารเป็นศาสตร์ และศิลป์ สะท้อนวิถีชีวิต รสนิยม
+          และทิศทางของอาหารตามยุคสมัยนับตั้งแต่จานอาหาร ไปจนถึงนัตกรรมด้านอาหาร รางวัลด้านอาหาร เทศกาลภาพยนตร์อาหาร ดนตรี การแสดง วรรณกรรม ล้วนทำให้อรรถรสของอาหารเป็นมากกว่าความอิ่มท้อง แต่อิ่มสมอง
+          อิ่มตา อิ่มใจ
+        </p>
+        <p>
+          <b>เสาที่ 4 :</b> Sustainable Tourism ผักดันให้พัฒนาอย่างยั่งยืนบนฐานการท่องเที่ยว อนุรักษ์ส่งเสริมเรื่องราวท้องถิ่น สร้างโอกาสให้เกิดความคงอยู่ของความหลากหลายทางชีวภาพ
+          การจัดการเศษอาหารเหลือทิ้ง คำนึงถึงสิ่งแวดล้อม การปกป้องมรดกอาหารท้องถิ่นให้อาหารเป็นสัญลักษณ์ของพื้นที่เปิดประสบการณ์ท่องเที่ยวอย่างลึกซึ้ง และยั่งยืนแก่ผู้มาเยือน
+        </p>
+        <p>(ที่มา 4 เสาหลักของ Gastronomy ผศ.ดร.จุฑามาศ วิศาลสิงห์ ผู้ก่อตั้ง Thailand Gastornomy Network)</p>
+        <p>หากนำทั้ง 4 เสาของ Gastronomy กลับมามองอาหารในจาน</p>
+        <p>มะม่วง คือเสาที่ 1 และเสาที่ 2 (ราก / แก่น)</p>
+        <p>เชฟแบลค คือเสาที่ 3 (ผู้ใช้ศาสตร์ และศิลป์ของการทำอาหาจากเอกลักษณ์ของตัวเอง)</p>
+        <p>เมื่อนำเสาที่ 1 + เสาที่ 2 + เสาที่ 3 = เมนูใหม่ที่เป็นเอกลักษณ์ของตัวเรา</p>
+
+        <h5>เชฟแบลค x มะม่วง</h5>
+        <p>
+          ใน Workshop นี้ เชฟแบลคนำมะม่วงมัน มะม่วงเปรี้ยว มะม่วงสุกไปทำเป็นวัฒนธรรมเรื่องจิ้ม เครื่องเคียง จากวัฒนธรรมอาหารหลายประเทศ เช่น มะม่วงโชยุ มะม่วงกิมจิ มะม่วงอาจาด นำ้จิ้มซีฟู๊ดมะม่วงสุก
+        </p>
+        <p>นำ้จิ้มซีฟู๊ดมะม่วงดิบ ยำมะม่วงนำ้มันพริกแบบจีน และทีเด็ดของ Workshop นี้ คือ เมนูมะม่วงทาทาร์ซอส ที่ใช้ครีมชีส ปลากุเลาเค็ม</p>
+        <p>ซอสมะม่วงสุก และวัตุดิบอีกสองสามชนิดมาคลุกเคล้าให้เข้ากัน หลายคนได้ลิ้มรสเมนูมะม่วงทาทาร์ซอสต่างประหลาดใจกับรสชาติกล่มกล่ม จนตักชิมแล้วชิมอีก</p>
+        <p>
+          การทดลองนำมะม่วงมาปรุงเป็นเครื่องจิ้ม เครื่องเคียง ของเชฟแบลคมาจากการตั้งคำถามว่า “จะพามะม่วงออกเดินทางไปยังวัฒนธรรมอาหารของประเทศไหนได้บ้าง” และใช้หลักการคิด ราก / แก่น + อัตลักษณ์ =
+          เมนูใหม่ที่เป็นเอกลักษณ์ของตัวเรา
+        </p>
+        <p>
+          อ่านมาถึงตรงนี้ เมื่อได้มะม่วงสุก มะม่วงมัน มะม่วงเปรี้ยวให้คุณนำไปทำอาหาร คุณจะนำไปทำเป็นเมนูอะไร อาหารจะพาคุณออกเดินทางไปพบเจอเรื่องอะไร ติดตามบทความต่อไปในหลักสูตร Integrated Smart
+          Gastronomy Design (ISDG) ทีม TGN จะสรุปมาให้อ่านกันครับ
+        </p>
+        <h5>
+          เรื่อง และภาพโดย<br />
+          ต้อม กฤษฎากร สุขมูล ช่างภาพอาหารที่ชอบดื่มอเมริกาโนเย็นคั่วกลาง
+        </h5>
+
+        <section class="dynamic-img-grid">
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/82d6/3e9e/4b877a431f228824985f512607d4e8d4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aaCsgHp5hnAK~PhQGOvDtB46eRkXbDjfR3wt09sJgYcbHngVpCo5lza6sgDM38-YVLHy7xI-H-RQ~xE0wbZ7lDCOoS1saGh8dLEq1bvOkRgiALUtS0MNmHSYkYWsgNeOOd28VhCBLgoyVBIIai2InbJCQ6qz~h6FyV8qOsG1fTAYYFh7sDWk7ZA75JuoWovCzkt7eUb6cZZZeWbuUynzu1ro~2rBf-Qz3Uu2n1xQEVpkKOm45yrMENbuIcZkB3zpgchQSfUCtW4zuPIt1CYPp9Rg2Z7b3Depp1ZcW3F5Zy-BO3K-eCObEJm5yZv165q~TEHR6N8plospIlCxJDPk3w__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/3ff9/7c86/a6b2964787664306545dc4d49b2c8590?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMMPfKev1bUlQH2zWXxJzfepez-n5QUGggkXcWcXLANJbJiVicRAYnxHcfQ1Rbt6fd2SSMeXly2mguMsag7FSv89XTZpOSFrjm7-k5TBIrSFgTrMzG1WBPR-U5WuC1MkvWk-OuUVnlSft6AQIMQeENhdfeR0gVxshQvfa4gps87aKfWj9fYR-RRkCuOrsddZlZAOTkO3iff8rBka5F~5a0FirNYmpprevDA5B4FA9QH4WD-jctiuN51zLupSZTxYwWocxjgmu~mirPZVQ2YNpD7GJ260Rn14QwtX0~QrzNbO6yL~czIX3friiqOuU-bMjCl2eS9c2eA~sUpyw-~8SA__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/19fd/6150/5204af78e80985abc1b61dbb6de9149f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p1fw1NnCpEJyz3V4~N5tVoU4PUiJWLBsXJm4jcqgf9p-KEDTDAsd~B06wZJP3uCd~DVW4-Qhg6tl2OwqMvyC2MeSjtYsZyjp540PUZXSl2XJ9K4ELD80kOFvF0fptPBYWhzlzntYkE67-6QbH1x9yXpnZ0rNyZ1xa~KNZN2JN8yppm1rVkXA5nri8bMry9Pb3xhPDzcFUeGr5zbBv3mfcjxRe51hXIVIU1fmwhycT~P7uXrm6NsDWuYw42mP6k8XKPc97neUF-dmxta-cutonNCwtI0-LwgCwVwlf-xFHQV-Je40n5-85wTT5DzOwpofQShesNJ1koC7ZnuPBxA0Vw__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2a30/6ca6/231d8f44af7fa88586f37a6a6ee5cf18?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ijTuoTsA9w9C28QSYus1NrmvVfPtEIdVjrXueNhJuG6dX-Co1XlZeSfBBeBc7RNlHgkhE8JghQu0cKfLNuyf8nVFPv7EDPvVBu1qB2mIOCyfecmQ5uPAwBaszi-pXHNaBgxvpmJdDxJ9JfCB7pS9rjB5d4~Ge-J1P5hJo-H6am7wxzHg7TL2phBJFHjxxwyGzIjWdVMSzFbcUO7sObETmnxgdDfmw0GymgClcFIwOQXvO20sg4FYv7jPSV6xZOq7ZJzCwN9no8EW2lKFxz0mkyA6GB0d8T2qdLLVn8XZWfyqhVgfS-pYKuzzTfcupMAfunWdhzZCXd4OVdGcZ3Prjw__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/87c2/1604/51ea91bc4d5e260e81bd053aedf14a6f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FPxXi6hgelzZYdkrvsi5fzm29Y4~c09qt3xPhWrsofzV2MaaNIZW35HHvjjzvDpv7JVLqDxKZdiaGKc-Ma1O~j6j1qJ1Pt6vUAXdg~3mbiJkiBRlwFBYGVfEQNfRrABBmBRacpWL77A60nHyt081aOrZ44tn9K-Mc9ziRwHPxLTPJy47aZHrVh-LoI1K6PN7mAiCZbcuGM7zJmmg~ad4rAGKVAcvHhWE-zStCp3sAFpjx-h15GPa2YLUXE~YHWqTyhQaVAOtKWBs1EuN1PIoepx4ak1HwTw8xuk9sOvwUuXuRr4cFDgfGJRwW2tj7nPs8WpXmYKK-OqlWOI4s1YZYQ__"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/82d6/3e9e/4b877a431f228824985f512607d4e8d4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aaCsgHp5hnAK~PhQGOvDtB46eRkXbDjfR3wt09sJgYcbHngVpCo5lza6sgDM38-YVLHy7xI-H-RQ~xE0wbZ7lDCOoS1saGh8dLEq1bvOkRgiALUtS0MNmHSYkYWsgNeOOd28VhCBLgoyVBIIai2InbJCQ6qz~h6FyV8qOsG1fTAYYFh7sDWk7ZA75JuoWovCzkt7eUb6cZZZeWbuUynzu1ro~2rBf-Qz3Uu2n1xQEVpkKOm45yrMENbuIcZkB3zpgchQSfUCtW4zuPIt1CYPp9Rg2Z7b3Depp1ZcW3F5Zy-BO3K-eCObEJm5yZv165q~TEHR6N8plospIlCxJDPk3w__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/3ff9/7c86/a6b2964787664306545dc4d49b2c8590?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMMPfKev1bUlQH2zWXxJzfepez-n5QUGggkXcWcXLANJbJiVicRAYnxHcfQ1Rbt6fd2SSMeXly2mguMsag7FSv89XTZpOSFrjm7-k5TBIrSFgTrMzG1WBPR-U5WuC1MkvWk-OuUVnlSft6AQIMQeENhdfeR0gVxshQvfa4gps87aKfWj9fYR-RRkCuOrsddZlZAOTkO3iff8rBka5F~5a0FirNYmpprevDA5B4FA9QH4WD-jctiuN51zLupSZTxYwWocxjgmu~mirPZVQ2YNpD7GJ260Rn14QwtX0~QrzNbO6yL~czIX3friiqOuU-bMjCl2eS9c2eA~sUpyw-~8SA__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/19fd/6150/5204af78e80985abc1b61dbb6de9149f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p1fw1NnCpEJyz3V4~N5tVoU4PUiJWLBsXJm4jcqgf9p-KEDTDAsd~B06wZJP3uCd~DVW4-Qhg6tl2OwqMvyC2MeSjtYsZyjp540PUZXSl2XJ9K4ELD80kOFvF0fptPBYWhzlzntYkE67-6QbH1x9yXpnZ0rNyZ1xa~KNZN2JN8yppm1rVkXA5nri8bMry9Pb3xhPDzcFUeGr5zbBv3mfcjxRe51hXIVIU1fmwhycT~P7uXrm6NsDWuYw42mP6k8XKPc97neUF-dmxta-cutonNCwtI0-LwgCwVwlf-xFHQV-Je40n5-85wTT5DzOwpofQShesNJ1koC7ZnuPBxA0Vw__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2a30/6ca6/231d8f44af7fa88586f37a6a6ee5cf18?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ijTuoTsA9w9C28QSYus1NrmvVfPtEIdVjrXueNhJuG6dX-Co1XlZeSfBBeBc7RNlHgkhE8JghQu0cKfLNuyf8nVFPv7EDPvVBu1qB2mIOCyfecmQ5uPAwBaszi-pXHNaBgxvpmJdDxJ9JfCB7pS9rjB5d4~Ge-J1P5hJo-H6am7wxzHg7TL2phBJFHjxxwyGzIjWdVMSzFbcUO7sObETmnxgdDfmw0GymgClcFIwOQXvO20sg4FYv7jPSV6xZOq7ZJzCwN9no8EW2lKFxz0mkyA6GB0d8T2qdLLVn8XZWfyqhVgfS-pYKuzzTfcupMAfunWdhzZCXd4OVdGcZ3Prjw__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/87c2/1604/51ea91bc4d5e260e81bd053aedf14a6f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FPxXi6hgelzZYdkrvsi5fzm29Y4~c09qt3xPhWrsofzV2MaaNIZW35HHvjjzvDpv7JVLqDxKZdiaGKc-Ma1O~j6j1qJ1Pt6vUAXdg~3mbiJkiBRlwFBYGVfEQNfRrABBmBRacpWL77A60nHyt081aOrZ44tn9K-Mc9ziRwHPxLTPJy47aZHrVh-LoI1K6PN7mAiCZbcuGM7zJmmg~ad4rAGKVAcvHhWE-zStCp3sAFpjx-h15GPa2YLUXE~YHWqTyhQaVAOtKWBs1EuN1PIoepx4ak1HwTw8xuk9sOvwUuXuRr4cFDgfGJRwW2tj7nPs8WpXmYKK-OqlWOI4s1YZYQ__"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/82d6/3e9e/4b877a431f228824985f512607d4e8d4?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aaCsgHp5hnAK~PhQGOvDtB46eRkXbDjfR3wt09sJgYcbHngVpCo5lza6sgDM38-YVLHy7xI-H-RQ~xE0wbZ7lDCOoS1saGh8dLEq1bvOkRgiALUtS0MNmHSYkYWsgNeOOd28VhCBLgoyVBIIai2InbJCQ6qz~h6FyV8qOsG1fTAYYFh7sDWk7ZA75JuoWovCzkt7eUb6cZZZeWbuUynzu1ro~2rBf-Qz3Uu2n1xQEVpkKOm45yrMENbuIcZkB3zpgchQSfUCtW4zuPIt1CYPp9Rg2Z7b3Depp1ZcW3F5Zy-BO3K-eCObEJm5yZv165q~TEHR6N8plospIlCxJDPk3w__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/3ff9/7c86/a6b2964787664306545dc4d49b2c8590?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YMMPfKev1bUlQH2zWXxJzfepez-n5QUGggkXcWcXLANJbJiVicRAYnxHcfQ1Rbt6fd2SSMeXly2mguMsag7FSv89XTZpOSFrjm7-k5TBIrSFgTrMzG1WBPR-U5WuC1MkvWk-OuUVnlSft6AQIMQeENhdfeR0gVxshQvfa4gps87aKfWj9fYR-RRkCuOrsddZlZAOTkO3iff8rBka5F~5a0FirNYmpprevDA5B4FA9QH4WD-jctiuN51zLupSZTxYwWocxjgmu~mirPZVQ2YNpD7GJ260Rn14QwtX0~QrzNbO6yL~czIX3friiqOuU-bMjCl2eS9c2eA~sUpyw-~8SA__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/19fd/6150/5204af78e80985abc1b61dbb6de9149f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p1fw1NnCpEJyz3V4~N5tVoU4PUiJWLBsXJm4jcqgf9p-KEDTDAsd~B06wZJP3uCd~DVW4-Qhg6tl2OwqMvyC2MeSjtYsZyjp540PUZXSl2XJ9K4ELD80kOFvF0fptPBYWhzlzntYkE67-6QbH1x9yXpnZ0rNyZ1xa~KNZN2JN8yppm1rVkXA5nri8bMry9Pb3xhPDzcFUeGr5zbBv3mfcjxRe51hXIVIU1fmwhycT~P7uXrm6NsDWuYw42mP6k8XKPc97neUF-dmxta-cutonNCwtI0-LwgCwVwlf-xFHQV-Je40n5-85wTT5DzOwpofQShesNJ1koC7ZnuPBxA0Vw__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/2a30/6ca6/231d8f44af7fa88586f37a6a6ee5cf18?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ijTuoTsA9w9C28QSYus1NrmvVfPtEIdVjrXueNhJuG6dX-Co1XlZeSfBBeBc7RNlHgkhE8JghQu0cKfLNuyf8nVFPv7EDPvVBu1qB2mIOCyfecmQ5uPAwBaszi-pXHNaBgxvpmJdDxJ9JfCB7pS9rjB5d4~Ge-J1P5hJo-H6am7wxzHg7TL2phBJFHjxxwyGzIjWdVMSzFbcUO7sObETmnxgdDfmw0GymgClcFIwOQXvO20sg4FYv7jPSV6xZOq7ZJzCwN9no8EW2lKFxz0mkyA6GB0d8T2qdLLVn8XZWfyqhVgfS-pYKuzzTfcupMAfunWdhzZCXd4OVdGcZ3Prjw__"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://s3-alpha-sig.figma.com/img/87c2/1604/51ea91bc4d5e260e81bd053aedf14a6f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FPxXi6hgelzZYdkrvsi5fzm29Y4~c09qt3xPhWrsofzV2MaaNIZW35HHvjjzvDpv7JVLqDxKZdiaGKc-Ma1O~j6j1qJ1Pt6vUAXdg~3mbiJkiBRlwFBYGVfEQNfRrABBmBRacpWL77A60nHyt081aOrZ44tn9K-Mc9ziRwHPxLTPJy47aZHrVh-LoI1K6PN7mAiCZbcuGM7zJmmg~ad4rAGKVAcvHhWE-zStCp3sAFpjx-h15GPa2YLUXE~YHWqTyhQaVAOtKWBs1EuN1PIoepx4ak1HwTw8xuk9sOvwUuXuRr4cFDgfGJRwW2tj7nPs8WpXmYKK-OqlWOI4s1YZYQ__"
+              alt=""
+            />
+          </div>
+        </section>
+      </article>
+
+      <section class="mt-24 space-y-10 main-container">
+        <div class="flex items-center justify-center max-md:flex-col gap-y-8 md:justify-between text-gold">
+          <h3 class="text-4xl">Latest Blogs</h3>
+
+          <a href="./blogs-and-events.html" class="section-link text-gold !capitalize">
+            All Blogs
+
+            <div class="w-12 h-12 btn-rounded-gold">
+              <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+            </div>
+          </a>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-3 sm:grid-cols-2 main-container">
+          <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+            <figure class="overflow-hidden">
+              <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+            </figure>
+
+            <section class="flex items-center gap-x-2">
+              <div class="px-2.5 py-1 bg-gold text-white w-fit">Blog</div>
+              <span>January 18, 2023</span>
+            </section>
+            <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+            <p class="text-lg line-clamp-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+              distinctio blanditiis. Consequatur doloremque hic numquam.
+            </p>
+            <section class="flex items-center gap-x-2">
+              <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+              <span class="truncate">by Thailandgastronomynetwork</span>
+            </section>
+          </a>
+
+          <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+            <figure class="overflow-hidden">
+              <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+            </figure>
+
+            <section class="flex items-center gap-x-2">
+              <div class="px-2.5 py-1 bg-gold text-white w-fit">Blog</div>
+              <span>January 18, 2023</span>
+            </section>
+            <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+            <p class="text-lg line-clamp-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+              distinctio blanditiis. Consequatur doloremque hic numquam.
+            </p>
+            <section class="flex items-center gap-x-2">
+              <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+              <span class="truncate">by Thailandgastronomynetwork</span>
+            </section>
+          </a>
+
+          <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+            <figure class="overflow-hidden">
+              <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+            </figure>
+
+            <section class="flex items-center gap-x-2">
+              <div class="px-2.5 py-1 bg-gold text-white w-fit">Events</div>
+              <span>January 18, 2023</span>
+            </section>
+            <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+            <p class="text-lg line-clamp-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+              distinctio blanditiis. Consequatur doloremque hic numquam.
+            </p>
+            <section class="flex items-center gap-x-2">
+              <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+              <span class="truncate">by Thailandgastronomynetwork</span>
+            </section>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

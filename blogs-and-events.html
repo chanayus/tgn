@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="">
+      <header class="pt-[10rem] py-14 bg-body-gradient">
+        <div class="space-y-10 main-container">
+          <h2 class="text-center heading-section-text">Blog & Events</h2>
+          <figure id="hero-image" class="w-full overflow-hidden aspect-[1.25] max-h-[54.125rem] relative">
+            <img src="./images/pages/blogs-and-events/hero.webp" alt="" class="absolute object-cover w-full h-full -translate-x-1/2 left-1/2 section-image" />
+          </figure>
+        </div>
+      </header>
+
+      <section id="text-section" class="space-y-16 main-container">
+        <div class="space-y-3">
+          <div class="px-2.5 py-1 bg-gold mx-auto text-white w-fit">Blog</div>
+          <h2 class="text-center heading-section-text">Thailand Gastronomy Network</h2>
+
+          <p class="text-center">January 18, 2023 | by <span class="font-bold text-gold">Thailandgastronomynetwork</span></p>
+        </div>
+      </section>
+
+      <div class="grid gap-6 py-20 lg:grid-cols-3 sm:grid-cols-2 main-container">
+        <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+          <figure class="overflow-hidden">
+            <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+          </figure>
+
+          <section class="flex items-center gap-x-2">
+            <div class="px-2.5 py-1 bg-gold text-white w-fit">Blog</div>
+            <span>January 18, 2023</span>
+          </section>
+          <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+          <p class="text-lg line-clamp-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+            distinctio blanditiis. Consequatur doloremque hic numquam.
+          </p>
+          <section class="flex items-center gap-x-2">
+            <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+            <span class="truncate">by Thailandgastronomynetwork</span>
+          </section>
+        </a>
+
+        <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+          <figure class="overflow-hidden">
+            <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+          </figure>
+
+          <section class="flex items-center gap-x-2">
+            <div class="px-2.5 py-1 bg-gold text-white w-fit">Blog</div>
+            <span>January 18, 2023</span>
+          </section>
+          <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+          <p class="text-lg line-clamp-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+            distinctio blanditiis. Consequatur doloremque hic numquam.
+          </p>
+          <section class="flex items-center gap-x-2">
+            <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+            <span class="truncate">by Thailandgastronomynetwork</span>
+          </section>
+        </a>
+
+        <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+          <figure class="overflow-hidden">
+            <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+          </figure>
+
+          <section class="flex items-center gap-x-2">
+            <div class="px-2.5 py-1 bg-gold text-white w-fit">Events</div>
+            <span>January 18, 2023</span>
+          </section>
+          <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+          <p class="text-lg line-clamp-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+            distinctio blanditiis. Consequatur doloremque hic numquam.
+          </p>
+          <section class="flex items-center gap-x-2">
+            <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+            <span class="truncate">by Thailandgastronomynetwork</span>
+          </section>
+        </a>
+
+        <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+          <figure class="overflow-hidden">
+            <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+          </figure>
+
+          <section class="flex items-center gap-x-2">
+            <div class="px-2.5 py-1 bg-gold text-white w-fit">Blog</div>
+            <span>January 18, 2023</span>
+          </section>
+          <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+          <p class="text-lg line-clamp-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+            distinctio blanditiis. Consequatur doloremque hic numquam.
+          </p>
+          <section class="flex items-center gap-x-2">
+            <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+            <span class="truncate">by Thailandgastronomynetwork</span>
+          </section>
+        </a>
+
+        <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+          <figure class="overflow-hidden">
+            <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+          </figure>
+
+          <section class="flex items-center gap-x-2">
+            <div class="px-2.5 py-1 bg-gold text-white w-fit">Events</div>
+            <span>January 18, 2023</span>
+          </section>
+          <h3 class="text-2xl font-bold truncate">Name Blog</h3>
+          <p class="text-lg line-clamp-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+            distinctio blanditiis. Consequatur doloremque hic numquam.
+          </p>
+          <section class="flex items-center gap-x-2">
+            <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+            <span class="truncate">by Thailandgastronomynetwork</span>
+          </section>
+        </a>
+
+        <a href="" class="flex flex-col max-w-[30rem] w-full gap-y-2.5 mx-auto [&:hover_figure_img]:scale-110">
+          <figure class="overflow-hidden">
+            <img class="transition-transform" src="./images/pages/blogs-and-events/blog1.png" alt="" />
+          </figure>
+
+          <section class="flex items-center gap-x-2">
+            <div class="px-2.5 py-1 bg-gold text-white w-fit">Blog</div>
+            <span>January 18, 2023</span>
+          </section>
+          <h3 class="text-2xl font-bold truncate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti impedit tenetur delectus vero quos nostrum at maiores quaerat quibusdam suscipit explicabo expedita ab, voluptatem porro! Provident fuga facere aliquam dolorum?</h3>
+          <p class="text-lg line-clamp-2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet libero omnis quam voluptate porro nobis harum explicabo dicta ex consequuntur? Neque dignissimos culpa exercitationem
+            distinctio blanditiis. Consequatur doloremque hic numquam.
+          </p>
+          <section class="flex items-center gap-x-2">
+            <img src="./images/logo.webp" alt="" class="rounded-full w-11 h-11" width="42" height="42" />
+            <span class="truncate">by Thailandgastronomynetwork</span>
+          </section>
+        </a>
+      </div>
+
+      <div class="mt-10 pagination-container">
+        <ul class="pagination" id="pagination" data-total-data="500" data-current-page="5" data-per-page="10">
+          <button>
+            <img src="./icons/double-chevron-left-gold.svg" alt="<<" />
+          </button>
+          <button>
+            <img src="./icons/chevron-left-gold.svg" alt="<" />
+          </button>
+
+          <a href="" class="active">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+
+          <button>
+            <img src="./icons/chevron-right-gold.svg" alt=">" />
+          </button>
+          <button>
+            <img src="./icons/double-chevron-right-gold.svg" alt=">>" />
+          </button>
+        </ul>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
