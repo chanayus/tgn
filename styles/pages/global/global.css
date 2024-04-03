@@ -1101,7 +1101,7 @@ ol li {
      object-position: top;
   position: absolute;
   top: 0;
-  transition: scale 0.2s;
+  transition: scale 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .dynamic-img-grid > div > img:hover {
   scale: 1.1;
