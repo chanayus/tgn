@@ -32,7 +32,7 @@ gsap
 
 const imgSection = document.querySelectorAll(".img-section");
 
-imgSection.forEach((value, index) => {
+imgSection?.forEach((value, index) => {
   gsap
     .timeline({
       scrollTrigger: {

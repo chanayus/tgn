@@ -32,7 +32,7 @@ const slide = new splide.Splide("#pillars-slide", {
 
 const addPaginationProgress = () => {
   const paginationButtons = document.querySelectorAll(".splide__pagination__page");
-  paginationButtons.forEach((item) => (item.innerHTML = ""));
+  paginationButtons?.forEach((item) => (item.innerHTML = ""));
   paginationButtons[slide.index].innerHTML = `<div class="active-interval"></div>`;
 };
 

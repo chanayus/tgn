@@ -25,7 +25,7 @@ gsap
 
 const chapters = document.querySelectorAll("#video-gird-section figure");
 
-chapters.forEach((card) => {
+chapters?.forEach((card) => {
   card.addEventListener("click", (e) => {
     openVideoPopup();
     setVideoSrc(card.dataset.url);

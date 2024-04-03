@@ -85,7 +85,7 @@ const masterVideoPopup = document.querySelector("#master-video-popup");
 const masterIFrame = document.querySelector("#master-video-popup iframe");
 const closeVideoPopupButton = document.querySelector("#close-master-video");
 
-masterCards.forEach((card) => {
+masterCards?.forEach((card) => {
   card.addEventListener("click", (e) => {
     masterIFrame.src = card.dataset.url;
     gsap.fromTo(masterVideoPopup, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.25 });

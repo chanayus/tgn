@@ -1,8 +1,8 @@
 const unloadImgSection = document.querySelectorAll(".img-section");
 const loadMoreButton = document.querySelector("#loadmore-button");
 
-loadMoreButton.addEventListener("click", () => {
-  unloadImgSection.forEach((section) => {
+loadMoreButton?.addEventListener("click", () => {
+  unloadImgSection?.forEach((section) => {
     section.classList.remove("max-md:hidden");
   });
   loadMoreButton.remove();
@@ -39,7 +39,7 @@ gsap
 
 const imgSection = document.querySelectorAll(".img-section");
 
-imgSection.forEach((value, index) => {
+imgSection?.forEach((value, index) => {
   gsap
     .timeline({
       scrollTrigger: {

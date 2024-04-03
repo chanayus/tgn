@@ -18,7 +18,7 @@ gsap
 
 const timelineItems = document.querySelectorAll(".timeline-item");
 
-timelineItems.forEach((item, index) => {
+timelineItems?.forEach((item, index) => {
   gsap
     .timeline({
       scrollTrigger: {
@@ -36,8 +36,8 @@ const loadMoreButton = document.querySelector("#loadmore-timeline-button");
 const loadMoreSection = document.querySelector("#loadmore-timeline-section");
 const timelineSection = document.querySelector("#timeline-section");
 
-console.log(timelineSection);
-loadMoreButton.addEventListener("click", () => {
+
+loadMoreButton?.addEventListener("click", () => {
   timelineSection.classList.remove("max-md:max-h-[80rem]");
 
   loadMoreSection.remove();

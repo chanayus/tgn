@@ -9,7 +9,7 @@ const modalBackdrop = document.querySelector("#modal-backdrop");
 
 const showTargetContent = (title, target) => {
   modalTitle.textContent = title;
-  modalContents.forEach((content) => {
+  modalContents?.forEach((content) => {
     if (content.id === target) {
       content.classList.remove("hidden");
     } else {

@@ -11,7 +11,7 @@ const slideSection = document.querySelector("#slide-section");
 let currentSlidePage = 0;
 
 const updatePagination = () => {
-  paginationDot.forEach((dot, index) => {
+  paginationDot?.forEach((dot, index) => {
     dot.className = `${index === currentSlidePage ? "active" : ""} pagination-dot`;
   });
 };
@@ -22,7 +22,7 @@ const activeDotStyle = () => {
   const div = document.createElement("div");
   div.className = "active-interval";
 
-  dots.forEach((dot) => (dot.innerHTML = ""));
+  dots?.forEach((dot) => (dot.innerHTML = ""));
   activeDot.appendChild(div);
 
   gsap.fromTo(div, { width: "0%" }, { width: "100%", duration: 5, ease: "linear" });
