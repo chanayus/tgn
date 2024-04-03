@@ -1,7 +1,7 @@
 @import "../../modules/main";
 
-// article
 article.block-editor {
+    font-size: 1.125rem;
     & a {
         color: $gold;
         text-decoration: underline;
@@ -30,6 +30,7 @@ article.block-editor {
         font-size: 1.125rem;
         font-weight: bold;
     }
+
     & ul {
         padding-left: 1.75rem;
         & li {

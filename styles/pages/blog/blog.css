@@ -800,6 +800,9 @@ ol li {
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+article.block-editor {
+  font-size: 1.125rem;
+}
 article.block-editor a {
   color: rgb(173, 156, 108);
   text-decoration: underline;
