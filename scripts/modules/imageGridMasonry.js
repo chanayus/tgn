@@ -1,13 +1,13 @@
-export const initImageGrid = () => {
-  const images = document.querySelectorAll(".dynamic-img-grid div");
+export const initImageGridMasonry = (selector = ".dynamic-img-grid div") => {
+  const images = document.querySelectorAll(selector);
   let step = 6; // Initial step
-  let index = 1; // Start index
+  let indexTarget = 1; // Start index
   let row = 1;
   let col = 1;
-  images?.forEach((image, i) => {
-    if (i === index - 1) {
-      console.log(i, `${col} / span 2`, `${row} / span 2`);
-      index += step;
+
+  images?.forEach((image, index) => {
+    if (index === indexTarget - 1) {
+      indexTarget += step;
       image.style.gridRow = `${row} / span 2`;
       image.style.gridColumn = `${col} / span 2`;
       col = col === 1 ? 2 : 1;
@@ -18,7 +18,7 @@ export const initImageGrid = () => {
       .timeline({
         scrollTrigger: {
           trigger: image,
-          start: "top center",
+          start: "-25% center",
           end: "top center",
         },
       })

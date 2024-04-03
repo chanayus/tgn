@@ -1,3 +1,3 @@
-import { initImageGrid } from "./modules/imageGrid.js";
+import { initImageGridMasonry } from "./modules/imageGridMasonry.js";
 
-initImageGrid();
+initImageGridMasonry();

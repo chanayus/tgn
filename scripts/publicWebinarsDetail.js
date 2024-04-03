@@ -3,7 +3,7 @@ import { openVideoPopup, setVideoSrc } from "./modules/videoPopup.js";
 const videoSection = document.querySelector("#video-section");
 const playVideoButton = document.querySelector("#video-section .play-video-button");
 
-playVideoButton.addEventListener("click", () => {
+playVideoButton?.addEventListener("click", () => {
   openVideoPopup();
   setVideoSrc(videoSection.dataset.url);
 });
