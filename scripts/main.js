@@ -2,30 +2,50 @@ import "./modules/collapsibleMenu.js";
 import "./modules/mobileNavMenu.js";
 
 export const initMarquee = () => {
-  const gallery = document.querySelector(".marquee");
+  const gallery = document.querySelectorAll(".marquee");
 
   if (gallery === null) return;
 
-  const childElement = gallery.firstElementChild;
+  gallery.forEach((marquee) => {
+    const childElement = marquee.firstElementChild;
 
-  if (childElement) {
-    for (let i = 0; i <= 3; i++) {
-      const duplicatedElement = childElement.cloneNode(true);
-      gallery.appendChild(duplicatedElement);
+    if (childElement) {
+      for (let i = 0; i <= 3; i++) {
+        const duplicatedElement = childElement.cloneNode(true);
+        marquee.appendChild(duplicatedElement);
+      }
     }
-  }
 
-  const num = -100;
-  gsap.fromTo(
-    ".marquee-item",
-    { xPercent: 0 },
-    {
-      xPercent: num,
-      repeat: -1,
-      duration: 25,
-      ease: "linear",
+    const duration = marquee.dataset?.duration || 30;
+    const reverse = marquee.dataset?.reverse ? true : false;
+    console.log(reverse);
+
+    if (marquee.dataset?.direction === "y") {
+      console.log("y");
+
+      gsap.fromTo(
+        marquee.querySelectorAll(".marquee-item"),
+        { yPercent: reverse ? -100 : 0 },
+        {
+          yPercent: reverse ? 0 : -100,
+          repeat: -1,
+          duration: duration,
+          ease: "linear",
+        }
+      );
+    } else {
+      gsap.fromTo(
+        marquee.querySelectorAll(".marquee-item"),
+        { xPercent: reverse ? -100 : 0 },
+        {
+          xPercent: reverse ? 0 : -100,
+          repeat: -1,
+          duration: duration,
+          ease: "linear",
+        }
+      );
     }
-  );
+  });
 };
 
 initMarquee();

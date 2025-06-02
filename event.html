@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/pages/global/global.css" />
+    <link rel="stylesheet" href="./styles/pages/blog/blog.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="space-y-32">
+      <header class="pt-[10rem] bg-body-gradient">
+        <div class="flex gap-6 max-lg:flex-col-reverse main-container">
+          <div class="flex-1 space-y-4">
+            <h1 class="text-3xl text-gold">Flavor Crafted : Trat Edition</h1>
+            <p>
+              Embark on a journey where the essence of Trat's culinary heritage is not just tasted but experienced. The "Flavour Crafted: Trat Edition" under the Gastronomad campaign invites you to
+              delve deep into the heart of Thailand's eastern province, where every dish tells a story, and every flavor is a testament to generations of tradition.
+            </p>
+            <h6 class="text-xl font-bold text-gold">A Culinary Odyssey Begins</h6>
+            <p>
+              Trat, a province often overshadowed by its more frequented neighbors, holds a treasure trove of gastronomic wonders waiting to be discovered. Here, the rhythm of life is dictated by the
+              tides, the seasons, and the bountiful produce that the land and sea generously offer. The "Flavour Crafted" experience is more than a culinary tour; it's an immersion into the soul of
+              Trat's food culture.
+            </p>
+            <div class="text-gold">
+              <p class="font-bold">Flavour Crafted: Trat Edition</p>
+              <p>
+                by Thailand Gastronomy Network x Gastro Club Create Trat’s Flavour by Yourself Let your hands, your senses, and your stories shape the taste of Trat. This 4-part immersive journey
+                invites you to cook, sip, and dine the way locals live — creatively, seasonally, and soulfully.
+              </p>
+            </div>
+            <div class="flex gap-x-2">
+              <a href="" class="w-10 h-10 btn-rounded-gold">
+                <img src="./icons/facebook-gold.svg" alt="" />
+              </a>
+              <a href="" class="w-10 h-10 btn-rounded-gold">
+                <img src="./icons/instagram-gold.svg" alt="" />
+              </a>
+              <a href="" class="w-10 h-10 btn-rounded-gold">
+                <img src="./icons/vimeo-gold.svg" alt="" />
+              </a>
+              <a href="" class="w-10 h-10 btn-rounded-gold">
+                <img src="./icons/youtube-gold.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <section class="flex md:gap-6 gap-4 flex-1 overflow-hidden max-h-[55vh]">
+            <div data-direction="y" class="flex flex-col flex-1 overflow-hidden marquee">
+              <div class="flex flex-col marquee-item shrink-0 origins-left will-change-transform">
+                <img src="./images/pages/event/slide-1.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-2.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-3.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-4.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+              </div>
+            </div>
+            <div data-direction="y" data-reverse="true" class="flex flex-col flex-1 overflow-hidden marquee">
+              <div class="flex flex-col marquee-item shrink-0 origins-left will-change-transform">
+                <img src="./images/pages/event/slide-5.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-6.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-7.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+              </div>
+            </div>
+            <div data-direction="y" data-duration="60" class="flex flex-col flex-1 overflow-hidden lg:hidden max-sm:hidden marquee">
+              <div class="flex flex-col marquee-item shrink-0 origins-left will-change-transform">
+                <img src="./images/pages/event/slide-1.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-2.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-3.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+                <img src="./images/pages/event/slide-4.png" class="object-cover w-full my-2 md:my-3 aspect-square shrink-0" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <section class="grid sm:grid-cols-2 gap-x-6 gap-y-8 main-container">
+        <a href="" class="space-y-4 [&:hover_img]:scale-105">
+          <figure class="relative w-full overflow-hidden border aspect-square">
+            <img src="./images/pages/event/afternoon-tea.png" class="object-cover w-full h-full transition-transform" alt="" />
+            <div class="absolute px-4 py-2 text-center rounded-md bg-white/90 backdrop-blur top-3 left-3">
+              <div class="font-bold text-xl/tight">05</div>
+              <div class="leading-none">June</div>
+            </div>
+          </figure>
+          <section class="">
+            <h6 class="text-xl font-bold truncate text-gold">Crafting Your Own Afternoon Tea</h6>
+            <p class="text-black/50">8.30 p.m. - 11 p.m.</p>
+            <p class="my-2 line-clamp-2">
+              Imagine sitting by a serene riverside, the gentle breeze carrying the scent of blooming herbs and freshly brewed tea. In this setting, you are not just a guest but a creator. Select from
+              an array of locally sourced ingredients—lemongrass, pandan leaves, butterfly pea flowers—and craft your personalized tea blend. Pair it with traditional sweets.
+            </p>
+            <div class="text-xl text-gold"><span class="text-2xl font-bold">฿1,299</span> / Set for 2</div>
+          </section>
+        </a>
+
+        <a href="" class="space-y-4 [&:hover_img]:scale-105">
+          <figure class="relative w-full overflow-hidden border aspect-square">
+            <img src="./images/pages/event/cooking-trat-way.png" class="object-cover w-full h-full transition-transform" alt="" />
+            <div class="absolute px-4 py-2 text-center rounded-md bg-white/90 backdrop-blur top-3 left-3">
+              <div class="font-bold text-xl/tight">07</div>
+              <div class="leading-none">June</div>
+            </div>
+          </figure>
+          <section class="">
+            <h6 class="text-xl font-bold truncate text-gold">Cooking the Trat Way</h6>
+            <p class="text-black/50">8.30 p.m. - 11 p.m.</p>
+            <p class="my-2 line-clamp-2">
+              Welcome to your open-air kitchen — not in a restaurant, but right by the sea.You'll be handed a beautiful basket filled with locally sourced ingredients: hand-picked herbs, pre-cooked
+              proteins, fresh condiments, and seasonal surprises you might never expect — some foraged just steps from the shore.
+            </p>
+            <div class="text-xl text-gold"><span class="text-2xl font-bold">฿1,999</span> / Set for 2</div>
+          </section>
+        </a>
+
+        <a href="" class="space-y-4 [&:hover_img]:scale-105">
+          <figure class="relative w-full overflow-hidden border aspect-square">
+            <img src="./images/pages/event/mixing-bar.png" class="object-cover w-full h-full transition-transform" alt="" />
+            <div class="absolute px-4 py-2 text-center rounded-md bg-white/90 backdrop-blur top-3 left-3">
+              <div class="font-bold text-xl/tight">09</div>
+              <div class="leading-none">June</div>
+            </div>
+          </figure>
+          <section class="">
+            <h6 class="text-xl font-bold truncate text-gold">Mixing Traditions at the Open Bar</h6>
+            <p class="text-black/50">8.30 p.m. - 11 p.m.</p>
+            <p class="my-2 line-clamp-2">
+              At our riverside open bar, you'll be invited to design 3 signature drinks or shots inspired by a curated selection of local spirits, herbs, fruits, and more. But here’s the twist: each
+              drink will be paired with one bite-sized Trat tapas — a blend of taste and storytelling.
+            </p>
+            <div class="text-xl text-gold"><span class="text-2xl font-bold">฿599</span> / Per Person</div>
+          </section>
+        </a>
+
+        <a href="" class="space-y-4 [&:hover_img]:scale-105">
+          <figure class="relative w-full overflow-hidden border aspect-square">
+            <img src="./images/pages/event/seasonal-feast.png" class="object-cover w-full h-full transition-transform" alt="" />
+            <div class="absolute px-4 py-2 text-center rounded-md bg-white/90 backdrop-blur top-3 left-3">
+              <div class="font-bold text-xl/tight">13</div>
+              <div class="leading-none">June</div>
+            </div>
+          </figure>
+          <section class="">
+            <h6 class="text-xl font-bold truncate text-gold">A Seasonal Feast to Remember</h6>
+            <p class="text-black/50">8.30 p.m. - 11 p.m.</p>
+            <p class="my-2 line-clamp-2">
+              Welcome to the heart of the Flavour Crafted experience — a dinner inspired by the rhythm of the sea, the wind, and a mother’s touch. Each season in Trat tells a different story, and each
+              dish in this full-course feast is a page from that story.
+            </p>
+            <div class="text-xl text-gold"><span class="text-2xl font-bold">฿2,999</span> / Full Course Set</div>
+          </section>
+        </a>
+      </section>
+
+      <section class="space-y-16 main-container-sm">
+        <h2 class="text-4xl text-center text-gold">Frequently asked questions</h2>
+
+        <div class="space-y-4">
+          <section class="px-6 py-2 bg-white border rounded shadow-md collapsible active">
+            <button class="flex items-center justify-between w-full py-2">
+              <span class="font-bold">วิธีการซื้อบัตร E-Ticket ทางเว็บไซต์</span>
+              <div class="size-4.5 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" class="w-full h-full" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-2 collapsible-content">
+                <p>1. เลือกอีเวนต์ที่คุณต้องการอ่านรายละเอียดเงื่อนไขของงานและบัตรให้ครบถ้วน จากนั้นกดปุ่ม “ดูราคาบัตร”</p>
+                <p>2. อ่านรายละเอียดและเงื่อนไขของบัตรแต่ละประเภท เลือกจำนวนบัตรที่ต้องการ จากนั้นกดปุ่ม "ซื้อบัตร"</p>
+                <p>
+                  3. กรอกข้อมูลผู้ถือบัตร (หากผู้ซื้อบัตรเป็นผู้เข้าร่วมงานเอง เลือก "เป็นคนเดียวกับผู้ซื้อบัตร" ข้อมูลจะกรอกลงในช่องโดยอัตโนมัติ)
+                  กรุณาตรวจสอบข้อมูลให้ถูกต้องเพราะข้อมูลนี้จะแสดงบนบัตรของคุณและไม่สามารถเปลี่ยนแปลงข้อมูลได้ในภายหลั
+                </p>
+                <p>4. เมื่อตรวจสอบรายการคำสั่งซื้อเรียบร้อยแล้วให้เลือก "ยืนยันการสั่งซื้อ" เพื่อไปยังหน้าชำระเงิน</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="px-6 py-2 bg-white border rounded shadow-md collapsible">
+            <button class="flex items-center justify-between w-full py-2">
+              <span class="font-bold">การชำระเงินผ่านบัตรเครดิต / เดบิต</span>
+              <div class="size-4.5 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" class="w-full h-full" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-2 collapsible-content">
+                <p>1. เลือกอีเวนต์ที่คุณต้องการอ่านรายละเอียดเงื่อนไขของงานและบัตรให้ครบถ้วน จากนั้นกดปุ่ม “ดูราคาบัตร”</p>
+                <p>2. อ่านรายละเอียดและเงื่อนไขของบัตรแต่ละประเภท เลือกจำนวนบัตรที่ต้องการ จากนั้นกดปุ่ม "ซื้อบัตร"</p>
+                <p>
+                  3. กรอกข้อมูลผู้ถือบัตร (หากผู้ซื้อบัตรเป็นผู้เข้าร่วมงานเอง เลือก "เป็นคนเดียวกับผู้ซื้อบัตร" ข้อมูลจะกรอกลงในช่องโดยอัตโนมัติ)
+                  กรุณาตรวจสอบข้อมูลให้ถูกต้องเพราะข้อมูลนี้จะแสดงบนบัตรของคุณและไม่สามารถเปลี่ยนแปลงข้อมูลได้ในภายหลั
+                </p>
+                <p>4. เมื่อตรวจสอบรายการคำสั่งซื้อเรียบร้อยแล้วให้เลือก "ยืนยันการสั่งซื้อ" เพื่อไปยังหน้าชำระเงิน</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="px-6 py-2 bg-white border rounded shadow-md collapsible">
+            <button class="flex items-center justify-between w-full py-2">
+              <span class="font-bold">การชำระเงินผ่าน QR Promptpay</span>
+              <div class="size-4.5 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" class="w-full h-full" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="space-y-2 collapsible-content">
+                <p>1. เลือกอีเวนต์ที่คุณต้องการอ่านรายละเอียดเงื่อนไขของงานและบัตรให้ครบถ้วน จากนั้นกดปุ่ม “ดูราคาบัตร”</p>
+                <p>2. อ่านรายละเอียดและเงื่อนไขของบัตรแต่ละประเภท เลือกจำนวนบัตรที่ต้องการ จากนั้นกดปุ่ม "ซื้อบัตร"</p>
+                <p>
+                  3. กรอกข้อมูลผู้ถือบัตร (หากผู้ซื้อบัตรเป็นผู้เข้าร่วมงานเอง เลือก "เป็นคนเดียวกับผู้ซื้อบัตร" ข้อมูลจะกรอกลงในช่องโดยอัตโนมัติ)
+                  กรุณาตรวจสอบข้อมูลให้ถูกต้องเพราะข้อมูลนี้จะแสดงบนบัตรของคุณและไม่สามารถเปลี่ยนแปลงข้อมูลได้ในภายหลั
+                </p>
+                <p>4. เมื่อตรวจสอบรายการคำสั่งซื้อเรียบร้อยแล้วให้เลือก "ยืนยันการสั่งซื้อ" เพื่อไปยังหน้าชำระเงิน</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
