@@ -314,3 +314,34 @@
         }
     }
 }
+
+input[type="checkbox"] {
+    appearance: none;
+
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 0.25rem;
+    accent-color: rgba(10, 10, 10, 1);
+    color: rgba(10, 10, 10, 1);
+    border: 0.125rem solid rgba(10, 10, 10, 1);
+    z-index: 10;
+    position: relative;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    border-radius: 0.125rem;
+    width: calc(100%);
+    height: calc(100%);
+    background-color: rgba(10, 10, 10, 1);
+    transition: 0.1s;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translate(-50%, -50%) scale(0.7);
+}
