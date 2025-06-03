@@ -977,14 +977,14 @@ video {
   height: 1rem;
 }
 
-.size-64 {
-  width: 16rem;
-  height: 16rem;
-}
-
 .size-5 {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.size-64 {
+  width: 16rem;
+  height: 16rem;
 }
 
 .h-0 {
@@ -1832,6 +1832,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-none {
+  border-radius: 0px;
 }
 
 .border {
