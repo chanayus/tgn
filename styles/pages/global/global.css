@@ -1137,4 +1137,40 @@ input[type=checkbox]::before {
 
 input[type=checkbox]:checked::before {
   transform: translate(-50%, -50%) scale(0.7);
+}
+
+.tooltip .tooltip-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  z-index: 1;
+  line-height: 1.2;
+  max-width: 30ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tooltip .tooltip-content > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tooltip:hover .tooltip-content, .tooltip .tooltip-content:hover {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1240px) {
+  .tooltip .tooltip-content {
+    left: unset;
+    right: 0%;
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=global.css.map */

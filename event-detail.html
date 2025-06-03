@@ -205,7 +205,16 @@
 
               <div class="flex flex-col flex-1 gap-y-1">
                 <label for="" class="font-bold">Security code</label>
-                <input type="text" name="security_code" class="px-5 py-2.5 bg-white border-2" placeholder="Security code" />
+                <div class="relative w-full">
+                  <div class="absolute top-0 right-0 flex items-center justify-center w-12 h-full bg-white border-2 border-l-0 tooltip">
+                    <img src="/icons/question.svg" alt="question-icon" width="20" height="20" class="size-5">
+                    <div class="tooltip-content">
+                      <p>Lorem ipsum dolor sit amet asdasdasdassadasdadasdasdasdasdasdasasdasasdasdasds</p>
+                      <p>Lorem ipsum dolor sit amet asdasdasdassadasdadasdasdasdasdasdasasdasasdasdasds</p>
+                    </div>
+                  </div>
+                  <input type="text" name="security_code" class="px-5 py-2.5 bg-white w-full border-2" placeholder="Security code" />
+                </div>
               </div>
             </div>
 
