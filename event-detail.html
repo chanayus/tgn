@@ -130,106 +130,108 @@
         </div>
       </section>
 
-      <form id="register-form" class="pb-16 md:pb-20 bg-body-gradient">
-        <div class="space-y-10 main-container">
-          <hgroup class="space-y-2 text-center main-container">
-            <h1 class="text-3xl md:text-4xl text-gold">Register</h1>
-            <p class="md:text-lg">Join us by filling out this form</p>
-          </hgroup>
+      <form id="payment-form">
+        <section class="pb-16 md:pb-20 bg-body-gradient">
+          <div class="space-y-10 main-container-sm">
+            <hgroup class="space-y-2 text-center">
+              <h1 class="text-3xl md:text-4xl text-gold">Register</h1>
+              <p class="md:text-lg">Join us by filling out this form</p>
+            </hgroup>
 
-          <section class="grid mx-auto main-container-sm sm:grid-cols-2 gap-x-6 gap-y-8">
-            <div class="flex flex-col gap-y-1">
-              <label for="" class="font-bold">First name</label>
-              <input type="text" name="first_name" class="px-5 py-2.5 bg-white border-2" placeholder="First name" />
-            </div>
-
-            <div class="flex flex-col gap-y-1">
-              <label for="" class="font-bold">Last name</label>
-              <input type="text" name="last_name" class="px-5 py-2.5 bg-white border-2" placeholder="Last name" />
-            </div>
-
-            <div class="flex flex-col gap-y-1">
-              <label for="" class="font-bold">Email</label>
-              <input type="text" name="email" class="px-5 py-2.5 bg-white border-2" placeholder="Email" />
-            </div>
-
-            <div class="flex flex-col gap-y-1">
-              <label for="" class="font-bold">Phone</label>
-              <input type="text" name="phone" class="px-5 py-2.5 bg-white border-2" placeholder="Phone" />
-            </div>
-          </section>
-
-          <button type="submit" class="w-full mx-auto btn-gold md:max-w-80">Book Now</button>
-        </div>
-      </form>
-
-      <form id="payment-form" class="py-16 md:py-20">
-        <div class="space-y-10 main-container-sm">
-          <hgroup class="space-y-4">
-            <h1 class="text-3xl text-gold">Payment Details</h1>
-            <p class="text-lg font-bold md:text-xl">Select your payment option</p>
-          </hgroup>
-
-          <section class="flex gap-4">
-            <button type="button" data-method="qr-code" class="py-3 space-y-2 transition-colors border-2 rounded-md payment-method w-44">
-              <img src="./images/pages/event-detail/qr-code.svg" alt="" class="mx-auto" />
-              <div class="font-bold">QRCode</div>
-            </button>
-            <button type="button" data-method="credit-card" class="py-3 space-y-2 transition-colors border-2 rounded-md payment-method w-44 border-gold">
-              <img src="./images/pages/event-detail/credit-card.svg" alt="" class="mx-auto" />
-              <div class="font-bold">Credit card</div>
-            </button>
-          </section>
-
-          <section class="space-y-8">
-            <div class="flex flex-col gap-y-1">
-              <label for="" class="font-bold">Card number</label>
-              <div class="relative w-full">
-                <div id="card-brand" class="absolute top-0 right-0 flex items-center justify-center w-24 h-full bg-white border-2 border-l-0">
-                  <img src="./images/pages/event-detail/visa.svg" alt="" />
-                </div>
-                <input type="text" name="card_number" id="card-number" class="px-5 py-2.5 bg-white border-2 w-full" placeholder="Card number" />
-              </div>
-            </div>
-
-            <div class="flex flex-col gap-y-1">
-              <label for="" class="font-bold">Name on Card</label>
-              <input type="text" name="name_card" class="px-5 py-2.5 bg-white border-2" placeholder="Name on Card" />
-            </div>
-
-            <div class="flex gap-8 max-md:flex-col">
-              <div class="flex flex-col flex-1 gap-y-1">
-                <label for="" class="font-bold">Expiry date</label>
-                <input type="text" name="expiry_date" id="expiry-date" class="px-5 py-2.5 bg-white border-2" placeholder="Expiry date" />
+            <section class="grid mx-auto sm:grid-cols-2 gap-x-6 gap-y-8">
+              <div class="flex flex-col gap-y-1">
+                <label for="" class="font-bold">First name</label>
+                <input type="text" name="first_name" class="px-5 py-2.5 bg-white border-2" placeholder="First name" />
               </div>
 
-              <div class="flex flex-col flex-1 gap-y-1">
-                <label for="" class="font-bold">Security code</label>
+              <div class="flex flex-col gap-y-1">
+                <label for="" class="font-bold">Last name</label>
+                <input type="text" name="last_name" class="px-5 py-2.5 bg-white border-2" placeholder="Last name" />
+              </div>
+
+              <div class="flex flex-col gap-y-1">
+                <label for="" class="font-bold">Email</label>
+                <input type="text" name="email" class="px-5 py-2.5 bg-white border-2" placeholder="Email" />
+              </div>
+
+              <div class="flex flex-col gap-y-1">
+                <label for="" class="font-bold">Phone</label>
+                <input type="text" name="phone" class="px-5 py-2.5 bg-white border-2" placeholder="Phone" />
+              </div>
+            </section>
+
+            <a href="#payment-section" class="w-full mx-auto btn-gold md:max-w-80">Book Now</a>
+          </div>
+        </section>
+
+        <section id="payment-section" class="py-16 md:py-20">
+          <div class="space-y-10 main-container-sm">
+            <hgroup class="space-y-4">
+              <h1 class="text-3xl text-gold">Payment Details</h1>
+              <p class="text-lg font-bold md:text-xl">Select your payment option</p>
+            </hgroup>
+
+            <section class="flex gap-4">
+              <button type="button" data-method="qr-code" class="py-3 space-y-2 transition-colors border-2 rounded-md payment-method w-44">
+                <img src="./images/pages/event-detail/qr-code.svg" alt="" class="mx-auto" />
+                <div class="font-bold">QRCode</div>
+              </button>
+              <button type="button" data-method="credit-card" class="py-3 space-y-2 transition-colors border-2 rounded-md payment-method w-44 border-gold">
+                <img src="./images/pages/event-detail/credit-card.svg" alt="" class="mx-auto" />
+                <div class="font-bold">Credit card</div>
+              </button>
+            </section>
+
+            <section id="payment-section" class="space-y-8">
+              <div class="flex flex-col gap-y-1">
+                <label for="" class="font-bold">Card number</label>
                 <div class="relative w-full">
-                  <div class="absolute top-0 right-0 flex items-center justify-center w-12 h-full bg-white border-2 border-l-0 tooltip">
-                    <img src="/icons/question.svg" alt="question-icon" width="20" height="20" class="size-5">
-                    <div class="tooltip-content">
-                      <p>Lorem ipsum dolor sit amet asdasdasdassadasdadasdasdasdasdasdasasdasasdasdasds</p>
-                      <p>Lorem ipsum dolor sit amet asdasdasdassadasdadasdasdasdasdasdasasdasasdasdasds</p>
-                    </div>
+                  <div id="card-brand" class="absolute top-0 right-0 flex items-center justify-center w-24 h-full bg-white border-2 border-l-0">
+                    <img src="./images/pages/event-detail/visa.svg" alt="" />
                   </div>
-                  <input type="text" name="security_code" class="px-5 py-2.5 bg-white w-full border-2" placeholder="Security code" />
+                  <input type="text" name="card_number" id="card-number" class="px-5 py-2.5 bg-white border-2 w-full" placeholder="Card number" />
                 </div>
               </div>
-            </div>
 
-            <div class="flex items-center gap-x-2">
-              <input id="remember-card" name="remember" type="checkbox" />
-              <label for="remember-card" class="leading-none mt-0.5">Remember Card</label>
-            </div>
-          </section>
+              <div class="flex flex-col gap-y-1">
+                <label for="" class="font-bold">Name on Card</label>
+                <input type="text" name="name_card" class="px-5 py-2.5 bg-white border-2" placeholder="Name on Card" />
+              </div>
 
-          <button type="submit" class="w-full font-bold btn-gold">Pay ฿1,299</button>
-        </div>
+              <div class="flex gap-8 max-md:flex-col">
+                <div class="flex flex-col flex-1 gap-y-1">
+                  <label for="" class="font-bold">Expiry date</label>
+                  <input type="text" name="expiry_date" id="expiry-date" class="px-5 py-2.5 bg-white border-2" placeholder="Expiry date" />
+                </div>
+
+                <div class="flex flex-col flex-1 gap-y-1">
+                  <label for="" class="font-bold">Security code</label>
+                  <div class="relative w-full">
+                    <div class="absolute top-0 right-0 flex items-center justify-center w-12 h-full bg-white border-2 border-l-0 tooltip">
+                      <img src="/icons/question.svg" alt="question-icon" width="20" height="20" class="size-5" />
+                      <div class="tooltip-content">
+                        <p>Lorem ipsum dolor sit amet asdasdasdassadasdadasdasdasdasdasdasasdasasdasdasds</p>
+                        <p>Lorem ipsum dolor sit amet asdasdasdassadasdadasdasdasdasdasdasasdasasdasdasds</p>
+                      </div>
+                    </div>
+                    <input type="text" name="security_code" class="px-5 py-2.5 bg-white w-full border-2" placeholder="Security code" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-x-2">
+                <input id="remember-card" name="remember" type="checkbox" />
+                <label for="remember-card" class="leading-none mt-0.5">Remember Card</label>
+              </div>
+            </section>
+
+            <button type="submit" class="w-full font-bold btn-gold">Pay ฿1,299</button>
+          </div>
+        </section>
       </form>
 
       <section class="grid sm:grid-cols-2 gap-x-6 gap-y-8 main-container">
-        <a href="" class="space-y-4 [&:hover_img]:scale-105">
+        <a href="/event-detail.html" class="space-y-4 [&:hover_img]:scale-105">
           <figure class="relative w-full overflow-hidden border aspect-square">
             <img src="./images/pages/event/cooking-trat-way.png" class="object-cover w-full h-full transition-transform" alt="" />
             <div class="absolute px-4 py-2 text-center rounded-md bg-white/90 backdrop-blur top-3 left-3">
@@ -248,7 +250,7 @@
           </section>
         </a>
 
-        <a href="" class="space-y-4 [&:hover_img]:scale-105">
+        <a href="/event-detail.html" class="space-y-4 [&:hover_img]:scale-105">
           <figure class="relative w-full overflow-hidden border aspect-square">
             <img src="./images/pages/event/mixing-bar.png" class="object-cover w-full h-full transition-transform" alt="" />
             <div class="absolute px-4 py-2 text-center rounded-md bg-white/90 backdrop-blur top-3 left-3">

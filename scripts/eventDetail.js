@@ -11,8 +11,6 @@ document.querySelectorAll(".payment-method")?.forEach((method) => {
 const cardNumberInput = document.querySelector("#card-number");
 
 cardNumberInput?.addEventListener("input", (e) => {
-  console.log(cardNumberInput.value.replaceAll(" ", "").length);
-
   if (cardNumberInput.value.replaceAll(" ", "").length >= 16) {
     cardNumberInput.value = cardNumberInput.value.slice(0, 19);
   } else if ((e.target.value.length + 1) % 5 === 0 || e.target.value.length === 4) {
@@ -36,11 +34,19 @@ paymentForm?.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(e.target);
 
+  // register
+  const firstName = formData.get("first_name");
+  const lastName = formData.get("last_name");
+  const email = formData.get("email");
+  const phone = formData.get("phone");
+  console.log(firstName, lastName, email, phone);
+
+  // payment
   const method = currentMethod;
-  const email = formData.get("card_number");
+  const cardNumber = formData.get("card_number");
   const name = formData.get("name_card");
   const expiry = formData.get("expiry_date");
   const securityCode = formData.get("security_code");
   const remember = formData.get("remember");
-  console.log(method, email, name, expiry, securityCode, remember);
+  console.log(cardNumber, email, name, expiry, securityCode, remember);
 });
