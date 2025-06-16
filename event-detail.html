@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -38,6 +38,31 @@
   <body>
     <navbar-component></navbar-component>
     <mobile-nav-component></mobile-nav-component>
+
+    <!-- Loader -->
+    <section id="loader" class="fixed z-20 flex items-center justify-center invisible w-full h-full p-4 transition opacity-0 bg-white/85 backdrop-blur">
+      <div class="loader"></div>
+    </section>
+    <!-- Form validation modal -->
+    <section id="validation-modal" class="fixed z-20 flex items-center justify-center invisible w-full h-full p-4 transition bg-white opacity-0">
+      <div class="flex flex-col items-center w-full max-w-xl p-8 space-y-6 text-center md:p-16 h-fit bg-body-gold text-gold">
+        <img src="./icons/warning.png" width="100" height="100" alt="warning" class="size-20" />
+
+        <h3 class="text-2xl font-bold md:text-3xl">
+          There was a problem <br />
+          with your submission.
+        </h3>
+
+        <p>Please review the following errors</p>
+
+        <ul id="require-list" class="w-full max-w-md space-y-2.5 text-left [&>li]:first-letter:capitalize marker:text-red-500">
+          <li>Phone field is required</li>
+          <li>Invalid credit card details Close</li>
+        </ul>
+
+        <button class="w-full max-w-md close-button btn btn-gold">Close</button>
+      </div>
+    </section>
 
     <main id="main-content" class="">
       <header class="pt-[10rem] bg-body-gold space-y-9">

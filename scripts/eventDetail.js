@@ -29,9 +29,23 @@ expiryDateInput?.addEventListener("input", (e) => {
 });
 
 const paymentForm = document.querySelector("#payment-form");
+const validationModal = document.querySelector("#validation-modal");
+const requireList = document.querySelector("#require-list");
+const loader = document.querySelector("#loader");
+
+validationModal.querySelector(".close-button")?.addEventListener("click", () => {
+  validationModal.classList.add(...["opacity-0"]);
+  setTimeout(() => validationModal.classList.add(...["invisible"]), 250);
+});
+
+const openValidationModal = () => {
+  validationModal.classList.remove(...["invisible", "opacity-0"]);
+};
 
 paymentForm?.addEventListener("submit", (e) => {
   e.preventDefault();
+  requireList.innerHTML = ``;
+
   const formData = new FormData(e.target);
 
   // register
@@ -49,4 +63,48 @@ paymentForm?.addEventListener("submit", (e) => {
   const securityCode = formData.get("security_code");
   const remember = formData.get("remember");
   console.log(cardNumber, email, name, expiry, securityCode, remember);
+
+  const requireFields = ["first_name", "last_name", "email", "phone", "card_number", "name_card", "expiry_date", "security_code"];
+  const missingFields = [];
+  let emailFormatValid = true;
+
+  // Checking Required Fields
+
+  requireFields.forEach((field) => {
+    if (!formData.get(field)) {
+      missingFields.push(field);
+    }
+    requireList.innerHTML = missingFields.map((field) => `<li>${field.replace("_", " ")} field is required</li>`).join("");
+  });
+
+  if (email !== "" && !(/\S+@\S+\.\S+/).test(email)) {
+    requireList.innerHTML += `<li>Incorrect email format.</li>`;
+  }
+
+  if (missingFields.length > 0 || !(/\S+@\S+\.\S+/).test(email)) {
+    openValidationModal();
+    return;
+  }
+
+  loader.classList.remove(...["invisible", "opacity-0"]);
+
+  setTimeout(() => {
+    // Credit Card Validation
+
+    const creditCardError = false;
+    if (creditCardError) {
+      requireList.innerHTML += `<li>Invalid credit card details close</li>`;
+      openValidationModal();
+      loader.classList.add(...["invisible", "opacity-0"]);
+      return;
+    }
+
+    const success = true;
+
+    if (success) {
+      window.location.href = "./event-booking-success.html";
+    } else {
+      window.location.href = "./event-booking-error.html";
+    }
+  }, 3000);
 });
