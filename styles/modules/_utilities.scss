@@ -52,6 +52,7 @@ $colors: (
     align-items: center;
     border-radius: 999px;
     transition: 0.2s;
+    color: $gold;
     &:hover {
         background: $gold;
         color: $body-gold;
@@ -63,6 +64,9 @@ $colors: (
         img {
             filter: contrast(100) grayscale(100%);
         }
+    }
+    & i{
+        font-size: 1.25rem;
     }
 }
 

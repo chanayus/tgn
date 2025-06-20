@@ -173,6 +173,7 @@
   align-items: center;
   border-radius: 999px;
   transition: 0.2s;
+  color: rgb(173, 156, 108);
 }
 .btn-rounded-gold:hover {
   background: rgb(173, 156, 108);
@@ -185,6 +186,9 @@
 }
 .btn-rounded-gold:hover img {
   filter: contrast(100) grayscale(100%);
+}
+.btn-rounded-gold i {
+  font-size: 1.25rem;
 }
 
 .btn-rounded-white {
@@ -624,6 +628,56 @@
   padding: 1em 0;
   right: 0.5em;
   top: 0;
+}
+
+.main-article h1,
+.main-article h2,
+.main-article h3,
+.main-article h4,
+.main-article h5,
+.main-article h6 {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+.main-article h1 {
+  font-size: clamp(2rem, 5vw, 2.25rem);
+  color: rgb(173, 156, 108);
+}
+.main-article h2 {
+  font-size: 1.875rem;
+  color: rgb(173, 156, 108);
+}
+.main-article h3 {
+  color: rgb(173, 156, 108);
+  font-size: 1.5rem;
+}
+.main-article h4 {
+  color: rgb(173, 156, 108);
+  font-size: 1.25rem;
+}
+.main-article h5 {
+  font-size: 1.125rem;
+}
+.main-article h6 {
+  font-size: 1rem;
+  color: rgb(173, 156, 108);
+  font-weight: 400;
+}
+.main-article p {
+  margin-bottom: 1.25rem;
+}
+.main-article ul,
+.main-article ol {
+  margin-bottom: 1.25rem;
+}
+.main-article li {
+  margin-left: 1rem;
+}
+.main-article ol {
+  list-style: decimal;
+}
+.main-article ul {
+  list-style: disc;
 }
 
 nav.gold-theme * {
