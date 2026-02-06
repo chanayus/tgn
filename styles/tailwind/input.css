@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme inline {
+  --color-brown: var(--brown);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-body-gradient: var(--body-gradient);
+  --color-body-gold: var(--body-gold);
+  --color-body-gradient-flip: var(--body-gradient-flip);
+  --color-cream: var(--cream);
+  --text-2xs: 0.625rem;
+  --text-3xs: 0.5rem;
+}

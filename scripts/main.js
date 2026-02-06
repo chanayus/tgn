@@ -1,5 +1,13 @@
 import "./modules/collapsibleMenu.js";
 import "./modules/mobileNavMenu.js";
+import "./modules/animation.js";
+
+import { animate } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+document.querySelectorAll(".svg-icon")?.forEach((el) => {
+  const src = el.getAttribute("data-src");
+  el.style.setProperty("--src", `url(${src})`);
+});
 
 export const initMarquee = () => {
   const gallery = document.querySelectorAll(".marquee");
@@ -18,32 +26,11 @@ export const initMarquee = () => {
 
     const duration = marquee.dataset?.duration || 30;
     const reverse = marquee.dataset?.reverse ? true : false;
-    console.log(reverse);
 
     if (marquee.dataset?.direction === "y") {
-      console.log("y");
-
-      gsap.fromTo(
-        marquee.querySelectorAll(".marquee-item"),
-        { yPercent: reverse ? -100 : 0 },
-        {
-          yPercent: reverse ? 0 : -100,
-          repeat: -1,
-          duration: duration,
-          ease: "linear",
-        }
-      );
+      animate(marquee.querySelectorAll(".marquee-item"), { y: reverse ? ["-100%", "0%"] : ["0%", "-100%"] }, { ease: "linear", duration: duration, repeat: Infinity });
     } else {
-      gsap.fromTo(
-        marquee.querySelectorAll(".marquee-item"),
-        { xPercent: reverse ? -100 : 0 },
-        {
-          xPercent: reverse ? 0 : -100,
-          repeat: -1,
-          duration: duration,
-          ease: "linear",
-        }
-      );
+      animate(marquee.querySelectorAll(".marquee-item"), { x: reverse ? ["-100%", "0%"] : ["0%", "-100%"] }, { ease: "linear", duration: duration, repeat: Infinity });
     }
   });
 };

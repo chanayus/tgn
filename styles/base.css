@@ -1,0 +1,257 @@
+@import "./components.css";
+@import "./splide.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+
+:root {
+  --brown: rgba(56, 29, 15, 1);
+  --gold: rgba(173, 156, 108, 1);
+  --cream: rgba(244, 242, 238, 1);
+  --gold-light: rgba(227, 218, 207, 1);
+  --body-gradient: linear-gradient(180deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+  --body-gold: #f3f0e9;
+  --body-gradient-flip: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
+}
+
+.crimson-font {
+  font-family: "Crimson Text", "IBM Plex Sans Thai", sans-serif;
+}
+
+* {
+  touch-action: manipulation;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  font-smooth: always;
+  text-rendering: optimizeLegibility;
+  scroll-padding-top: 2rem;
+}
+
+html {
+  font-size: clamp(14px, 1vw, 16px);
+}
+
+body {
+  background: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  flex-direction: column;
+  transition: background-color 0.075s;
+}
+
+[class*="main-container"] {
+  width: 100%;
+  margin-inline: auto;
+
+  padding-left: 1rem;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.main-container {
+  max-width: 1200px;
+  @media (max-width: 1366px) {
+    & {
+      max-width: 1136px;
+    }
+  }
+}
+
+.main-container-sm {
+  max-width: 960px;
+  @media (max-width: 980px) {
+    & {
+      max-width: 768px;
+    }
+  }
+}
+
+.main-container-xs {
+  max-width: 768px;
+  @media (max-width: 0px) {
+    & {
+      max-width: 768px;
+    }
+  }
+}
+
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.sm-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.svg-icon {
+  -webkit-mask: var(--src) no-repeat center;
+  mask: var(--src) no-repeat center;
+  mask-size: contain;
+  pointer-events: none;
+  transition:
+    background-color 0.25s,
+    opacity 0.25s;
+
+  &:not([style]) {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 0.6s forwards !important;
+}
+
+main#main-content {
+  flex: 1 1 0;
+  animation: fade-in 0.35s forwards;
+  margin-top: 6rem;
+}
+
+ul {
+  padding-left: 1.75rem;
+  & li {
+    list-style-type: disc;
+  }
+}
+
+ol {
+  padding-left: 1.15rem;
+  & li {
+    list-style-type: decimal;
+  }
+}
+
+.ease-theme {
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, var(--gold) 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, var(--gold));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+
+.main-article {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 2.25rem);
+    color: var(--gold);
+  }
+  h2 {
+    font-size: 1.875rem;
+    color: var(--gold);
+  }
+  h3 {
+    color: var(--gold);
+    font-size: 1.5rem;
+  }
+  h4 {
+    color: var(--gold);
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+  h6 {
+    font-size: 1rem;
+    color: var(--gold);
+    font-weight: 400;
+  }
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1.25rem;
+  }
+
+  li {
+    margin-left: 1rem;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+}
+
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+nav#navbar {
+  & .desktop-links a {
+    transition: opacity 0.25s;
+  }
+  & .desktop-links:has(a:hover) a:not(:hover) {
+    opacity: 0.25;
+  }
+}
+
+button {
+  cursor: pointer;
+}

@@ -1,214 +1,24 @@
-import * as splide from "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm";
-import { openVideoPopup, setVideoSrc } from "./modules/videoPopup.js";
+import { animate, scroll, stagger } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
 
-let paginationDot;
-let slideInterval;
-const paginationContainer = document.querySelector("#slide-pagination");
-const imageSlide = document.querySelectorAll(".image-slide-content");
-const textSlideContent = document.querySelectorAll(".slide-content");
-const slideSection = document.querySelector("#slide-section");
+const stackCards = document.querySelectorAll(".stackcard");
 
-let currentSlidePage = 0;
+stackCards?.forEach((card, index) => {
+  const animation = animate(card, { scale: [1, 0.9] });
 
-const updatePagination = () => {
-  paginationDot?.forEach((dot, index) => {
-    dot.className = `${index === currentSlidePage ? "active" : ""} pagination-dot`;
-  });
-};
-
-const activeDotStyle = () => {
-  const activeDot = document.querySelector(`#slide-pagination .pagination-dot.active`);
-  const dots = document.querySelectorAll(`#slide-pagination .pagination-dot`);
-  const div = document.createElement("div");
-  div.className = "active-interval";
-
-  dots?.forEach((dot) => (dot.innerHTML = ""));
-  activeDot.appendChild(div);
-
-  gsap.fromTo(div, { width: "0%" }, { width: "100%", duration: 5, ease: "linear" });
-};
-
-const playSlideAnimation = (currentIndex, nextIndex) => {
-  gsap
-    .timeline()
-    .to(imageSlide[currentIndex], { autoAlpha: 0, duration: 0.5 }, 0)
-    .to(textSlideContent[currentIndex], { autoAlpha: 0, duration: 0.5 }, 0)
-    .set([textSlideContent[currentIndex], imageSlide[currentIndex]], { display: "none" })
-    .set([textSlideContent[nextIndex], imageSlide[nextIndex]], { display: "block" })
-    .fromTo(imageSlide[nextIndex], { autoAlpha: 0, scale: 1.1 }, { autoAlpha: 1, scale: 1, ease: "expo", duration: 1.5 })
-    .fromTo(textSlideContent[nextIndex], { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 0.5 }, "-=1");
-
-  currentSlidePage = nextIndex;
-  updatePagination();
-  activeDotStyle();
-};
-
-const initSlide = () => {
-  textSlideContent?.forEach((element, index) => {
-    if (index !== currentSlidePage) {
-      gsap.set(element, { display: "none", autoAlpha: 0 });
-      if (textSlideContent[index]) {
-        gsap.set(imageSlide[index], { display: "none", autoAlpha: 0 });
-      }
-    }
-    paginationContainer.innerHTML += `
-      <button class="${index === currentSlidePage ? "active" : ""} pagination-dot"></button>
-    `;
-  });
-
-  paginationDot = document.querySelectorAll("#slide-pagination button");
-
-  paginationDot?.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      if (currentSlidePage !== index) {
-        clearInterval(slideInterval);
-        playSlideAnimation(currentSlidePage, index);
-        slideInterval = setInterval(() => playSlideAnimation(currentSlidePage, currentSlidePage + 1 > textSlideContent.length - 1 ? 0 : currentSlidePage + 1), 5000);
-      }
-    });
-  });
-};
-
-if (textSlideContent.length > 0) {
-  initSlide();
-  if (textSlideContent.length <= 1) {
-    paginationContainer.classList.add("!hidden");
-  } else if (textSlideContent.length > 1) {
-    activeDotStyle();
-    slideInterval = setInterval(() => playSlideAnimation(currentSlidePage, currentSlidePage + 1 > textSlideContent.length - 1 ? 0 : currentSlidePage + 1), 5000);
-  }
-} else {
-  slideSection.classList.add("!hidden");
-}
-
-// Animate for Hero Section
-
-gsap
-  .timeline()
-  .fromTo("#hero-section h1", { autoAlpha: 0, y: 75 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 1 }, "+=0.25")
-  .fromTo("#hero-section-bg", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.75, ease: "none" }, "+=0.25")
-  .fromTo("#scrolldown-mouse", { autoAlpha: 0 }, { autoAlpha: 1, duration: 2, ease: "expo" }, "<");
-
-gsap
-  .timeline({ repeat: -1, repeatDelay: 0, ease: "none" })
-  .fromTo("#scrolldown-mouse-wheel", { y: 0, duration: 1, autoAlpha: 0 }, { y: 0, duration: 1, autoAlpha: 1 })
-  .to("#scrolldown-mouse-wheel", { y: 14, duration: 1, autoAlpha: 0 })
-  .to("#scrolldown-mouse-wheel", { y: 0, duration: 1 });
-// Animate for Text and Image Section
-
-const textImageSections = document.querySelectorAll(".text-image-section");
-
-textImageSections?.forEach((section, index) => {
-  const image = section.querySelector(".section-image");
-  const heading = section.querySelector("h2");
-  const desc = section.querySelector(".desc");
-
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: section,
-      start: "-5% center",
-      end: "top center",
-    },
-  });
-
-  tl.fromTo(image, { yPercent: 150, scale: 1.5 }, { yPercent: 0, scale: 1, ease: "expo.inOut", duration: 2 }, "-=0.35")
-    .fromTo(heading, { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, ease: "expo", duration: 1 }, "-=1")
-    .fromTo(desc, { autoAlpha: 0 }, { autoAlpha: 1, ease: "expo", duration: 1 }, "-=0.5");
+  scroll(animation, { target: card, offset: ["start center", "end center"] });
 });
 
-// Animate for What we do section
+const sequence = [
+  ["header .text-content", { opacity: 1 }, { duration: 0 }],
+  ["header .text-content *", { opacity: [0, 1], y: [15, 0] }, { delay: stagger(0.15), ease: [0.25, 1, 0.5, 1], duration: 1.5 }],
+];
 
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "#what-we-do-section",
-      start: "top center",
-      end: "top center",
-    },
-  })
-  .fromTo("#what-we-do-section .heading-section-text", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.1 })
-  .fromTo("#what-we-do-section a", { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.2, ease: "expo", duration: 0.75 });
+animate(sequence, { delay: 0.5 });
 
-// Handle Story Telling Section & Animate
-
-const slide = new splide.Splide("#storytelling-container", {
-  perPage: 3,
-  drag: true,
-  perMove: 1,
-  pagination: false,
-  gap: "1rem",
-  breakpoints: {
-    1024: {
-      perMove: 1,
-      padding: { left: "1.25rem", right: "1.25rem" },
-    },
-    960: {
-      perMove: 1,
-      drag: "free",
-    },
-    640: {
-      perPage: 1,
-      perMove: 1,
-      fixedWidth: "16rem",
-    },
+new Swiper("#hero-slide", {
+  speed: 1000,
+  navigation: {
+    nextEl: ".hero-slide-next",
+    prevEl: ".hero-slide-prev",
   },
-}).mount();
-
-const storyTellingCards = document.querySelectorAll("#story-card-container .storytelling-card");
-const storyTellingSection = document.querySelector("#storytelling-container");
-
-if (storyTellingCards.length > 0) {
-  gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: storyTellingSection,
-        start: "top center",
-        end: "top center",
-      },
-    })
-    .fromTo("#storytelling-heading", { autoAlpha: 0 }, { autoAlpha: 1 })
-    .fromTo(storyTellingCards, { autoAlpha: 0, y: 25 }, { autoAlpha: 1, y: 0, stagger: 0.15, ease: "expo", duration: 0.75 });
-} else {
-  storyTellingSection.classList.add("!hidden");
-}
-
-// StoryTelling Video Popup
-
-storyTellingCards.forEach((card) => {
-  card.addEventListener("click", (e) => {
-    setVideoSrc(card.dataset.url);
-    openVideoPopup();
-  });
 });
-
-// Award Marquee
-
-const initGallery = () => {
-  const gallery = document.querySelector("#award-marquee");
-  const childElement = gallery.firstElementChild;
-
-  if (childElement) {
-    for (let i = 0; i <= 3; i++) {
-      const duplicatedElement = childElement.cloneNode(true);
-      duplicatedElement.classList.add("duplicate-item");
-      gallery.appendChild(duplicatedElement);
-    }
-  }
-
-  let mm = gsap.matchMedia();
-
-  mm.add("(min-width: 1024px)", () => {
-    gsap.fromTo(
-      ".award-marquee-item",
-      { xPercent: 0 },
-      {
-        xPercent: -102.5,
-        repeat: -1,
-        duration: 20,
-        ease: "linear",
-      }
-    );
-  });
-};
-
-initGallery();

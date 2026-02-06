@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/index-old.js"></script>
+    <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    
+
+    <!-- Video Popup -->
+    <section id="video-popup" class="fixed z-30 flex items-center justify-center invisible w-full h-full p-4 opacity-0 backdrop-blur-sm bg-black/50">
+      <button id="close-video-popup" class="absolute top-8 right-8">
+        <img src="./icons/close-white.svg" alt="" width="24" height="24" />
+      </button>
+      <div class="w-full max-w-4xl bg-black aspect-video">
+        <iframe src="" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <header id="hero-section" class="w-full h-screen overflow-hidden bg-black max-h-[67.5rem] relative flex justify-center items-center text-white">
+        <div class="relative z-10 overflow-hidden text-[clamp(2rem,7vw,3.5rem)] text-center px-4">
+          <h1 class="max-w-[30ch] w-full leading-snug opacity-0">Thailand Gastronomy Network Sustainability Movement Through Food</h1>
+        </div>
+
+        <iframe
+          src="https://player.vimeo.com/video/872245150?h=70966264ba&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1&autopause=false"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          id="hero-section-bg"
+          class="absolute w-[178vh] h-[56.25vw] top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2"
+          allow="autoplay; fullscreen"
+          data-ready="true"
+        ></iframe>
+
+        <a href="#tgn-intro" class="w-8 h-12 absolute border-[3px] opacity-0 flex justify-center p-1 rounded-2xl bottom-[6%] left-[50%] translate-x-[-50%] z-10" id="scrolldown-mouse">
+          <div id="scrolldown-mouse-wheel" class="w-1 h-3 bg-white rounded-full"></div>
+        </a>
+      </header>
+
+      <section id="tgn-intro" class="py-20 text-image-section bg-body-gold">
+        <div class="flex flex-col main-container gap-x-24 gap-y-8 lg:flex-row">
+          <div class="flex-1 space-y-6 lg:mt-12">
+            <h2 class="heading-section-text">Thailand Gastronomy Network</h2>
+            <div class="space-y-6 desc">
+              <p class="text-lg">
+                Gastronomic or food tourism experiences are much more than just eating and drinking at a destination. Food tourism comprises a continuum that extends from production (e.g.,
+                agri-tourism and visits to artisanal food producers) through to post-consumption (e.g., value-added souvenir products and food waste management).
+                <br />
+                <br />
+                Along this continuum are numerous opportunities to engage tourists in a variety of food-related tourism activities and experiences that create socioeconomic benefits for a broad range
+                of stakeholders, many of whom exist outside the primary tourism industry.
+              </p>
+
+              <a href="" class="section-link text-gold">
+                LEARN MORE
+
+                <div class="w-12 h-12 btn-rounded-gold">
+                  <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <figure class="flex-1 lg:aspect-[0.95] max-w-[35rem] mx-auto overflow-hidden">
+            <img src="./images/pages/index/tgn-intro.webp" alt="" class="object-cover w-full h-full section-image" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="what-we-do-section" class="py-20 space-y-8 text-center bg-body-gradient">
+        <h2 class="heading-section-text">What we do?</h2>
+        <div class="main-container grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-7 flex-wrap">
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.85]">
+              <img src="./images/pages/index/wwd-1.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-xl">Gastronomy Academy (E-Learning Platform)</p>
+          </a>
+
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.85]">
+              <img src="./images/pages/index/wwd-2.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-xl">Sustainable Food Learning Journey & Workshop</p>
+          </a>
+
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.85]">
+              <img src="./images/pages/index/wwd-3.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-xl">Gastronomy Trail & Visit</p>
+          </a>
+
+          <a href="" class="space-y-4 ease-theme duration-200 hover:!scale-95">
+            <figure class="w-full aspect-[0.85]">
+              <img src="./images/pages/index/wwd-4.webp" alt="" class="object-cover w-full h-full" />
+            </figure>
+
+            <p class="text-xl">Gastronomy Fair & Forum</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="py-20 text-image-section">
+        <div class="flex flex-col main-container gap-x-16 gap-y-8 lg:flex-row">
+          <figure class="flex-1 lg:aspect-[0.95] max-w-[35rem] mx-auto overflow-hidden">
+            <img src="./images/pages/index/education.webp" alt="" class="object-cover w-full h-full section-image" />
+          </figure>
+          <div class="flex-1 space-y-6 lg:mt-12">
+            <h2 class="heading-section-text">Educational Research Initiatives</h2>
+
+            <div class="space-y-6 desc">
+              <p class="text-lg">
+                The integrated framework for the development of gastronomy tourism was formulated and used as a basis to evaluate the current state of gastronomic tourism in ASEAN countries. Progress
+                made for each of the attributes was also highlighted. Experts from all 10-member ASEAN states along with international panellists were invited to provide insights about food tourism in
+                the region as well as share their thoughts on the future of ASEAN gastronomy tourism. The analysis of the data focused on identifying comparative advantages. The purpose of this
+                analysis is to inform the development of strategic directions suited to the specific context of each member state. Our Brain Bank
+              </p>
+
+              <a href="" class="section-link text-gold">
+                LEARN MORE
+
+                <div class="w-12 h-12 btn-rounded-gold">
+                  <img src="./icons/arrow-right-gold.svg" alt="" width="30" height="30" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 space-y-8 overflow-hidden text-center main-container">
+        <h2 class="heading-section-text">“A Collection of Unique Territorial Assets, Presenting Artistically and Sustainably through Gastronomy Experiences”</h2>
+
+        <div class="relative object-cover w-full overflow-hidden aspect-video max-md:aspect-square">
+          <iframe
+            src="https://player.vimeo.com/video/872245150?h=70966264ba&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&muted=1"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            class="absolute min-w-full w-[178vh] h-[56.25vw] min-h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            allow="autoplay; fullscreen"
+            data-ready="true"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="storytelling-container" class="pt-10 space-y-8 overflow-hidden splide pb-28">
+        <div id="storytelling-heading" class="flex flex-col justify-between md:items-center md:flex-row main-container gap-y-8">
+          <h3 class="heading-section-text">Storytelling Through Food</h3>
+          <div class="flex gap-x-4 splide__arrows">
+            <button id="storytelling-prev" class="w-12 h-12 rotate-180 btn-rounded-gold splide__arrow splide__arrow--prev">
+              <img src="./icons/arrow-right-gold.svg" alt="" />
+            </button>
+            <button id="storytelling-next" class="w-12 h-12 btn-rounded-gold splide__arrow splide__arrow--next">
+              <img src="./icons/arrow-right-gold.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="splide__track main-container lg:!overflow-visible">
+          <div id="story-card-container" class="flex w-full pb-2 splide__list lg:min-w-fit">
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">ปลาไทย</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">Black Journey</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">ปลาไทย</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 1 Lagoon Gastronomyasdasdasdasdasdsadasdasd</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/e33f/972f/e31d822160f49246d08436f0c203e889?Expires=1697414400&Signature=mqwfyGJKjaAiQ342twvW9loe~HKC1iZoJt63lUluvq82jRu7UkSKswmVXDlsnTJsvrz6kG8fsXPHE-zDdcIx144NK-OgiNcc5eX65GRinbWy3QRgvugYoxaLvhBZ92lL5PJsYuVy3QRNjAeLGYY2yQXRNZk3pbGuLyusVuFZOMkiNVUIQ4ieaeG7EqlbwFYm3RQ9CfW9pKrasDDYzHIBBqbDGGdZbRzu-m~FMpaCQyDorWtX8El7tfpcopwQ937lheZ1wFsg1ZjUzbA3V1VuRTv26mXQGsHax9srFk8MHchyYl0bH4T~ih1mv2hTSfPbPRqIMHPuDrs9lfHECaggSw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">อาหารอีสาน</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 2 Isan Soul Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/0f88/a9a6/925d799c2cc9a3fbfcbb726b0d82a627?Expires=1697414400&Signature=jIvg~mBaUKOGuNE5vR06uKnC2gpuevrOiAESyTIabf~DDdAfSxNl-qzHvWykHkVGH-WRpmB1VgiqX3o6XQhI7KjQxCwfdCVqSXxYlFNhGw3~tx-apIvKUwB4osFa838Mwwws7stTxipbYSxqITqbwbpv1e64qChe2q5syzEudhnvG0BEXuJfaOJAKWjz8fiFgQ7UqnQ2s7kIe5earfG-AUTDjetqT2A4fP4sgPi5WwNttwFYdh--s0lqJ8WnEM0~y~Hh4yAtjkXpop1ssF6Ha8z662-YG2ikGYhPpH~-KKF1lzowSHPwpr-8lEo2YH-DG6SPY6GERHo1xoCOKI5W2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">สมัยอยุธยา</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 3 Portland Bazaar Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/4caa/c259/68f66c99a9c519c55fd503744eba9a8d?Expires=1697414400&Signature=kElhO8TsLB9vGeSlHQZ7OpxGWPv3-yF9NtAwgbX~D3NE4AlG784Vtuj2jlilKI4uzApz4Fxj4kiHxfqChfWv068Jx8NSA4T-eCKxk~GeUG-5H24413H2Nfg2GKep5HCfvVe2LaUsB8vugcUEt4qm1lfoVDvtUpTQyYAdySguwdOfgjVfmnQufanWBd1V8kpy81RzU2AZInU94hiySxIir~ukGfQ0eX8mGUh2BibpVxza~yHVQxOf0HWexbHGYXdVLLg-GXW4vCOCDiBjF~5B9s20KoGgMfT54TwivzztYs3I-ZajYXMrNf7gFtW0CfdYJXB6Ye6BMxs3-uo1F2MByg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+
+            <button data-url="https://player.vimeo.com/video/872245150?h=70966264ba" class="splide__slide storytelling-card">
+              <div class="storytelling-info">
+                <h4 class="storytelling-heading">Black Journey</h4>
+                <div class="info-underline"></div>
+                <p class="storytelling-desc">EP. 4 Wondering Gastronomy</p>
+              </div>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/38f2/414d/f04b8373a6f9b92ad382b542f8bb621c?Expires=1697414400&Signature=iOGjbxQGhmqiMrmcui1dY9hqvodrJG40kurYb4C1T2mQimoOV3iOg3y8003ve182WP4wnKWHzOI1FQg8hwZrRrQ4BcBlU-v4zA-4tA6jdNqESfAGTknzZSnJHZPWIFmy9mnOGl7xEXna8WWXyEUBa30~yThAbqt6dvF~hrydCKk1l7aQvGvOUavx7eTYWGucMlpFu-sRApOiZjzBf0LgZ4~tJe3FUWqlh~7YRfNmeHsUUzv3dClONheFq7ouUQIXNc6jX2zdNuDNcVamlT5PBc9eMaRb~uxmi4Vv7CRQ2kQw68RjMJUm63m7MHidGBQfTJIbpq9t6h9SU8JXb7jRTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide-section" class="relative w-full lg:h-[40.625rem] h-[80vh] flex max-lg:flex-col">
+        <figure class="relative flex-1 w-full overflow-hidden shrink-0">
+          <img src="./images/pages/index/black-journey.webp" alt="" class="absolute object-cover w-full h-full image-slide-content" />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/2109/f227/078686d9fe4e8e2e0cb5c77f9c92f301?Expires=1697414400&Signature=qerNsuJ6yTHC4AFJd9E4Ye4g7MvcxcKWb2j6Eo~u6Vb~U0e39pd2Qs1gfXyFubq9zo5qDnElVhxYatK71cGcGs~eHJFEAmkD6LrendiQWABcE9ame5dj5AkyYEWWHvdOkbcfxoXoTuGv7eqbAgBNopn9sFSzGuITmX~~m9p5LCacEMzHllDj4IgV4sIOghkufsltkYXVIpE983DsqqFHVMJAy52Qe3gVzslSkq3i-d4BiF6OfVzDMGaSNe6g7EeFmVxOhQRcnYL-3g7L200okrjupeLc4ycI~4NuBoJlX55f~hB7xqpItYxBfGeld3xhTSkANwSKMWcEOCyeLfjFdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+            alt=""
+            class="absolute object-cover w-full h-full image-slide-content"
+          />
+        </figure>
+
+        <div class="flex items-center justify-center lg:flex-1 flex-[0.5] p-4 shrink-0">
+          <div class="slide-content max-w-[60ch] space-y-6">
+            <h3 class="text-3xl !leading-snug md:text-4xl">Explore Amazing New Chapters: Beyond what is on the plate</h3>
+            <p class="text-[#AD9C6C] text-xl">Journey with chef Journey like chef</p>
+          </div>
+
+          <div class="slide-content max-w-[60ch] space-y-6">
+            <h3 class="text-3xl !leading-snug md:text-4xl">Explore Amazing New Chapters: Beyond what is on the plate</h3>
+            <p class="text-[#AD9C6C] text-xl">Journey with chef Journey like chef</p>
+          </div>
+
+          <div id="slide-pagination" class="absolute z-10 flex justify-center gap-x-2 bottom-8 h-fit"></div>
+        </div>
+      </section>
+
+      <section class="overflow-hidden">
+        <div class="relative flex justify-between py-24 gap-y-8 gap-x-16 max-lg:flex-col lg:items-center main-container">
+          <h3 class="flex-[0.25] text-3xl text-gold">Award Gastrodiplomacy</h3>
+
+          <div>
+            <div class="lg:overflow-x-hidden">
+              <div id="award-marquee" class="max-lg:[&>.duplicate-item]:hidden flex flex-1 gap-8 text-xl lg:w-fit max-md:flex-wrap md:text-2xl whitespace-nowrap">
+                <div class="flex gap-10 max-lg:flex-wrap award-marquee-item opacity-80">
+                  <a href="">Storytellers</a>
+                  <a href="">Chef movement</a>
+                  <a href="">Tribal marketing</a>
+                  <a href="">Storytelling through food</a>
+                  <a href="">Local-based Design & Innovation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex justify-center items-center relative w-full h-[28rem]">
+        <div class="relative z-10 max-w-[20rem] text-center space-y-4">
+          <h3 class="text-4xl leading-snug text-gold">SIGN UP FOR OUR NEWSLETTER</h3>
+          <form class="flex items-center w-full border-b border-gold">
+            <input type="email" class="w-full bg-transparent text-gold" placeholder="Email" />
+            <button type="submit">
+              <img src="./icons/arrow-right-gold.svg" alt="" />
+            </button>
+          </form>
+        </div>
+
+        <img src="./images/pages/index/sign-up.webp" alt="" class="absolute object-cover w-full h-full" />
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
