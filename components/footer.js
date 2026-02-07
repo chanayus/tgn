@@ -18,7 +18,8 @@ class Footer extends HTMLElement {
           <section class="space-y-5 flex-1">
             <h4 class="text-3xl font-bold">Thailand Gastronomy Network</h4>
             <address class="not-italic space-y-3">
-              <p>Perfect Link Consulting Group Co., Ltd. 129/171 Perfect Place, <br />Rattanathibet RoadBangraknoi, Muang, Nonthaburi 11000 Thailand</p>
+              <p class="leading-loose">Perfect Link Consulting Group Co., Ltd. 129/171 Perfect Place,</p>
+              <p class="leading-loose">Rattanathibet RoadBangraknoi, Muang, Nonthaburi 11000 Thailand</p>
               <a href="" class="flex items-center gap-x-2">
                 <div class="svg-icon size-4 bg-brown" data-src="../icons/mail.svg"></div>Thailandgastronomynetwork@gmail.com
               </a>

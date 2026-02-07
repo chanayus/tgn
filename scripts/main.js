@@ -52,15 +52,15 @@ const toggleMobileNavMenu = () => {
   if (menuVisible === true && mobileNavMenu) {
     const sequence = [
       ["#mobile-nav-menu-content", { y: "-100%" }, { duration: 0 }],
-      ["#mobile-nav-menu", { opacity: [0, 1], visibility: ["hidden", "visible"] }, { ease: defaultEase, duration: 0.75 }],
-      ["#mobile-nav-menu-content", { y: "0%" }, { duration: 0.75, ease: defaultEase, at: "<-0.75" }],
+      [mobileNavMenu, { opacity: [0, 1], visibility: ["hidden", "visible"] }, { ease: defaultEase, duration: 0.5 }],
+      ["#mobile-nav-menu-content", { y: "0%" }, { duration: 0.5, ease: defaultEase, at: "<-0.05" }],
     ];
 
     animate(sequence);
   } else if (menuVisible === false && mobileNavMenu) {
     const sequence = [
-      ["#mobile-nav-menu-content", { y: "-100%" }, { duration: 0.75, ease: defaultEase }],
-      [mobileNavMenu, { opacity: 0, y: "0%", visibility: ["visible", "hidden"] }, { ease: defaultEase, duration: 0.75, at: "<-0.5" }],
+      ["#mobile-nav-menu-content", { y: "-100%" }, { duration: 0.5, ease: defaultEase }],
+      [mobileNavMenu, { opacity: 0, y: "0%", visibility: ["visible", "hidden"] }, { ease: defaultEase, duration: 0.5, at: "<+0.2" }],
     ];
 
     animate(sequence);

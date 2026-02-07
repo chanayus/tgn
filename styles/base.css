@@ -153,7 +153,12 @@ button:disabled {
 main#main-content {
   flex: 1 1 0;
   animation: fade-in 0.35s forwards;
-  margin-top: 6rem;
+  margin-top: 4.25rem;
+  @media (width >= 1024px) {
+    & {
+      margin-top: 6rem;
+    }
+  }
 }
 
 ul {
@@ -172,6 +177,10 @@ ol {
 
 .ease-theme {
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-reveal] {
+  opacity: 0;
 }
 
 .loader {

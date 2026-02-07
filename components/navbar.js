@@ -1,7 +1,7 @@
 class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
-    <nav id="navbar" class="fixed border-b border-[#EBE5DA] bg-cream text-brown top-0 z-30 lg:px-8 px-5 flex justify-between items-center w-full h-24 ">
+    <nav id="navbar" class="fixed border-b border-[#EBE5DA] bg-cream text-brown top-0 z-30 lg:px-8 px-4 flex justify-between items-center w-full lg:h-24 h-17 ">
 
       <a href="" class="flex flex-1 items-center gap-x-2">
         <img src="./images/logo.webp" class="lg:size-14 size-12" alt="" width="55" height="55" />
@@ -35,12 +35,11 @@ class Navbar extends HTMLElement {
       </div>
     </nav>
 
-    <section id="mobile-nav-menu" class="fixed lg:hidden opacity-0 invisible pt-24 top-0 left-0 w-full h-full z-10 bg-[rgba(92,72,49,0.92)]">
+    <section id="mobile-nav-menu" class="fixed lg:hidden opacity-0 invisible lg:pt-24 pt-17 top-0 left-0 w-full h-full z-10 bg-[rgba(92,72,49,0.92)]">
       <div id="mobile-nav-menu-content" class="bg-cream py-5 px-8 text-brown flex flex-col gap-y-4 rounded-b-xl">
         <a href="" class="text-xl">Learn</a>
         <a href="" class="text-xl">Taste</a>
         <a href="" class="text-xl">Connect</a>
-        <a href="" class="text-xl">Book</a>
         <a href="" class="text-xl">About</a>
         <a href="" class="text-xl">Contact</a>
       </div>
