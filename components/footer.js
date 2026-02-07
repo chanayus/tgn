@@ -2,7 +2,7 @@ class Footer extends HTMLElement {
   pathname = window.location.pathname ?? "";
   connectedCallback() {
     this.innerHTML = /*html*/ `
-    <footer class="bg-black lg:px-8 px-6 py-6 relative">
+    <footer class="bg-black lg:px-8 px-4 py-6 relative">
       <video class="absolute top-0 left-0 w-full h-full object-cover" width="550" height="620" playsinline autoplay loop muted>
         <source src="../videos/footer.mp4" type="video/mp4" />
       </video>
