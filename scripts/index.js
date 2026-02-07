@@ -1,8 +1,8 @@
-import { animate, scroll, stagger } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+import { animate, scroll, stagger } from "./main.js";
 
 const stackCards = document.querySelectorAll(".stackcard");
 
-stackCards?.forEach((card, index) => {
+stackCards?.forEach((card) => {
   const animation = animate(card, { scale: [1, 0.9] });
 
   scroll(animation, { target: card, offset: ["start center", "end center"] });
