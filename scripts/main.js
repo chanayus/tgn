@@ -2,6 +2,8 @@ import { animate, inView, scroll, stagger } from "https://cdn.jsdelivr.net/npm/m
 
 export { animate, inView, scroll, stagger };
 
+export const defaultEase = [0.25, 1, 0.5, 1];
+
 import "./modules/collapsibleMenu.js";
 import "./modules/animation.js";
 
@@ -50,15 +52,15 @@ const toggleMobileNavMenu = () => {
   if (menuVisible === true && mobileNavMenu) {
     const sequence = [
       ["#mobile-nav-menu-content", { y: "-100%" }, { duration: 0 }],
-      ["#mobile-nav-menu", { opacity: [0, 1], visibility: ["hidden", "visible"] }, { ease: [0.25, 1, 0.5, 1], duration: 0.75 }],
-      ["#mobile-nav-menu-content", { y: "0%" }, { duration: 0.75, ease: [0.25, 1, 0.5, 1], at: "<-0.75" }],
+      ["#mobile-nav-menu", { opacity: [0, 1], visibility: ["hidden", "visible"] }, { ease: defaultEase, duration: 0.75 }],
+      ["#mobile-nav-menu-content", { y: "0%" }, { duration: 0.75, ease: defaultEase, at: "<-0.75" }],
     ];
 
     animate(sequence);
   } else if (menuVisible === false && mobileNavMenu) {
     const sequence = [
-      ["#mobile-nav-menu-content", { y: "-100%" }, { duration: 0.75, ease: [0.25, 1, 0.5, 1] }],
-      [mobileNavMenu, { opacity: 0, y: "0%", visibility: ["visible", "hidden"] }, { ease: [0.25, 1, 0.5, 1], duration: 0.75, at: "<-0.5" }],
+      ["#mobile-nav-menu-content", { y: "-100%" }, { duration: 0.75, ease: defaultEase }],
+      [mobileNavMenu, { opacity: 0, y: "0%", visibility: ["visible", "hidden"] }, { ease: defaultEase, duration: 0.75, at: "<-0.5" }],
     ];
 
     animate(sequence);
@@ -66,3 +68,24 @@ const toggleMobileNavMenu = () => {
 };
 
 toggleButton?.addEventListener("click", () => toggleMobileNavMenu());
+
+// Navbar Scroll to hide
+
+let prevScrollY = window.scrollY || 0;
+let isHidden = false;
+
+window.addEventListener("scroll", () => {
+  const currentY = window.scrollY;
+
+  if ((currentY < prevScrollY || currentY <= 80) && isHidden) {
+    animate("#navbar", { y: "0%" }, { ease: defaultEase });
+    isHidden = false;
+  }
+
+  if (currentY > prevScrollY && currentY > 80 && !isHidden) {
+    animate("#navbar", { y: "-100%" }, { ease: defaultEase });
+    isHidden = true;
+  }
+
+  prevScrollY = currentY;
+});
