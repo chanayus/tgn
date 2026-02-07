@@ -17,6 +17,10 @@
   font-family: "Crimson Text", "IBM Plex Sans Thai", sans-serif;
 }
 
+.playfair-font {
+  font-family: "Playfair Display", "IBM Plex Sans Thai", sans-serif !important;
+}
+
 * {
   touch-action: manipulation;
   box-sizing: border-box;

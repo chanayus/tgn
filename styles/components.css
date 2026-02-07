@@ -17,7 +17,7 @@
   & > button * {
     pointer-events: none;
   }
-  .collapsible-content-wrapper {
+  & .collapsible-content-wrapper {
     display: grid;
     width: 100%;
     transition:
@@ -39,12 +39,12 @@
       grid-template-rows: 0fr;
     }
   }
-  .collapsible-content {
+  & .collapsible-content {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    a,
-    button {
+    & a,
+    & button {
       padding-left: 1.25rem;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -249,14 +249,14 @@
 
 .pagination-container {
   text-align: center;
-  .pagination {
+  & .pagination {
     display: flex;
     justify-content: center;
     column-gap: 0.4rem;
     padding: 0;
     margin: 0;
-    button,
-    a {
+    & button,
+    & a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -384,9 +384,6 @@ input[type="checkbox"]:checked::before {
   }
 }
 
-.playfair-font {
-  font-family: "Playfair Display", "IBM Plex Sans Thai", sans-serif !important;
-}
 
 [class*="btn-rounded"] {
   aspect-ratio: 1/1;
@@ -416,8 +413,8 @@ input[type="checkbox"]:checked::before {
   &:hover {
     background: var(--gold);
     color: var(--body-gold);
-    rect,
-    path {
+    & rect,
+    & path {
       fill: #fff;
       stroke: #fff;
     }
@@ -440,12 +437,12 @@ input[type="checkbox"]:checked::before {
   &:hover {
     background: #fff;
     color: #000;
-    rect,
-    path {
+    & rect,
+    & path {
       fill: #000;
       stroke: #000;
     }
-    img {
+    & img {
       filter: contrast(0) grayscale(100%);
     }
     & .svg-icon {
@@ -456,19 +453,19 @@ input[type="checkbox"]:checked::before {
 
 .btn-rounded-stroke-white {
   background: rgba(6, 6, 6, 0.2);
-  border-color: #FFF;
+  border-color: #fff;
   & .svg-icon {
     background-color: #fff;
   }
   &:hover {
     background: #fff;
     color: #000;
-    rect,
-    path {
+    & rect,
+    & path {
       fill: #000;
       stroke: #000;
     }
-    img {
+    & img {
       filter: contrast(0) grayscale(100%);
     }
     & .svg-icon {
@@ -486,8 +483,8 @@ input[type="checkbox"]:checked::before {
   &:hover {
     background: #000;
     color: #000;
-    rect,
-    path {
+    & rect,
+    & path {
       fill: #000;
       stroke: #000;
     }
@@ -506,8 +503,8 @@ input[type="checkbox"]:checked::before {
   &:hover {
     background: var(--brown);
     color: var(--brown);
-    rect,
-    path {
+    & rect,
+    & path {
       fill: var(--brown);
       stroke: var(--brown);
     }
@@ -572,12 +569,12 @@ input[type="checkbox"]:checked::before {
   &:hover .btn-rounded-gold {
     background: var(--gold);
     color: var(--body-gold);
-    rect,
-    path {
+    & rect,
+    & path {
       fill: #fff;
       stroke: #fff;
     }
-    img {
+    & img {
       filter: contrast(100) grayscale(100%);
     }
   }

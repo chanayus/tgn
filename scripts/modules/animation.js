@@ -1,4 +1,4 @@
-import { animate, inView } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+import { animate, inView } from "../main.js";
 
 const sections = document.querySelectorAll("[data-reveal]");
 
