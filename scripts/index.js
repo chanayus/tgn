@@ -10,7 +10,7 @@ stackCards?.forEach((card) => {
 
 const sequence = [
   ["header .text-content", { opacity: 1 }, { duration: 0 }],
-  ["header .text-content *", { opacity: [0, 1], y: [15, 0] }, { delay: stagger(0.15), ease: defaultEase, duration: 1.5 }],
+  ["header .text-content *", { opacity: [0, 1], y: [20, 0], filter: ["blur(4px)", "blur(0px)"] }, { delay: stagger(0.175), ease: defaultEase, duration: 1.5 }],
 ];
 
 animate(sequence, { delay: 0.5 });
