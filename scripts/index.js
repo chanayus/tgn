@@ -4,7 +4,6 @@ const stackCards = document.querySelectorAll(".stackcard");
 
 stackCards?.forEach((card) => {
   const animation = animate(card, { scale: [1, 0.8] });
-
   scroll(animation, { target: card, offset: ["start center", "end center"] });
 });
 

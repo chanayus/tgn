@@ -3,7 +3,7 @@ class Navbar extends HTMLElement {
     this.innerHTML = /*html*/ `
     <nav id="navbar" class="fixed border-b border-[#EBE5DA] bg-cream text-brown top-0 z-30 lg:px-8 px-4 flex justify-between items-center w-full lg:h-24 h-17 ">
 
-      <a href="" class="flex flex-1 items-center gap-x-2">
+      <a href="../index.html" class="flex flex-1 items-center gap-x-2">
         <img src="./images/logo.webp" class="lg:size-14 size-12" alt="" width="55" height="55" />
         <div class="crimson-font font-bold flex flex-col text-center">
           <span class="lg:text-3xl/none text-2xl/none">Thailand</span>

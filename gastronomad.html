@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/pages/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/gastronomad.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <main id="main-content" class="md:space-y-32 space-y-16 pt-14 pb-28">
+      <section class="main-container space-y-10">
+        <img data-reveal src="./images/pages/gastronomad/heading.webp" class="w-full max-w-3xl mx-auto" width="730" height="120" alt="" />
+
+        <p data-reveal data-delay="0.25" class="text-center text-balance text-lg/relaxed">
+          We believe food is more than just what we eat. It is how places speak, how communities remember, and how cultures move through time. Our Gastronomad was created to follow flavour not to
+          chase trends, not to just rank most popular restaurants (because often the hidden ones that are most precious), we are not just collecting destinations but to understand places through the
+          way people cook, eat, and share food every day.
+        </p>
+      </section>
+
+      <section data-reveal data-amount="0.01" data-delay="0.5" class="main-container lg:space-y-16 space-y-6">
+        <section class="grid lg:grid-cols-4 sm:grid-cols-2 items-center gap-6">
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/1.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">Taste in 60 Seconds</h6>
+            <p class="text-lg line-clamp-3">Discovery & Reach Short-form videos telling one food story at a time.</p>
+          </div>
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/2.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">On the Plate, in the Place</h6>
+            <p class="text-lg line-clamp-3">Visual Storytelling How food lives where it's made.</p>
+          </div>
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/3.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">Behind the Taste</h6>
+            <p class="text-lg line-clamp-3">Insight & Meaning What food culture really tells us about places and communities.</p>
+          </div>
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/4.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">Where Taste Leads</h6>
+            <p class="text-lg line-clamp-3">Routes & Journeys Travel guided by food, not maps.</p>
+          </div>
+        </section>
+        <section class="grid lg:grid-cols-4 sm:grid-cols-2 items-center gap-6">
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/3.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">Behind the Taste</h6>
+            <p class="text-lg line-clamp-3">Insight & Meaning What food culture really tells us about places and communities.</p>
+          </div>
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/4.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">Where Taste Leads</h6>
+            <p class="text-lg line-clamp-3">Routes & Journeys Travel guided by food, not maps.</p>
+          </div>
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/1.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">Taste in 60 Seconds</h6>
+            <p class="text-lg line-clamp-3">Discovery & Reach Short-form videos telling one food story at a time.</p>
+          </div>
+          <div class="max-sm:max-w-96 max-sm:mx-auto">
+            <img src="./images/pages/gastronomad/2.webp" class="w-full" alt="" width="270" />
+            <h6 class="text-xl text-gold font-bold mt-3">On the Plate, in the Place</h6>
+            <p class="text-lg line-clamp-3">Visual Storytelling How food lives where it's made.</p>
+          </div>
+        </section>
+      </section>
+
+      <section data-reveal class="main-container max-xl:overflow-hidden flex items-center max-lg:flex-col-reverse gap-14 gap-y-10">
+        <div id="text-slide" class="lg:text-4xl/normal text-2xl/normal lg:place-items-center max-lg:text-center grid text-gold flex-1">
+          <p class="swipe-text row-1 col-1 text-balance">
+            We believe: Food is culture, not content. Communities are knowledge holders, not backdrops. Travel is learning, not consumption. Taste is a language that connects landscapes and lives.
+          </p>
+          <p class="swipe-text row-1 col-1 text-balance lg:text-3xl/normal">
+            In a world of fast recommendations and endless lists, Gastronomad chooses to slow down to listen at the table, to cook alongside locals, to walk markets before maps, and to let food lead
+            the way. This platform exists to: Tell stories rooted in place Celebrate everyday food wisdom connect cities through shared culinary heritage Turn gastronomy into a bridge between culture,
+            wellbeing and economy
+          </p>
+          <p class="swipe-text row-1 col-1 text-balance">
+            Gastronomad is not just a campaign, It is a living platform where cities become chapters, where food becomes a guide, and where every journey begins with a taste.
+            <br /><b>Let flavors lead the way. Co-create yours with us. Contact us.</b>
+          </p>
+        </div>
+
+        <div id="img-slide" class="relative flex-1 grid w-full place-items-center">
+          <video class="swipe-card row-1 col-1 bg-black max-w-109 w-3/4 aspect-[0.75] object-cover rounded-xl" width="442" height="585" autoplay loop muted playsinline>
+            <source src="./videos/pages/gastronomad/slide-1.mp4" type="video/mp4" />
+          </video>
+          <img src="./images/pages/gastronomad/slide-2.webp" class="swipe-card row-1 col-1 bg-black max-w-109 w-3/4 aspect-[0.75] object-cover rounded-xl" alt="" width="442" height="585" />
+          <img src="./images/pages/gastronomad/slide-3.webp" class="swipe-card row-1 col-1 bg-black max-w-109 w-3/4 aspect-[0.75] object-cover rounded-xl" alt="" width="442" height="585" />
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
