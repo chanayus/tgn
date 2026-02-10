@@ -1,0 +1,49 @@
+nav.gold-theme {
+  & * {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+  & #bar-icon {
+    & path {
+      fill: var(--gold);
+    }
+
+    &:hover path {
+      fill: #000;
+    }
+  }
+
+  & #user-icon {
+    & path {
+      stroke: var(--gold);
+    }
+    &:hover path {
+      stroke: #000;
+    }
+  }
+}
+
+nav {
+  & button,
+  & a,
+  & path {
+    transition:
+      color 0.2s,
+      border-color 0.2s,
+      fill 0.2s,
+      stroke 0.2s;
+  }
+}
+
+#mobile-nav-menu {
+  & button,
+  & a,
+  & path,
+  & rect {
+    transition:
+      color 0.2s,
+      border-color 0.2s,
+      fill 0.2s,
+      stroke 0.2s;
+  }
+}

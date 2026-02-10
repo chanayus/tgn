@@ -1,4 +1,4 @@
-import { animate, defaultEase, scroll, stagger } from "./main.js";
+import { animate, defaultEase, scroll, stagger } from "./modules/animation.js";
 
 const stackCards = document.querySelectorAll(".stackcard");
 

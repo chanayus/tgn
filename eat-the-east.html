@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/pages/eat-the-east.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/eatTheEast.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="!mt-24 min-h-fit overflow-hidden">
+      <header id="hero-section" class="w-full relative aspect-video 2xl:h-[calc(100vh-6rem)] overflow-hidden bg-black/50">
+        <img id="hero-bg" class="w-full h-full object-cover" src="./images/pages/eat-the-east/hero.webp" alt="" />
+        <svg id="ellipse" class="absolute max-lg:hidden w-full h-full -bottom-[45%]" width="1440" height="704" viewBox="0 0 1440 704" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="720.5" cy="391" rx="859.5" ry="391" fill="var(--cream)" />
+        </svg>
+      </header>
+
+      <section id="intro-section" class="relative">
+        <div class="main-container space-y-8 text-center lg:py-24 py-16">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold">Eat the East : The Grand Road Trip</h2>
+
+          <p data-reveal class="lg:text-2xl text-lg">เดินทางสู่ภาคตะวันออก 9 จังหวัด เปิดมุมมองใหม่ ให้รสชาตินำทาง</p>
+
+          <p data-reveal class="text-lg">
+            เมื่อการตามหา “รส” กลายเป็นเข็มทิศนำทางที่ลึกซึ้งกว่าการตามหา “ร้าน” Gastronomad จุดประกายการ เดินทางแบบ Road Trip ไปตามหารสชาติแห่งภาคตะวันออก 9 จังหวัด คุณจะได้สัมผัสจิตวิญญาณท้องถิ่น
+            ผ่านวัตถุดิบ เรื่องเล่าและวิถีชีวิตของผู้คน ในพื้นที่ภาคตะวันออกของประเทศไทย ซึ่งโดดเด่นด้วยวัฒนธรรม อาหารที่หลากหลาย ครอบคลุมตั้งแต่อาหารลุ่มน้ำ อาหารทะเล อาหารสมุนไพร อาหารจากสวนผลไม้ ไป
+            จนถึงอาหารที่สะท้อนอิทธิพลทางวัฒนธรรมและชาติพันธุ์ในแต่ละจังหวัด เพื่อสร้าง ประสบการณ์แห่งรสชาติที่ น่าจดจำ
+          </p>
+
+          <div data-reveal class="flex items-center gap-x-4 justify-center">
+            <a href="" class="btn-brown max-w-52 !px-0 flex-1">เริ่มออกเดินทาง</a>
+            <a href="" class="btn-stroke-brown max-w-52 !px-0 flex-1">เลือกเส้นทางรสชาติ</a>
+          </div>
+
+          <p data-reveal class="text-lg">“Every Route Tastes Like the East”</p>
+
+          <svg class="w-72 mx-auto relative top-14 max-lg:hidden" width="289" height="17" viewBox="0 0 289 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="line"
+              d="M2.5 8.49951C26.1667 -12.2851 49.8333 29.2841 73.5 8.49951C97.1667 -12.2851 120.833 29.2841 144.5 8.49951C168.167 -12.2851 191.833 29.2841 215.5 8.49951C239.167 -12.2851 262.833 29.2841 286.5 8.49951"
+              stroke="#20B2AA"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+
+        <!-- props -->
+        <svg id="bike" class="w-72 max-xl:hidden absolute bottom-16 left-0" width="298" height="207" viewBox="0 0 298 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_489_4177)">
+            <path d="M66.0855 88.1073L234.183 140.814L237.639 129.536L69.5416 76.8293L66.0855 88.1073Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <path
+              d="M10.737 94.9154C35.0343 94.1271 55.4453 113.255 56.2335 137.553C57.0218 161.85 37.8936 182.261 13.5964 183.049C-10.7008 183.837 -31.1118 164.709 -31.9001 140.412C-32.6884 116.115 -13.5602 95.7037 10.737 94.9154ZM10.0593 74.0264C-25.8118 75.1902 -53.9529 105.218 -52.7891 141.09C-51.6253 176.961 -21.597 205.102 14.2741 203.938C50.1552 202.774 78.2863 172.746 77.1225 136.875C75.9584 100.994 45.9305 72.8626 10.0593 74.0264Z"
+              fill="black"
+            />
+            <path d="M25.2453 137.167L13.8886 133.133L81.6927 49.8209L93.0495 53.8547L25.2453 137.167Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <g id="bike-wheel">
+              <path
+                d="M228.753 87.8427C253.05 87.0544 273.461 106.183 274.249 130.48C275.037 154.777 255.909 175.188 231.612 175.976C207.315 176.765 186.904 157.636 186.116 133.339C185.327 109.042 204.455 88.6309 228.753 87.8427ZM228.075 66.9537C192.194 68.1178 164.063 98.1457 165.227 134.017C166.39 169.888 196.419 198.029 232.29 196.865C268.161 195.702 296.302 165.673 295.138 129.802C293.974 93.921 263.946 65.7899 228.075 66.9537Z"
+                fill="black"
+              />
+              <path
+                d="M262.977 85.5813C266.755 86.3992 272.066 88.198 276.877 94.9155C284.118 105.006 283.642 115.017 283.642 115.017C283.642 115.017 277.643 102.795 273.188 97.7966C267.955 91.9232 264.875 88.2812 260.978 85.6562C259.833 84.8829 262.987 85.591 262.987 85.591L262.977 85.5813Z"
+                fill="white"
+              />
+            </g>
+
+            <path d="M220.45 129.288L231.528 124.521L189.468 26.7552L178.389 31.5213L220.45 129.288Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <path
+              d="M137.82 24.7881L221.677 3.26763C221.677 3.26763 227.698 4.14283 229.468 12.1296C231.506 21.2784 226.123 24.6647 226.123 24.6647L144.827 47.6929L137.81 24.7884L137.82 24.7881Z"
+              fill="#EFB334"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M144.831 47.6881C150.21 46.23 153.165 39.8669 151.433 33.4757C149.7 27.0845 143.935 23.0854 138.557 24.5435C133.178 26.0016 130.223 32.3647 131.956 38.7559C133.688 45.1471 139.453 49.1462 144.831 47.6881Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M211.926 66.3269C220.891 66.0361 227.922 58.5333 227.631 49.5689C227.34 40.6045 219.837 33.5732 210.873 33.864C201.909 34.1549 194.877 41.6577 195.168 50.6221C195.459 59.5865 202.962 66.6178 211.926 66.3269Z"
+              fill="#EFB334"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M227.631 49.5689C227.776 54.0266 226.108 58.1228 223.294 61.1456C222.439 61.3134 221.573 61.4316 220.673 61.4608C211.708 61.7516 204.206 54.7212 203.915 45.7559C203.771 41.2983 205.439 37.202 208.252 34.1792C209.107 34.0114 209.974 33.8932 210.873 33.864C219.839 33.5732 227.34 40.6036 227.631 49.5689Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path d="M14.1985 142.999L222.589 136.238L222.207 124.454L13.8162 131.215L14.1985 142.999Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <path
+              d="M230.817 147.767C240.383 147.456 247.886 139.45 247.576 129.884C247.265 120.318 239.259 112.815 229.693 113.125C220.127 113.435 212.624 121.442 212.934 131.008C213.244 140.574 221.251 148.077 230.817 147.767Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M29.3307 136.965C29.641 146.53 22.1367 154.537 12.5717 154.847C3.00677 155.158 -5.00078 147.653 -5.3111 138.088C-5.62142 128.523 1.88287 120.516 11.4478 120.206C21.0128 119.895 29.0204 127.4 29.3307 136.965Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M145.067 140.234C145.584 156.155 133.099 169.477 117.178 169.994C101.256 170.51 87.9341 158.026 87.4176 142.104C86.901 126.183 99.3856 112.861 115.307 112.344C131.229 111.828 144.551 124.312 145.067 140.234Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M119.257 71.038C121.583 56.4877 107.663 42.166 88.1668 39.0495C68.6701 35.933 50.9795 45.2019 48.6537 59.7521C46.3278 74.3024 60.2476 88.6241 79.7442 91.7406C99.2409 94.8571 116.932 85.5882 119.257 71.038Z"
+              fill="black"
+            />
+            <path
+              d="M55.9936 62.931C56.8264 66.706 58.6594 72.0094 65.3877 76.7837C75.5164 83.9791 85.5143 83.4446 85.5143 83.4446C85.5143 83.4446 73.265 77.4986 68.2388 73.0693C62.337 67.8679 58.6858 64.8047 56.0384 60.9185C55.2608 59.7731 55.9836 62.9314 55.9836 62.9314L55.9936 62.931Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_489_4177">
+              <rect width="348.11" height="194.87" fill="white" transform="translate(-57 11.2881) rotate(-1.85822)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </section>
+
+      <section id="specialist-section" class="relative lg:py-24 py-16">
+        <div data-amount="0.75" class="main-container space-y-8 text-center">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">การเดินทางที่สร้างสรรค์โดย ผู้เชี่ยวชาญด้านการท่องเที่ยวและวัฒนธรรมอาหารไทย</h2>
+
+          <p data-reveal class="text-lg">
+            การท่องเที่ยวแห่งประเทศไทย บัตรเครดิตเคทีซีและ Thailand Gastronomy Network (เครือข่าย วัฒนธรรมอาหารประเทศไทย) ร่วมสร้างสรรค์โครงการ Eat the East : The Grand Road Trip การ
+            เดินทางตามหารสชาติเฉพาะตัวของภาคตะวันออก 9 จังหวัด เปิดต่อมรับรสทุกมิติ เที่ยวไป ชิมไป เดินทางไป พร้อมกับยานยนต์คู่ใจ พบจุดหมายใน 9 จังหวัด ซึ่งมีเสน่ห์ที่ต่างกัน
+          </p>
+
+          <div data-reveal class="flex md:dgap-x-14 gap-6 justify-center items-center">
+            <img src="./images/pages/eat-the-east/ttt.webp" class="sm:size-20 size-14 object-contain" alt="ททท" />
+            <img src="./images/pages/eat-the-east/amazing-thailand.webp" class="sm:size-20 size-14 object-contain" alt="amazing-thailand" />
+            <img src="./images/pages/eat-the-east/ktc.webp" class="sm:size-20 size-14 object-contain" alt="ktc" />
+            <img src="./images/logo.webp" class="sm:size-20 size-14 object-contain" alt="tgn" />
+          </div>
+          <svg class="w-72 mx-auto relative top-14 max-lg:hidden" width="289" height="17" viewBox="0 0 289 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="line"
+              d="M2.5 8.49951C26.1667 -12.2851 49.8333 29.2841 73.5 8.49951C97.1667 -12.2851 120.833 29.2841 144.5 8.49951C168.167 -12.2851 191.833 29.2841 215.5 8.49951C239.167 -12.2851 262.833 29.2841 286.5 8.49951"
+              stroke="#20B2AA"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+
+        <!-- props -->
+        <img id="human" class="absolute xl:w-56 sm:w-40 w-30 -right-0 2xl:top-20 -top-32" src="./images/pages/eat-the-east/ktc-section-prop.svg" alt="" width="210" height="278" />
+      </section>
+
+      <section class="lg:py-24 py-16 text-center space-y-16">
+        <hgroup class="main-container space-y-8">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">การเดินทางที่สร้างสรรค์โดย ผู้เชี่ยวชาญด้านการท่องเที่ยวและวัฒนธรรมอาหารไทย</h2>
+          <p data-reveal class="text-lg">เดินทางสู่ภาคตะวันออก 9 จังหวัด เปิดมุมมองใหม่ ให้รสชาตินำทาง</p>
+        </hgroup>
+
+        <div data-reveal id="provinces-slide" class="swiper mb-0 space-y-9">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/samutprakarn-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/chachoengsao-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/chonburi-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/rayong-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/chanthaburi-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/trat-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/nakhonnayok-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/prachinburi-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full flex-1 flex justify-center">
+                <img src="./images/pages/eat-the-east/sakaeo-card.webp" class="w-full max-w-106 rounded-2xl object-cover" alt="" width="476" height="595" />
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+
+          <section class="main-container space-y-9">
+            <div class="text-center space-y-4 text-balance grid">
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">สมุทรปราการ - Gateway to the Flavour Road</h4>
+                <p>
+                  เมืองเริ่มต้นของการเดินทาง เชื่อมกรุงเทพฯ สู่ ภาคตะวันออก ผ่านอาหารชุมชนลุ่มน้ำเจ้าพระยา-บางกระเจ้า วิถีสวน ครัวบ้าน และอาหารใกล้เมือง ที่เข้าถึงง่าย
+                  สะท้อนแนวคิดเมืองที่เป็นปอดของมหานคร และ แหล่งอาหาร Heal ใจ Heal กาย
+                </p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">ฉะเชิงเทรา - Bang Pakong River Feast</h4>
+                <p>
+                  เมืองแห่งรสชาติจากสายน้ำและความศรัทธา อาหารลุ่ม น้ำบางปะกงเป็นหัวใจหลัก เชื่อมปลาแม่น้ำ ครัวชุมชน วิถีศรัทธา และอาหารมงคล เกิดเรื่องเล่า “Eat - Pray - Travel”
+                  ที่สะท้อนความผูกพันระหว่างอาหาร วิถีชีวิต และความเชื่อ
+                </p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">ชลบุรี - Seafood Capital & Coastal Living Paradise</h4>
+                <p>รสชาติทะเลใกล้เมือง เมืองชายฝั่งที่ ผสมผสานอาหารทะเลสด วิถีเมืองชายทะเล และไลฟ์สไตล์ร่วมสมัย เหมาะกับการท่องเที่ยวแบบ Urban Taste Hopping ระหว่างพัทยา-บางแสน</p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">ระยอง - Slow Coast & Fruit Valley</h4>
+                <p>ทะเลที่มีจังหวะช้าลง อาหารพื้นถิ่นตามฤดูกาล เมืองที่ เชื่อมอาหารทะเลตามฤดูกาล ถ่ายทอดเรื่องราว Sea-to-Valley และการกินอยู่ตามจังหวะธรรมชาติ</p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">จันทบุรี - Herbs Route & Heritage Food</h4>
+                <p>สมุนไพร อาหารพื้นถิ่น และมรดกวัฒนธรรม อัต ลักษณ์อาหารจากสมุนไพร เครื่องเทศ และครัวชุมชนเก่าแก่ ผสานเรื่องเล่าทางประวัติศาสตร์และพหุ วัฒนธรรม</p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">ตราด - Island-to-Table Gastronomy</h4>
+                <p>จากป่าชายเลน สู่จานอาหาร อาหารจากเกาะ ทะเล และ ชุมชนชายฝั่ง ถ่ายทอดแนวคิด “กินตามฤดูกาล” และรสมือชาวสวน ชาวเล ชาวเกาะ</p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">นครนายก - Green Adventure Taste</h4>
+                <p>อาหารจากป่า น้ำ และการผจญภัยสีเขียว อาหารท้องถิ่น เชื่อมธรรมชาติ ป่าเขา และกิจกรรมกลางแจ้ง สะท้อนความสด สะอาด และการกินอยู่ใกล้ธรรมชาติ</p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">ปราจีนบุรี - Herbal Wisdom & Wellness Flavour</h4>
+                <p>ภูมิปัญญาสมุนไพรกับอาหารเพื่อสุขภาพ อาหารสมุนไพรและวัฒนธรรมการดูแลสุขภาพ เชื่อมโยงกับ Wellness Tourism และภูมิปัญญา ท้องถิ่น</p>
+              </div>
+              <div class="provinces-info space-y-2 row-1 col-1">
+                <h4 class="text-3xl/normal text-gold">สระแก้ว - Frontier Flavours</h4>
+                <p>รสชาติชายแดนและอัตลักษณ์ข้ามวัฒนธรรม อาหารที่สะท้อน อิทธิพลวัฒนธรรมชายแดนและชาติพันธุ์ เป็น “รสชาติชายขอบ” ที่ช่วยเติมมิติความหลากหลายใน</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-6 justify-center">
+              <div class="provinces-slide-prev btn-rounded-gold size-11 p-1.5">
+                <div class="svg-icon bg-gold w-full h-full rotate-180" data-src="../icons/arrow-right-gold.svg"></div>
+              </div>
+              <div class="provinces-slide-next btn-rounded-gold size-11 p-1.5">
+                <div class="svg-icon bg-gold w-full h-full" data-src="../icons/arrow-right-gold.svg"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <svg class="w-72 mx-auto relative top-14 max-lg:hidden" width="289" height="17" viewBox="0 0 289 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            class="line"
+            d="M2.5 8.49951C26.1667 -12.2851 49.8333 29.2841 73.5 8.49951C97.1667 -12.2851 120.833 29.2841 144.5 8.49951C168.167 -12.2851 191.833 29.2841 215.5 8.49951C239.167 -12.2851 262.833 29.2841 286.5 8.49951"
+            stroke="#20B2AA"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </section>
+
+      <section id="guidebook-section" class="relative flex flex-col justify-center w-full lg:py-24 py-16 text-center">
+        <div class="main-container">
+          <h2 data-reveal class="lg:text-4xl/normal mb-5 text-2xl/normal text-gold text-balance">โยนไกด์บุ๊คทิ้งไป แล้วใช้ “รสชาติ” นำทาง</h2>
+          <p data-reveal class="text-lg mb-10">มาร่วมสนุกกับการออกแบบเส้นทางใน 3 ธีมหลัก แล้วดูว่าคุณจะพบ รสชาติอะไรระหว่างทาง</p>
+          <div data-reveal class="flex justify-center gap-6">
+            <div id="guide-card-2" class="space-y-5 max-w-sm relative z-1">
+              <img src="./images/pages/eat-the-east/campaign.webp" class="w-full rounded-2xl object-cover" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <img id="pineapple" class="absolute w-38 top-16 left-0 max-lg:hidden" src="./images/pages/eat-the-east/pineapple.svg" alt="" width="142" height="256" />
+      </section>
+
+      <section data-reveal class="flex flex-1 overflow-hidden marquee mb-16">
+        <div class="flex gap-14 marquee-item shrink-0 px-8 origins-left will-change-transform">
+          <img src="./images/pages/eat-the-east/samutprakarn.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/chachoengsao.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/chonburi.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/chanthaburi.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/nakhonnayok.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/prachinburi.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/sakaeo.webp" alt="" class="object-contain lg:size-32 size-28" />
+          <img src="./images/pages/eat-the-east/rayong.webp" alt="" class="object-contain lg:size-32 size-28" />
+        </div>
+      </section>
+
+      <blockquote class="text-white bg-sky py-32">
+        <p data-reveal class="main-container text-center text-balance text-3xl/relaxed">
+          ไม่ว่าคุณจะเป็นใคร นักเดินทางสายช้าแต่มีคุณภาพ นักเดินทางสายกิน สายโซเชียล หรือนักเดินทางท่องเที่ยว แบบเหย้า-เยือนที่มีเพื่อนเจ้าถิ่นรออยู่ในภาคตะวันออก คุณก็คือคนที่เรามองหา
+          มาร่วมสร้างสรรค์แคมเปญ ท่องเที่ยวแบบ Road Trip สู่เส้นทางภาคตะวันออก ที่ตัวคุณเองจะให้นิยามรสชาติใหม่ สไตล์คุณ ในฐานะที่ เป็น Gastronomad Ambassador ได้เช่นกัน
+        </p>
+      </blockquote>
+
+      <section class="main-container py-16 flex items-center max-lg:flex-col gap-8">
+        <div data-reveal class="flex-1 space-y-5">
+          <h2 class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">Eat the East: The Grand Road Trip</h2>
+
+          <p>
+            ใช้อาหารนำทางการเดินทาง สร้างประสบการณ์ตามหารสชาติของ ภาคตะวันออก ที่เต็มไปด้วยสีสันภาคตะวันออก เปิดประสบการณ์แบบ Road Trip ขั้นสุดด้วยสิทธิพิเศษ จาก บัตรเครดิต KTC ที่มัดรวมคาเฟ่
+            ร้านอาหาร โรงแรมเก๋ ไม่ต่ำกว่า 100 แห่งใน 9 จังหวัด พร้อมส่วนลดพิเศษ เฉพาะผู้ถือบัตร Top Up และด้วยคะแนนสะสมพิเศษ ที่มอบอภิสิทธิ์เกิน คุ้ม คลิกดูรายละเอียดได้ที่ link นี้
+            <a href="" class="underline">XXXXXXX</a>
+          </p>
+
+          <p><b>#EattheEast #สีสันตะวันออก #Gastronomad #KTC #Thailandgastronomy #Amazingthailand </b></p>
+
+          <h4 class="text-2xl text-gold">ติดตามแคมเปญได้ที่</h4>
+
+          <div class="space-y-4">
+            <a href="" class="flex items-center gap-x-4 w-fit">
+              <figure class="size-9 rounded-full border p-2 border-brown">
+                <div class="svg-icon bg-brown w-full h-full" data-src="../icons/facebook-gold.svg"></div>
+              </figure>
+              <span>www.facebook.com/Thailandgastronomynetwork</span>
+            </a>
+            <a href="" class="flex items-center gap-x-4 w-fit">
+              <figure class="size-9 rounded-full border p-2 border-brown">
+                <div class="svg-icon bg-brown w-full h-full" data-src="../icons/instagram-gold.svg"></div>
+              </figure>
+              <span>Thailandgastronomynetwork</span>
+            </a>
+            <a href="" class="flex items-center gap-x-4 w-fit">
+              <figure class="size-9 rounded-full border p-2 border-brown">
+                <div class="svg-icon bg-brown w-full h-full" data-src="../icons/tiktok.svg"></div>
+              </figure>
+              <span>Thailandgastronomynetwork</span>
+            </a>
+            <a href="" class="flex items-center gap-x-4 w-fit">
+              <figure class="size-9 rounded-full border p-2 border-brown">
+                <div class="svg-icon bg-brown w-full h-full" data-src="../icons/youtube-gold.svg"></div>
+              </figure>
+              <span>Thailandgastronomynetwork</span>
+            </a>
+          </div>
+        </div>
+        <figure data-reveal data-delay="0.25" class="flex-1">
+          <img src="./images/pages/eat-the-east/cards.webp" class="w-full h-full max-w-lg object-contain" alt="" />
+        </figure>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>

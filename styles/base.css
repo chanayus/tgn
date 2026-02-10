@@ -1,6 +1,6 @@
 @import "./components.css";
 @import "./splide.css";
-
+@import "./old-navbar.css";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
 
 :root {
@@ -8,6 +8,8 @@
   --gold: rgba(173, 156, 108, 1);
   --cream: rgba(244, 242, 238, 1);
   --gold-light: rgba(227, 218, 207, 1);
+  --yellow: rgba(254, 209, 92, 1);
+  --sky: rgba(133, 174, 214, 1);
   --body-gradient: linear-gradient(180deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
   --body-gold: #f3f0e9;
   --body-gradient-flip: linear-gradient(0deg, #f3f0e9 92.23%, rgba(243, 240, 233, 0) 100%);
@@ -43,6 +45,7 @@ body {
   font-family: "IBM Plex Sans Thai", sans-serif;
   flex-direction: column;
   transition: background-color 0.075s;
+  color: var(--brown);
 }
 
 [class*="main-container"] {

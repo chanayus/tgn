@@ -388,6 +388,7 @@ input[type="checkbox"]:checked::before {
 }
 
 [class*="btn-rounded"] {
+  max-width: 5rem;
   aspect-ratio: 1/1;
   display: flex;
   border: 1px solid;
@@ -517,7 +518,7 @@ input[type="checkbox"]:checked::before {
 }
 
 [class*="btn-"]:not([class*="btn-rounded"]) {
-  height: 2.5rem;
+  min-height: 2.5rem;
   padding: 0 2.5rem;
   display: flex;
   justify-content: center;
@@ -530,9 +531,16 @@ input[type="checkbox"]:checked::before {
 .btn-gold {
   background: var(--gold);
   color: #fff;
-  transition: background-color 0.2s;
   &:hover {
     background: hsl(from var(--gold) h s calc(l - 15));
+  }
+}
+
+.btn-brown {
+  background: var(--brown);
+  color: #fff;
+  &:hover {
+    background: hsl(from var(--brown) h s calc(l + 15));
   }
 }
 
@@ -554,6 +562,17 @@ input[type="checkbox"]:checked::before {
   &:hover {
     background: var(--gold);
     color: var(--body-gold);
+  }
+}
+
+.btn-stroke-brown {
+  background: transparent;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+
+  &:hover {
+    background: var(--brown);
+    color: #fff;
   }
 }
 

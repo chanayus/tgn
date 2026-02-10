@@ -1,4 +1,4 @@
-import { animate } from "./main.js";
+import { animate } from "./modules/animation.js";
 
 const cardContainer = document.getElementById("img-slide");
 const textContainer = document.getElementById("text-slide");

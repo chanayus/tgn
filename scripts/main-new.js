@@ -2,7 +2,6 @@ import { animate, defaultEase } from "./modules/animation.js";
 
 import "./modules/collapsibleMenu.js";
 import "./modules/animation.js";
-import "./modules/mobileNavMenu.js";
 
 document.querySelectorAll(".svg-icon")?.forEach((el) => {
   const src = el.getAttribute("data-src");
