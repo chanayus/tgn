@@ -19,9 +19,21 @@ const heroSequence = [
   ["#hero-bg", { scale: [1, 1.25] }, { at: "<" }],
 ];
 
-const animation = animate(heroSequence);
+animateBreakpoint("(min-width: 1024px)", () => {
+  const animation = animate(heroSequence);
 
-scroll(animation, { target: heroSection, offset: ["center center", "150% center"] });
+  const scrollAnimate = scroll(animation, { target: heroSection, offset: ["center center", "150% center"] });
+
+  return () => {
+    const revert = [
+      [ellipse, { ry: 0, scale: 1 }],
+      ["#hero-bg", { scale: 1 }],
+    ];
+    animate(revert, { duration: 0 });
+
+    scrollAnimate();
+  };
+});
 
 // Intro section
 
