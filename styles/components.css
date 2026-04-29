@@ -528,6 +528,10 @@ input[type="checkbox"]:checked::before {
   transition: background-color 0.2s;
 }
 
+[class*="btn-"].rounded-full {
+  border-radius: 9999px !important;
+}
+
 .btn-gold {
   background: var(--gold);
   color: #fff;
@@ -541,6 +545,22 @@ input[type="checkbox"]:checked::before {
   color: #fff;
   &:hover {
     background: hsl(from var(--brown) h s calc(l + 15));
+  }
+}
+
+.btn-tan {
+  background: var(--tan);
+  color: var(--cocoa);
+  &:hover {
+    background: hsl(from var(--tan) h s calc(l - 15));
+  }
+}
+
+.btn-cocoa {
+  background: var(--cocoa);
+  color: #fff;
+  &:hover {
+    background: hsl(from var(--cocoa) h s calc(l + 15));
   }
 }
 
@@ -573,6 +593,10 @@ input[type="checkbox"]:checked::before {
   &:hover {
     background: var(--brown);
     color: #fff;
+
+    & .svg-icon {
+      background-color: #FFF;
+    }
   }
 }
 

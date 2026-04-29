@@ -9,6 +9,7 @@ const sections = document.querySelectorAll("[data-reveal]");
 sections.forEach((section) => {
   const amount = Number(section.getAttribute("data-amount")) || 0.3;
   const delay = Number(section.getAttribute("data-delay")) || 0;
+  const duration = Number(section.getAttribute("data-duration")) || 1;
 
   animate(section, { opacity: 0, y: 25 }, { duration: 0 });
   inView(
@@ -18,7 +19,7 @@ sections.forEach((section) => {
         section,
         { opacity: [0, 1], y: [25, 0] },
         {
-          duration: 1,
+          duration: duration,
           easing: defaultEase,
           delay: delay,
         },

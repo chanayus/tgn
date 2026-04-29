@@ -3,15 +3,12 @@ const mobileNavMenu = document.querySelector("#mobile-nav-menu");
 const openButton = document.querySelector("#mobile-nav-menu-open");
 const closeButton = document.querySelector("#mobile-nav-menu-close");
 
-console.log("asd");
-
-
 const toggleMobileNavMenu = (type) => {
   document.body.style.overflow = type === "open" ? "hidden" : "unset";
 
   if (type === "open" && mobileNavMenu) {
     menuVisible = true;
-    
+
     gsap
       .timeline()
       .set(mobileNavMenu, { pointerEvents: "auto" })
