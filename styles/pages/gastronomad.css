@@ -36,3 +36,7 @@
     transform: rotateY(180deg);
   }
 }
+
+.vp-player-ui-overlays {
+  display: none;
+}
