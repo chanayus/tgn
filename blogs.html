@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/pages/blogs.css" />
+
+    <!-- Components -->
+    <script src="./components/new-navbar.js"></script>
+    <script src="./components/new-footer.js"></script>
+
+    <!-- JS -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script type="module" src="./scripts/main-new.js"></script>
+    <script type="module" src="./scripts/blogs.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <main id="main-content" class="space-y-20 pb-28">
+      <header class="w-full aspect-video relative max-lg:rounded-b-2xl bg-white px-5 max-h-192 py-16 flex items-end">
+        <div class="main-container z-1 max-lg:!absolute max-lg:-bottom-64 left-0">
+          <div id="blog-highlight" class="bg-black/70 backdrop-blur flex max-lg:flex-col gap-y-8 overflow-hidden justify-between w-full lg:py-14 py-8 px-10 lg:pr-18 rounded-lg border border-cocoa text-white">
+            <hgroup>
+              <div data-index="1" class="highlight-item active">
+                <div class="tag">BLOG</div>
+                <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 1</h1>
+                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+              </div>
+              <div data-index="2" class="highlight-item">
+                <div class="tag">BLOG</div>
+                <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 2</h1>
+                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+              </div>
+              <div data-index="3" class="highlight-item">
+                <div class="tag">BLOG</div>
+                <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 3</h1>
+                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+              </div>
+              <div data-index="4" class="highlight-item">
+                <div class="tag">BLOG</div>
+                <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 4</h1>
+                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+              </div>
+              <div data-index="5" class="highlight-item">
+                <div class="tag">BLOG</div>
+                <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 5</h1>
+                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+              </div>
+            </hgroup>
+            <section class="highlight-list max-lg:hidden">
+              <div data-index="1" class="highlight-list-item active">
+                <p>August 19, 2025</p>
+                <h6>Train Journey Photo Diary</h6>
+              </div>
+              <div data-index="2" class="highlight-list-item">
+                <p>August 19, 2025</p>
+                <h6>Train Journey Photo Diary</h6>
+              </div>
+              <div data-index="3" class="highlight-list-item">
+                <p>August 19, 2025</p>
+                <h6>Train Journey Photo Diary</h6>
+              </div>
+              <div data-index="4" class="highlight-list-item">
+                <p>August 19, 2025</p>
+                <h6>Train Journey Photo Diary</h6>
+              </div>
+              <div data-index="5" class="highlight-list-item">
+                <p>August 19, 2025</p>
+                <h6>Train Journey Photo Diary</h6>
+              </div>
+            </section>
+
+            <section class="flex items-center justify-between w-full lg:hidden">
+              <button class="highlight-prev btn-rounded-stroke-white size-11">
+                <div class="svg-icon size-8 rotate-180" data-src="../icons/arrow-right-white.svg"></div>
+              </button>
+              <button class="highlight-next btn-rounded-stroke-white size-11">
+                <div class="svg-icon size-8" data-src="../icons/arrow-right-white.svg"></div>
+              </button>
+            </section>
+          </div>
+        </div>
+
+        <img data-index="1" src="./images/pages/blogs/header-1.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
+        <img data-index="2" src="./images/pages/blogs/header-2.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
+        <img data-index="3" src="./images/pages/blogs/header-3.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
+        <img data-index="4" src="./images/pages/blogs/header-4.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
+        <img data-index="5" src="./images/pages/blogs/header-5.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
+      </header>
+
+      <div class="max-lg:mt-92 space-y-20">
+        <div class="main-container flex lg:justify-center gap-4 flex-wrap">
+          <button class="btn-tan rounded-full">TGN Magazine</button>
+          <button class="btn-tan rounded-full">TGN Podcast</button>
+          <button class="btn-tan rounded-full">Public Webinars</button>
+          <button class="btn-tan rounded-full">Media Library</button>
+          <button class="btn-cocoa rounded-full">Blog & Events</button>
+        </div>
+
+        <section class="main-container grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8">
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/1.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/2.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/3.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/4.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <!--  -->
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/5.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/6.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/7.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/8.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <!--  -->
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/1.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/2.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/3.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="" class="blog-card">
+            <figure>
+              <img src="./images/pages/blogs/4.png" alt="" />
+            </figure>
+            <div class="tag">BLOG</div>
+            <h4>Hidden Gems in Songkhla : Padang Besar</h4>
+            <p>ส้นทางสายนี้ชวนคุณไปแวะสถานี “ปาดังเบซาร์ (ฝั่งไทย)” สถานีรถไฟ สุดชายแดนสงขลา...</p>
+            <div class="author">
+              <img src="./images/logo.webp" alt="" width="40" height="40" />
+              <div>
+                <p>Thailand Gastronomy</p>
+                <p>August 10, 2025</p>
+              </div>
+            </div>
+          </a>
+        </section>
+      </div>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
