@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/pages/blogs.css" />
-
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
     <!-- Components -->
     <script src="./components/new-navbar.js"></script>
     <script src="./components/new-footer.js"></script>
@@ -29,34 +29,37 @@
     <navbar-component></navbar-component>
 
     <main id="main-content" class="space-y-20 pb-28">
-      <header class="w-full aspect-video relative max-lg:rounded-b-2xl bg-white px-5 max-h-192 py-16 flex items-end">
-        <div class="main-container z-1 max-lg:!absolute max-lg:-bottom-64 left-0">
-          <div id="blog-highlight" class="bg-black/70 backdrop-blur flex max-lg:flex-col gap-y-8 overflow-hidden justify-between w-full lg:py-14 py-8 px-10 lg:pr-18 rounded-lg border border-cocoa text-white">
+      <header id="highlight-section" class="w-full aspect-video relative max-lg:rounded-b-2xl bg-white px-5 max-h-192 py-16 flex items-end">
+        <div class="main-container z-1 max-lg:!absolute max-lg:-bottom-60 left-0">
+          <div
+            id="blog-highlight"
+            class="bg-black/70 backdrop-blur flex max-lg:flex-col gap-y-8 overflow-hidden justify-between w-full lg:py-14 py-8 lg:px-10 px-8 lg:pr-18 rounded-lg border border-cocoa text-white"
+          >
             <hgroup>
               <div data-index="1" class="highlight-item active">
                 <div class="tag">BLOG</div>
                 <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 1</h1>
-                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+                <a href="/1.html" class="btn-tan font-bold rounded-full w-fit">Read More</a>
               </div>
               <div data-index="2" class="highlight-item">
                 <div class="tag">BLOG</div>
                 <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 2</h1>
-                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+                <a href="" class="btn-tan font-bold rounded-full w-fit">Read More</a>
               </div>
               <div data-index="3" class="highlight-item">
                 <div class="tag">BLOG</div>
                 <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 3</h1>
-                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+                <a href="" class="btn-tan font-bold rounded-full w-fit">Read More</a>
               </div>
               <div data-index="4" class="highlight-item">
                 <div class="tag">BLOG</div>
                 <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 4</h1>
-                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+                <a href="" class="btn-tan font-bold rounded-full w-fit">Read More</a>
               </div>
               <div data-index="5" class="highlight-item">
                 <div class="tag">BLOG</div>
                 <h1>ประกาศรางวัลกิจกรรมแคมเปญ Train Journey To The Southern Soul 5</h1>
-                <a href="" class="btn-cream font-bold rounded-full w-fit">Read More</a>
+                <a href="" class="btn-tan font-bold rounded-full w-fit">Read More</a>
               </div>
             </hgroup>
             <section class="highlight-list max-lg:hidden">
@@ -66,7 +69,10 @@
               </div>
               <div data-index="2" class="highlight-list-item">
                 <p>August 19, 2025</p>
-                <h6>Train Journey Photo Diary</h6>
+                <h6>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sit ea pariatur quam quas ullam, atque quae facilis exercitationem temporibus asperiores voluptates debitis vero
+                  doloremque dolor esse rem nostrum quisquam.
+                </h6>
               </div>
               <div data-index="3" class="highlight-list-item">
                 <p>August 19, 2025</p>
@@ -93,20 +99,46 @@
           </div>
         </div>
 
-        <img data-index="1" src="./images/pages/blogs/header-1.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
-        <img data-index="2" src="./images/pages/blogs/header-2.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
-        <img data-index="3" src="./images/pages/blogs/header-3.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
-        <img data-index="4" src="./images/pages/blogs/header-4.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
-        <img data-index="5" src="./images/pages/blogs/header-5.jpg" alt="" class="highlight-img absolute w-full h-full object-cover top-0 left-0" />
+        <div class="absolute w-full h-full top-0 left-0 overflow-hidden">
+          <div class="bg-container">
+            <figure data-index="1" class="highlight-img">
+              <img src="./images/pages/blogs/header-1.jpg" alt="" />
+            </figure>
+            <figure data-index="2" class="highlight-img">
+              <img
+                src="https://images.unsplash.com/photo-1777195680759-9c3c616a92e7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </figure>
+            <figure data-index="3" class="highlight-img">
+              <img
+                src="https://images.unsplash.com/photo-1777216092678-ab3cac218f80?q=80&w=1599&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </figure>
+            <figure data-index="4" class="highlight-img">
+              <img
+                src="https://images.unsplash.com/photo-1662101935064-46ce632bb30d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </figure>
+            <figure data-index="5" class="highlight-img">
+              <img
+                src="https://images.unsplash.com/photo-1517147216490-ec561deb427d?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
       </header>
 
-      <div class="max-lg:mt-92 space-y-20">
-        <div class="main-container flex lg:justify-center gap-4 flex-wrap">
-          <button class="btn-tan rounded-full">TGN Magazine</button>
-          <button class="btn-tan rounded-full">TGN Podcast</button>
-          <button class="btn-tan rounded-full">Public Webinars</button>
-          <button class="btn-tan rounded-full">Media Library</button>
-          <button class="btn-cocoa rounded-full">Blog & Events</button>
+      <div class="max-lg:mt-80 space-y-20">
+        <div class="main-container filter-section flex lg:justify-center gap-4 flex-wrap">
+          <button class="">TGN Magazine</button>
+          <button class="">TGN Podcast</button>
+          <button class="">Public Webinars</button>
+          <button class="">Media Library</button>
+          <button class="active">Blog & Events</button>
         </div>
 
         <section class="main-container grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-8">
