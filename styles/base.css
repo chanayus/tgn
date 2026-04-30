@@ -1,7 +1,6 @@
 @import "./components.css";
 @import "./splide.css";
 @import "./old-navbar.css";
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
 
 :root {
   --brown: rgba(56, 29, 15, 1);
@@ -18,7 +17,7 @@
 }
 
 .crimson-font {
-  font-family: "Crimson Text", "IBM Plex Sans Thai", sans-serif;
+  font-family: "IBM Plex Sans Thai", sans-serif;
 }
 
 .playfair-font {
