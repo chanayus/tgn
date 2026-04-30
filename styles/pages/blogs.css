@@ -8,6 +8,10 @@
       &:not(.active) {
         pointer-events: none;
       }
+
+      &:not(:first-of-type) {
+        opacity: 0;
+      }
     }
     & .tag {
       text-transform: uppercase;
@@ -29,7 +33,7 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
-      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+      text-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
     }
 
     & a {
