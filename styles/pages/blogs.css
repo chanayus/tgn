@@ -82,6 +82,10 @@
   }
 }
 
+#highlight-section {
+  max-height: 40rem;
+}
+
 .bg-container {
   position: absolute;
   top: 0;
@@ -93,7 +97,7 @@
 .highlight-img {
   width: 100%;
   aspect-ratio: 16/9;
-  max-height: 48rem;
+  max-height: 40rem;
   height: 100%;
   overflow: hidden;
 
