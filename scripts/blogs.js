@@ -58,7 +58,7 @@ if (highlightListItems.length > 0) {
       return;
     }
 
-    animate(imgTarget, { y: direction > 0 ? ["-70%", "0%"] : ["70%", "0%"] }, { duration: highlightImageDuration, ease: defaultEase });
+    animate(imgTarget, { y: direction > 0 ? ["-100%", "0%"] : ["100%", "0%"], scale: [1.1, 1] }, { duration: highlightImageDuration, ease: defaultEase });
     animate(bgContainer, { y: `-${(Number(activeIndex) - 1) * 100}%` }, { duration: highlightImageDuration, ease: defaultEase });
   };
 

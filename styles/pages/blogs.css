@@ -11,7 +11,7 @@
     }
     & .tag {
       text-transform: uppercase;
-      background: rgba(149, 126, 100, 0.6);
+      background: rgba(149, 126, 100, 1);
       border: 1px solid rgba(149, 126, 100, 1);
       text-align: center;
       padding: 0.125rem 1rem;
@@ -29,6 +29,7 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
     }
 
     & a {
@@ -43,15 +44,16 @@
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
     padding-right: 1rem;
+    min-width: 20rem;
     & .highlight-list-item {
-      padding: 1rem 0;
+      padding: 1.25rem 0;
       text-align: left;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
       cursor: pointer;
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      max-width: 24ch;
+      max-width: 32ch;
       &:hover h6 {
         color: #fff;
       }
@@ -88,6 +90,7 @@
   width: 100%;
   aspect-ratio: 16/9;
   max-height: 48rem;
+  height: 100%;
   overflow: hidden;
 
   & img {
@@ -180,7 +183,9 @@
     border-radius: 999px;
     padding: 0.625rem 1.25rem;
     background: rgba(235, 229, 218, 1);
-    transition: background 0.3s, color 0.3s;
+    transition:
+      background 0.3s,
+      color 0.3s;
     &:not(.active):hover {
       background: rgb(205, 199, 185);
     }
