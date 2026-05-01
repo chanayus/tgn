@@ -8,8 +8,8 @@ const highlightNextButton = document.querySelector(".highlight-next");
 
 const highlightItemDuration = 0.3;
 const highlightChildDuration = 0.45;
-const highlightImageDuration = 1.5;
-
+const highlightImageDuration = 0.75;
+const highlightImageEase = [0.4, 0.8, 0.5, 1];
 const bgContainer = document.querySelector(".bg-container");
 
 if (highlightListItems.length > 0) {
@@ -58,8 +58,8 @@ if (highlightListItems.length > 0) {
       return;
     }
 
-    animate(imgTarget, { y: direction > 0 ? ["-100%", "0%"] : ["100%", "0%"], scale: [1.1, 1] }, { duration: highlightImageDuration, ease: defaultEase });
-    animate(bgContainer, { y: `-${(Number(activeIndex) - 1) * 100}%` }, { duration: highlightImageDuration, ease: defaultEase });
+    animate(imgTarget, { y: direction > 0 ? ["-100%", "0%"] : ["100%", "0%"], scale: [1.15, 1] }, { duration: highlightImageDuration, ease: highlightImageEase });
+    animate(bgContainer, { y: `-${(Number(activeIndex) - 1) * 100}%` }, { duration: highlightImageDuration, ease: highlightImageEase });
   };
 
   const setActiveHighlight = (activeIndex, direction = getDirectionFromIndexes(getActiveHighlightIndex(), activeIndex)) => {
@@ -121,4 +121,6 @@ if (highlightListItems.length > 0) {
   highlightNextButton?.addEventListener("click", () => {
     stepHighlight(1);
   });
+
+  animateHighlightItem(highlightItems[0], 1, true);
 }
