@@ -124,3 +124,7 @@ if (highlightListItems.length > 0) {
 
   animateHighlightItem(highlightItems[0], 1, true);
 }
+
+const blogHighlight = document.querySelector("#blog-highlight");
+
+blogHighlight && animate(blogHighlight, { opacity: [0, 1] }, { duration: 0.5, ease: defaultEase, delay: 0.5 });
