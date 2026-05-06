@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/pages/cities-detail.css" />
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+
+    <!-- Components -->
+    <script src="./components/new-navbar.js"></script>
+    <script src="./components/new-footer.js"></script>
+
+    <!-- JS -->
+    <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+    <script type="module" src="./scripts/main-new.js"></script>
+    <script type="module" src="./scripts/citiesDetail.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <main id="main-content" class="space-y-16 pb-28">
+      <header id="highlight-section" class="w-full aspect-video overflow-hidden max-h-165 relative bg-black max-lg:rounded-b-2xl">
+        <img src="./images/pages/cities-detail/hero.webp" class="absolute w-full h-full object-cover" alt="" />
+      </header>
+
+      <div id="main-article-section" class="main-container flex gap-16 max-lg:flex-col">
+        <aside class="cities-nav">
+          <button type="button" class="cities-nav-toggle" aria-expanded="false" aria-controls="cities-nav-menu">
+            <span>Explore this city</span>
+            <span class="cities-nav-toggle-icon" aria-hidden="true"></span>
+          </button>
+          <div id="cities-nav-menu" class="cities-nav-menu">
+            <div>
+              <h6>Journeys</h6>
+              <a href="#three-ages-of-songkhla" class="active" data-section="three-ages-of-songkhla">Three Ages of Songkhla</a>
+              <a href="#gastronomic-echo" data-section="gastronomic-echo">Gastronomic Echo</a>
+              <a href="#sweet-buzz-of-bang-klam" data-section="sweet-buzz-of-bang-klam">Sweet Buzz of Bang Klam</a>
+              <a href="#phatthalung-rhythm" data-section="phatthalung-rhythm">Phatthalung Rhythm</a>
+            </div>
+            <div>
+              <h6>Blog</h6>
+              <a href="#hidden-gems-namom" data-section="hidden-gems-namom">Hidden Gems: NAMOM</a>
+              <a href="#hidden-gems-padang-besar" data-section="hidden-gems-padang-besar">Hidden Gems: Padang Besar</a>
+              <a href="#hidden-gems-bang-klam" data-section="hidden-gems-bang-klam">Hidden Gems: Bang Klam</a>
+            </div>
+            <div>
+              <h6>Explore More</h6>
+              <a href="#read-watch-listen" data-section="read-watch-listen">Read, Watch & Listen</a>
+            </div>
+          </div>
+        </aside>
+        <article>
+          <p>
+            Songkhla is not one story — it is many, layered across centuries and told through the food of its people. Choose your journey: from a single-day immersion into the city's three eras, to a
+            three-day rail odyssey through the flavours of the south. Every route leads somewhere unforgettable.
+          </p>
+          <section id="three-ages-of-songkhla">
+            <h2>Three Ages of Songkhla</h2>
+            <p>
+              Shape history with your own hands. On the legendary Sangkhalok Road—Sukhothai’s heritage craft lane—you’ll learn to hand-form a traditional Sangkhalok plate and paint it with symbolic
+              patterns like fish, rice fields, or gentle water flows.
+            </p>
+
+            <a href="">Book This Experience</a>
+
+            <img src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/09/Three-Ages-of-Songkhla-1.jpg" alt="" />
+          </section>
+
+          <section id="gastronomic-echo">
+            <h2>Gastronomic Echo</h2>
+            <p>
+              A journey where every taste tells a story. Over three days and two nights, local trains, historic towns, and hidden villages become part of your sensory voyage through the culinary
+              landscapes of southern Thailand. Each province offers a different flavour — Songkhla's multicultural depth, Phatthalung's gentle wilderness, Bang Klam's golden sweetness, and Hatyai's
+              vibrant streets.
+            </p>
+
+            <a href="">Book This Experience</a>
+
+            <div class="img-container">
+              <img src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/09/Gastronomic-Echo-1.jpg" alt="" />
+              <img src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/09/Phatthalung-Rhythm-1.jpg" alt="" />
+            </div>
+          </section>
+
+          <section id="sweet-buzz-of-bang-klam">
+            <h2>Sweet Buzz of Bang Klam</h2>
+            <p>
+              Ride the local train to Bang Klam — a fertile agricultural gem of Songkhla with roots stretching to the Ayutthaya period. Discover the world of stingless bees, taste fresh honey from the
+              hive, and enjoy a warm picnic lunch of grandmothers' recipes from Tassapan. A gentle, heartwarming day filled with smiles and sweet memories.
+            </p>
+
+            <a href="">Book This Experience</a>
+
+            <img src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/09/Sweet-Buzz-Of-Bang-Klam-2.jpg" alt="" />
+          </section>
+
+          <section id="phatthalung-rhythm">
+            <h2>Phatthalung Rhythm</h2>
+            <p>
+              Phatthalung is like a backyard herbal garden — quietly holding treasures of wisdom through local food traditions, cultural arts, and timeless folklore. The gentle rhythm of the train
+              leads you into the heart of it all: shadow puppet painting, pounding chili dips, stirring sago pudding, sipping coffee in taro fields, and browsing markets where every souvenir is woven
+              with local stories.
+            </p>
+
+            <a href="">Book This Experience</a>
+
+            <img src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/09/Phatthalung-Rhythm-1.jpg" alt="" />
+          </section>
+
+          <!-- ฺBlog -->
+
+          <section id="hidden-gems-namom">
+            <h2>Hidden Gems in Songkhla: NAMOM</h2>
+            <p>
+              ถ้าคุณรักการไปเยือนสถานที่ที่ไม่ได้อยู่บนพิกัดเส้นทางท่องเที่ยว นาหม่อม คือจุดหมายปลายทางที่น่าแวะไปเยือน ด้วยการเดินทางโดยรถไฟท้องถิ่นจากสถานีชุมทางหาดใหญ่สู่สถานีรถไฟนาม่วง
+              สัมผัสเสน่ห์ที่หาได้ยากในเส้นทางท่องเที่ยวทั่วไป
+            </p>
+
+            <a href="">Read Full Articles</a>
+          </section>
+
+          <section id="hidden-gems-padang-besar">
+            <h2>Hidden Gems in Songkhla: Padang Besar</h2>
+            <p>
+              เส้นทางสายนี้ชวนคุณไปแวะสถานี "ปาดังเบซาร์ (ฝั่งไทย)" สถานีรถไฟสุดชายแดนสงขลา สัมผัสเสน่ห์ที่หลากหลายในแบบไม่เร่งรีบ เดินเล่นในตัวเมืองเล็กๆ จากมัสยิดกลางเมืองไปถึงศาลเจ้า เส้นทางสั้นๆ
+              ที่ทำให้หนึ่งวันเติมเต็มด้วยรสชาติที่ไม่เหมือนใคร
+            </p>
+
+            <a href="">Read Full Articles</a>
+          </section>
+
+          <section id="hidden-gems-bang-klam">
+            <h2>Songkhla's Hidden Gem: Sweet Buzz of Bang Klam</h2>
+            <p>
+              "บางกล่ำ" ที่เต็มไปด้วยเรื่องราวศิลปวัฒนธรรม วัตถุดิบอาหาร สวนผลไม้ รวมไปถึง "น้ำผึ้งชันโรง" ประสบการณ์หาได้ยากที่ผสานประวัติศาสตร์ยาวนานตั้งแต่สมัยอยุธยา การอพยพของชาวจีนฮกเกี้ยน
+              จนถึงยุคสร้างทางรถไฟภาคใต้
+            </p>
+
+            <a href="">Read Full Articles</a>
+          </section>
+        </article>
+      </div>
+
+      <section id="read-watch-listen" class="main-container space-y-6">
+        <h2 class="lg:text-5xl text-4xl font-bold">Read, Watch & Listen</h2>
+        <p>Dive deeper into the stories of Songkhla — through our magazine, films, and podcast episodes dedicated to this city.</p>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4 justify-center">
+          <a href="" class="flex flex-col gap-4 bg-beige rounded-2xl p-4">
+            <figure class="aspect-[0.75] w-full relative">
+              <div class="absolute top-3.5 left-3.5 text-xs bg-cocoa text-beige px-2 py-1 rounded-full">MAGAZINE</div>
+              <img class="object-cover rounded-xl aspect-[0.75]" src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/10/GPC_JPG-scaled.jpg" alt="" />
+            </figure>
+            <div class="space-y-3 flex flex-col">
+              <h4 class="font-bold text-lg line-clamp-2 min-h-14">Gastro Preferred Choice — Songkhla Edition</h4>
+              <button class="btn-stroke-dark-tan !px-0 text-sm rounded-full w-full">
+                Download PDF
+                <div class="svg-icon size-4 bg-brown mb-1 shrink-0" data-src="../icons/download.svg"></div>
+              </button>
+            </div>
+          </a>
+
+          <a href="" class="flex flex-col gap-4 bg-beige rounded-2xl p-4">
+            <figure class="aspect-[0.75] w-full relative">
+              <div class="absolute top-3.5 left-3.5 text-xs bg-cocoa text-beige px-2 py-1 rounded-full">MAGAZINE</div>
+              <img class="object-cover rounded-xl aspect-[0.75]" src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/10/GPC_JPG-scaled.jpg" alt="" />
+            </figure>
+            <div class="space-y-3 flex flex-col">
+              <h4 class="font-bold text-lg line-clamp-2 min-h-14">Gastro Preferred</h4>
+              <button class="btn-stroke-dark-tan !px-0 text-sm rounded-full w-full">
+                Download PDF
+                <div class="svg-icon size-4 bg-brown mb-1 shrink-0" data-src="../icons/download.svg"></div>
+              </button>
+            </div>
+          </a>
+
+          <a href="" class="flex flex-col gap-4 bg-beige rounded-2xl p-4">
+            <figure class="aspect-[0.75] w-full relative">
+              <div class="absolute top-3.5 left-3.5 text-xs bg-cocoa text-beige px-2 py-1 rounded-full">MAGAZINE</div>
+              <img class="object-cover rounded-xl aspect-[0.75]" src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/10/GPC_JPG-scaled.jpg" alt="" />
+            </figure>
+            <div class="space-y-3 flex flex-col">
+              <h4 class="font-bold text-lg line-clamp-2 min-h-14">Gastro Preferred Choice — Songkhla Edition</h4>
+              <button class="btn-stroke-dark-tan !px-0 text-sm rounded-full w-full">
+                Download PDF
+                <div class="svg-icon size-4 bg-brown mb-1 shrink-0" data-src="../icons/download.svg"></div>
+              </button>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="flex items-center max-lg:flex-col gap-8 main-container">
+        <figure class="flex-1 aspect-video h-fit w-full [&:hover_.play-video-button]:opacity-100 relative">
+          <img class="w-full h-full object-cover" src="https://thailandgastronomynetwork.com/wp-content/uploads/2025/10/GPC_JPG-scaled.jpg" alt="" />
+          <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full transition-opacity opacity-0 play-video-button bg-black/20">
+            <button class="transition-opacity">
+              <img src="./icons/play-white.svg" width="75" height="75" class="w-20 h-20" alt="" />
+            </button>
+          </div>
+        </figure>
+        <a href="" class="flex-1 space-y-3">
+          <h4 class="font-bold text-2xl">Hidden Gems in Songkhla : Padang Besar</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non laboriosam esse ab atque in odio officia, eum earum saepe quas neque ducimus, minus recusandae incidunt itaque fugit
+            provident placeat?
+          </p>
+          <div class="flex items-center gap-x-2.5">
+            <img class="size-10 rounded-fill object-cover" src="./images/logo.webp" alt="" width="40" height="40" />
+            <p>Thailand Gastronomy</p>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
