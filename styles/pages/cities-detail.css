@@ -56,6 +56,21 @@
         font-size: clamp(1.75rem, 2.5vw, 2.5rem);
         font-weight: 700;
       }
+
+      & a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #000;
+        }
+        & .svg-icon {
+          width: 1.25rem;
+          height: 1.25rem;
+          background-color: currentColor;
+        }
+      }
       & .img-container {
         display: flex;
         gap: 1rem;
@@ -104,9 +119,11 @@
       & .cities-nav-menu {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease, margin-top 0.3s ease;
+        transition:
+          max-height 0.3s ease,
+          margin-top 0.3s ease;
         padding: 0;
-    }
+      }
 
       &.is-open {
         & .cities-nav-toggle-icon {
