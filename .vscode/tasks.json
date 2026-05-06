@@ -5,12 +5,24 @@
       "label": "Watch Tailwind CSS",
       "type": "shell",
       "command": "npx @tailwindcss/cli -i ./styles/tailwind/input.css -o ./styles/tailwind/output.css --watch --minify",
-      "problemMatcher": []
+      "problemMatcher": [],
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      }
     },
     {
       "label": "Minify Tailwind CSS",
       "type": "shell",
-      "command": "npx @tailwindcss/cli -i ./styles/tailwind/input.css -o ./styles/tailwind/output.css --minify"
+      "command": "npx @tailwindcss/cli -i ./styles/tailwind/input.css -o ./styles/tailwind/output.css --minify",
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      }
     }
   ]
 }

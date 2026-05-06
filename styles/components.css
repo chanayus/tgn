@@ -604,7 +604,9 @@ input[type="checkbox"]:checked::before {
   background: transparent;
   border: 1px solid var(--dark-tan);
   color: var(--brown);
-
+  & .svg-icon {
+    background-color: var(--brown);
+  }
   &:hover {
     background: var(--dark-tan);
     color: #fff;

@@ -126,8 +126,8 @@ button:disabled {
   mask-size: contain;
   pointer-events: none;
   transition:
-    background-color 0.25s,
-    opacity 0.25s;
+    background-color 0.2s,
+    opacity 0.2s;
 
   &:not([style]) {
     opacity: 0;

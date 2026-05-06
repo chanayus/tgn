@@ -61,11 +61,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        transition: color 0.3s ease;
         font-size: 14px;
-        &:hover {
-          color: #000;
-        }
         & .svg-icon {
           width: 1.25rem;
           height: 1.25rem;
