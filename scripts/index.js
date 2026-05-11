@@ -16,6 +16,10 @@ animate(sequence, { delay: 0.5 });
 
 new Swiper("#hero-slide", {
   speed: 1000,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".hero-slide-next",
     prevEl: ".hero-slide-prev",
