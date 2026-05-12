@@ -168,7 +168,7 @@
     & figure > img {
       transform: scale(1.05);
     }
-    & > h4 {
+    & h4 {
       color: var(--gold);
     }
   }
@@ -219,16 +219,11 @@
   }
 }
 
-@media (width >= 64rem /* 1024px */) {
-  .blog-card:nth-child(n + 5) {
-    align-self: center;
-  }
-}
 
 .filter-section {
     scrollbar-width: thin; 
   & button {
-    padding: 0.625rem 1.25rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 999px;
     flex-shrink: 0;
     font-size: 0.875rem;
