@@ -128,3 +128,27 @@ if (highlightListItems.length > 0) {
 const blogHighlight = document.querySelector("#blog-highlight");
 
 blogHighlight && animate(blogHighlight, { opacity: [0, 1] }, { duration: 0.5, ease: defaultEase, delay: 0.5 });
+
+// Masonry View More
+const masonrySection = document.querySelector("#masonry");
+const viewMoreBtn = document.querySelector("#view-more-btn");
+
+if (masonrySection && viewMoreBtn) {
+  const BATCH_SIZE = 12; // 4 columns × 3 cards
+  const allCards = [...masonrySection.querySelectorAll(".blog-card")];
+  let visibleCount = BATCH_SIZE;
+
+  const updateVisibility = () => {
+    allCards.forEach((card, index) => {
+      card.classList.toggle("is-hidden", index >= visibleCount);
+    });
+    viewMoreBtn.disabled = visibleCount >= allCards.length;
+  };
+
+  updateVisibility();
+
+  viewMoreBtn.addEventListener("click", () => {
+    visibleCount += BATCH_SIZE;
+    updateVisibility();
+  });
+}
