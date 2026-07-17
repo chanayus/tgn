@@ -1,0 +1,297 @@
+/* Accent per experience theme, taken from the designer poster artwork */
+#designers,
+#theme-strip-section {
+  --theme-ingredient: rgba(214, 184, 11, 1);
+  --theme-local: rgba(240, 90, 40, 1);
+  --theme-handson: rgba(58, 156, 145, 1);
+  --theme-signature: rgba(232, 74, 160, 1);
+}
+
+/* ---------- Filter bar ---------- */
+
+.designer-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.625rem;
+  margin: 2.25rem auto 2.5rem;
+}
+
+.designer-filter-btn {
+  padding: 0.625rem 1.25rem;
+  border: 1.5px solid var(--gold);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--cocoa);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.18s, border-color 0.18s, color 0.18s;
+}
+
+.designer-filter-btn:hover {
+  background: var(--tan);
+}
+
+.designer-filter-btn.is-active {
+  background: var(--brown);
+  border-color: var(--brown);
+  color: var(--cream);
+}
+
+/* ---------- Designer grid ---------- */
+
+.designer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .designer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .designer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.designer-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 10px 24px rgba(56, 29, 15, 0.1);
+  transition: transform 0.2s;
+}
+
+.designer-card:hover {
+  transform: translateY(-4px);
+}
+
+.designer-card.is-filtered-out {
+  display: none;
+}
+
+.designer-card-photo {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: var(--beige);
+}
+
+.designer-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.designer-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  padding: 1rem 1.125rem 1.25rem;
+}
+
+.designer-card-tag {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 100px;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.designer-card-tag[data-theme="ingredient"] {
+  background: var(--theme-ingredient);
+}
+
+.designer-card-tag[data-theme="local"] {
+  background: var(--theme-local);
+}
+
+.designer-card-tag[data-theme="handson"] {
+  background: var(--theme-handson);
+}
+
+.designer-card-tag[data-theme="signature"] {
+  background: var(--theme-signature);
+}
+
+.designer-card-code {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--dark-tan);
+}
+
+.designer-card-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--brown);
+}
+
+.designer-card-exp {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--gold);
+}
+
+.designer-card-desc {
+  font-size: 0.78125rem;
+  line-height: 1.6;
+  color: var(--cocoa);
+}
+
+/* ---------- Ambassador band ---------- */
+
+/* Yellow sampled from the hero artwork. White text fails on it, so the copy goes dark. */
+.ambassador-band {
+  background: rgba(238, 177, 8, 1);
+  color: var(--brown);
+}
+
+/* ---------- Theme strip ---------- */
+
+.theme-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.theme-pill {
+  min-width: 11rem;
+  padding: 1rem 1.375rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 10px 24px rgba(56, 29, 15, 0.1);
+  text-align: center;
+}
+
+.theme-pill-dot {
+  display: block;
+  width: 2.125rem;
+  height: 2.125rem;
+  margin: 0 auto 0.5rem;
+  border-radius: 50%;
+}
+
+.theme-pill-dot[data-theme="ingredient"] {
+  background: var(--theme-ingredient);
+}
+
+.theme-pill-dot[data-theme="local"] {
+  background: var(--theme-local);
+}
+
+.theme-pill-dot[data-theme="handson"] {
+  background: var(--theme-handson);
+}
+
+.theme-pill-dot[data-theme="signature"] {
+  background: var(--theme-signature);
+}
+
+.theme-pill b {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--brown);
+}
+
+.theme-pill span:last-child {
+  font-size: 0.75rem;
+  color: var(--dark-tan);
+}
+
+/* ---------- About: funnel ---------- */
+
+.funnel-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.funnel-step {
+  flex: 1;
+  min-width: 0;
+  padding: 1.25rem 1.25rem;
+  border-radius: 0.875rem;
+  background: var(--beige);
+  text-align: center;
+}
+
+.funnel-arrow {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  color: var(--gold);
+}
+
+.funnel-arrow svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Stack the funnel below the breakpoint and turn the arrows downward. */
+@media (max-width: 768px) {
+  .funnel-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .funnel-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+}
+
+/* tabular-nums keeps the digits from jittering while they count up */
+.funnel-step b {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.funnel-step span {
+  font-size: 0.8125rem;
+  color: var(--cocoa);
+}
+
+/* ---------- About: accordion ---------- */
+/* The accordion itself is the shared .collapsible component from styles/components.css.
+   Only the theme list inside one of its panels is specific to this page. */
+
+.theme-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .theme-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.theme-list div {
+  padding: 0.75rem 1rem;
+  border-radius: 0.625rem;
+  background: var(--beige);
+  font-size: 0.875rem;
+}
+
+.theme-list b {
+  display: block;
+  margin-bottom: 0.1875rem;
+  color: var(--gold);
+}

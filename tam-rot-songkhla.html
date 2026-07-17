@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>ตามรสสงขลา : รสถึงเครื่อง คนถึงใจ | Thailand Gastronomy Network.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/pages/tam-rot-songkhla.css" />
+
+    <!-- Components -->
+    <script src="./components/navbar.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/mobile-nav.js"></script>
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/tamRotSongkhla.js"></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <mobile-nav-component></mobile-nav-component>
+
+    <main id="main-content" class="!mt-24 min-h-fit overflow-hidden">
+      <header id="hero-section" class="w-full relative aspect-video 2xl:h-[calc(100vh-6rem)] overflow-hidden bg-black/50">
+        <img id="hero-bg" class="w-full h-full object-cover object-top" src="./images/pages/tam-rot-songkhla/hero.webp" alt="ตามรสสงขลา : รสถึงเครื่อง คนถึงใจ" />
+        <svg id="ellipse" class="absolute max-lg:hidden w-full h-full -bottom-[45%]" width="1440" height="704" viewBox="0 0 1440 704" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="720.5" cy="391" rx="859.5" ry="0" fill="var(--cream)" />
+        </svg>
+      </header>
+
+      <!-- Logos are sized by height, not a square box: the set mixes square marks (ททท., อว.)
+           with wide wordmarks, and a shared box would render them at very different optical sizes. -->
+      <section data-reveal class="flex flex-1 overflow-hidden marquee py-8">
+        <div class="flex items-center gap-14 marquee-item shrink-0 px-7 origins-left will-change-transform">
+          <img src="./images/pages/tam-rot-songkhla/logo/mhesi.webp" alt="กระทรวง อว." class="object-contain w-auto lg:h-16 h-12 shrink-0" />
+          <img src="./images/pages/tam-rot-songkhla/logo/tat.webp" alt="การท่องเที่ยวแห่งประเทศไทย" class="object-contain w-auto lg:h-16 h-12 shrink-0" />
+          <img src="./images/pages/tam-rot-songkhla/logo/amazing-thailand.webp" alt="Amazing Thailand" class="object-contain w-auto lg:h-14 h-11 shrink-0" />
+          <img src="./images/pages/tam-rot-songkhla/logo/hatyai-university.webp" alt="มหาวิทยาลัยหาดใหญ่" class="object-contain w-auto lg:h-14 h-11 shrink-0" />
+          <img src="./images/pages/tam-rot-songkhla/logo/tgn.webp" alt="Thailand Gastronomy Network" class="object-contain w-auto lg:h-16 h-12 shrink-0" />
+          <img src="./images/pages/tam-rot-songkhla/logo/hug.webp" alt="HUG - Hat Yai University Gastronomy Lab" class="object-contain w-auto lg:h-12 h-10 shrink-0" />
+        </div>
+      </section>
+
+      <section id="intro-section" class="relative">
+        <div class="main-container space-y-8 text-center lg:py-24 py-16">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold">ตามรสสงขลา : รสถึงเครื่อง คนถึงใจ</h2>
+
+          <p data-reveal class="lg:text-2xl text-lg">เดินทางตามหาประสบการณ์ท่องเที่ยวเชิงวัฒนธรรมอาหาร ที่ออกแบบโดยคนในพื้นที่สงขลา</p>
+
+          <p data-reveal class="text-lg">
+            กลิ่นเครื่องแกงใต้ลอยคลุ้งปะทะจมูก เสียงคลื่นกระทบฝั่งทะเลสาบดังแผ่ว ๆ เคล้ากับเสียงพ่อค้าแม่ค้าตะโกนเรียกลูกค้าในตลาดเช้า ทุกมื้อ ทุกเส้นทาง และทุกกิจกรรม ไม่ได้จบแค่คำว่า
+            “อร่อย” แต่พาคุณไปสัมผัสตัวตนของสงขลาอย่างถึงเครื่อง ถึงใจ
+          </p>
+
+          <p data-reveal class="text-lg">“รสสงขลา รสถึงเครื่อง คนถึงใจ”</p>
+
+          <svg class="w-72 mx-auto relative top-14 max-lg:hidden" width="289" height="17" viewBox="0 0 289 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="line"
+              d="M2.5 8.49951C26.1667 -12.2851 49.8333 29.2841 73.5 8.49951C97.1667 -12.2851 120.833 29.2841 144.5 8.49951C168.167 -12.2851 191.833 29.2841 215.5 8.49951C239.167 -12.2851 262.833 29.2841 286.5 8.49951"
+              stroke="#20B2AA"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+
+        <!-- props -->
+        <svg id="bike" class="w-72 max-xl:hidden absolute bottom-16 left-0" width="298" height="207" viewBox="0 0 298 207" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_489_4177)">
+            <path d="M66.0855 88.1073L234.183 140.814L237.639 129.536L69.5416 76.8293L66.0855 88.1073Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <path
+              d="M10.737 94.9154C35.0343 94.1271 55.4453 113.255 56.2335 137.553C57.0218 161.85 37.8936 182.261 13.5964 183.049C-10.7008 183.837 -31.1118 164.709 -31.9001 140.412C-32.6884 116.115 -13.5602 95.7037 10.737 94.9154ZM10.0593 74.0264C-25.8118 75.1902 -53.9529 105.218 -52.7891 141.09C-51.6253 176.961 -21.597 205.102 14.2741 203.938C50.1552 202.774 78.2863 172.746 77.1225 136.875C75.9584 100.994 45.9305 72.8626 10.0593 74.0264Z"
+              fill="black"
+            />
+            <path d="M25.2453 137.167L13.8886 133.133L81.6927 49.8209L93.0495 53.8547L25.2453 137.167Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <g id="bike-wheel">
+              <path
+                d="M228.753 87.8427C253.05 87.0544 273.461 106.183 274.249 130.48C275.037 154.777 255.909 175.188 231.612 175.976C207.315 176.765 186.904 157.636 186.116 133.339C185.327 109.042 204.455 88.6309 228.753 87.8427ZM228.075 66.9537C192.194 68.1178 164.063 98.1457 165.227 134.017C166.39 169.888 196.419 198.029 232.29 196.865C268.161 195.702 296.302 165.673 295.138 129.802C293.974 93.921 263.946 65.7899 228.075 66.9537Z"
+                fill="black"
+              />
+              <path
+                d="M262.977 85.5813C266.755 86.3992 272.066 88.198 276.877 94.9155C284.118 105.006 283.642 115.017 283.642 115.017C283.642 115.017 277.643 102.795 273.188 97.7966C267.955 91.9232 264.875 88.2812 260.978 85.6562C259.833 84.8829 262.987 85.591 262.987 85.591L262.977 85.5813Z"
+                fill="white"
+              />
+            </g>
+
+            <path d="M220.45 129.288L231.528 124.521L189.468 26.7552L178.389 31.5213L220.45 129.288Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <path
+              d="M137.82 24.7881L221.677 3.26763C221.677 3.26763 227.698 4.14283 229.468 12.1296C231.506 21.2784 226.123 24.6647 226.123 24.6647L144.827 47.6929L137.81 24.7884L137.82 24.7881Z"
+              fill="#EFB334"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M144.831 47.6881C150.21 46.23 153.165 39.8669 151.433 33.4757C149.7 27.0845 143.935 23.0854 138.557 24.5435C133.178 26.0016 130.223 32.3647 131.956 38.7559C133.688 45.1471 139.453 49.1462 144.831 47.6881Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M211.926 66.3269C220.891 66.0361 227.922 58.5333 227.631 49.5689C227.34 40.6045 219.837 33.5732 210.873 33.864C201.909 34.1549 194.877 41.6577 195.168 50.6221C195.459 59.5865 202.962 66.6178 211.926 66.3269Z"
+              fill="#EFB334"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M227.631 49.5689C227.776 54.0266 226.108 58.1228 223.294 61.1456C222.439 61.3134 221.573 61.4316 220.673 61.4608C211.708 61.7516 204.206 54.7212 203.915 45.7559C203.771 41.2983 205.439 37.202 208.252 34.1792C209.107 34.0114 209.974 33.8932 210.873 33.864C219.839 33.5732 227.34 40.6036 227.631 49.5689Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path d="M14.1985 142.999L222.589 136.238L222.207 124.454L13.8162 131.215L14.1985 142.999Z" fill="#01A94D" stroke="black" stroke-width="2" stroke-miterlimit="10" />
+            <path
+              d="M230.817 147.767C240.383 147.456 247.886 139.45 247.576 129.884C247.265 120.318 239.259 112.815 229.693 113.125C220.127 113.435 212.624 121.442 212.934 131.008C213.244 140.574 221.251 148.077 230.817 147.767Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M29.3307 136.965C29.641 146.53 22.1367 154.537 12.5717 154.847C3.00677 155.158 -5.00078 147.653 -5.3111 138.088C-5.62142 128.523 1.88287 120.516 11.4478 120.206C21.0128 119.895 29.0204 127.4 29.3307 136.965Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M145.067 140.234C145.584 156.155 133.099 169.477 117.178 169.994C101.256 170.51 87.9341 158.026 87.4176 142.104C86.901 126.183 99.3856 112.861 115.307 112.344C131.229 111.828 144.551 124.312 145.067 140.234Z"
+              fill="#F9ED15"
+              stroke="black"
+              stroke-width="2"
+              stroke-miterlimit="10"
+            />
+            <path
+              d="M119.257 71.038C121.583 56.4877 107.663 42.166 88.1668 39.0495C68.6701 35.933 50.9795 45.2019 48.6537 59.7521C46.3278 74.3024 60.2476 88.6241 79.7442 91.7406C99.2409 94.8571 116.932 85.5882 119.257 71.038Z"
+              fill="black"
+            />
+            <path
+              d="M55.9936 62.931C56.8264 66.706 58.6594 72.0094 65.3877 76.7837C75.5164 83.9791 85.5143 83.4446 85.5143 83.4446C85.5143 83.4446 73.265 77.4986 68.2388 73.0693C62.337 67.8679 58.6858 64.8047 56.0384 60.9185C55.2608 59.7731 55.9836 62.9314 55.9836 62.9314L55.9936 62.931Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_489_4177">
+              <rect width="348.11" height="194.87" fill="white" transform="translate(-57 11.2881) rotate(-1.85822)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </section>
+
+      <section id="specialist-section" class="relative lg:py-24 py-16">
+        <div data-amount="0.75" class="main-container space-y-8 text-center">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">การเดินทางที่สร้างสรรค์โดย ผู้เชี่ยวชาญด้านการท่องเที่ยวและวัฒนธรรมอาหารไทย</h2>
+
+          <p data-reveal class="text-lg">
+            Thailand Gastronomy Network ร่วมกับการท่องเที่ยวแห่งประเทศไทย และภาคีในพื้นที่ ร่วมสร้างสรรค์โครงการตามรสสงขลา ผ่าน 47 นักออกแบบประสบการณ์ท่องเที่ยวเชิงวัฒนธรรมอาหาร
+            เพื่อพาคุณสัมผัสรสชาติที่แท้จริงของเมืองสงขลา
+          </p>
+
+          <div data-reveal class="flex md:gap-x-12 gap-6 justify-center items-center flex-wrap">
+            <img src="./images/pages/tam-rot-songkhla/logo/mhesi.webp" class="sm:h-16 h-11 w-auto object-contain" alt="กระทรวง อว." />
+            <img src="./images/pages/tam-rot-songkhla/logo/tat.webp" class="sm:h-16 h-11 w-auto object-contain" alt="การท่องเที่ยวแห่งประเทศไทย" />
+            <img src="./images/pages/tam-rot-songkhla/logo/amazing-thailand.webp" class="sm:h-14 h-10 w-auto object-contain" alt="Amazing Thailand" />
+            <img src="./images/pages/tam-rot-songkhla/logo/hatyai-university.webp" class="sm:h-14 h-10 w-auto object-contain" alt="มหาวิทยาลัยหาดใหญ่" />
+            <img src="./images/pages/tam-rot-songkhla/logo/tgn.webp" class="sm:h-16 h-11 w-auto object-contain" alt="Thailand Gastronomy Network" />
+            <img src="./images/pages/tam-rot-songkhla/logo/hug.webp" class="sm:h-12 h-9 w-auto object-contain" alt="HUG" />
+          </div>
+          <svg class="w-72 mx-auto relative top-14" width="289" height="17" viewBox="0 0 289 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="line"
+              d="M2.5 8.49951C26.1667 -12.2851 49.8333 29.2841 73.5 8.49951C97.1667 -12.2851 120.833 29.2841 144.5 8.49951C168.167 -12.2851 191.833 29.2841 215.5 8.49951C239.167 -12.2851 262.833 29.2841 286.5 8.49951"
+              stroke="#20B2AA"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+
+        <!-- props -->
+        <img id="human" class="absolute xl:w-56 sm:w-40 w-30 -right-0 2xl:top-20 -top-32" src="./images/pages/eat-the-east/ktc-section-prop.svg" alt="" width="210" height="278" />
+      </section>
+
+      <section id="designers" class="lg:py-24 py-16">
+        <hgroup class="main-container space-y-8 text-center">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">47 นักออกแบบประสบการณ์ท่องเที่ยวเชิงวัฒนธรรมอาหาร</h2>
+          <p data-reveal class="text-lg">คัดสรรจากผู้สมัครกว่า 100 ราย เลือกเส้นทางที่ใช่ แล้วออกตามหารสสงขลาไปด้วยกัน</p>
+        </hgroup>
+
+        <div data-reveal class="main-container designer-filter-bar" role="group" aria-label="กรองตามธีมประสบการณ์">
+          <button type="button" class="designer-filter-btn is-active" data-filter="all" aria-pressed="true">ทั้งหมด (47)</button>
+          <button type="button" class="designer-filter-btn" data-filter="ingredient" aria-pressed="false">Ingredient Journey (5)</button>
+          <button type="button" class="designer-filter-btn" data-filter="local" aria-pressed="false">Made with Local (9)</button>
+          <button type="button" class="designer-filter-btn" data-filter="handson" aria-pressed="false">Hands-on Gastro (11)</button>
+          <button type="button" class="designer-filter-btn" data-filter="signature" aria-pressed="false">Signature Immersive (22)</button>
+        </div>
+
+        <!-- The grid reveals as one container, driven from tamRotSongkhla.js rather than
+             data-reveal: it is several viewports tall, and data-reveal's 30%-visible
+             threshold can never be met by an element that size. -->
+        <div id="designer-grid" class="main-container designer-grid">
+        <article class="designer-card" data-theme="ingredient">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/ingredient-journey/HUG26001.webp" alt="เฉลิมพล เลาหสกุล (เชฟตูน) — Songkhla Essence : The Chef's Trail" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="ingredient">Ingredient Journey</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26001</p>
+            <h3 class="designer-card-name">เฉลิมพล เลาหสกุล (เชฟตูน)</h3>
+            <p class="designer-card-exp">Songkhla Essence : The Chef's Trail</p>
+            <p class="designer-card-desc">นำชมวัตถุดิบ 3 น้ำ (เกาะยอ-นาทับ) เจาะลึกเทคนิค Ikejime ปลาไทย ชิมซาชิมิสดวิถีเล จบด้วย Chef's Table 8 คอร์ส</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="ingredient">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/ingredient-journey/HUG26010.webp" alt="กิตติพงศ์ แก้วจังหวัด (แสน) — เมือง 2 เล ปลา 3 น้ำ" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="ingredient">Ingredient Journey</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26010</p>
+            <h3 class="designer-card-name">กิตติพงศ์ แก้วจังหวัด (แสน)</h3>
+            <p class="designer-card-exp">เมือง 2 เล ปลา 3 น้ำ</p>
+            <p class="designer-card-desc">สัมผัสอัตลักษณ์เมืองสองเลผ่านเรื่องเล่า กลิ่นอาย และวิถีชาวเล จากต้นน้ำสู่ปลายน้ำอย่างเป็นระบบ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="ingredient">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/ingredient-journey/HUG26033.webp" alt="อากฤษฏิ์ ศศิอังกูร (ปอล) — Songkhla Lake Sea Bass Experience" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="ingredient">Ingredient Journey</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26033</p>
+            <h3 class="designer-card-name">อากฤษฏิ์ ศศิอังกูร (ปอล)</h3>
+            <p class="designer-card-exp">Songkhla Lake Sea Bass Experience</p>
+            <p class="designer-card-desc">นั่งเรือลุยกระชังปลากะพงสามน้ำเกาะยอ สัมผัสวิถีคนเลี้ยงปลา &quot;From Cage to Table&quot; พร้อมลิ้มรสอาหารพื้นบ้านเมนูปลาสด ๆ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="ingredient">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/ingredient-journey/HUG26051.webp" alt="รติกร สุขเจริญ (ตั๊กแตน) — สลัดมันเดือย ดอกไม้กินได้" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="ingredient">Ingredient Journey</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26051</p>
+            <h3 class="designer-card-name">รติกร สุขเจริญ (ตั๊กแตน)</h3>
+            <p class="designer-card-exp">สลัดมันเดือย ดอกไม้กินได้</p>
+            <p class="designer-card-desc">เปิดสวนพาชมการปลูกพืชอินทรีย์ร่วมกับดอกไม้กินได้ เรียนรู้การทำสลัดมันเดือย ปรุงดอกไม้เพื่อสุขภาพ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="ingredient">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/ingredient-journey/HUG26053.webp" alt="กะรัต ธรรมรัตน์พงศ์ (กี้) — Farm to Flavor" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="ingredient">Ingredient Journey</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26053</p>
+            <h3 class="designer-card-name">กะรัต ธรรมรัตน์พงศ์ (กี้)</h3>
+            <p class="designer-card-exp">Farm to Flavor</p>
+            <p class="designer-card-desc">ทัวร์เดินเก็บผลไม้สด ๆ จากต้น ในสวนเกษตรอินทรีย์กลางเมืองหาดใหญ่ สัมผัสรสชาติแท้ ๆ ตามฤดูกาล พร้อมเวิร์กชอปเครื่องจิ้มถึงรส</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26007.webp" alt="ณรงค์ฤทธิ์ ผลห้า (นุก) — Tantalum Sunset Gin Experience" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26007</p>
+            <h3 class="designer-card-name">ณรงค์ฤทธิ์ ผลห้า (นุก)</h3>
+            <p class="designer-card-exp">Tantalum Sunset Gin Experience</p>
+            <p class="designer-card-desc">นำน้ำตาลโตนดสทิงพระมาทำคราฟต์สปิริต ร่วมเวิร์กชอปเบลนด์สมุนไพรท้องถิ่น ดีไซน์ Gin ของตัวเอง พร้อมจิบเครื่องดื่มชมพระอาทิตย์ตกริมทะเลสาบ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26008.webp" alt="สุมิตดานัน จันทวี (สิม) — Cocoa Cruise Songkhla" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26008</p>
+            <h3 class="designer-card-name">สุมิตดานัน จันทวี (สิม)</h3>
+            <p class="designer-card-exp">Cocoa Cruise Songkhla</p>
+            <p class="designer-card-desc">ล่องเรือชมทัศนียภาพทะเลสาบยามเย็น พร้อมดื่มด่ำการชิม Craft Chocolate จากโกโก้สายพันธุ์สงขลาแท้ ๆ เล่าเรื่องเมืองผ่านรสขมและหวาน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26016.webp" alt="นฤมล ชื่นช่วย (แมว) — Cocoa Zero &quot;0&quot; (Wisdom for a Cup)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26016</p>
+            <h3 class="designer-card-name">นฤมล ชื่นช่วย (แมว)</h3>
+            <p class="designer-card-exp">Cocoa Zero &quot;0&quot; (Wisdom for a Cup)</p>
+            <p class="designer-card-desc">ถ่ายทอดภูมิปัญญาการทำเครื่องดื่มโกโก้แบบไร้ขยะ (Zero Waste) ดึงคุณค่าจากฝักโกโก้มาใช้ให้ครบทุกมิติในแก้วเดียว</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26017.webp" alt="พิมพ์ภูภรณ์ มากสุวรรณ (กิฟต์) — &quot;เขาคัน&quot; Southern Wild Berry Gastronomy Pairing" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26017</p>
+            <h3 class="designer-card-name">พิมพ์ภูภรณ์ มากสุวรรณ (กิฟต์)</h3>
+            <p class="designer-card-exp">&quot;เขาคัน&quot; Southern Wild Berry Gastronomy Pairing</p>
+            <p class="designer-card-desc">หยิบ &quot;ลูกเขาคัน&quot; ผลไม้ป่ารสเปรี้ยวของภาคใต้มารังสรรค์เป็นเมนูเครื่องดื่มจับคู่เมนูอาหารแสนอร่อย ในบรรยากาศ คัน ๆ มัน ๆ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26032.webp" alt="สุวัฒน์ พฤษาระยัพ (ลุงวัฒน์) — ผึ้งชันโรงหลอดแก้ว (น้ำผึ้งชันโรง บ้านแม่เสริม)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26032</p>
+            <h3 class="designer-card-name">สุวัฒน์ พฤษาระยัพ (ลุงวัฒน์)</h3>
+            <p class="designer-card-exp">ผึ้งชันโรงหลอดแก้ว (น้ำผึ้งชันโรง บ้านแม่เสริม)</p>
+            <p class="designer-card-desc">นวัตกรรมการเลี้ยงชันโรงในหลอดแก้ว ชิมน้ำผึ้งชันโรงสด ๆ ที่มีคุณค่าทางยาสูง พร้อมเรียนรู้การแปรรูปเป็นผลิตภัณฑ์สุขภาพ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26035.webp" alt="นฤมล อารีวานิช (โอ๋) — Blend Tea Songkhla" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26035</p>
+            <h3 class="designer-card-name">นฤมล อารีวานิช (โอ๋)</h3>
+            <p class="designer-card-exp">Blend Tea Songkhla</p>
+            <p class="designer-card-desc">ศิลปะการเบลนด์ชาด้วย &quot;กลิ่นอายใต้&quot; นำสมุนไพรและดอกไม้แห้งในท้องถิ่นสงขลามาผสมผสานปรุงเป็นชาประจำตัว</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26040.webp" alt="ระวิวรรณ พุทธา (เงิน) — Panoramic Sunset with Songkhla Cocoa" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26040</p>
+            <h3 class="designer-card-name">ระวิวรรณ พุทธา (เงิน)</h3>
+            <p class="designer-card-exp">Panoramic Sunset with Songkhla Cocoa</p>
+            <p class="designer-card-desc">จิบโกโก้สงขลาเข้มข้นรสเลิศ พร้อมชมวิวพาโนรามาพระอาทิตย์ตกดินในจุดชมวิวที่สวยที่สุด</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26045.webp" alt="วิมาน เหมมันต์ (บังมีดี) — Meedee Station: ไซรัป &amp; ส้มซ่า" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26045</p>
+            <h3 class="designer-card-name">วิมาน เหมมันต์ (บังมีดี)</h3>
+            <p class="designer-card-exp">Meedee Station: ไซรัป &amp; ส้มซ่า</p>
+            <p class="designer-card-desc">เวิร์กชอปสอนแปรรูปส้มซ่าเป็นไซรัปเข้มข้น ใช้ในบาร์เครื่องดื่ม และการปรุงอาหาร</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="local">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/made-with-local/HUG26063.webp" alt="บัวชมพู บุญพันธ์ (อ้าย) — Scent of Stories" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="local">Made with Local</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26063</p>
+            <h3 class="designer-card-name">บัวชมพู บุญพันธ์ (อ้าย)</h3>
+            <p class="designer-card-exp">Scent of Stories</p>
+            <p class="designer-card-desc">ออกแบบเครื่องหอมและกลิ่นสัมผัสที่เชื่อมโยงกับเรื่องเล่า และรสชาติอาหารค่ำ สร้าง Aroma Memory สุดประทับใจ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26004.webp" alt="อริสา พิทักษ์วาที (ซิน) — From Clay to Collection (ปั้นดิน กินกาแฟ แลแคคตัส)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26004</p>
+            <h3 class="designer-card-name">อริสา พิทักษ์วาที (ซิน)</h3>
+            <p class="designer-card-exp">From Clay to Collection (ปั้นดิน กินกาแฟ แลแคคตัส)</p>
+            <p class="designer-card-desc">เวิร์กชอปงานเซรามิกทำมือขึ้นรูปแก้วกาแฟของตัวเอง ผ่อนคลายไปกับกาแฟสด และเพลิดเพลินในสวนต้นกระบองเพชร</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26009.webp" alt="พิชชานันท์ ชุมพงศ์ (กระแต) — ปั้นดิน กินน้ำผึ้งชันโรง" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26009</p>
+            <h3 class="designer-card-name">พิชชานันท์ ชุมพงศ์ (กระแต)</h3>
+            <p class="designer-card-exp">ปั้นดิน กินน้ำผึ้งชันโรง</p>
+            <p class="designer-card-desc">กิจกรรมศิลปะผสมอาหารคราฟต์ ลงมือปั้นภาชนะดินเผา และลิ้มลองรสชาติต่าง ๆ ของน้ำผึ้งชันโรงบริสุทธิ์จากธรรมชาติ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26014.webp" alt="ภัทรภร มุสิกโร (เดือน) — Gut and Glow Workshop" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26014</p>
+            <h3 class="designer-card-name">ภัทรภร มุสิกโร (เดือน)</h3>
+            <p class="designer-card-exp">Gut and Glow Workshop</p>
+            <p class="designer-card-desc">ห้องเรียนอาหารสุขภาพเพื่อปรับสมดุลลำไส้ เรียนรู้การเลือกทานอาหารให้เป็นยา เพื่อให้ผิวพรรณเปล่งปลั่งและสุขภาพดีจากภายใน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26021.webp" alt="พันธิตร นะแส (แจ๊บ) — พิมพ์ย่าง แลเล ที่สวนกง" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26021</p>
+            <h3 class="designer-card-name">พันธิตร นะแส (แจ๊บ)</h3>
+            <p class="designer-card-exp">พิมพ์ย่าง แลเล ที่สวนกง</p>
+            <p class="designer-card-desc">กิจกรรมทำอาหารพื้นบ้านริมชายหาดสวนกง ปรุงเมนูย่างเตาถ่านจากอาหารทะเลสด ๆ ที่ชาวประมงจับมาได้วันต่อวัน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26022.webp" alt="ศรายุทธ แก้วมาก (บูม) — อบใหม่ ใส่ไอเดีย" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26022</p>
+            <h3 class="designer-card-name">ศรายุทธ แก้วมาก (บูม)</h3>
+            <p class="designer-card-exp">อบใหม่ ใส่ไอเดีย</p>
+            <p class="designer-card-desc">เวิร์กชอปการอบขนมเบเกอรี่โฮมเมด ผสมผสานวัตถุดิบท้องถิ่นแปลกใหม่ลงในเนื้อขนม เพื่อสร้างเนื้อสัมผัสและรสชาติที่เป็นเอกลักษณ์</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26024.webp" alt="ณัฐนี ปัญญาวชิโรกุล (โดนัท) — Kid Cooking Studio Class" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26024</p>
+            <h3 class="designer-card-name">ณัฐนี ปัญญาวชิโรกุล (โดนัท)</h3>
+            <p class="designer-card-exp">Kid Cooking Studio Class</p>
+            <p class="designer-card-desc">“เด็กได้ทำ ผู้ใหญ่ได้พัก” สตูดิโอเวิร์กชอปติ่มซำสร้างเสริมจินตนาการสำหรับคุณหนู ควบคู่ไปกับมื้อเพลิดเพลินของคุณพ่อ คุณแม่</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26026.webp" alt="กันย์ลภัส ภัทรศรีพงศ์ (กัญ) — หมักใจในสวน (กิมจิ &amp; คอมบูชะ)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26026</p>
+            <h3 class="designer-card-name">กันย์ลภัส ภัทรศรีพงศ์ (กัญ)</h3>
+            <p class="designer-card-exp">หมักใจในสวน (กิมจิ &amp; คอมบูชะ)</p>
+            <p class="designer-card-desc">สโลว์ไลฟ์ในสวนโกโก้ เรียนรู้วิทยาศาสตร์การหมักกิมจิ และบ่มชาคอมบูชะโดยใช้วัตถุดิบท้องถิ่นสงขลา ผสมผสานงานคราฟต์ฮีลใจ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26027.webp" alt="ฟาฮัด เหมมัน (ฟาฮัด) — DIY ติ่มซำ ทำต้มยำแห้งกระทะร้อน" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26027</p>
+            <h3 class="designer-card-name">ฟาฮัด เหมมัน (ฟาฮัด)</h3>
+            <p class="designer-card-exp">DIY ติ่มซำ ทำต้มยำแห้งกระทะร้อน</p>
+            <p class="designer-card-desc">กิจกรรมสร้างสรรค์หน้าติ่มซำในฝันของตัวเองได้จุใจถึง 10 เข่ง และฝึกทำเมนูต้มยำแห้งซอสสูตรเด็ดบนกระทะร้อนฉ่า</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26028.webp" alt="ปาณิสรา จันทร์คล้าย (ลูกเกด) — ข้าว กับ ปลา" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26028</p>
+            <h3 class="designer-card-name">ปาณิสรา จันทร์คล้าย (ลูกเกด)</h3>
+            <p class="designer-card-exp">ข้าว กับ ปลา</p>
+            <p class="designer-card-desc">เวิร์กชอปข้าวปั้นลุ่มน้ำ ที่หลอมรวม &quot;จิตวิญญาณคนปลูกข้าวพื้นถิ่นแดนใต้&quot; เข้ากับปลาไทย Ikejime &quot;วิถีความเคารพต่อชีวิตแห่งท้องทะเล&quot;</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26030.webp" alt="ธีรเนตร ศิรประภาธรรม (พี่แอ๊) — Halal Flavor Journey (Cooking Class)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26030</p>
+            <h3 class="designer-card-name">ธีรเนตร ศิรประภาธรรม (พี่แอ๊)</h3>
+            <p class="designer-card-exp">Halal Flavor Journey (Cooking Class)</p>
+            <p class="designer-card-desc">เปิดครัวสอนทำอาหารฮาลาลอัตลักษณ์สงขลาดั้งเดิม เรียนรู้การใช้เครื่องเทศและการคัดเลือกวัตถุดิบตามวิถีมุสลิมที่ถูกต้อง</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="handson">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/hands-on-gastro/HUG26031.webp" alt="จักรพงศ์ บุญวรรโณ (โจ้) — ชม ดม ชิม วัตถุดิบท้องถิ่นสงขลา (Songkhla Ingredient)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="handson">Hands-on Gastro</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26031</p>
+            <h3 class="designer-card-name">จักรพงศ์ บุญวรรโณ (โจ้)</h3>
+            <p class="designer-card-exp">ชม ดม ชิม วัตถุดิบท้องถิ่นสงขลา (Songkhla Ingredient)</p>
+            <p class="designer-card-desc">นิทรรศการเรียนรู้ผ่านประสาทสัมผัส ดมกลิ่นและจำแนกรสชาติวัตถุดิบเฉพาะของสงขลา เพื่อเข้าใจประวัติศาสตร์และรากเหง้าวัฒนธรรมอาหาร</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26003.webp" alt="วิมพ์ภัทรา เม่งช่วย (แพร) — เดินเมืองเก่า เล่าเรื่องสงขลา" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26003</p>
+            <h3 class="designer-card-name">วิมพ์ภัทรา เม่งช่วย (แพร)</h3>
+            <p class="designer-card-exp">เดินเมืองเก่า เล่าเรื่องสงขลา</p>
+            <p class="designer-card-desc">ทริปเดินเท้าลัดเลาะย่านเก่าถนนนครนอก-นครใน ดื่มด่ำเรื่องราวโรงสีแดง สตรีทอาร์ต แวะชิมขนมโบราณชื่อดัง ย่อยประวัติศาสตร์ผ่านการกินตลอด 4 ชั่วโมง</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26011.webp" alt="ทัศนพร ดิลกวราห์กุล (ฝน) — เรื่องเล่าในรสอาหารของแม่ (Little Charm Garden)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26011</p>
+            <h3 class="designer-card-name">ทัศนพร ดิลกวราห์กุล (ฝน)</h3>
+            <p class="designer-card-exp">เรื่องเล่าในรสอาหารของแม่ (Little Charm Garden)</p>
+            <p class="designer-card-desc">ล้อมวงกินข้าวยามเย็นในสวนหลังบ้าน ฟังเรื่องเล่าผ่านสูตรอาหารรสมือแม่ ถ่ายทอดความอบอุ่นและสายใยครอบครัวผ่านรสชาติที่คุ้นเคย</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26012.webp" alt="ปัณณพร ดิลกวราห์กุล (ฝ้าย) — บ้านทัสปัณ สมรม 3 รุ่น (From Farm to Body)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26012</p>
+            <h3 class="designer-card-name">ปัณณพร ดิลกวราห์กุล (ฝ้าย)</h3>
+            <p class="designer-card-exp">บ้านทัสปัณ สมรม 3 รุ่น (From Farm to Body)</p>
+            <p class="designer-card-desc">เปิดสวนหลังบ้านให้คุณได้ฝึกโยคะ รับประทานอาหารเมนูพิเศษ ผสานศาสตร์และศิลป์ของคน 3 ช่วงวัย ที่ส่งต่อความสุขจากรุ่น สู่รุ่น</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26015.webp" alt="กฤตยชญ์ กาญจนะเดชะ (กนต์) — ตลาดใต้ บนโต๊ะอาหาร (Gong's Table Local Market to Table)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26015</p>
+            <h3 class="designer-card-name">กฤตยชญ์ กาญจนะเดชะ (กนต์)</h3>
+            <p class="designer-card-exp">ตลาดใต้ บนโต๊ะอาหาร (Gong's Table Local Market to Table)</p>
+            <p class="designer-card-desc">พาเที่ยวชมตลาดสดท้องถิ่น เลือกซื้อวัตถุดิบสดใหม่ด้วยตนเอง นำมาทำมื้ออาหารเช้า/กลางวันสไตล์ Chef's Table บนโต๊ะยาว</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26018.webp" alt="พงศธร ชฤศิษฎ์ (ก้อง) — จาน สู่จอ / Food with Film (รสชาติบนแผ่นฟิล์ม)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26018</p>
+            <h3 class="designer-card-name">พงศธร ชฤศิษฎ์ (ก้อง)</h3>
+            <p class="designer-card-exp">จาน สู่จอ / Food with Film (รสชาติบนแผ่นฟิล์ม)</p>
+            <p class="designer-card-desc">ออกแบบประสบการณ์รับประทานอาหารที่ใช้สื่อภาพยนตร์มาเล่าเรื่องบนจาน หรือนำวัตถุดิบในจาน ไปร้อยเรียงสร้างสรรค์สู่สื่อภาพยนตร์</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26019.webp" alt="ศิรินาถ เรืองสุข (ปลา) — ดินเนอร์ ปาร์ตี้ พรุฉิมพลี" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26019</p>
+            <h3 class="designer-card-name">ศิรินาถ เรืองสุข (ปลา)</h3>
+            <p class="designer-card-exp">ดินเนอร์ ปาร์ตี้ พรุฉิมพลี</p>
+            <p class="designer-card-desc">งานเลี้ยงอาหารค่ำแฟนตาซีริมพรุฉิมพลี ผสมผสานเสียงดนตรีสด คอนเสิร์ตย่อย และบรรยากาศงานปาร์ตี้สนุกสนานยามค่ำคืน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26020.webp" alt="พีระเนตร บุญณะสิทธิ์ (เนตร) — Mini Mango Fun" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26020</p>
+            <h3 class="designer-card-name">พีระเนตร บุญณะสิทธิ์ (เนตร)</h3>
+            <p class="designer-card-exp">Mini Mango Fun</p>
+            <p class="designer-card-desc">กิจกรรมนันทนาการและมื้ออาหารที่นำ &quot;มะม่วงเบา&quot; วัตถุดิบผลไม้ขึ้นชื่อสงขลา มาสร้างสรรค์เมนูสุดสนุก เติมความสุขในครอบครัว</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26025.webp" alt="อภิสิทธิ์ จันเสรีกร (แม็ก) — เงา เล่า รส (Songkhla Shadow Dinner)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26025</p>
+            <h3 class="designer-card-name">อภิสิทธิ์ จันเสรีกร (แม็ก)</h3>
+            <p class="designer-card-exp">เงา เล่า รส (Songkhla Shadow Dinner)</p>
+            <p class="designer-card-desc">มื้ออาหาร Fine Dining ค่ำคืนสุดอลังการ ณ บ้านจันทร์ฉาย ร้อยเรียงรสชาติอาหารพื้นบ้านปักษ์ใต้เข้ากับการแสดงเชิดหนังตะลุงร่วมสมัย</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26029.webp" alt="รัตนะ นวกรรมิก (แนน) — Sip &amp; Scent จิบ ชิม ดม เหล้าตะเครี้ยะ 3 ฤดู" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26029</p>
+            <h3 class="designer-card-name">รัตนะ นวกรรมิก (แนน)</h3>
+            <p class="designer-card-exp">Sip &amp; Scent จิบ ชิม ดม เหล้าตะเครี้ยะ 3 ฤดู</p>
+            <p class="designer-card-desc">เปิดประสบการณ์จับคู่อาหาร กับ “เหล้าตะเครี้ยะ” เครื่องดื่มท้องถิ่น ที่นำเสนอมนต์เสน่ห์ 3 ฤดูกาลที่แตกต่างกัน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26032.webp" alt="พูนสุข แสงพงศ์ชวาล (แอล) — Kaya Heritage Songkhla (กินขนมแบบสงขลา ฟังเรื่องเล่าจากเจ้าบ้าน)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26032</p>
+            <h3 class="designer-card-name">พูนสุข แสงพงศ์ชวาล (แอล)</h3>
+            <p class="designer-card-exp">Kaya Heritage Songkhla (กินขนมแบบสงขลา ฟังเรื่องเล่าจากเจ้าบ้าน)</p>
+            <p class="designer-card-desc">ละเลียดชิม “สังขยาเมืองสงขลา” สูตรดั้งเดิมและขนมหวานเบเกอรี่โบราณ ล้อมวงฟังเรื่องเล่ามรดกวัฒนธรรมอาหารของเมืองท่า จากปากเจ้าของบ้าน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26036.webp" alt="ตีรพุทธิ์ ปรีชาติวงศ์ (บาส) — Shadow : Aroma : Rhy (ชิมกาแฟผ่านหนังตะลุง)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26036</p>
+            <h3 class="designer-card-name">ตีรพุทธิ์ ปรีชาติวงศ์ (บาส)</h3>
+            <p class="designer-card-exp">Shadow : Aroma : Rhy (ชิมกาแฟผ่านหนังตะลุง)</p>
+            <p class="designer-card-desc">นวัตกรรมการเสพกาแฟรูปแบบใหม่ จิบกาแฟ Specialty ท้องถิ่นที่สอดคล้องไปกับท่วงทำนอง แสงเงา และจังหวะการแสดงของตัวหนังตะลุงใต้</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26042.webp" alt="สันติ เศษสิน (โตนิ) — Unseen Through Lens : มุมลับ คนจริง แสงจริง" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26042</p>
+            <h3 class="designer-card-name">สันติ เศษสิน (โตนิ)</h3>
+            <p class="designer-card-exp">Unseen Through Lens : มุมลับ คนจริง แสงจริง</p>
+            <p class="designer-card-desc">ทริปตามหา &quot;มุมลับ&quot; ของเมืองสงขลา ถ่ายภาพแสงเงาธรรมชาติ เสาะหาเมนูอร่อยลับ ๆ ที่ซ่อนอยู่ตามชุมชนที่นักท่องเที่ยวทั่วไปเข้าไม่ถึง</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26043.webp" alt="สุพร ภัทรอนุวงศ์ (พร) — กินรับทรัพย์ ตะลุยร้านดัง (กินอิ่ม รับโชค)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26043</p>
+            <h3 class="designer-card-name">สุพร ภัทรอนุวงศ์ (พร)</h3>
+            <p class="designer-card-exp">กินรับทรัพย์ ตะลุยร้านดัง (กินอิ่ม รับโชค)</p>
+            <p class="designer-card-desc">ทริปสายมูและสายกิน มัดรวมเส้นทางตระเวนกินอาหารร้านเด็ดระดับตำนานของสงขลา ควบคู่ไปกับการท่องเที่ยวไหว้พระเสริมสิริมงคลรับโชคลาภ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26046.webp" alt="กันต์ธร พวงแก้ว (จูเนียร์) — Songkhla Fullcourse Journey" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26046</p>
+            <h3 class="designer-card-name">กันต์ธร พวงแก้ว (จูเนียร์)</h3>
+            <p class="designer-card-exp">Songkhla Fullcourse Journey</p>
+            <p class="designer-card-desc">รวบรวมการเดินทางของวัตถุดิบสงขลา 16 อำเภอ ผ่านจานอาหาร Fullcourse ตั้งแต่เรียกน้ำย่อยจนถึงของหวาน</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26046-2.webp" alt="พริ้มพราว สุขยิ่ง (ตุ๊กตา) — ครอบคุณค่า : ตามรสสงขลา สัมผัสคุณค่าที่ซ่อนอยู่" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26046</p>
+            <h3 class="designer-card-name">พริ้มพราว สุขยิ่ง (ตุ๊กตา)</h3>
+            <p class="designer-card-exp">ครอบคุณค่า : ตามรสสงขลา สัมผัสคุณค่าที่ซ่อนอยู่</p>
+            <p class="designer-card-desc">ท่องเที่ยวสัมผัสจิตวิญญาณ “ไข่ครอบสงขลา” อัตลักษณ์อาหารลุ่มน้ำ สะท้อนภูมิปัญญาการใช้วัตถุดิบอย่างคุ้มค่า</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26050.webp" alt="ธัญจิรา องค์พันธุ์เดชา (ปุ่น) — Common Scents: Dessert Table" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26050</p>
+            <h3 class="designer-card-name">ธัญจิรา องค์พันธุ์เดชา (ปุ่น)</h3>
+            <p class="designer-card-exp">Common Scents: Dessert Table</p>
+            <p class="designer-card-desc">ยกระดับโต๊ะขนมหวานให้กลายเป็นงานศิลปะทางประสาทสัมผัส (Sensory Table) ผสมผสานรูป รส และกลิ่นอายเฉพาะตัวเพื่อสร้างมิติการกินของหวานที่แปลกใหม่</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26055.webp" alt="ปัณณธร ไหมพรหม (ติ่ง) — เขาคอหงส์ฮีลใจ เดิน กิน ฟื้นฟู สุขภาพ" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26055</p>
+            <h3 class="designer-card-name">ปัณณธร ไหมพรหม (ติ่ง)</h3>
+            <p class="designer-card-exp">เขาคอหงส์ฮีลใจ เดิน กิน ฟื้นฟู สุขภาพ</p>
+            <p class="designer-card-desc">ทริปเดินป่าศึกษาธรรมชาติเชิงสุขภาพ ณ เขาคอหงส์ สูดอ็อกซิเจนบริสุทธิ์ ทานอาหารสมุนไพรฟื้นฟูร่างกายและบำบัดความเครียด</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26057.webp" alt="อมรรัตน์ ดิลกวราห์กุล (รัตน์) — มื้อนี้...ที่บ้านแม่" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26057</p>
+            <h3 class="designer-card-name">อมรรัตน์ ดิลกวราห์กุล (รัตน์)</h3>
+            <p class="designer-card-exp">มื้อนี้...ที่บ้านแม่</p>
+            <p class="designer-card-desc">ประสบการณ์ทานอาหารที่ให้ความรู้สึกอบอุ่นใจเหมือนได้กลับไปกินข้าวฝีมือแม่ที่บ้าน ทานอาหารใต้พื้นบ้านแท้ ๆ ท่ามกลางบรรยากาศแสนเป็นกันเอง</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26058.webp" alt="ธีระพงศ์ ขุนเพ็ชร (สิงห์โต) — Countryside Experience" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26058</p>
+            <h3 class="designer-card-name">ธีระพงศ์ ขุนเพ็ชร (สิงห์โต)</h3>
+            <p class="designer-card-exp">Countryside Experience</p>
+            <p class="designer-card-desc">หลีกหนีความวุ่นวายไปใช้ชีวิตในชนบทสงขลา สัมผัสบรรยากาศทุ่งนา ลิ้มรสอาหารท้องถิ่น ตามรอยซีรี่ดังที่เขาคูหา รัตภูมิ</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26059.webp" alt="ธัญรัศม์ ขวัญพสุมนต์ (นาง) — Chill &amp; Taste (พักกายเติมใจในรสชาติท้องถิ่น)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26059</p>
+            <h3 class="designer-card-name">ธัญรัศม์ ขวัญพสุมนต์ (นาง)</h3>
+            <p class="designer-card-exp">Chill &amp; Taste (พักกายเติมใจในรสชาติท้องถิ่น)</p>
+            <p class="designer-card-desc">พักใจไปกับบรรยากาศสบาย ๆ ของบ้านสวนวิวทะเล ชิมอาหารโฮมเมดและขนมท้องถิ่น Retreat เล็ก ๆ สำหรับคนที่ต้องการ Recharge ชีวิต</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26061.webp" alt="สิริน ชีพชัยอิสสระ (นก) — 1 Day Retreat “คืนสมดุลกายใจผ่านธรรมชาติ”" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26061</p>
+            <h3 class="designer-card-name">สิริน ชีพชัยอิสสระ (นก)</h3>
+            <p class="designer-card-exp">1 Day Retreat “คืนสมดุลกายใจผ่านธรรมชาติ”</p>
+            <p class="designer-card-desc">โปรแกรมฟื้นฟูสุขภาพแบบองค์รวม 1 วันเต็ม คลายความเหนื่อยล้า ด้วยอาหารธรรมชาติบำบัด สูดอากาศบริสุทธิ์ และฝึกสมาธิคืนสมดุลชีวิต</p>
+          </div>
+        </article>
+        <article class="designer-card" data-theme="signature">
+          <figure class="designer-card-photo">
+            <img src="./images/pages/tam-rot-songkhla/designers/signature-immersive/HUG26062.webp" alt="เย้าฮารี เบ็ญหยีหมาน (เย้า) — เป็น อยู่ คือ (Happy Senior Dining Care Wellness)" loading="lazy" width="1024" height="1024" />
+            <span class="designer-card-tag" data-theme="signature">Signature Immersive</span>
+          </figure>
+          <div class="designer-card-body">
+            <p class="designer-card-code">HUG26062</p>
+            <h3 class="designer-card-name">เย้าฮารี เบ็ญหยีหมาน (เย้า)</h3>
+            <p class="designer-card-exp">เป็น อยู่ คือ (Happy Senior Dining Care Wellness)</p>
+            <p class="designer-card-desc">มื้ออาหารและกิจกรรมสุนทรียภาพที่ออกแบบมาเพื่อดูแลโภชนาการ และความสุขของผู้สูงอายุ (Senior) ให้มีชีวิตชีวา และมีความสุข</p>
+          </div>
+        </article>
+        </div>
+
+        <p id="designer-grid-empty" class="main-container text-center text-dark-tan italic mt-8 hidden">ไม่พบนักออกแบบในธีมนี้</p>
+
+        <svg class="w-72 mx-auto relative top-14" width="289" height="17" viewBox="0 0 289 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            class="line"
+            d="M2.5 8.49951C26.1667 -12.2851 49.8333 29.2841 73.5 8.49951C97.1667 -12.2851 120.833 29.2841 144.5 8.49951C168.167 -12.2851 191.833 29.2841 215.5 8.49951C239.167 -12.2851 262.833 29.2841 286.5 8.49951"
+            stroke="#20B2AA"
+            stroke-width="5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </section>
+
+      <section id="theme-strip-section" class="relative lg:py-24 py-16">
+        <hgroup class="main-container space-y-8 text-center mb-12">
+          <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">4 ธีมยุทธศาสตร์ของโครงการ</h2>
+        </hgroup>
+
+        <!-- No data-reveal here: the pills get a bouncy staggered reveal in tamRotSongkhla.js -->
+        <div class="main-container theme-strip">
+          <div class="theme-pill">
+            <span class="theme-pill-dot" data-theme="ingredient"></span>
+            <b>Ingredient Journey</b>
+            <span>ตามรอยวัตถุดิบ</span>
+          </div>
+          <div class="theme-pill">
+            <span class="theme-pill-dot" data-theme="local"></span>
+            <b>Made with Local</b>
+            <span>สร้างสรรค์จากท้องถิ่น</span>
+          </div>
+          <div class="theme-pill">
+            <span class="theme-pill-dot" data-theme="handson"></span>
+            <b>Hands-on Gastro</b>
+            <span>ลงมือทำด้วยตนเอง</span>
+          </div>
+          <div class="theme-pill">
+            <span class="theme-pill-dot" data-theme="signature"></span>
+            <b>Signature Immersive</b>
+            <span>ดื่มด่ำวัฒนธรรมอาหาร</span>
+          </div>
+        </div>
+
+        <!-- props -->
+        <img id="pineapple" class="absolute w-38 top-16 left-0 max-lg:hidden" src="./images/pages/eat-the-east/pineapple.svg" alt="" width="142" height="256" />
+      </section>
+
+      <blockquote class="ambassador-band py-32">
+        <p data-reveal class="main-container text-center text-balance text-3xl/relaxed">
+          ไม่ว่าคุณจะเป็นใคร นักเดินทางสายกิน สายถ่ายรูป หรือสายวัฒนธรรม ร่วมสร้างสรรค์เส้นทางตามรสสงขลาไปด้วยกัน เลือกเส้นทางที่ใช่ แล้วออกตามหารสสงขลากับ Gastronomad Ambassador
+          ได้ตั้งแต่วันนี้
+        </p>
+      </blockquote>
+
+      <section id="about" class="main-container lg:py-24 py-16 space-y-12">
+        <hgroup data-reveal class="space-y-5 text-center">
+          <h2 class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">เกี่ยวกับโครงการ Songkhla Gastronomy Tourism Experience Design Lab</h2>
+          <p class="text-lg text-balance">
+            ห้องปฏิบัติการนวัตกรรมการท่องเที่ยวเชิงวัฒนธรรมอาหาร ที่เปลี่ยนสินทรัพย์ของเมืองให้กลายเป็นประสบการณ์ท่องเที่ยวพร้อมเข้าสู่ตลาดไทย-มาเลเซีย-อินโดนีเซีย
+          </p>
+        </hgroup>
+
+        <div data-reveal class="funnel-row">
+          <div class="funnel-step">
+            <b>100+</b>
+            <span>ผู้สมัคร</span>
+          </div>
+          <div class="funnel-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12h15M13 6l6 6-6 6" />
+            </svg>
+          </div>
+          <div class="funnel-step">
+            <b>60</b>
+            <span>เข้าสู่กระบวนการ Co-creation</span>
+          </div>
+          <div class="funnel-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12h15M13 6l6 6-6 6" />
+            </svg>
+          </div>
+          <div class="funnel-step">
+            <b>47</b>
+            <span>Experience Designers ต้นแบบ</span>
+          </div>
+        </div>
+
+        <!-- Uses the shared .collapsible component: styles live in styles/components.css and
+             the toggle is wired up by scripts/modules/collapsibleMenu.js, which main.js
+             already imports. Nothing page-specific needed. -->
+        <div data-reveal class="space-y-1">
+          <section class="collapsible border-t border-tan active">
+            <button class="flex items-center justify-between w-full gap-4 py-5 text-lg font-semibold text-brown">
+              <span>ทำไมต้องสงขลา — Cross-Cultural Gastronomy Gateway</span>
+              <div class="size-5 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="collapsible-content text-cocoa">
+                สงขลาสื่อสารทั้งอัตลักษณ์อาหารไทยภาคใต้ และความเป็นเมืองพหุวัฒนธรรม สร้างความคุ้นเคยกับนักเดินทางมลายู-มุสลิม และอินโดนีเซีย-มุสลิม ผ่านอาหาร ศรัทธา ครอบครัว ตลาดท้องถิ่น
+                และอาหารทะเล ด้วยศักยภาพนี้ สงขลามีตลาดนักท่องเที่ยวรองรับไม่ต่ำกว่า 390 ล้านคน
+              </div>
+            </div>
+          </section>
+
+          <section class="collapsible border-t border-tan">
+            <button class="flex items-center justify-between w-full gap-4 py-5 text-lg font-semibold text-brown">
+              <span>4 ธีมยุทธศาสตร์ของโครงการ</span>
+              <div class="size-5 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="collapsible-content text-cocoa">
+                <div class="theme-list">
+                  <div><b>Ingredient Journey</b>ตามรอยแหล่งวัตถุดิบ เรียนรู้เรื่องราวของผู้ผลิตและต้นกำเนิดอาหาร</div>
+                  <div><b>Made with Local</b>สร้างสรรค์ผลิตภัณฑ์และประสบการณ์จากวัตถุดิบท้องถิ่น</div>
+                  <div><b>Hands-on Gastro</b>เปิดโอกาสให้นักเดินทางลงมือทำและมีส่วนร่วมด้วยตนเอง</div>
+                  <div><b>Signature Gastro Immersive</b>ประสบการณ์ดื่มด่ำที่เชื่อมโยงรสชาติ ผู้คน และอัตลักษณ์พื้นที่</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="collapsible border-y border-tan">
+            <button class="flex items-center justify-between w-full gap-4 py-5 text-lg font-semibold text-brown">
+              <span>พันธมิตรและทิศทางระดับประเทศ</span>
+              <div class="size-5 button-icon">
+                <img src="./icons/chevron-down-black.svg" alt="" width="30" height="30" />
+              </div>
+            </button>
+            <div class="collapsible-content-wrapper">
+              <div class="collapsible-content text-cocoa">
+                ริเริ่มโดยการท่องเที่ยวแห่งประเทศไทย (ททท.) ร่วมกับกระทรวง อว. มหาวิทยาลัยหาดใหญ่ Thailand Gastronomy Network และ HUG ภายใต้ทิศทาง Thailand Tourism Next 2026 ที่เน้น
+                “Value over Volume” และแคมเปญ “Gastronomy Experience Platform: From Taste to Journey”
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+  </body>
+</html>
