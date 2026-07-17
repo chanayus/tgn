@@ -177,11 +177,19 @@
 }
 
 .theme-pill-dot {
-  display: block;
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 0.75rem;
+  border-radius: 50%;
+}
+
+/* .svg-icon masks the artwork, so the colour comes from background-color here */
+.theme-pill-icon {
   width: 2.125rem;
   height: 2.125rem;
-  margin: 0 auto 0.5rem;
-  border-radius: 50%;
+  background-color: white;
 }
 
 .theme-pill-dot[data-theme="ingredient"] {
@@ -251,6 +259,13 @@
     justify-content: center;
     transform: rotate(90deg);
   }
+}
+
+.funnel-step-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 0.625rem;
+  background-color: var(--gold);
 }
 
 /* tabular-nums keeps the digits from jittering while they count up */

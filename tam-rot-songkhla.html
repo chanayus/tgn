@@ -802,25 +802,35 @@
           <h2 data-reveal class="lg:text-4xl/normal text-2xl/normal text-gold text-balance">4 ธีมยุทธศาสตร์ของโครงการ</h2>
         </hgroup>
 
-        <!-- No data-reveal here: the pills get a bouncy staggered reveal in tamRotSongkhla.js -->
+        <!-- No data-reveal here: the pills get a bouncy staggered reveal in tamRotSongkhla.js.
+             Icons are masked via .svg-icon (main.js reads data-src), so they take the tint
+             from background-color rather than needing recoloured art. -->
         <div class="main-container theme-strip">
           <div class="theme-pill">
-            <span class="theme-pill-dot" data-theme="ingredient"></span>
+            <div class="theme-pill-dot" data-theme="ingredient">
+              <div class="svg-icon theme-pill-icon" data-src="../icons/plant.png"></div>
+            </div>
             <b>Ingredient Journey</b>
             <span>ตามรอยวัตถุดิบ</span>
           </div>
           <div class="theme-pill">
-            <span class="theme-pill-dot" data-theme="local"></span>
+            <div class="theme-pill-dot" data-theme="local">
+              <div class="svg-icon theme-pill-icon" data-src="../icons/community-gold.svg"></div>
+            </div>
             <b>Made with Local</b>
             <span>สร้างสรรค์จากท้องถิ่น</span>
           </div>
           <div class="theme-pill">
-            <span class="theme-pill-dot" data-theme="handson"></span>
+            <div class="theme-pill-dot" data-theme="handson">
+              <div class="svg-icon theme-pill-icon" data-src="../icons/cooking.png"></div>
+            </div>
             <b>Hands-on Gastro</b>
             <span>ลงมือทำด้วยตนเอง</span>
           </div>
           <div class="theme-pill">
-            <span class="theme-pill-dot" data-theme="signature"></span>
+            <div class="theme-pill-dot" data-theme="signature">
+              <div class="svg-icon theme-pill-icon" data-src="../icons/food-gold.svg"></div>
+            </div>
             <b>Signature Immersive</b>
             <span>ดื่มด่ำวัฒนธรรมอาหาร</span>
           </div>
@@ -847,6 +857,7 @@
 
         <div data-reveal class="funnel-row">
           <div class="funnel-step">
+            <div class="svg-icon funnel-step-icon" data-src="../icons/people-gold.svg"></div>
             <b>100+</b>
             <span>ผู้สมัคร</span>
           </div>
@@ -856,6 +867,7 @@
             </svg>
           </div>
           <div class="funnel-step">
+            <div class="svg-icon funnel-step-icon" data-src="../icons/checkhand-gold.svg"></div>
             <b>60</b>
             <span>เข้าสู่กระบวนการ Co-creation</span>
           </div>
@@ -865,6 +877,7 @@
             </svg>
           </div>
           <div class="funnel-step">
+            <div class="svg-icon funnel-step-icon" data-src="../icons/showcase-gold.svg"></div>
             <b>47</b>
             <span>Experience Designers ต้นแบบ</span>
           </div>
